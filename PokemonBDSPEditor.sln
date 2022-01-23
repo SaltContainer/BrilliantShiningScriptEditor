@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBDSPEditor", "PokemonBDSPEditor.csproj", "{F35C76B4-19E4-4C8A-BD2E-14E64266939A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F35C76B4-19E4-4C8A-BD2E-14E64266939A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F35C76B4-19E4-4C8A-BD2E-14E64266939A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F35C76B4-19E4-4C8A-BD2E-14E64266939A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F35C76B4-19E4-4C8A-BD2E-14E64266939A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B6A8071-47B8-4470-897B-8712B997B6E1}
+	EndGlobalSection
+EndGlobal
