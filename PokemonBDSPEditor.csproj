@@ -68,15 +68,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMain.cs">
+    <Compile Include="Data\BundleData.cs" />
+    <Compile Include="Data\BundleDecompressor.cs" />
+    <Compile Include="Data\BundleManipulator.cs" />
+    <Compile Include="Data\JSONObjects\BundleInfo.cs" />
+    <Compile Include="Data\Utils\FileConstants.cs" />
+    <Compile Include="Engine\Editor\DTO\ArgDTO.cs" />
+    <Compile Include="Engine\Editor\DTO\CommandDTO.cs" />
+    <Compile Include="Engine\Editor\DTO\ScriptDTO.cs" />
+    <Compile Include="Engine\Editor\EditorEngine.cs" />
+    <Compile Include="Engine\Editor\Model\Argument.cs" />
+    <Compile Include="Engine\Editor\Model\ArgumentType.cs" />
+    <Compile Include="Engine\Editor\Model\Command.cs" />
+    <Compile Include="Engine\Editor\Model\Script.cs" />
+    <Compile Include="Engine\Editor\Model\ScriptFile.cs" />
+    <Compile Include="Forms\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
+    <Compile Include="Forms\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormMain.resx">
+    <EmbeddedResource Include="Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -89,6 +103,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="JSON\bundle_constants.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -112,5 +127,6 @@
   <ItemGroup>
     <None Include="Icons\418.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

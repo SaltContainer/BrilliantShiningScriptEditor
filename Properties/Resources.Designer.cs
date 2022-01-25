@@ -81,6 +81,25 @@ namespace PokemonBDSPEditor.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///	&quot;text-data&quot;: {
+        ///		&quot;key&quot;: &quot;script-data&quot;,
+        ///		&quot;file_name&quot;: &quot;ev_script&quot;,
+        ///		&quot;full_path&quot;: &quot;StreamingAssets\AssetAssistant\Dpr\ev_script&quot;,
+        ///		&quot;cab_directory&quot;: &quot;tbd&quot;,
+        ///		&quot;classes&quot;: [
+        ///			&quot;trainer&quot;
+        ///		]
+        ///	}
+        ///}.
+        /// </summary>
+        internal static string bundle_constants {
+            get {
+                return ResourceManager.GetString("bundle_constants", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap folder {

@@ -1,5 +1,5 @@
 ﻿
-namespace PokemonBDSPEditor
+namespace PokemonBDSPEditor.Forms
 {
     partial class FormMain
     {
@@ -31,27 +31,27 @@ namespace PokemonBDSPEditor
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.stripMain = new System.Windows.Forms.ToolStrip();
-            this.tabsMain = new System.Windows.Forms.TabControl();
-            this.tabScript = new System.Windows.Forms.TabPage();
-            this.tabText = new System.Windows.Forms.TabPage();
-            this.tabTrainer = new System.Windows.Forms.TabPage();
-            this.rtbScript = new System.Windows.Forms.RichTextBox();
-            this.comboScriptFile = new System.Windows.Forms.ComboBox();
-            this.lbScriptFile = new System.Windows.Forms.Label();
-            this.grpScriptFile = new System.Windows.Forms.GroupBox();
-            this.grpScriptCommands = new System.Windows.Forms.GroupBox();
-            this.dataScriptCommands = new System.Windows.Forms.DataGridView();
-            this.btnScriptAdd = new System.Windows.Forms.Button();
-            this.btnScriptSave = new System.Windows.Forms.Button();
-            this.btnScriptCompile = new System.Windows.Forms.Button();
             this.tbtnOpen = new System.Windows.Forms.ToolStripButton();
             this.tbtnSave = new System.Windows.Forms.ToolStripButton();
+            this.tabsMain = new System.Windows.Forms.TabControl();
+            this.tabScript = new System.Windows.Forms.TabPage();
+            this.grpScriptCommands = new System.Windows.Forms.GroupBox();
+            this.dataScriptCommands = new System.Windows.Forms.DataGridView();
+            this.grpScriptFile = new System.Windows.Forms.GroupBox();
+            this.btnScriptAdd = new System.Windows.Forms.Button();
+            this.comboScriptFile = new System.Windows.Forms.ComboBox();
+            this.lbScriptFile = new System.Windows.Forms.Label();
+            this.btnScriptSave = new System.Windows.Forms.Button();
+            this.btnScriptCompile = new System.Windows.Forms.Button();
+            this.rtbScript = new System.Windows.Forms.RichTextBox();
+            this.tabText = new System.Windows.Forms.TabPage();
+            this.tabTrainer = new System.Windows.Forms.TabPage();
             this.stripMain.SuspendLayout();
             this.tabsMain.SuspendLayout();
             this.tabScript.SuspendLayout();
-            this.grpScriptFile.SuspendLayout();
             this.grpScriptCommands.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataScriptCommands)).BeginInit();
+            this.grpScriptFile.SuspendLayout();
             this.SuspendLayout();
             // 
             // stripMain
@@ -65,6 +65,24 @@ namespace PokemonBDSPEditor
             this.stripMain.Size = new System.Drawing.Size(1108, 39);
             this.stripMain.TabIndex = 0;
             this.stripMain.Text = "toolStrip1";
+            // 
+            // tbtnOpen
+            // 
+            this.tbtnOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbtnOpen.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
+            this.tbtnOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbtnOpen.Name = "tbtnOpen";
+            this.tbtnOpen.Size = new System.Drawing.Size(36, 36);
+            this.tbtnOpen.Text = "Open RomFS Folder";
+            // 
+            // tbtnSave
+            // 
+            this.tbtnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbtnSave.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
+            this.tbtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbtnSave.Name = "tbtnSave";
+            this.tbtnSave.Size = new System.Drawing.Size(36, 36);
+            this.tbtnSave.Text = "Export Changes";
             // 
             // tabsMain
             // 
@@ -93,70 +111,6 @@ namespace PokemonBDSPEditor
             this.tabScript.Text = "Script Editor";
             this.tabScript.UseVisualStyleBackColor = true;
             // 
-            // tabText
-            // 
-            this.tabText.Location = new System.Drawing.Point(4, 22);
-            this.tabText.Name = "tabText";
-            this.tabText.Padding = new System.Windows.Forms.Padding(3);
-            this.tabText.Size = new System.Drawing.Size(1076, 543);
-            this.tabText.TabIndex = 1;
-            this.tabText.Text = "Text Editor";
-            this.tabText.UseVisualStyleBackColor = true;
-            // 
-            // tabTrainer
-            // 
-            this.tabTrainer.Location = new System.Drawing.Point(4, 22);
-            this.tabTrainer.Name = "tabTrainer";
-            this.tabTrainer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTrainer.Size = new System.Drawing.Size(1076, 543);
-            this.tabTrainer.TabIndex = 2;
-            this.tabTrainer.Text = "Trainer Editor";
-            this.tabTrainer.UseVisualStyleBackColor = true;
-            // 
-            // rtbScript
-            // 
-            this.rtbScript.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbScript.Location = new System.Drawing.Point(559, 6);
-            this.rtbScript.Name = "rtbScript";
-            this.rtbScript.Size = new System.Drawing.Size(511, 531);
-            this.rtbScript.TabIndex = 0;
-            this.rtbScript.Text = "";
-            // 
-            // comboScriptFile
-            // 
-            this.comboScriptFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboScriptFile.FormattingEnabled = true;
-            this.comboScriptFile.Location = new System.Drawing.Point(9, 37);
-            this.comboScriptFile.Name = "comboScriptFile";
-            this.comboScriptFile.Size = new System.Drawing.Size(349, 21);
-            this.comboScriptFile.TabIndex = 1;
-            // 
-            // lbScriptFile
-            // 
-            this.lbScriptFile.AutoSize = true;
-            this.lbScriptFile.Location = new System.Drawing.Point(6, 19);
-            this.lbScriptFile.Name = "lbScriptFile";
-            this.lbScriptFile.Size = new System.Drawing.Size(53, 13);
-            this.lbScriptFile.TabIndex = 2;
-            this.lbScriptFile.Text = "Script File";
-            // 
-            // grpScriptFile
-            // 
-            this.grpScriptFile.Controls.Add(this.btnScriptAdd);
-            this.grpScriptFile.Controls.Add(this.comboScriptFile);
-            this.grpScriptFile.Controls.Add(this.lbScriptFile);
-            this.grpScriptFile.Controls.Add(this.btnScriptSave);
-            this.grpScriptFile.Controls.Add(this.btnScriptCompile);
-            this.grpScriptFile.Location = new System.Drawing.Point(6, 6);
-            this.grpScriptFile.Name = "grpScriptFile";
-            this.grpScriptFile.Size = new System.Drawing.Size(547, 80);
-            this.grpScriptFile.TabIndex = 5;
-            this.grpScriptFile.TabStop = false;
-            this.grpScriptFile.Text = "Scrip File Control";
-            // 
             // grpScriptCommands
             // 
             this.grpScriptCommands.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -184,6 +138,20 @@ namespace PokemonBDSPEditor
             this.dataScriptCommands.Size = new System.Drawing.Size(535, 420);
             this.dataScriptCommands.TabIndex = 0;
             // 
+            // grpScriptFile
+            // 
+            this.grpScriptFile.Controls.Add(this.btnScriptAdd);
+            this.grpScriptFile.Controls.Add(this.comboScriptFile);
+            this.grpScriptFile.Controls.Add(this.lbScriptFile);
+            this.grpScriptFile.Controls.Add(this.btnScriptSave);
+            this.grpScriptFile.Controls.Add(this.btnScriptCompile);
+            this.grpScriptFile.Location = new System.Drawing.Point(6, 6);
+            this.grpScriptFile.Name = "grpScriptFile";
+            this.grpScriptFile.Size = new System.Drawing.Size(547, 80);
+            this.grpScriptFile.TabIndex = 5;
+            this.grpScriptFile.TabStop = false;
+            this.grpScriptFile.Text = "Scrip File Control";
+            // 
             // btnScriptAdd
             // 
             this.btnScriptAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -194,6 +162,26 @@ namespace PokemonBDSPEditor
             this.btnScriptAdd.TabIndex = 5;
             this.btnScriptAdd.Text = "add";
             this.btnScriptAdd.UseVisualStyleBackColor = true;
+            this.btnScriptAdd.Click += new System.EventHandler(this.btnScriptAdd_Click);
+            // 
+            // comboScriptFile
+            // 
+            this.comboScriptFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboScriptFile.FormattingEnabled = true;
+            this.comboScriptFile.Location = new System.Drawing.Point(9, 37);
+            this.comboScriptFile.Name = "comboScriptFile";
+            this.comboScriptFile.Size = new System.Drawing.Size(349, 21);
+            this.comboScriptFile.TabIndex = 1;
+            // 
+            // lbScriptFile
+            // 
+            this.lbScriptFile.AutoSize = true;
+            this.lbScriptFile.Location = new System.Drawing.Point(6, 19);
+            this.lbScriptFile.Name = "lbScriptFile";
+            this.lbScriptFile.Size = new System.Drawing.Size(53, 13);
+            this.lbScriptFile.TabIndex = 2;
+            this.lbScriptFile.Text = "Script File";
             // 
             // btnScriptSave
             // 
@@ -217,23 +205,37 @@ namespace PokemonBDSPEditor
             this.btnScriptCompile.Text = "compile";
             this.btnScriptCompile.UseVisualStyleBackColor = true;
             // 
-            // tbtnOpen
+            // rtbScript
             // 
-            this.tbtnOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tbtnOpen.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
-            this.tbtnOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbtnOpen.Name = "tbtnOpen";
-            this.tbtnOpen.Size = new System.Drawing.Size(36, 36);
-            this.tbtnOpen.Text = "Open RomFS Folder";
+            this.rtbScript.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtbScript.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbScript.Location = new System.Drawing.Point(559, 6);
+            this.rtbScript.Name = "rtbScript";
+            this.rtbScript.Size = new System.Drawing.Size(511, 531);
+            this.rtbScript.TabIndex = 0;
+            this.rtbScript.Text = "";
             // 
-            // tbtnSave
+            // tabText
             // 
-            this.tbtnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tbtnSave.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
-            this.tbtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbtnSave.Name = "tbtnSave";
-            this.tbtnSave.Size = new System.Drawing.Size(36, 36);
-            this.tbtnSave.Text = "Export Changes";
+            this.tabText.Location = new System.Drawing.Point(4, 22);
+            this.tabText.Name = "tabText";
+            this.tabText.Padding = new System.Windows.Forms.Padding(3);
+            this.tabText.Size = new System.Drawing.Size(1076, 543);
+            this.tabText.TabIndex = 1;
+            this.tabText.Text = "Text Editor";
+            this.tabText.UseVisualStyleBackColor = true;
+            // 
+            // tabTrainer
+            // 
+            this.tabTrainer.Location = new System.Drawing.Point(4, 22);
+            this.tabTrainer.Name = "tabTrainer";
+            this.tabTrainer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabTrainer.Size = new System.Drawing.Size(1076, 543);
+            this.tabTrainer.TabIndex = 2;
+            this.tabTrainer.Text = "Trainer Editor";
+            this.tabTrainer.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
@@ -250,10 +252,10 @@ namespace PokemonBDSPEditor
             this.stripMain.PerformLayout();
             this.tabsMain.ResumeLayout(false);
             this.tabScript.ResumeLayout(false);
-            this.grpScriptFile.ResumeLayout(false);
-            this.grpScriptFile.PerformLayout();
             this.grpScriptCommands.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataScriptCommands)).EndInit();
+            this.grpScriptFile.ResumeLayout(false);
+            this.grpScriptFile.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
