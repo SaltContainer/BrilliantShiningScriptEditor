@@ -82,12 +82,12 @@ namespace PokemonBDSPEditor.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///	&quot;text-data&quot;: {
+        ///	&quot;script-data&quot;: {
         ///		&quot;key&quot;: &quot;script-data&quot;,
         ///		&quot;file_name&quot;: &quot;ev_script&quot;,
-        ///		&quot;full_path&quot;: &quot;StreamingAssets\AssetAssistant\Dpr\ev_script&quot;,
-        ///		&quot;cab_directory&quot;: &quot;tbd&quot;,
-        ///		&quot;classes&quot;: [
+        ///		&quot;full_path&quot;: &quot;StreamingAssets\\AssetAssistant\\Dpr\\ev_script&quot;,
+        ///		&quot;cab_directory&quot;: &quot;CAB-e856180fe48cd419c06715341f9e3f42&quot;,
+        ///		&quot;files&quot;: [
         ///			&quot;trainer&quot;
         ///		]
         ///	}
@@ -96,6 +96,25 @@ namespace PokemonBDSPEditor.Properties {
         internal static string bundle_constants {
             get {
                 return ResourceManager.GetString("bundle_constants", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///	&quot;script-data&quot;: {
+        ///		&quot;key&quot;: &quot;script-data&quot;,
+        ///		&quot;file_name&quot;: &quot;ev_script&quot;,
+        ///		&quot;full_path&quot;: &quot;StreamingAssets\\AssetAssistant\\Dpr\\ev_script&quot;,
+        ///		&quot;cab_directory&quot;: &quot;CAB-e856180fe48cd419c06715341f9e3f42&quot;,
+        ///		&quot;files&quot;: [
+        ///			&quot;trainer&quot;
+        ///		]
+        ///	}
+        ///}.
+        /// </summary>
+        internal static string commands {
+            get {
+                return ResourceManager.GetString("commands", resourceCulture);
             }
         }
         

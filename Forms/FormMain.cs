@@ -1,4 +1,5 @@
-﻿using PokemonBDSPEditor.Data.Utils;
+﻿using PokemonBDSPEditor.Data.JSONObjects;
+using PokemonBDSPEditor.Data.Utils;
 using PokemonBDSPEditor.Engine.ScriptEditor;
 using PokemonBDSPEditor.Engine.ScriptEditor.Model;
 using System;
@@ -21,6 +22,8 @@ namespace PokemonBDSPEditor.Forms
         {
             InitializeComponent();
             scriptEditorEngine = new ScriptEditorEngine();
+
+            dataScriptCommands.DataSource = scriptEditorEngine.GetCommands();
         }
 
         private void UpdateScriptFileList(List<ScriptFile> scriptFiles)
@@ -35,15 +38,37 @@ namespace PokemonBDSPEditor.Forms
             comboScript.SelectedIndex = 0;
         }
 
+        private void comboScriptFile_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateScriptList(scriptEditorEngine.GetScriptFiles()[comboScriptFile.SelectedIndex].Scripts);
+        }
+
         private void btnScriptAdd_Click(object sender, EventArgs e)
         {
+            // Add Script
+        }
+
+        private void btnScriptCompile_Click(object sender, EventArgs e)
+        {
+            // Compile Script
+        }
+
+        private void btnScriptSave_Click(object sender, EventArgs e)
+        {
+            // Save Script
+        }
+
+        private void tbtnOpen_Click(object sender, EventArgs e)
+        {
+            // Open ROMFS
+
             List<ScriptFile> scripts = scriptEditorEngine.GetScriptFiles();
             UpdateScriptFileList(scripts);
         }
 
-        private void comboScriptFile_SelectedIndexChanged(object sender, EventArgs e)
+        private void tbtnSave_Click(object sender, EventArgs e)
         {
-            UpdateScriptList(scriptEditorEngine.GetScriptFiles()[comboScriptFile.SelectedIndex].Scripts);
+            // Save ROMFS
         }
     }
 }

@@ -71,12 +71,14 @@
     <Compile Include="Data\BundleData.cs" />
     <Compile Include="Data\BundleDecompressor.cs" />
     <Compile Include="Data\BundleManipulator.cs" />
-    <Compile Include="Data\JSONObjects\BundleInfo.cs" />
+    <Compile Include="Data\JSONObjects\Bundle\BundleInfo.cs" />
     <Compile Include="Data\Utils\FileConstants.cs" />
     <Compile Include="Engine\ScriptEditor\EditorEngine.cs" />
     <Compile Include="Engine\ScriptEditor\Model\Argument.cs" />
+    <Compile Include="Data\JSONObjects\Scripts\ArgumentInfo.cs" />
     <Compile Include="Engine\ScriptEditor\Model\ArgumentType.cs" />
     <Compile Include="Engine\ScriptEditor\Model\Command.cs" />
+    <Compile Include="Data\JSONObjects\Scripts\CommandInfo.cs" />
     <Compile Include="Engine\ScriptEditor\Model\Script.cs" />
     <Compile Include="Engine\ScriptEditor\Model\ScriptFile.cs" />
     <Compile Include="Forms\FormMain.cs">
@@ -92,20 +94,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="JSON\bundle_constants.json" />
+    <None Include="JSON\commands.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>

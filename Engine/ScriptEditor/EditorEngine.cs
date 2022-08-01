@@ -1,7 +1,10 @@
 ﻿using AssetsTools.NET;
+using Newtonsoft.Json;
 using PokemonBDSPEditor.Data;
+using PokemonBDSPEditor.Data.JSONObjects;
 using PokemonBDSPEditor.Data.Utils;
 using PokemonBDSPEditor.Engine.ScriptEditor.Model;
+using PokemonBDSPEditor.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +28,16 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
         {
             if (!AreScriptFilesLoaded()) LoadScriptFiles();
             return scriptFiles;
+        }
+
+        public bool AreScriptFilesLoaded()
+        {
+            return bundleManipulator.IsBundleLoaded(FileConstants.ScriptDataBundleKey);
+        }
+
+        public List<CommandInfo> GetCommands()
+        {
+            return FileConstants.Commands;
         }
 
         private void LoadScriptFiles()
@@ -65,11 +78,6 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             }
 
             return new ScriptFile(strings, scripts, root["m_Name"].GetValue().AsString());
-        }
-
-        public bool AreScriptFilesLoaded()
-        {
-            return bundleManipulator.IsBundleLoaded(FileConstants.ScriptDataBundleKey);
         }
     }
 }

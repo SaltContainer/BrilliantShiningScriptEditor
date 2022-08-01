@@ -1,0 +1,7398 @@
+[
+	{
+		"Id": 777,
+		"Name": "ACMD_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 811,
+		"Name": "ACMD_NOT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1155,
+		"Name": "AC_ANIME_DURATION",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 805,
+		"Name": "AC_ANM_PAUSE_OFF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 804,
+		"Name": "AC_ANM_PAUSE_ON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 775,
+		"Name": "AC_DIR_D",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 797,
+		"Name": "AC_DIR_DOWN_CENTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 776,
+		"Name": "AC_DIR_L",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 798,
+		"Name": "AC_DIR_LEFT_CENTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 803,
+		"Name": "AC_DIR_PAUSE_OFF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 802,
+		"Name": "AC_DIR_PAUSE_ON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 774,
+		"Name": "AC_DIR_R",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 799,
+		"Name": "AC_DIR_RIGHT_CENTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 773,
+		"Name": "AC_DIR_U",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 796,
+		"Name": "AC_DIR_UP_CENTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 778,
+		"Name": "AC_DIR_VAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 769,
+		"Name": "AC_DOWN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 793,
+		"Name": "AC_DOWN_CENTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 976,
+		"Name": "AC_FACE_INDEX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 808,
+		"Name": "AC_HERO_BANZAI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 810,
+		"Name": "AC_HERO_BANZAI_UKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 788,
+		"Name": "AC_HERO_MATCH_X",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 789,
+		"Name": "AC_HERO_MATCH_Z",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 807,
+		"Name": "AC_HIDE_PULLOFF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 870,
+		"Name": "AC_INDEX_ANIME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 871,
+		"Name": "AC_INDEX_ANIME_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 965,
+		"Name": "AC_INVISIBLE_OFF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 964,
+		"Name": "AC_INVISIBLE_ON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 770,
+		"Name": "AC_LEFT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 794,
+		"Name": "AC_LEFT_CENTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 772,
+		"Name": "AC_LOOP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 900,
+		"Name": "AC_MARK_EMO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 783,
+		"Name": "AC_MARK_GYOE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 809,
+		"Name": "AC_MARK_SAISEN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 908,
+		"Name": "AC_NECK_ROTATE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 927,
+		"Name": "AC_OFFSET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 806,
+		"Name": "AC_PC_BOW",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 771,
+		"Name": "AC_RIGHT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 795,
+		"Name": "AC_RIGHT_CENTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1142,
+		"Name": "AC_STOP_WALK_ANIME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 768,
+		"Name": "AC_UP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 792,
+		"Name": "AC_UP_CENTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 801,
+		"Name": "AC_VANISH_OFF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 800,
+		"Name": "AC_VANISH_ON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 779,
+		"Name": "AC_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 786,
+		"Name": "AC_WORLD_X",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 787,
+		"Name": "AC_WORLD_Z",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1227,
+		"Name": "CMD_NAME_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 348,
+		"Name": "_2VS2_BATTLE_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 76,
+		"Name": "_AB_KEYWAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 77,
+		"Name": "_AB_KEY_TIME_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 695,
+		"Name": "_ACCE_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 474,
+		"Name": "_ACCE_SHOP_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 880,
+		"Name": "_AC_ANIM_LOCK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 881,
+		"Name": "_AC_ANIM_RELEASE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 196,
+		"Name": "_ADD_BOX_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 185,
+		"Name": "_ADD_COIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 715,
+		"Name": "_ADD_COIN_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 821,
+		"Name": "_ADD_CUSTUM_WIN_LABEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1196,
+		"Name": "_ADD_CUSTUM_WIN_LABEL_TWO_WINDOW",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 962,
+		"Name": "_ADD_CUSTUM_WIN_LABEL_WORD_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 175,
+		"Name": "_ADD_GOLD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 198,
+		"Name": "_ADD_GOODS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 200,
+		"Name": "_ADD_GOODS_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 189,
+		"Name": "_ADD_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 191,
+		"Name": "_ADD_ITEM_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1175,
+		"Name": "_ADD_MAROYAKA_POFFIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 635,
+		"Name": "_ADD_MOVE_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 558,
+		"Name": "_ADD_NATSUKI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 218,
+		"Name": "_ADD_POKEMON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1209,
+		"Name": "_ADD_POKEMON_UI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 694,
+		"Name": "_ADD_SCORE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 210,
+		"Name": "_ADD_TAMA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 219,
+		"Name": "_ADD_TAMAGO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 212,
+		"Name": "_ADD_TAMA_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 202,
+		"Name": "_ADD_TRAP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 204,
+		"Name": "_ADD_TRAP_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 206,
+		"Name": "_ADD_TREASURE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 208,
+		"Name": "_ADD_TREASURE_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1105,
+		"Name": "_ADD_UG_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1214,
+		"Name": "_ADD_UNIQUE_POKEMON_UI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 39,
+		"Name": "_ADD_WAITICON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1167,
+		"Name": "_ADD_WAZA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 58,
+		"Name": "_ADD_WK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 707,
+		"Name": "_AGB_CARTRIDGE_VER_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1208,
+		"Name": "_AG_TRANSITION_HOYUTA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 673,
+		"Name": "_AIKOTOBA_KABEGAMI_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 753,
+		"Name": "_AIKOTOBA_OKURIMONO_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1066,
+		"Name": "_AK_LISNER_POS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1067,
+		"Name": "_AK_LISNER_ROT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1065,
+		"Name": "_AK_LISNER_TRA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1176,
+		"Name": "_ALL_MONSNO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1177,
+		"Name": "_ALL_MONS_OWN_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 936,
+		"Name": "_AMAIKAORI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 938,
+		"Name": "_AMAIMITU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 934,
+		"Name": "_ANANUKENOHIMO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 933,
+		"Name": "_ANAWOHORU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 139,
+		"Name": "_ANIME_DATA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 138,
+		"Name": "_ANIME_LABEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 317,
+		"Name": "_ANOON_SEE_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 223,
+		"Name": "_APPROVE_POISON_DEAD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 42,
+		"Name": "_ARRIVE_FLAG_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 662,
+		"Name": "_ASHIATO_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 747,
+		"Name": "_AUSU_ITEM_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1164,
+		"Name": "_AUTO_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1165,
+		"Name": "_AUTO_MSG_STOP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1088,
+		"Name": "_AUTO_SAVE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1204,
+		"Name": "_AUTO_SAVE_BACK_UP_ON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1077,
+		"Name": "_AUTO_TANKEN_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1079,
+		"Name": "_AUTO_TANKEN_SET_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 958,
+		"Name": "_AZUKARIYA_DISCARD_EGG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 950,
+		"Name": "_AZUKARIYA_EXIST_EGG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 957,
+		"Name": "_AZUKARIYA_GET_EGG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 956,
+		"Name": "_AZUKARIYA_GET_STORED_MONSNO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 960,
+		"Name": "_AZUKARIYA_GET_STORED_SEX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 955,
+		"Name": "_AZUKARIYA_LOVE_LEVEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 961,
+		"Name": "_AZUKARIYA_OLDMAN_INIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 954,
+		"Name": "_AZUKARIYA_RESTORE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 959,
+		"Name": "_AZUKARIYA_SET_STORED_INFO_STR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 952,
+		"Name": "_AZUKARIYA_SET_STORED_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 953,
+		"Name": "_AZUKARIYA_STORE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 951,
+		"Name": "_AZUKARIYA_STORED_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1185,
+		"Name": "_AZUKARIYA_STORE_UI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1090,
+		"Name": "_AZUKARIYA_TAKE_OVER_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1104,
+		"Name": "_BADGE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 263,
+		"Name": "_BAG_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 262,
+		"Name": "_BAG_SET_PROC_KINOMI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 261,
+		"Name": "_BAG_SET_PROC_NORMAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 126,
+		"Name": "_BGM_FADEIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 124,
+		"Name": "_BGM_FADEOUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 125,
+		"Name": "_BGM_FADEOUT_PLAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 121,
+		"Name": "_BGM_NOW_MAP_PLAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 118,
+		"Name": "_BGM_PLAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 127,
+		"Name": "_BGM_PLAYER_PAUSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 119,
+		"Name": "_BGM_PLAY_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 123,
+		"Name": "_BGM_SPECIAL_CLR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 122,
+		"Name": "_BGM_SPECIAL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 120,
+		"Name": "_BGM_STOP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 26,
+		"Name": "_BG_ID_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 95,
+		"Name": "_BG_SCROLL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 293,
+		"Name": "_BICYCLE_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1094,
+		"Name": "_BICYCLE_COLOR_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1093,
+		"Name": "_BICYCLE_COLOR_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 294,
+		"Name": "_BICYCLE_REQ",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 295,
+		"Name": "_BICYCLE_REQ_NON_BGM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 316,
+		"Name": "_BIRTH_DAY_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 969,
+		"Name": "_BIRTH_DAY_INPUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 968,
+		"Name": "_BIRTH_MOUNTH_INPUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 284,
+		"Name": "_BLACK_IN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 283,
+		"Name": "_BLACK_OUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 104,
+		"Name": "_BMPLIST_INIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 105,
+		"Name": "_BMPLIST_INIT_EX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 106,
+		"Name": "_BMPLIST_MAKE_LIST",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 107,
+		"Name": "_BMPLIST_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 108,
+		"Name": "_BMPMENU_HV_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 98,
+		"Name": "_BMPMENU_INIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 99,
+		"Name": "_BMPMENU_INIT_EX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 100,
+		"Name": "_BMPMENU_MAKE_LIST",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 101,
+		"Name": "_BMPMENU_MAKE_LIST16",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 102,
+		"Name": "_BMPMENU_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 91,
+		"Name": "_BOARD_END_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 86,
+		"Name": "_BOARD_MAKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 90,
+		"Name": "_BOARD_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 88,
+		"Name": "_BOARD_REQ",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 89,
+		"Name": "_BOARD_REQ_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 984,
+		"Name": "_BOUKENNOOTO_TIPS_OPEN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1026,
+		"Name": "_BOUKENNOOTO_TIPS_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1056,
+		"Name": "_BOX_OPEN_NORMAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1057,
+		"Name": "_BOX_OPEN_SELECT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1061,
+		"Name": "_BOX_SEAL_UI_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 250,
+		"Name": "_BOX_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 966,
+		"Name": "_BTL_ENCSEQ_LOAD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 742,
+		"Name": "_BTL_POINT_ADD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 743,
+		"Name": "_BTL_POINT_SUB",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 739,
+		"Name": "_BTL_POINT_WIN_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 738,
+		"Name": "_BTL_POINT_WIN_WRITE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 740,
+		"Name": "_BTL_POINT_WRITE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 243,
+		"Name": "_BTL_SEARCHER_DIR_MV_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 242,
+		"Name": "_BTL_SEARCHER_EVENT_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 600,
+		"Name": "_BTOWER_APP_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 945,
+		"Name": "_BTOWER_APP_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 610,
+		"Name": "_BTOWER_GET_LEADER_ROOMID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 611,
+		"Name": "_BTOWER_IS_LEADER_EXIST",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 607,
+		"Name": "_BTOWER_PRIZEMAN_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 606,
+		"Name": "_BTOWER_PRIZE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 609,
+		"Name": "_BTOWER_RECV_BUF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 608,
+		"Name": "_BTOWER_SEND_BUF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 605,
+		"Name": "_BTOWER_SEVEN_POKE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 604,
+		"Name": "_BTOWER_TOOLS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 601,
+		"Name": "_BTOWER_WORK_CLEAR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 602,
+		"Name": "_BTOWER_WORK_INIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 603,
+		"Name": "_BTOWER_WORK_RELEASE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1025,
+		"Name": "_BTWR_DEB_IS_WORK_NULL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1206,
+		"Name": "_BTWR_PLAYER_WIN_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1021,
+		"Name": "_BTWR_SUB_ADD_BATTLE_POINT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1215,
+		"Name": "_BTWR_SUB_ADD_BATTLE_POINT_MANUAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1034,
+		"Name": "_BTWR_SUB_ADD_LOSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1030,
+		"Name": "_BTWR_SUB_BTL_TRAINER_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1010,
+		"Name": "_BTWR_SUB_CHK_ENTRY_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1016,
+		"Name": "_BTWR_SUB_CHOICE_BTL_PARTNER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1200,
+		"Name": "_BTWR_SUB_GET_ENTRY_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1020,
+		"Name": "_BTWR_SUB_GET_LEADER_CLEAR_FLAG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1023,
+		"Name": "_BTWR_SUB_GET_MINE_OBJ",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1011,
+		"Name": "_BTWR_SUB_GET_NOW_ROUND",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1018,
+		"Name": "_BTWR_SUB_GET_PLAY_MODE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1031,
+		"Name": "_BTWR_SUB_GET_RANK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1014,
+		"Name": "_BTWR_SUB_GET_RENSHOU_CNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1012,
+		"Name": "_BTWR_SUB_INC_ROUND",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1013,
+		"Name": "_BTWR_SUB_IS_CLEAR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1017,
+		"Name": "_BTWR_SUB_LOCAL_BTL_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1032,
+		"Name": "_BTWR_SUB_RANK_DOWN_LOSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1033,
+		"Name": "_BTWR_SUB_RANK_DOWN_LOSE_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1022,
+		"Name": "_BTWR_SUB_RENSHOU_RIBBON_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1199,
+		"Name": "_BTWR_SUB_SELECT_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1019,
+		"Name": "_BTWR_SUB_SET_LEADER_CLEAR_FLAG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1015,
+		"Name": "_BTWR_SUB_SET_SCORE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1024,
+		"Name": "_BTWR_SUB_UPDATE_RANDOM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1002,
+		"Name": "_BTWR_TOOL_CHK_ENTRY_POKE_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1003,
+		"Name": "_BTWR_TOOL_CLEAR_PLAY_DATA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1006,
+		"Name": "_BTWR_TOOL_GET_WIFI_RANK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1005,
+		"Name": "_BTWR_TOOL_POP_NOW_LOCATION",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1004,
+		"Name": "_BTWR_TOOL_PUSH_NOW_LOCATION",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1008,
+		"Name": "_BTWR_TOOL_SET_NOW_WIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1007,
+		"Name": "_BTWR_TOOL_SET_PLAY_MODE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1009,
+		"Name": "_BTWR_TOOL_SET_RANK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 719,
+		"Name": "_C08R0801SCOPECAMERASET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1130,
+		"Name": "_C08R0801SCOPECAMERA_SEQUENCE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 28,
+		"Name": "_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1052,
+		"Name": "_CALL_EFFECT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1058,
+		"Name": "_CALL_EFFECT_OBJ",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 619,
+		"Name": "_CALL_SAFARI_SCOPE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 665,
+		"Name": "_CALL_SHIP_DEMO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1119,
+		"Name": "_CALL_SHIP_DEMO_SEA_MAP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 996,
+		"Name": "_CALL_WAZA_OMOIDASHI_UI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 998,
+		"Name": "_CALL_WAZA_OSHIE_UI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 997,
+		"Name": "_CALL_WAZA_WASURE_UI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1039,
+		"Name": "_CAMERA_CONTROLLER_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1136,
+		"Name": "_CAMERA_CONTROLLER_IS_NULL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1038,
+		"Name": "_CAMERA_CONTROLLER_PLAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1069,
+		"Name": "_CAMERA_CONTROLLER_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 876,
+		"Name": "_CAMERA_COS_ANGLE_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 875,
+		"Name": "_CAMERA_SET_COS_ANGLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 972,
+		"Name": "_CAMERA_SHAKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 815,
+		"Name": "_CAMERA_TARGET_DUMMY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 814,
+		"Name": "_CAMERA_TARGET_HERO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 404,
+		"Name": "_CAPTURE_BTL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 38,
+		"Name": "_CASE_CANCEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 37,
+		"Name": "_CASE_JUMP",
+		"Description": "Compares the value <Arg> to the value of the variable given to the last _SWITCH command ran, then jumps to <Script> if they are equal.",
+		"Args": [
+			{
+				"TentativeName": "Arg",
+				"Type": "Value"
+			},
+			{
+				"TentativeName": "Script",
+				"Type": "Label"
+			}
+		]
+	},
+	{
+		"Id": 1055,
+		"Name": "_CASSET_VERSION_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 216,
+		"Name": "_CB_ITEM_NUM_ADD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 215,
+		"Name": "_CB_ITEM_NUM_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 214,
+		"Name": "_CB_SEAL_KIND_NUM_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 988,
+		"Name": "_CHANGE_FASHION_REQ",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 981,
+		"Name": "_CHARA_LOOK_LOCK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 982,
+		"Name": "_CHARA_LOOK_RELEASE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 698,
+		"Name": "_CHECKMINOMUCHICOMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 920,
+		"Name": "_CHECK_CAN_SEED_WATER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 691,
+		"Name": "_CHECK_FLD_LIFT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 748,
+		"Name": "_CHECK_MY_GSID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1082,
+		"Name": "_CHECK_ONLINE_ACCOUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 195,
+		"Name": "_CHECK_POCKET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 937,
+		"Name": "_CHECK_POFIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 623,
+		"Name": "_CHECK_SAFARI_TRAIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1144,
+		"Name": "_CHECK_SECRET_BASE_EXPANTION",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 999,
+		"Name": "_CHECK_WAZA_OSHIE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1000,
+		"Name": "_CHECK_WAZA_OSHIE_ALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 22,
+		"Name": "_CHG_COMMON_SCR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 23,
+		"Name": "_CHG_LOCAL_SCR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 220,
+		"Name": "_CHG_POKE_WAZA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 197,
+		"Name": "_CHK_BOX_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 626,
+		"Name": "_CHK_POKE_SEIKAKU_ALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 221,
+		"Name": "_CHK_POKE_WAZA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 222,
+		"Name": "_CHK_POKE_WAZA_GROUP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 657,
+		"Name": "_CHK_PRMEXP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 654,
+		"Name": "_CHK_RIBBON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 652,
+		"Name": "_CHK_RIBBON_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 653,
+		"Name": "_CHK_RIBBON_COUNT_ALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 545,
+		"Name": "_CHK_TEMOTI_POKERUS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 658,
+		"Name": "_CHK_WEEK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 399,
+		"Name": "_CHK_ZENKOKU_ZUKAN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1087,
+		"Name": "_CHK_ZUKAN_TOUROKU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 620,
+		"Name": "_CLIMAX_DEMO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 415,
+		"Name": "_CLIP_CONSAVEDATA_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 414,
+		"Name": "_CLIP_TVSAVEDATA_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 416,
+		"Name": "_CLIP_TV_TITLE_SAVE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 18,
+		"Name": "_CMPVAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 19,
+		"Name": "_CMPWK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 182,
+		"Name": "_COIN_WIN_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 181,
+		"Name": "_COIN_WIN_WRITE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 183,
+		"Name": "_COIN_WRITE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 287,
+		"Name": "_COLOSSEUM_MAP_CHANGE_IN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 288,
+		"Name": "_COLOSSEUM_MAP_CHANGE_OUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 482,
+		"Name": "_COMM_DIRECT_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 483,
+		"Name": "_COMM_DIRECT_END_TIMING",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 484,
+		"Name": "_COMM_DIRECT_ENTER_BTL_ROOM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 235,
+		"Name": "_COMM_GET_CURRENT_ID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 485,
+		"Name": "_COMM_PLAYER_SET_DIR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 422,
+		"Name": "_COMM_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 421,
+		"Name": "_COMM_SYNCHRONIZE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 744,
+		"Name": "_COMP_BTL_POINT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 713,
+		"Name": "_COMP_COIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 177,
+		"Name": "_COMP_GOLD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 548,
+		"Name": "_COMP_MY_GOLD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 752,
+		"Name": "_COMP_WK_COIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 360,
+		"Name": "_CONSIO_TIMING_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 359,
+		"Name": "_CONSIO_TIMING_SEND",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 368,
+		"Name": "_CONTEST_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 382,
+		"Name": "_CON_ACCE_NO_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 894,
+		"Name": "_CON_BEST_PERFORMER_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 364,
+		"Name": "_CON_BREEDER_NAME_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 385,
+		"Name": "_CON_CAMERA_FLASH_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 384,
+		"Name": "_CON_CAMERA_FLASH_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 901,
+		"Name": "_CON_CATEGORY_AND_RANK_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1178,
+		"Name": "_CON_CATEGORY_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 895,
+		"Name": "_CON_CATEGORY_RIBBON_NAME_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 906,
+		"Name": "_CON_CHECK_ENTRY_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 897,
+		"Name": "_CON_CONTEST_STAR_NAME_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 379,
+		"Name": "_CON_DESK_MODE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 388,
+		"Name": "_CON_ENDING_SKIP_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 383,
+		"Name": "_CON_ENTRY_PARAM_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 896,
+		"Name": "_CON_HAVE_CONTEST_STAR_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 380,
+		"Name": "_CON_HAVE_RIBBON_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 387,
+		"Name": "_CON_HBLANK_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 386,
+		"Name": "_CON_HBLANK_STOP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 305,
+		"Name": "_CON_HERO_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 363,
+		"Name": "_CON_JUDGE_NAME_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 391,
+		"Name": "_CON_MSGPRINT_FLAG_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 390,
+		"Name": "_CON_MSGPRINT_FLAG_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 376,
+		"Name": "_CON_MY_ENTRY_NO_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 893,
+		"Name": "_CON_MY_ENTRY_NO_WORD_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 365,
+		"Name": "_CON_NICK_NAME_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 366,
+		"Name": "_CON_NUM_TAG_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 377,
+		"Name": "_CON_OBJ_CODE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 891,
+		"Name": "_CON_OPEN_BOUTIQUE_SELECT_MENU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 890,
+		"Name": "_CON_OPEN_CAPSULE_SELECT_MENU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 991,
+		"Name": "_CON_OPEN_MATCHING_MENU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 889,
+		"Name": "_CON_OPEN_POKE_SELECT_MENU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1060,
+		"Name": "_CON_OPEN_RESUME_MATCHING_MENU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 269,
+		"Name": "_CON_POKELIST_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 268,
+		"Name": "_CON_POKELIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 270,
+		"Name": "_CON_POKESTATUS_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 378,
+		"Name": "_CON_POPULARITY_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 374,
+		"Name": "_CON_RANKING_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1179,
+		"Name": "_CON_RANK_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 369,
+		"Name": "_CON_RANK_NAME_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 902,
+		"Name": "_CON_RANK_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 389,
+		"Name": "_CON_RECORD_DISP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 909,
+		"Name": "_CON_RESET_PARAMETER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 898,
+		"Name": "_CON_REWARD_NAME_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 931,
+		"Name": "_CON_REWARD_SHOWMASTER_NAME_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 381,
+		"Name": "_CON_RIBBON_NAME_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 911,
+		"Name": "_CON_SELECT_MULTI_MODE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 910,
+		"Name": "_CON_SELECT_SINGLE_MODE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 367,
+		"Name": "_CON_SIO_PARAM_INIT_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 361,
+		"Name": "_CON_SYSTEM_CREATE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 362,
+		"Name": "_CON_SYSTEM_EXIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 932,
+		"Name": "_CON_TWINKLE_STAR_NAME_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 370,
+		"Name": "_CON_TYPE_NAME_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 371,
+		"Name": "_CON_VICTORY_BREEDER_NAME_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 375,
+		"Name": "_CON_VICTORY_ENTRY_NO_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 372,
+		"Name": "_CON_VICTORY_ITEM_NO_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 373,
+		"Name": "_CON_VICTORY_NICK_NAME_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 892,
+		"Name": "_CON_WAIT_CONTEST_MENU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 683,
+		"Name": "_COUNT_MONSBOX_SPACE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 17,
+		"Name": "_CP_ADR_ADR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 15,
+		"Name": "_CP_ADR_REG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 16,
+		"Name": "_CP_ADR_VAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 14,
+		"Name": "_CP_REG_ADR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 12,
+		"Name": "_CP_REG_REG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 13,
+		"Name": "_CP_REG_VAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1118,
+		"Name": "_CREATE_HYOUTA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 130,
+		"Name": "_CTRL_BGM_FLAG_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 129,
+		"Name": "_CTRL_BGM_FLAG_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 248,
+		"Name": "_CUSTOM_BALL_EVENT_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 987,
+		"Name": "_CUSTOM_BALL_NUM_ADD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1111,
+		"Name": "_CUSTOM_BALL_TRAINER_COPY_OPEN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1110,
+		"Name": "_CUSTOM_BALL_TRAINER_PAGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1129,
+		"Name": "_CUSTOM_BALL_TRAINER_PAGE_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 304,
+		"Name": "_CUTIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 296,
+		"Name": "_CYCLING_ROAD_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 725,
+		"Name": "_D17SYSTEM_MAP_SELECT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 705,
+		"Name": "_D20R0106_LEGEND_IS_UNSEAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 762,
+		"Name": "_DAME_TAMAGO_CHK_ALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1219,
+		"Name": "_DARKNESS_TEMPORARILY_OFF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1220,
+		"Name": "_DARKNESS_TEMPORARILY_ON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 349,
+		"Name": "_DEBUG_BTL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 356,
+		"Name": "_DEBUG_CHILD_WIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 355,
+		"Name": "_DEBUG_PARENT_WIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 782,
+		"Name": "_DEBUG_PRINT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 667,
+		"Name": "_DEBUG_PRINT_FLAG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 669,
+		"Name": "_DEBUG_PRINT_FLAG_STATIONED",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 666,
+		"Name": "_DEBUG_PRINT_WORK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 668,
+		"Name": "_DEBUG_PRINT_WORK_STATIONED",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 872,
+		"Name": "_DEBUG_RESET_WORK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 358,
+		"Name": "_DEBUG_SIO_CONTEST",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 357,
+		"Name": "_DEBUG_SIO_ENCOUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 351,
+		"Name": "_DEBUG_TRAINER_FLAG_ON_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 350,
+		"Name": "_DEBUG_TRAINER_FLAG_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 352,
+		"Name": "_DEBUG_TR_TALK_BTL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 20,
+		"Name": "_DEBUG_WATCH_WORK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 532,
+		"Name": "_DEL_SODATEYA_EGG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 40,
+		"Name": "_DEL_WAITICON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 688,
+		"Name": "_DENDOU_BALL_ANM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 236,
+		"Name": "_DENDOU_NUM_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 993,
+		"Name": "_DENDOU_NUM_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 255,
+		"Name": "_DENDOU_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1108,
+		"Name": "_DISPLAY_MESSAGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1109,
+		"Name": "_DISPLAY_MESSAGE_CLOSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1173,
+		"Name": "_DOF_CHANGE_TARGET_POS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1107,
+		"Name": "_DOF_FAR_DEPTH",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1174,
+		"Name": "_DOF_RESET_TARGET_POS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 879,
+		"Name": "_DOOR_ENABLE_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 839,
+		"Name": "_DOOR_FORCE_ANIME_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 914,
+		"Name": "_DOOR_TRANSITION_ZONE_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 912,
+		"Name": "_DPR_SHOP_OPEN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 913,
+		"Name": "_DPR_SHOP_OPEN_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 258,
+		"Name": "_DPW_INIT_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 706,
+		"Name": "_DRESSING_IMC_ACCE_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1182,
+		"Name": "_DRESS_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 2,
+		"Name": "_DUMMY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 816,
+		"Name": "_DUMMY_ANIME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 817,
+		"Name": "_DUMMY_ANIME_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 818,
+		"Name": "_DUMMY_SET_POS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 819,
+		"Name": "_DUMMY_SET_POS_HERO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 92,
+		"Name": "_EASY_BOARD_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 93,
+		"Name": "_EASY_INFOBOARD_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 85,
+		"Name": "_EASY_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 84,
+		"Name": "_EASY_OBJ_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 114,
+		"Name": "_EASY_VOICE_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1161,
+		"Name": "_EFF_SCALE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 664,
+		"Name": "_ELEVATOR_ANM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 393,
+		"Name": "_ELEVATOR_FLOOR_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 394,
+		"Name": "_ELEVATOR_FLOOR_WRITE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1131,
+		"Name": "_EMBANKMENT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 3,
+		"Name": "_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1089,
+		"Name": "_ENDING_DEMO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1152,
+		"Name": "_END_LIGHTINTENSITY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1153,
+		"Name": "_END_LIGHTINTENSITY_CHARCTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1154,
+		"Name": "_END_LIGHTINTENSITY_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1132,
+		"Name": "_ENTRY_UWASA_ZUKAN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 943,
+		"Name": "_EVENT_CAMERA_END_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 828,
+		"Name": "_EVENT_CAMERA_FRAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 942,
+		"Name": "_EVENT_CAMERA_INDEX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 825,
+		"Name": "_EVENT_CAMERA_MODE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 827,
+		"Name": "_EVENT_CAMERA_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 166,
+		"Name": "_EVENT_DATA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 167,
+		"Name": "_EVENT_DATA_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 157,
+		"Name": "_EVENT_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1212,
+		"Name": "_EVENT_ENTITY_CLIP_ATTACH_PLAYER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 973,
+		"Name": "_EVENT_ENTITY_CLIP_PLAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 974,
+		"Name": "_EVENT_ENTITY_CLIP_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1183,
+		"Name": "_EVENT_ENTITY_VISIBLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 834,
+		"Name": "_EVENT_GET_TEMOTI_POKE_CHK_GET_POS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 155,
+		"Name": "_EVENT_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 918,
+		"Name": "_EV_ENTITY_PLAYER_MOVE_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 919,
+		"Name": "_EV_ENTITY_PLAYER_MOVE_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 917,
+		"Name": "_EV_ENTITY_PLAYER_MOVE_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 276,
+		"Name": "_EYE_TRAINER_ID_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 274,
+		"Name": "_EYE_TRAINER_MOVE_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 273,
+		"Name": "_EYE_TRAINER_MOVE_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 275,
+		"Name": "_EYE_TRAINER_TYPE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 975,
+		"Name": "_FACE_INDEX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1128,
+		"Name": "_FADE_AREA_IN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1127,
+		"Name": "_FADE_AREA_OUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 837,
+		"Name": "_FADE_BALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1126,
+		"Name": "_FADE_BUILDING_IN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1125,
+		"Name": "_FADE_BUILDING_OUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 838,
+		"Name": "_FADE_DEFAULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1124,
+		"Name": "_FADE_DUNGEON_IN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1123,
+		"Name": "_FADE_DUNGEON_OUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 836,
+		"Name": "_FADE_SPEED",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 784,
+		"Name": "_FADE_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 761,
+		"Name": "_FIELDOBJ_BITSET_FELLOWHIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1051,
+		"Name": "_FIND_BG_DISABLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1050,
+		"Name": "_FIND_BG_ENABLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 231,
+		"Name": "_FINISH_MAP_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 403,
+		"Name": "_FIRST_BTL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 323,
+		"Name": "_FIRST_POKEMON_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 326,
+		"Name": "_FIRST_POKE_NO_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 259,
+		"Name": "_FIRST_POKE_SELECT_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 260,
+		"Name": "_FIRST_POKE_SELECT_SET_AND_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 472,
+		"Name": "_FIX_GOODS_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 473,
+		"Name": "_FIX_SEAL_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 471,
+		"Name": "_FIX_SHOP_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 172,
+		"Name": "_FLAG_CHANGE_LABEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 44,
+		"Name": "_FLAG_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 49,
+		"Name": "_FLAG_CHECK_WK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 43,
+		"Name": "_FLAG_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 41,
+		"Name": "_FLAG_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 50,
+		"Name": "_FLAG_SET_WK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 704,
+		"Name": "_FLDOBJ_BLINK_ANM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 703,
+		"Name": "_FLDOBJ_SHAKE_ANM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 187,
+		"Name": "_FLD_ITEM_EVENT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 767,
+		"Name": "_FLD_SCOPE_MODE_OFF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 766,
+		"Name": "_FLD_SCOPE_MODE_ON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 644,
+		"Name": "_FLD_TRADE_ALLOC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 646,
+		"Name": "_FLD_TRADE_CHG_MONSNO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 648,
+		"Name": "_FLD_TRADE_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 647,
+		"Name": "_FLD_TRADE_EVENT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 645,
+		"Name": "_FLD_TRADE_MONSNO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 947,
+		"Name": "_FLOOR_CLOSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 946,
+		"Name": "_FLOOR_OPEN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 576,
+		"Name": "_FNOTE_DATA_MAKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 577,
+		"Name": "_FNOTE_DATA_SAVE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 575,
+		"Name": "_FNOTE_START_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1190,
+		"Name": "_FOV_OFFSET_RATE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 488,
+		"Name": "_FREE_3D_ANIME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 749,
+		"Name": "_FRIEND_DATA_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 671,
+		"Name": "_FRONT_POKEMON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1116,
+		"Name": "_FUREAI_TALK_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1115,
+		"Name": "_FUREAI_TALK_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 477,
+		"Name": "_GAME_OVER_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 333,
+		"Name": "_GENERATE_INFO_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 289,
+		"Name": "_GET_BEFORE_ZONE_ID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1189,
+		"Name": "_GET_BP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 745,
+		"Name": "_GET_BP_GIFT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 741,
+		"Name": "_GET_BTL_POINT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 750,
+		"Name": "_GET_COIN_GIFT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 184,
+		"Name": "_GET_COIN_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 928,
+		"Name": "_GET_COSTUME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1171,
+		"Name": "_GET_FORM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1210,
+		"Name": "_GET_FUREAI_SELECT_POKE_TEMOTI_NO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1207,
+		"Name": "_GET_GOLD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 406,
+		"Name": "_GET_HONEY_TREE_STATE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 400,
+		"Name": "_GET_HYOUKA_MSGID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1138,
+		"Name": "_GET_IS_HAVE_SECRETBASE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1162,
+		"Name": "_GET_ITEM_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 678,
+		"Name": "_GET_KUJI_ATARI_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 812,
+		"Name": "_GET_LANGUAGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 552,
+		"Name": "_GET_MAILBOX_DATANUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 228,
+		"Name": "_GET_MAP_POS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 479,
+		"Name": "_GET_MY_SEX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 557,
+		"Name": "_GET_NATSUKI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 631,
+		"Name": "_GET_NEWS_POKE_NO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 702,
+		"Name": "_GET_NOW_HOUR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 290,
+		"Name": "_GET_NOW_ZONE_ID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 971,
+		"Name": "_GET_PLAYER_CAP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 194,
+		"Name": "_GET_POCKET_NO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 417,
+		"Name": "_GET_POKETCH",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1122,
+		"Name": "_GET_POKETCH_APP_ID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 418,
+		"Name": "_GET_POKETCH_FLAG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 522,
+		"Name": "_GET_POKE_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 523,
+		"Name": "_GET_POKE_COUNT2",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 524,
+		"Name": "_GET_POKE_COUNT3",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 525,
+		"Name": "_GET_POKE_COUNT4",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1213,
+		"Name": "_GET_POKE_COUNT5",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 625,
+		"Name": "_GET_POKE_SEIKAKU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 734,
+		"Name": "_GET_RANDOM_HIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 813,
+		"Name": "_GET_REL_POS_HERO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 555,
+		"Name": "_GET_RND",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 556,
+		"Name": "_GET_RND_NEXT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 496,
+		"Name": "_GET_SEED_COMPOST",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 498,
+		"Name": "_GET_SEED_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 497,
+		"Name": "_GET_SEED_GROUND",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 494,
+		"Name": "_GET_SEED_STATUS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 495,
+		"Name": "_GET_SEED_TYPE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 561,
+		"Name": "_GET_SODATEYA_AISHOU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 533,
+		"Name": "_GET_SODATEYA_EGG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 513,
+		"Name": "_GET_SODATEYA_ZIISAN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 512,
+		"Name": "_GET_SODATE_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1205,
+		"Name": "_GET_STATUE_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1166,
+		"Name": "_GET_TAG_PATNER_ID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 526,
+		"Name": "_GET_TAMAGO_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 229,
+		"Name": "_GET_TEMOTI_POKE_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 554,
+		"Name": "_GET_TIME_ZONE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 765,
+		"Name": "_GET_TRCARD_RANK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 674,
+		"Name": "_GET_UG_HATA_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1139,
+		"Name": "_GET_UG_NPC_TALK_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 986,
+		"Name": "_GET_URAYAMA_ENCOUNT_INDEX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 179,
+		"Name": "_GOLD_WIN_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 178,
+		"Name": "_GOLD_WIN_WRITE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 180,
+		"Name": "_GOLD_WRITE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 201,
+		"Name": "_GOODS_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 329,
+		"Name": "_GOODS_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 850,
+		"Name": "_GROUP_ENTRY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 846,
+		"Name": "_GROUP_ENTRY_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 845,
+		"Name": "_GROUP_EXIST_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 848,
+		"Name": "_GROUP_LEADER_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 851,
+		"Name": "_GROUP_MAKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 847,
+		"Name": "_GROUP_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 849,
+		"Name": "_GROUP_NAME_IN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 97,
+		"Name": "_GUINNESS_WIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 347,
+		"Name": "_HAIFU_POKE_RETRY_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 785,
+		"Name": "_HERO_MOVE_GRID_CENTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 877,
+		"Name": "_HERO_MOVE_GRID_CENTER_FRONT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 709,
+		"Name": "_HIDEMAP_STATE_CHG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 736,
+		"Name": "_HIDENEFF_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 985,
+		"Name": "_HIDENEFF_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 302,
+		"Name": "_HIDEN_FLASH",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 303,
+		"Name": "_HIDEN_KIRIBARAI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 188,
+		"Name": "_HIDE_ITEM_EVENT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 538,
+		"Name": "_HIKITORI_LIST",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 560,
+		"Name": "_HIKITORI_LIST_NAME_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 541,
+		"Name": "_HIKITORI_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 540,
+		"Name": "_HIKITORI_RYOUKIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 829,
+		"Name": "_HIT_DOOR_ANIME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 830,
+		"Name": "_HIT_DOOR_ANIME_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 405,
+		"Name": "_HONEY_TREE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 408,
+		"Name": "_HONEY_TREE_AFTER_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 407,
+		"Name": "_HONEY_TREE_BTL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 33,
+		"Name": "_IFVAL_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 32,
+		"Name": "_IFVAL_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 35,
+		"Name": "_IFWK_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 34,
+		"Name": "_IFWK_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 31,
+		"Name": "_IF_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 48,
+		"Name": "_IF_FLAGOFF_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 46,
+		"Name": "_IF_FLAGOFF_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 47,
+		"Name": "_IF_FLAGON_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 45,
+		"Name": "_IF_FLAGON_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 30,
+		"Name": "_IF_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 57,
+		"Name": "_IF_TR_FLAGOFF_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 55,
+		"Name": "_IF_TR_FLAGOFF_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 56,
+		"Name": "_IF_TR_FLAGON_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 54,
+		"Name": "_IF_TR_FLAGON_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 245,
+		"Name": "_IMAGE_CLIP_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 915,
+		"Name": "_IMAGE_CLIP_VIEW_CON_CHECK_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 247,
+		"Name": "_IMAGE_CLIP_VIEW_CON_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 246,
+		"Name": "_IMAGE_CLIP_VIEW_TV_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 578,
+		"Name": "_IMC_ACCE_ADD_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 579,
+		"Name": "_IMC_ACCE_ADD_ITEM_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 580,
+		"Name": "_IMC_ACCE_ITEM_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 718,
+		"Name": "_IMC_ACCE_SUB_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 581,
+		"Name": "_IMC_BG_ADD_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 582,
+		"Name": "_IMC_BG_ITEM_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 712,
+		"Name": "_IMC_BG_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 87,
+		"Name": "_INFOBOARD_MAKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 174,
+		"Name": "_INIT_CHANGE_LABEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 519,
+		"Name": "_INIT_COMBAT_GYM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 520,
+		"Name": "_INIT_ELEC_GYM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 689,
+		"Name": "_INIT_FLD_LIFT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 516,
+		"Name": "_INIT_GHOST_GYM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 621,
+		"Name": "_INIT_SAFARI_TRAIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 518,
+		"Name": "_INIT_STEEL_GYM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 514,
+		"Name": "_INIT_WATER_GYM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 225,
+		"Name": "_INIT_WEATHER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1029,
+		"Name": "_INPUT_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 824,
+		"Name": "_INVISIBLE_OBJ_PROP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 731,
+		"Name": "_IS_HAIHU_EVENT_ENABLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 596,
+		"Name": "_ITEMLIST_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 595,
+		"Name": "_ITEMLIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 597,
+		"Name": "_ITEMNO_TO_MONSNO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 192,
+		"Name": "_ITEM_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 310,
+		"Name": "_ITEM_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 312,
+		"Name": "_ITEM_WAZA_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 24,
+		"Name": "_JUMP",
+		"Description": "Jumps to <Script>.",
+		"Args": [
+			{
+				"TentativeName": "Script",
+				"Type": "Label"
+			}
+		]
+	},
+	{
+		"Id": 291,
+		"Name": "_KABENOBORI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 886,
+		"Name": "_KABENOBORI_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 594,
+		"Name": "_KASEKI_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 598,
+		"Name": "_KASEKI_ITEMNO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 679,
+		"Name": "_KUJI_ATARI_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 680,
+		"Name": "_KUJI_ATARI_INIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 78,
+		"Name": "_LAST_KEYWAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 60,
+		"Name": "_LDVAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 841,
+		"Name": "_LDVAL_SEX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 840,
+		"Name": "_LDVAL_VERSION",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 61,
+		"Name": "_LDWK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 62,
+		"Name": "_LDWKVAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 11,
+		"Name": "_LD_ADR_ADR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 9,
+		"Name": "_LD_ADR_REG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 8,
+		"Name": "_LD_ADR_VAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 7,
+		"Name": "_LD_REG_ADR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 10,
+		"Name": "_LD_REG_REG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 5,
+		"Name": "_LD_REG_VAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 6,
+		"Name": "_LD_REG_WDATA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 720,
+		"Name": "_LEVEL_JIJII_INIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 716,
+		"Name": "_LEVEL_JIJII_NO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1036,
+		"Name": "_LOAD_CAMERA_CONTROLLER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1096,
+		"Name": "_LOAD_UMA_ANIME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1098,
+		"Name": "_LOAD_UMA_ANIME_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1037,
+		"Name": "_LOAD_WAIT_CAMERA_CONTROLLER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1084,
+		"Name": "_LOCALKOUKAN_APPLY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 345,
+		"Name": "_LOSE_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 551,
+		"Name": "_MAILBOX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 285,
+		"Name": "_MAP_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 286,
+		"Name": "_MAP_CHANGE_NONE_FADE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 94,
+		"Name": "_MENU_REQ",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 115,
+		"Name": "_ME_PLAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 116,
+		"Name": "_ME_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 949,
+		"Name": "_MONEY_CLOSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 948,
+		"Name": "_MONEY_OPEN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 544,
+		"Name": "_MONS_OWN_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 711,
+		"Name": "_MONUMENT_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 163,
+		"Name": "_MOVE_CODE_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 164,
+		"Name": "_MOVE_CODE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 916,
+		"Name": "_MOVE_COMBAT_GYM_WALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 690,
+		"Name": "_MOVE_FLD_LIFT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 517,
+		"Name": "_MOVE_GHOST_GYM_LIFT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 622,
+		"Name": "_MOVE_SAFARI_TRAIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 511,
+		"Name": "_MSGEXPANDBUF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 535,
+		"Name": "_MSG_AZUKE_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 244,
+		"Name": "_MSG_BOY_EVENT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 534,
+		"Name": "_MSG_SODATEYA_AISHOU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 857,
+		"Name": "_MYSTERY_DISABLE_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 858,
+		"Name": "_MYSTERY_ENABLE_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 854,
+		"Name": "_MYSTERY_GET_PRESENT_ID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 859,
+		"Name": "_MYSTERY_POSTMAN_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 852,
+		"Name": "_MYSTERY_POSTMAN_INIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 860,
+		"Name": "_MYSTERY_POSTMAN_SAVE_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 853,
+		"Name": "_MYSTERY_PRESENT_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 855,
+		"Name": "_MYSTERY_RECEIVE_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 856,
+		"Name": "_MYSTERY_RECEIVE_PRESENT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 321,
+		"Name": "_MY_TR_TYPE_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 277,
+		"Name": "_NAMEIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 710,
+		"Name": "_NAMEIN_MONUMENT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 278,
+		"Name": "_NAMEIN_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 292,
+		"Name": "_NAMINORI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 884,
+		"Name": "_NAMINORI_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 630,
+		"Name": "_NATURAL_PARK_ACCESSORY_NO_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 888,
+		"Name": "_NATURAL_PARK_GET_MONOHIROI_ITEM_NO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 903,
+		"Name": "_NATURAL_PARK_POKE_CREATE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 904,
+		"Name": "_NATURAL_PARK_POKE_KAISAN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 907,
+		"Name": "_NATURAL_PARK_POKE_SELECT_MENU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 905,
+		"Name": "_NATURAL_PARK_POKE_SYUUGOU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 628,
+		"Name": "_NATURAL_PARK_WALK_COUNT_CLEAR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 629,
+		"Name": "_NATURAL_PARK_WALK_COUNT_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 633,
+		"Name": "_NEWS_COUNT_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 632,
+		"Name": "_NEWS_COUNT_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 723,
+		"Name": "_NEW_NANKAI_WORD_COMPLETE_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 721,
+		"Name": "_NEW_NANKAI_WORD_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 79,
+		"Name": "_NEXT_ANM_LAST_KEYWAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1168,
+		"Name": "_NICKNAME_PLACEMENT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 318,
+		"Name": "_NICK_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1172,
+		"Name": "_NICK_NAME_ALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 681,
+		"Name": "_NICK_NAME_PC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 0,
+		"Name": "_NONE_USE_NUMBER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1,
+		"Name": "_NOP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 344,
+		"Name": "_NORMAL_LOSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 643,
+		"Name": "_NORMAL_WAZALIST_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 642,
+		"Name": "_NORMAL_WAZALIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 162,
+		"Name": "_NOT_ZONE_DEL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 265,
+		"Name": "_NPC_TRADE_POKELIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 314,
+		"Name": "_NUMBER_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 315,
+		"Name": "_NUMBER_NAME_EX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 583,
+		"Name": "_NUTMIXER_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 584,
+		"Name": "_NUTMIXER_PLAY_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 327,
+		"Name": "_NUTS_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 146,
+		"Name": "_OBJ_ADD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 136,
+		"Name": "_OBJ_ANIME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 899,
+		"Name": "_OBJ_ANIME_FUREAI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 137,
+		"Name": "_OBJ_ANIME_POS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1102,
+		"Name": "_OBJ_ANIME_SPEED",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 140,
+		"Name": "_OBJ_ANIME_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 173,
+		"Name": "_OBJ_CHANGE_LABEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 147,
+		"Name": "_OBJ_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 509,
+		"Name": "_OBJ_DIR_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1191,
+		"Name": "_OBJ_DIR_CHANGE_WORLD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 25,
+		"Name": "_OBJ_ID_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 550,
+		"Name": "_OBJ_INVISIBLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 144,
+		"Name": "_OBJ_PAUSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 142,
+		"Name": "_OBJ_PAUSE_ALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 145,
+		"Name": "_OBJ_PAUSE_CLEAR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 143,
+		"Name": "_OBJ_PAUSE_CLEAR_ALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 504,
+		"Name": "_OBJ_POS_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1062,
+		"Name": "_OBJ_POS_CHANGE_WORLD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1192,
+		"Name": "_OBJ_POS_CHANGE_WORLD_FIND",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 159,
+		"Name": "_OBJ_POS_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1103,
+		"Name": "_OBJ_SCALE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 549,
+		"Name": "_OBJ_VISIBLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 251,
+		"Name": "_OEKAKI_BOARD_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 883,
+		"Name": "_OFFSET_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1218,
+		"Name": "_OJIGI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 567,
+		"Name": "_OOKISA_KIROKU_SET_BUF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 568,
+		"Name": "_OOKISA_KURABE_INIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 564,
+		"Name": "_OOKISA_RECORD_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 565,
+		"Name": "_OOKISA_RECORD_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 566,
+		"Name": "_OOKISA_TEMOTI_SET_BUF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1148,
+		"Name": "_OOKISA_VALUE_SET_BUF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1217,
+		"Name": "_OPEN_BATTLE_WIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 822,
+		"Name": "_OPEN_CUSTUM_WIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1224,
+		"Name": "_OPEN_CUSTUM_WIN_FIXED",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 963,
+		"Name": "_OPEN_CUSTUM_WIN_WORD_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 992,
+		"Name": "_OPEN_PASSWORD_SWKEYBOARD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1063,
+		"Name": "_OPEN_SPECIAL_WIN_LABEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 640,
+		"Name": "_OSHIE_WAZALIST_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 638,
+		"Name": "_OSHIE_WAZALIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 636,
+		"Name": "_OSHIE_WAZA_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 165,
+		"Name": "_PAIR_OBJID_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 592,
+		"Name": "_PAPERPLANE_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1095,
+		"Name": "_PARK_ITEM_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1158,
+		"Name": "_PARTNER_NAME_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 697,
+		"Name": "_PARTY_DEOKISISUFORM_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 696,
+		"Name": "_PARTY_MONSNO_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 256,
+		"Name": "_PC_DENDOU_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1121,
+		"Name": "_PC_DENDOU_SET_PROC_OPEN_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 480,
+		"Name": "_PC_KAIFUKU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 663,
+		"Name": "_PC_RECOVER_ANM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 131,
+		"Name": "_PERAP_DATA_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 132,
+		"Name": "_PERAP_REC_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 133,
+		"Name": "_PERAP_REC_STOP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 134,
+		"Name": "_PERAP_SAVE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 161,
+		"Name": "_PLAYER_DIR_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 27,
+		"Name": "_PLAYER_DIR_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 128,
+		"Name": "_PLAYER_FIELD_DEMO_BGM_PLAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 297,
+		"Name": "_PLAYER_FORM_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 624,
+		"Name": "_PLAYER_HEGIHT_VALID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 306,
+		"Name": "_PLAYER_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 158,
+		"Name": "_PLAYER_POS_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 160,
+		"Name": "_PLAYER_POS_OFFSET_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 476,
+		"Name": "_PLAYER_REPORT_DRAW_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 475,
+		"Name": "_PLAYER_REPORT_DRAW_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 298,
+		"Name": "_PLAYER_REQ_BIT_ON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 299,
+		"Name": "_PLAYER_REQ_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1163,
+		"Name": "_PLAY_EMO_SE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1117,
+		"Name": "_PLAY_FUREAI_VOICE_NAKAYOSHIRANK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1226,
+		"Name": "_PLAY_REPORT_BTLTOWER_WIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1225,
+		"Name": "_PLAY_REPORT_TRAINING",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 493,
+		"Name": "_PMS_BUF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 492,
+		"Name": "_PMS_INPUT_DOUBLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 491,
+		"Name": "_PMS_INPUT_SINGLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 670,
+		"Name": "_PM_VERSION_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 311,
+		"Name": "_POCKET_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1181,
+		"Name": "_POFFIN_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 729,
+		"Name": "_POFIN_ADD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 730,
+		"Name": "_POFIN_ADD_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 980,
+		"Name": "_POKECEN_CLEAR_BALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 979,
+		"Name": "_POKECEN_PUT_BALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1044,
+		"Name": "_POKELIST_FORM_CHANGE_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1043,
+		"Name": "_POKELIST_FORM_CHANGE_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 267,
+		"Name": "_POKELIST_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 264,
+		"Name": "_POKELIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 309,
+		"Name": "_POKEMON_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 322,
+		"Name": "_POKEMON_NAME_EXTRA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 684,
+		"Name": "_POKEPARK_CONTROL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 685,
+		"Name": "_POKEPARK_DEPOSIT_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 687,
+		"Name": "_POKEPARK_GET_SCORE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 686,
+		"Name": "_POKEPARK_TRANS_MONS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 271,
+		"Name": "_POKESTATUS_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 419,
+		"Name": "_POKETCH_ADD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 420,
+		"Name": "_POKETCH_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 700,
+		"Name": "_POKETCH_HOOK_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 699,
+		"Name": "_POKETCH_HOOK_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 319,
+		"Name": "_POKETCH_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1091,
+		"Name": "_POKETORE_GET_CHARGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1092,
+		"Name": "_POKETORE_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 599,
+		"Name": "_POKE_LEVEL_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 717,
+		"Name": "_POKE_LEVEL_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1197,
+		"Name": "_POKE_LEVEL_GET_ALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1187,
+		"Name": "_POKE_LVUP_HOW_MANY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 591,
+		"Name": "_POKE_MAIL_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 593,
+		"Name": "_POKE_MAIL_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1216,
+		"Name": "_POKE_TARENT_POW_MAX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1180,
+		"Name": "_POKE_TYPE_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 240,
+		"Name": "_POKE_WINDOW_ANM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 241,
+		"Name": "_POKE_WINDOW_ANM_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 239,
+		"Name": "_POKE_WINDOW_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 237,
+		"Name": "_POKE_WINDOW_PUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 238,
+		"Name": "_POKE_WINDOW_PUT_PP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 515,
+		"Name": "_PUSH_WATER_GYM_BUTTON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 553,
+		"Name": "_RANKING_VIEW",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1113,
+		"Name": "_RECONGNIZE_OPEN_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1112,
+		"Name": "_RECONGNIZE_TOKIKAKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 614,
+		"Name": "_RECORD_ADD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 254,
+		"Name": "_RECORD_CORNER_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 613,
+		"Name": "_RECORD_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 612,
+		"Name": "_RECORD_INC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 615,
+		"Name": "_RECORD_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 616,
+		"Name": "_RECORD_SETIFLARGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 722,
+		"Name": "_REGULAR_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 661,
+		"Name": "_REGULATION_LIST_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1049,
+		"Name": "_RELEASE_CAMERA_CONTROLLER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1054,
+		"Name": "_RELEASE_EFFECT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1097,
+		"Name": "_RELEASE_UMA_ANIME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 641,
+		"Name": "_REMAIND_WAZALIST_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 639,
+		"Name": "_REMAIND_WAZALIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 637,
+		"Name": "_REMAIND_WAZA_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 411,
+		"Name": "_REPORT_SAVE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 410,
+		"Name": "_REPORT_SAVE_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 413,
+		"Name": "_REPORT_WIN_CLOSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 412,
+		"Name": "_REPORT_WIN_OPEN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1198,
+		"Name": "_RESET_SAVEBGM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1223,
+		"Name": "_RESET_STOP_EYE_ENCOUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 874,
+		"Name": "_RESET_SYS_FLAG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1140,
+		"Name": "_RESET_UG_NPC_TALK_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 29,
+		"Name": "_RET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1028,
+		"Name": "_RETURN_LOOP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 510,
+		"Name": "_RETURN_SCRIPT_WK_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 224,
+		"Name": "_REVENGE_TRAINER_SEARCH",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 339,
+		"Name": "_REVENGE_TRAINER_TALK_TYPE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 656,
+		"Name": "_RIBBON_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 307,
+		"Name": "_RIVAL_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 324,
+		"Name": "_RIVAL_POKEMON_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 521,
+		"Name": "_ROTATE_ELEC_GYM_GEAR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 832,
+		"Name": "_ROTOMU_FORM_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 618,
+		"Name": "_SAFARI_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 941,
+		"Name": "_SAFARI_SCOPE_SEQUENCE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 617,
+		"Name": "_SAFARI_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 758,
+		"Name": "_SAVE_FIELD_OBJ",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1221,
+		"Name": "_SAVE_PLAYREPORT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1027,
+		"Name": "_SAVE_RENDOU_ENABLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 170,
+		"Name": "_SCENE_CHANGE_DATA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 171,
+		"Name": "_SCENE_CHANGE_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 169,
+		"Name": "_SCENE_CHANGE_LABEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 346,
+		"Name": "_SEACRET_POKE_RETRY_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 759,
+		"Name": "_SEAL_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 328,
+		"Name": "_SEIKAKU_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 354,
+		"Name": "_SEL_CHILD_WIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 353,
+		"Name": "_SEL_PARENT_WIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 103,
+		"Name": "_SEL_WIN_JUMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 490,
+		"Name": "_SEQ_CLOSE_DOOR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 489,
+		"Name": "_SEQ_OPEN_DOOR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 675,
+		"Name": "_SETUP_PASO_ANM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 692,
+		"Name": "_SETUP_RAH_CYL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1120,
+		"Name": "_SETUP_SHIP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 820,
+		"Name": "_SET_CUSTUM_WIN_MSBT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 831,
+		"Name": "_SET_DOOR_OBJ",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 760,
+		"Name": "_SET_ESCAPE_LOCATION",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 826,
+		"Name": "_SET_EVENT_CAMERA_PARAM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1143,
+		"Name": "_SET_FORCE_BLINK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1201,
+		"Name": "_SET_GLOBALWATERFIELD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1149,
+		"Name": "_SET_LIGHTINTENSITY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1150,
+		"Name": "_SET_LIGHTINTENSITY_CHARCTER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1151,
+		"Name": "_SET_LIGHTINTENSITY_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 230,
+		"Name": "_SET_MAP_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1078,
+		"Name": "_SET_MATCHING_GROUP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 882,
+		"Name": "_SET_OFFSET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 790,
+		"Name": "_SET_POS_HERO_MATCH_X",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 791,
+		"Name": "_SET_POS_HERO_MATCH_Z",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 655,
+		"Name": "_SET_RIBBON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 499,
+		"Name": "_SET_SEED_COMPOST",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 500,
+		"Name": "_SET_SEED_NUTS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 501,
+		"Name": "_SET_SEED_WATER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 536,
+		"Name": "_SET_SODATEYA_POKE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1222,
+		"Name": "_SET_STOP_EYE_ENCOUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 873,
+		"Name": "_SET_SYS_FLAG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1186,
+		"Name": "_SET_TELEPORT_ID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 780,
+		"Name": "_SET_TURN_HERO_FRAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 781,
+		"Name": "_SET_TURN_OBJ_FRAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1070,
+		"Name": "_SET_TV_INT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1071,
+		"Name": "_SET_TV_PLAYER_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1072,
+		"Name": "_SET_TV_POKE_NICK_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 486,
+		"Name": "_SET_UP_DOOR_ANIME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1035,
+		"Name": "_SET_VISIBILITY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 478,
+		"Name": "_SET_WARP_ID",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 226,
+		"Name": "_SET_WEATHER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 109,
+		"Name": "_SE_PLAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 110,
+		"Name": "_SE_STOP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 111,
+		"Name": "_SE_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 396,
+		"Name": "_SHINOU_ZUKAN_GET_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 395,
+		"Name": "_SHINOU_ZUKAN_SEE_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 470,
+		"Name": "_SHOP_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 923,
+		"Name": "_SHOP_OPEN_BATTLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 929,
+		"Name": "_SHOP_OPEN_BOUTIQUE_BUY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 930,
+		"Name": "_SHOP_OPEN_BOUTIQUE_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 921,
+		"Name": "_SHOP_OPEN_FIXED",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 924,
+		"Name": "_SHOP_OPEN_FLOWER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 925,
+		"Name": "_SHOP_OPEN_OTENKI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 944,
+		"Name": "_SHOP_OPEN_PALPARK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 922,
+		"Name": "_SHOP_OPEN_SEAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 926,
+		"Name": "_SHOP_OPEN_SELL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 701,
+		"Name": "_SLOT_MACHINE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 714,
+		"Name": "_SLOT_RENTYAN_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 135,
+		"Name": "_SND_CLIMAX_DATA_LOAD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 117,
+		"Name": "_SND_INITIAL_VOL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 537,
+		"Name": "_SODATEYA_POKELIST",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 733,
+		"Name": "_SODATEYA_POKELIST_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 732,
+		"Name": "_SODATEYA_POKELIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 562,
+		"Name": "_SODATEYA_TAMAGO_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 539,
+		"Name": "_SODATE_POKE_LEVEL_STR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 301,
+		"Name": "_SORAWOTOBU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1059,
+		"Name": "_SORAWOTOBU_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 970,
+		"Name": "_SPEAKERS_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 168,
+		"Name": "_SP_EVENT_DATA_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 392,
+		"Name": "_SP_LOCATION_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 402,
+		"Name": "_SP_WILD_BTL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 634,
+		"Name": "_START_GENERATE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 677,
+		"Name": "_START_PASO_OFF_ANM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 676,
+		"Name": "_START_PASO_ON_ANM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 693,
+		"Name": "_START_RAH_CYL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1053,
+		"Name": "_STOP_EFFECT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 186,
+		"Name": "_SUB_COIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 176,
+		"Name": "_SUB_GOLD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 199,
+		"Name": "_SUB_GOODS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 190,
+		"Name": "_SUB_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 547,
+		"Name": "_SUB_MY_GOLD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 559,
+		"Name": "_SUB_NATSUKI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 211,
+		"Name": "_SUB_TAMA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 203,
+		"Name": "_SUB_TRAP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 207,
+		"Name": "_SUB_TREASURE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 59,
+		"Name": "_SUB_WK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 751,
+		"Name": "_SUB_WK_COIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 308,
+		"Name": "_SUPPORT_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 325,
+		"Name": "_SUPPORT_POKEMON_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 36,
+		"Name": "_SWITCH",
+		"Description": "Begins a switch statement based on the value of <Arg>.",
+		"Args": [
+			{
+				"TentativeName": "Arg",
+				"Type": "Var"
+			}
+		]
+	},
+	{
+		"Id": 508,
+		"Name": "_SXY_BG_POS_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 506,
+		"Name": "_SXY_DIR_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 507,
+		"Name": "_SXY_EXIT_POS_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 505,
+		"Name": "_SXY_MV_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 503,
+		"Name": "_SXY_POS_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 450,
+		"Name": "_SYS_FLAG_BADGE_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 448,
+		"Name": "_SYS_FLAG_BADGE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 449,
+		"Name": "_SYS_FLAG_BADGE_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 451,
+		"Name": "_SYS_FLAG_BAG_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 452,
+		"Name": "_SYS_FLAG_BAG_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 466,
+		"Name": "_SYS_FLAG_FLASH_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 465,
+		"Name": "_SYS_FLAG_FLASH_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 464,
+		"Name": "_SYS_FLAG_FLASH_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 459,
+		"Name": "_SYS_FLAG_GAME_CLEAR_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 460,
+		"Name": "_SYS_FLAG_GAME_CLEAR_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 463,
+		"Name": "_SYS_FLAG_KAIRIKI_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 462,
+		"Name": "_SYS_FLAG_KAIRIKI_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 461,
+		"Name": "_SYS_FLAG_KAIRIKI_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 469,
+		"Name": "_SYS_FLAG_KIRIBARAI_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 468,
+		"Name": "_SYS_FLAG_KIRIBARAI_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 467,
+		"Name": "_SYS_FLAG_KIRIBARAI_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 456,
+		"Name": "_SYS_FLAG_ONE_STEP_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 458,
+		"Name": "_SYS_FLAG_ONE_STEP_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 457,
+		"Name": "_SYS_FLAG_ONE_STEP_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 453,
+		"Name": "_SYS_FLAG_PAIR_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 455,
+		"Name": "_SYS_FLAG_PAIR_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 454,
+		"Name": "_SYS_FLAG_PAIR_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 446,
+		"Name": "_SYS_FLAG_SHOES_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 447,
+		"Name": "_SYS_FLAG_SHOES_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 444,
+		"Name": "_SYS_FLAG_ZUKAN_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 445,
+		"Name": "_SYS_FLAG_ZUKAN_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 502,
+		"Name": "_TAKE_SEED",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 885,
+		"Name": "_TAKIKUDARI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 300,
+		"Name": "_TAKINOBORI",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 70,
+		"Name": "_TALKMSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 63,
+		"Name": "_TALKMSG_ALLPUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 64,
+		"Name": "_TALKMSG_ALLPUT_ARC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 66,
+		"Name": "_TALKMSG_ALLPUT_PMS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 65,
+		"Name": "_TALKMSG_ARC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 75,
+		"Name": "_TALKMSG_AUTOGET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 68,
+		"Name": "_TALKMSG_BTOWER_APPEAR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 74,
+		"Name": "_TALKMSG_CON_SIO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 69,
+		"Name": "_TALKMSG_NG_POKE_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 73,
+		"Name": "_TALKMSG_NOSKIP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 67,
+		"Name": "_TALKMSG_PMS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 71,
+		"Name": "_TALKMSG_SP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 72,
+		"Name": "_TALKMSG_SP_AUTO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 81,
+		"Name": "_TALK_CLOSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 82,
+		"Name": "_TALK_CLOSE_NO_CLEAR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1194,
+		"Name": "_TALK_COLISEUM_NPC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 156,
+		"Name": "_TALK_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 83,
+		"Name": "_TALK_KEYWAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 153,
+		"Name": "_TALK_OBJ_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 141,
+		"Name": "_TALK_OBJ_PAUSE_ALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 151,
+		"Name": "_TALK_OBJ_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 983,
+		"Name": "_TALK_OBJ_START_LOOK_NONE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 152,
+		"Name": "_TALK_OBJ_START_TURN_NOT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 80,
+		"Name": "_TALK_OPEN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 887,
+		"Name": "_TALK_POKE_GET_TEMOTI_INDEX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 154,
+		"Name": "_TALK_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1133,
+		"Name": "_TALK_UG_NPC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1081,
+		"Name": "_TALK_UNION_NPC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 542,
+		"Name": "_TAMAGO_DEMO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 213,
+		"Name": "_TAMA_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 331,
+		"Name": "_TAMA_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 935,
+		"Name": "_TELEPORT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 977,
+		"Name": "_TEMOTI_BALL_LOAD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 978,
+		"Name": "_TEMOTI_BALL_LOAD_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 995,
+		"Name": "_TEMOTI_BOX_MONSNO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1001,
+		"Name": "_TEMOTI_BOX_POKEMON_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 994,
+		"Name": "_TEMOTI_BOX_POKE_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 543,
+		"Name": "_TEMOTI_MONSNO",
+		"Description": "Gets the NatDex Number of the Pokémon in slot #<Slot> of the player's party and returns it in <Result>.",
+		"Args": [
+			{
+				"TentativeName": "Slot",
+				"Type": "Value"
+			},
+			{
+				"TentativeName": "Result",
+				"Type": "Var"
+			}
+		]
+	},
+	{
+		"Id": 563,
+		"Name": "_TEMOTI_POKE_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1141,
+		"Name": "_TEMOTI_POKE_CHK_GET_POS",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1041,
+		"Name": "_TEMOTI_POKE_CHK_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 724,
+		"Name": "_TEMOTI_POKE_CONTEST_STATUS_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 546,
+		"Name": "_TEMOTI_POKE_SEX_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 672,
+		"Name": "_TEMOTI_POKE_TYPE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1040,
+		"Name": "_TEMOTI_ROTOMU_FORM_CHG_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1042,
+		"Name": "_TEMOTI_ROTOMU_FORM_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 833,
+		"Name": "_TEMOTI_ROTOMU_FORM_WAZA_CHG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 573,
+		"Name": "_TEMOTI_WAZANO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 574,
+		"Name": "_TEMOTI_WAZA_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 4,
+		"Name": "_TIME_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 249,
+		"Name": "_TMAP_BG_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1106,
+		"Name": "_TOBARI_4F_SHOP_OPEN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 253,
+		"Name": "_TRADE_LIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 341,
+		"Name": "_TRAINER_BGM_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 335,
+		"Name": "_TRAINER_BTL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 53,
+		"Name": "_TRAINER_FLAG_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 52,
+		"Name": "_TRAINER_FLAG_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 51,
+		"Name": "_TRAINER_FLAG_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 334,
+		"Name": "_TRAINER_ID_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 342,
+		"Name": "_TRAINER_LOSE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 343,
+		"Name": "_TRAINER_LOSE_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 337,
+		"Name": "_TRAINER_MSG_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 336,
+		"Name": "_TRAINER_MULTI_BTL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 338,
+		"Name": "_TRAINER_TALK_TYPE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 340,
+		"Name": "_TRAINER_TYPE_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1134,
+		"Name": "_TRAINING_OPEN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1135,
+		"Name": "_TRAINING_OPEN_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 205,
+		"Name": "_TRAP_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 330,
+		"Name": "_TRAP_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 209,
+		"Name": "_TREASURE_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 252,
+		"Name": "_TR_CARD_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 320,
+		"Name": "_TR_TYPE_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 409,
+		"Name": "_TSIGN_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1048,
+		"Name": "_TUREARUKI_ITEM_TIMER_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1046,
+		"Name": "_TUREARUKI_POKEMON_INDEX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1045,
+		"Name": "_TUREARUKI_POKEMON_TALK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1075,
+		"Name": "_TUREARUKI_POKE_CREATE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1076,
+		"Name": "_TUREARUKI_POKE_DELETE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1047,
+		"Name": "_TUREARUKI_TAKE_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 150,
+		"Name": "_TURN_HERO_SITE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 835,
+		"Name": "_TURN_HERO_TALK_OBJ",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 865,
+		"Name": "_TV_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 844,
+		"Name": "_TV_ENTRY_PARKINFO_ACCE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 842,
+		"Name": "_TV_ENTRY_PARKINFO_INIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 843,
+		"Name": "_TV_ENTRY_PARKINFO_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 660,
+		"Name": "_TV_ENTRY_WATCH_CHANGE_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 659,
+		"Name": "_TV_ENTRY_WATCH_HIDE_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 869,
+		"Name": "_TV_GET_DATA_TOTAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 682,
+		"Name": "_TV_INTERVIEWER_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 863,
+		"Name": "_TV_INTERVIEW_ENTRY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 862,
+		"Name": "_TV_INTERVIEW_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1202,
+		"Name": "_TV_INTERVIEW_STR_WORD_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 868,
+		"Name": "_TV_MAKE_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1160,
+		"Name": "_TV_MONITOR_RESET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1159,
+		"Name": "_TV_MONITOR_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1157,
+		"Name": "_TV_RED_GYARADOS_OFF",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1156,
+		"Name": "_TV_RED_GYARADOS_ON",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 867,
+		"Name": "_TV_SET_ENDFLAG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 864,
+		"Name": "_TV_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 866,
+		"Name": "_TV_START_NUMBER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1145,
+		"Name": "_TV_TOPIC_BRANCH_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1146,
+		"Name": "_TV_TOPIC_INT_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1211,
+		"Name": "_TV_TOPIC_STR_GENDER_WORD_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1147,
+		"Name": "_TV_TOPIC_STR_WORD_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1074,
+		"Name": "_TV_TPIC_BRANCH",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1073,
+		"Name": "_TV_TPIC_ENABLE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 746,
+		"Name": "_UG_BALLITEM_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1114,
+		"Name": "_UG_ITEM_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1184,
+		"Name": "_UG_LEAVE_HOYUTA",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 481,
+		"Name": "_UG_MAN_SHOP_NPC_RAND_PLACE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 530,
+		"Name": "_UG_SHOP_ITEM_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 527,
+		"Name": "_UG_SHOP_MENU_INIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 529,
+		"Name": "_UG_SHOP_TALK_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 528,
+		"Name": "_UG_SHOP_TALK_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 531,
+		"Name": "_UG_SHOP_TRAP_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1100,
+		"Name": "_UMA_ANIME_ATTACH",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1099,
+		"Name": "_UMA_ANIME_PLAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1137,
+		"Name": "_UMA_IS_NULL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1101,
+		"Name": "_UMA_PLAY_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 727,
+		"Name": "_UNDERGROUND_KASEKI_DIG_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 627,
+		"Name": "_UNDERGROUND_TALK_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 735,
+		"Name": "_UNDERGROUND_TALK_COUNT2",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 708,
+		"Name": "_UNDERGROUND_TALK_COUNT_CLEAR",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 726,
+		"Name": "_UNDERGROUND_TOOL_GIVE_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 728,
+		"Name": "_UNDERGROUND_TRAP_HIT_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 764,
+		"Name": "_UNION_BATTLE_START_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 425,
+		"Name": "_UNION_BEACON_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 763,
+		"Name": "_UNION_BMPMENU_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 437,
+		"Name": "_UNION_CHILD_SELECT_COMMAND_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 430,
+		"Name": "_UNION_CONNECT_CUT_RESTART",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 438,
+		"Name": "_UNION_CONNECT_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 426,
+		"Name": "_UNION_CONNECT_TALK_DENIED",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 427,
+		"Name": "_UNION_CONNECT_TALK_OK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 755,
+		"Name": "_UNION_GET_CARD_TALK_NO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 424,
+		"Name": "_UNION_GET_INFO_TALK_NO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 431,
+		"Name": "_UNION_GET_TALK_NUMBER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 432,
+		"Name": "_UNION_ID_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 439,
+		"Name": "_UNION_MAP_CHANGE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 434,
+		"Name": "_UNION_OBJ_ALL_VANISH",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 423,
+		"Name": "_UNION_PARENT_CARD_TALK_NO",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 436,
+		"Name": "_UNION_PARENT_START_COMMAND_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 266,
+		"Name": "_UNION_POKELIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1068,
+		"Name": "_UNION_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 433,
+		"Name": "_UNION_RESULT_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 429,
+		"Name": "_UNION_RETURN_SETUP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 435,
+		"Name": "_UNION_SCRIPT_RESULT_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 428,
+		"Name": "_UNION_TRAINER_NAME_REGIST",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 443,
+		"Name": "_UNION_VIEW_MY_STATUS_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 440,
+		"Name": "_UNION_VIEW_TR_SEL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 441,
+		"Name": "_UNION_VIEW_TR_TYPE_MSG_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 442,
+		"Name": "_UNION_VIEW_TR_TYPE_NO_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1170,
+		"Name": "_UNIQUE_POKE_FIX",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1169,
+		"Name": "_UNIQUE_POKE_TEMP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 217,
+		"Name": "_UNKNOWN_FORM_GET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 861,
+		"Name": "_UNKNOWN_MSG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 227,
+		"Name": "_UPDATE_WEATHER",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 590,
+		"Name": "_URAYAMA_ENCOUNT_NO_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 589,
+		"Name": "_URAYAMA_ENCOUNT_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1188,
+		"Name": "_USE_SPECIAL_ITEM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 967,
+		"Name": "_USE_SPRAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1195,
+		"Name": "_USE_SUB_ATTRIBUTE",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1080,
+		"Name": "_USE_TANKENSET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 148,
+		"Name": "_VANISH_DUMMY_OBJ_ADD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 149,
+		"Name": "_VANISH_DUMMY_OBJ_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 823,
+		"Name": "_VISIBLE_OBJ_PROP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 21,
+		"Name": "_VM_ADD",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 112,
+		"Name": "_VOICE_PLAY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 113,
+		"Name": "_VOICE_WAIT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 487,
+		"Name": "_WAIT_3D_ANIME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1083,
+		"Name": "_WAIT_CHECK_ONLINE_ACCOUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1064,
+		"Name": "_WAIT_SPECIAL_WIN_LABEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 878,
+		"Name": "_WARP_ENABLE_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 940,
+		"Name": "_WARP_END_ANIMATION",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 990,
+		"Name": "_WARP_PANEL_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 989,
+		"Name": "_WARP_PANEL_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 939,
+		"Name": "_WARP_START_ANIMATION",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 570,
+		"Name": "_WAZALIST_GET_RESULT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 569,
+		"Name": "_WAZALIST_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 571,
+		"Name": "_WAZA_COUNT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 572,
+		"Name": "_WAZA_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 193,
+		"Name": "_WAZA_ITEM_CHK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 313,
+		"Name": "_WAZA_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 282,
+		"Name": "_WHITE_IN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 281,
+		"Name": "_WHITE_OUT",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 232,
+		"Name": "_WIFI_AUTO_REG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 272,
+		"Name": "_WIFI_EARTH_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 754,
+		"Name": "_WIFI_HUSIGINAOKURIMONO_OPEN_FLAG_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 233,
+		"Name": "_WIFI_P2P_MATCH_EVENT_CALL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 234,
+		"Name": "_WIFI_P2P_MATCH_SET_DEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 401,
+		"Name": "_WILD_BTL_SET",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 280,
+		"Name": "_WIPE_FADE_END_CHECK",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 279,
+		"Name": "_WIPE_FADE_START",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 756,
+		"Name": "_WIRELESS_ICON_EASY",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 757,
+		"Name": "_WIRELESS_ICON_EASY_END",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 257,
+		"Name": "_WORLDTRADE_SET_PROC",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 96,
+		"Name": "_YES_NO_WIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 651,
+		"Name": "_ZENKOKU_ZUKAN_FLAG",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 398,
+		"Name": "_ZENKOKU_ZUKAN_GET_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 397,
+		"Name": "_ZENKOKU_ZUKAN_SEE_NUM",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 737,
+		"Name": "_ZISHIN",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 332,
+		"Name": "_ZONE_NAME",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1193,
+		"Name": "_ZONE_NAME2",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1203,
+		"Name": "_ZONE_NAME_LABEL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 586,
+		"Name": "_ZUKAN_CHK_NATIONAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 585,
+		"Name": "_ZUKAN_CHK_SHINOU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 588,
+		"Name": "_ZUKAN_RECONGNIZE_NATIONAL",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 587,
+		"Name": "_ZUKAN_RECONGNIZE_SHINOU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 650,
+		"Name": "_ZUKAN_SEX_VER_UP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 649,
+		"Name": "_ZUKAN_TEXT_VER_UP",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1085,
+		"Name": "_ZUKAN_TOUROKU",
+		"Description": "",
+		"Args": []
+	},
+	{
+		"Id": 1086,
+		"Name": "_ZUKAN_TOUROKU_WAIT",
+		"Description": "",
+		"Args": []
+	}
+]

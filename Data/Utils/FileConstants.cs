@@ -12,6 +12,7 @@ namespace PokemonBDSPEditor.Data.Utils
     static class FileConstants
     {
         public static Dictionary<string, BundleInfo> Bundles { get; } = JsonConvert.DeserializeObject<Dictionary<string, BundleInfo>>(Resources.bundle_constants);
+        public static List<CommandInfo> Commands { get; } = JsonConvert.DeserializeObject<List<CommandInfo>>(Resources.commands);
         public static string ScriptDataBundleKey { get; } = "script-data";
     }
 }

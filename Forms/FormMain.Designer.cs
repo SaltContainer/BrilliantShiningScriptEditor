@@ -76,6 +76,7 @@ namespace PokemonBDSPEditor.Forms
             this.tbtnOpen.Name = "tbtnOpen";
             this.tbtnOpen.Size = new System.Drawing.Size(36, 36);
             this.tbtnOpen.Text = "Open RomFS Folder";
+            this.tbtnOpen.Click += new System.EventHandler(this.tbtnOpen_Click);
             // 
             // tbtnSave
             // 
@@ -85,6 +86,7 @@ namespace PokemonBDSPEditor.Forms
             this.tbtnSave.Name = "tbtnSave";
             this.tbtnSave.Size = new System.Drawing.Size(36, 36);
             this.tbtnSave.Text = "Export Changes";
+            this.tbtnSave.Click += new System.EventHandler(this.tbtnSave_Click);
             // 
             // tabsMain
             // 
@@ -217,6 +219,7 @@ namespace PokemonBDSPEditor.Forms
             this.btnScriptSave.TabIndex = 4;
             this.btnScriptSave.Text = "save";
             this.btnScriptSave.UseVisualStyleBackColor = true;
+            this.btnScriptSave.Click += new System.EventHandler(this.btnScriptSave_Click);
             // 
             // btnScriptCompile
             // 
@@ -228,6 +231,7 @@ namespace PokemonBDSPEditor.Forms
             this.btnScriptCompile.TabIndex = 3;
             this.btnScriptCompile.Text = "compile";
             this.btnScriptCompile.UseVisualStyleBackColor = true;
+            this.btnScriptCompile.Click += new System.EventHandler(this.btnScriptCompile_Click);
             // 
             // rtbScript
             // 
