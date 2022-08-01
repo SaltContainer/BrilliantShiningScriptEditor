@@ -1,21 +1,21 @@
 ﻿using AssetsTools.NET;
 using PokemonBDSPEditor.Data;
 using PokemonBDSPEditor.Data.Utils;
-using PokemonBDSPEditor.Engine.Editor.Model;
+using PokemonBDSPEditor.Engine.ScriptEditor.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokemonBDSPEditor.Engine.Editor
+namespace PokemonBDSPEditor.Engine.ScriptEditor
 {
-    class EditorEngine
+    class ScriptEditorEngine
     {
         private BundleManipulator bundleManipulator;
         private List<ScriptFile> scriptFiles;
 
-        public EditorEngine()
+        public ScriptEditorEngine()
         {
             bundleManipulator = new BundleManipulator();
             scriptFiles = new List<ScriptFile>();

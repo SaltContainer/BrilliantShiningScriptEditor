@@ -73,12 +73,12 @@
     <Compile Include="Data\BundleManipulator.cs" />
     <Compile Include="Data\JSONObjects\BundleInfo.cs" />
     <Compile Include="Data\Utils\FileConstants.cs" />
-    <Compile Include="Engine\Editor\EditorEngine.cs" />
-    <Compile Include="Engine\Editor\Model\Argument.cs" />
-    <Compile Include="Engine\Editor\Model\ArgumentType.cs" />
-    <Compile Include="Engine\Editor\Model\Command.cs" />
-    <Compile Include="Engine\Editor\Model\Script.cs" />
-    <Compile Include="Engine\Editor\Model\ScriptFile.cs" />
+    <Compile Include="Engine\ScriptEditor\EditorEngine.cs" />
+    <Compile Include="Engine\ScriptEditor\Model\Argument.cs" />
+    <Compile Include="Engine\ScriptEditor\Model\ArgumentType.cs" />
+    <Compile Include="Engine\ScriptEditor\Model\Command.cs" />
+    <Compile Include="Engine\ScriptEditor\Model\Script.cs" />
+    <Compile Include="Engine\ScriptEditor\Model\ScriptFile.cs" />
     <Compile Include="Forms\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>

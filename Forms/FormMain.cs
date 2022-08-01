@@ -1,6 +1,6 @@
 ﻿using PokemonBDSPEditor.Data.Utils;
-using PokemonBDSPEditor.Engine.Editor;
-using PokemonBDSPEditor.Engine.Editor.Model;
+using PokemonBDSPEditor.Engine.ScriptEditor;
+using PokemonBDSPEditor.Engine.ScriptEditor.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,12 +15,12 @@ namespace PokemonBDSPEditor.Forms
 {
     public partial class FormMain : Form
     {
-        private EditorEngine editorEngine;
+        private ScriptEditorEngine scriptEditorEngine;
 
         public FormMain()
         {
             InitializeComponent();
-            editorEngine = new EditorEngine();
+            scriptEditorEngine = new ScriptEditorEngine();
         }
 
         private void UpdateScriptFileList(List<ScriptFile> scriptFiles)
@@ -37,13 +37,13 @@ namespace PokemonBDSPEditor.Forms
 
         private void btnScriptAdd_Click(object sender, EventArgs e)
         {
-            List<ScriptFile> scripts = editorEngine.GetScriptFiles();
+            List<ScriptFile> scripts = scriptEditorEngine.GetScriptFiles();
             UpdateScriptFileList(scripts);
         }
 
         private void comboScriptFile_SelectedIndexChanged(object sender, EventArgs e)
         {
-            UpdateScriptList(editorEngine.GetScriptFiles()[comboScriptFile.SelectedIndex].Scripts);
+            UpdateScriptList(scriptEditorEngine.GetScriptFiles()[comboScriptFile.SelectedIndex].Scripts);
         }
     }
 }
