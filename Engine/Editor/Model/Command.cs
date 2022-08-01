@@ -8,12 +8,10 @@ namespace PokemonBDSPEditor.Engine.Editor.Model
 {
     class Command
     {
-        private int id;
         private List<Argument> arguments;
 
-        public Command(int id, List<Argument> arguments)
+        public Command(List<Argument> arguments)
         {
-            this.id = id;
             this.arguments = arguments;
         }
     }

@@ -9,10 +9,10 @@ namespace PokemonBDSPEditor.Engine.Editor.Model
     class Argument
     {
         private ArgumentType type;
-        private uint numberValue;
+        private int numberValue;
         private string stringValue;
 
-        public Argument(ArgumentType type, uint value)
+        public Argument(ArgumentType type, int value)
         {
             this.type = type;
             this.numberValue = value;
@@ -39,7 +39,7 @@ namespace PokemonBDSPEditor.Engine.Editor.Model
             }
         }
 
-        public uint GetNumberValue()
+        public int GetNumberValue()
         {
             return numberValue;
         }

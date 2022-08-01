@@ -73,9 +73,6 @@
     <Compile Include="Data\BundleManipulator.cs" />
     <Compile Include="Data\JSONObjects\BundleInfo.cs" />
     <Compile Include="Data\Utils\FileConstants.cs" />
-    <Compile Include="Engine\Editor\DTO\ArgDTO.cs" />
-    <Compile Include="Engine\Editor\DTO\CommandDTO.cs" />
-    <Compile Include="Engine\Editor\DTO\ScriptDTO.cs" />
     <Compile Include="Engine\Editor\EditorEngine.cs" />
     <Compile Include="Engine\Editor\Model\Argument.cs" />
     <Compile Include="Engine\Editor\Model\ArgumentType.cs" />

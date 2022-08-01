@@ -36,16 +36,38 @@ namespace PokemonBDSPEditor.Engine.Editor
             var files = bundleManipulator.GetFilesOfBundle(FileConstants.ScriptDataBundleKey);
             foreach (var file in files)
             {
-                if (file["Scripts"] != null)
+                if (file["Scripts"] != null && file["Scripts"].GetChildrenCount() > 0)
                 {
-                    AssetTypeValueField[] scripts = files[0]["Scripts"]["Array"].children;
+                    scriptFiles.Add(ConvertToScriptFile(file));
                 }
             }
         }
 
-        private ScriptFile ConvertToScriptFile(List<ScriptDTO> dto)
+        private ScriptFile ConvertToScriptFile(AssetTypeValueField root)
         {
-            return null;
+            List<Script> scripts = new List<Script>();
+            foreach (var script in root["Scripts"][0].GetChildrenList())
+            {
+                List<Command> commands = new List<Command>();
+                foreach (var command in script["Commands"][0].GetChildrenList())
+                {
+                    List<Argument> args = new List<Argument>();
+                    foreach (var arg in command["Arg"][0].GetChildrenList())
+                    {
+                        args.Add(new Argument((ArgumentType)arg["argType"].GetValue().AsInt(), arg["data"].GetValue().AsInt()));
+                    }
+                    commands.Add(new Command(args));
+                }
+                scripts.Add(new Script(commands));
+            }
+
+            List<string> strings = new List<string>();
+            foreach (var str in root["StrList"][0].GetChildrenList())
+            {
+                strings.Add(str.GetValue().AsString());
+            }
+
+            return new ScriptFile(strings, scripts, root["m_Name"].GetValue().AsString());
         }
 
         public bool AreScriptFilesLoaded()

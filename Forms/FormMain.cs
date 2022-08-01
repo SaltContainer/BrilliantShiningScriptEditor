@@ -1,5 +1,6 @@
 ﻿using PokemonBDSPEditor.Data.Utils;
 using PokemonBDSPEditor.Engine.Editor;
+using PokemonBDSPEditor.Engine.Editor.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,7 +25,7 @@ namespace PokemonBDSPEditor.Forms
 
         private void btnScriptAdd_Click(object sender, EventArgs e)
         {
-            editorEngine.GetScriptFiles();
+            List<ScriptFile> scripts = editorEngine.GetScriptFiles();
         }
     }
 }
