@@ -8,11 +8,11 @@ namespace PokemonBDSPEditor.Engine.Editor.Model
 {
     class Command
     {
-        private List<Argument> arguments;
+        public List<Argument> Arguments { get; set; }
 
         public Command(List<Argument> arguments)
         {
-            this.arguments = arguments;
+            Arguments = arguments;
         }
     }
 }

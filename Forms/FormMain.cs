@@ -23,9 +23,27 @@ namespace PokemonBDSPEditor.Forms
             editorEngine = new EditorEngine();
         }
 
+        private void UpdateScriptFileList(List<ScriptFile> scriptFiles)
+        {
+            comboScriptFile.DataSource = scriptFiles;
+            comboScriptFile.SelectedIndex = 0;
+        }
+
+        private void UpdateScriptList(List<Script> scripts)
+        {
+            comboScript.DataSource = scripts;
+            comboScript.SelectedIndex = 0;
+        }
+
         private void btnScriptAdd_Click(object sender, EventArgs e)
         {
             List<ScriptFile> scripts = editorEngine.GetScriptFiles();
+            UpdateScriptFileList(scripts);
+        }
+
+        private void comboScriptFile_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateScriptList(editorEngine.GetScriptFiles()[comboScriptFile.SelectedIndex].Scripts);
         }
     }
 }

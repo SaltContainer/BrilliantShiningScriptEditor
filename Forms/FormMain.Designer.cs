@@ -38,6 +38,8 @@ namespace PokemonBDSPEditor.Forms
             this.grpScriptCommands = new System.Windows.Forms.GroupBox();
             this.dataScriptCommands = new System.Windows.Forms.DataGridView();
             this.grpScriptFile = new System.Windows.Forms.GroupBox();
+            this.lbScript = new System.Windows.Forms.Label();
+            this.comboScript = new System.Windows.Forms.ComboBox();
             this.btnScriptAdd = new System.Windows.Forms.Button();
             this.comboScriptFile = new System.Windows.Forms.ComboBox();
             this.lbScriptFile = new System.Windows.Forms.Label();
@@ -46,8 +48,6 @@ namespace PokemonBDSPEditor.Forms
             this.rtbScript = new System.Windows.Forms.RichTextBox();
             this.tabText = new System.Windows.Forms.TabPage();
             this.tabTrainer = new System.Windows.Forms.TabPage();
-            this.comboScript = new System.Windows.Forms.ComboBox();
-            this.lbScript = new System.Windows.Forms.Label();
             this.stripMain.SuspendLayout();
             this.tabsMain.SuspendLayout();
             this.tabScript.SuspendLayout();
@@ -156,6 +156,25 @@ namespace PokemonBDSPEditor.Forms
             this.grpScriptFile.TabStop = false;
             this.grpScriptFile.Text = "Script File Control";
             // 
+            // lbScript
+            // 
+            this.lbScript.AutoSize = true;
+            this.lbScript.Location = new System.Drawing.Point(6, 59);
+            this.lbScript.Name = "lbScript";
+            this.lbScript.Size = new System.Drawing.Size(34, 13);
+            this.lbScript.TabIndex = 7;
+            this.lbScript.Text = "Script";
+            // 
+            // comboScript
+            // 
+            this.comboScript.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboScript.FormattingEnabled = true;
+            this.comboScript.Location = new System.Drawing.Point(9, 75);
+            this.comboScript.Name = "comboScript";
+            this.comboScript.Size = new System.Drawing.Size(349, 21);
+            this.comboScript.TabIndex = 6;
+            // 
             // btnScriptAdd
             // 
             this.btnScriptAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -177,6 +196,7 @@ namespace PokemonBDSPEditor.Forms
             this.comboScriptFile.Name = "comboScriptFile";
             this.comboScriptFile.Size = new System.Drawing.Size(349, 21);
             this.comboScriptFile.TabIndex = 1;
+            this.comboScriptFile.SelectedIndexChanged += new System.EventHandler(this.comboScriptFile_SelectedIndexChanged);
             // 
             // lbScriptFile
             // 
@@ -240,25 +260,6 @@ namespace PokemonBDSPEditor.Forms
             this.tabTrainer.TabIndex = 2;
             this.tabTrainer.Text = "Trainer Editor";
             this.tabTrainer.UseVisualStyleBackColor = true;
-            // 
-            // comboScript
-            // 
-            this.comboScript.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboScript.FormattingEnabled = true;
-            this.comboScript.Location = new System.Drawing.Point(9, 75);
-            this.comboScript.Name = "comboScript";
-            this.comboScript.Size = new System.Drawing.Size(349, 21);
-            this.comboScript.TabIndex = 6;
-            // 
-            // lbScript
-            // 
-            this.lbScript.AutoSize = true;
-            this.lbScript.Location = new System.Drawing.Point(6, 59);
-            this.lbScript.Name = "lbScript";
-            this.lbScript.Size = new System.Drawing.Size(34, 13);
-            this.lbScript.TabIndex = 7;
-            this.lbScript.Text = "Script";
             // 
             // FormMain
             // 

@@ -8,11 +8,18 @@ namespace PokemonBDSPEditor.Engine.Editor.Model
 {
     class Script
     {
-        private List<Command> commands;
+        public string Name { get; set; }
+        public List<Command> Commands { get; set; }
 
-        public Script(List<Command> commands)
+        public Script(string name, List<Command> commands)
         {
-            this.commands = commands;
+            Name = name;
+            Commands = commands;
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

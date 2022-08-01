@@ -8,15 +8,20 @@ namespace PokemonBDSPEditor.Engine.Editor.Model
 {
     class ScriptFile
     {
-        private List<string> strings;
-        private List<Script> scripts;
-        private string fileName;
+        public List<string> Strings { get; set; }
+        public List<Script> Scripts { get; set; }
+        public string FileName { get; set; }
 
         public ScriptFile(List<string> strings, List<Script> scripts, string fileName)
         {
-            this.strings = strings;
-            this.scripts = scripts;
-            this.fileName = fileName;
+            Strings = strings;
+            Scripts = scripts;
+            FileName = fileName;
+        }
+
+        public override string ToString()
+        {
+            return FileName;
         }
     }
 }

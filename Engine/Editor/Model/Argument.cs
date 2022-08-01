@@ -8,25 +8,25 @@ namespace PokemonBDSPEditor.Engine.Editor.Model
 {
     class Argument
     {
-        private ArgumentType type;
+        public ArgumentType Type { get; set; }
         private int numberValue;
         private string stringValue;
 
         public Argument(ArgumentType type, int value)
         {
-            this.type = type;
+            Type = type;
             this.numberValue = value;
         }
 
         public Argument(ArgumentType type, string value)
         {
-            this.type = type;
+            Type = type;
             this.stringValue = value;
         }
 
         public object GetValue()
         {
-            switch(type)
+            switch(Type)
             {
                 case ArgumentType.Command:
                 case ArgumentType.Number:

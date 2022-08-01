@@ -1,7 +1,6 @@
 ﻿using AssetsTools.NET;
 using PokemonBDSPEditor.Data;
 using PokemonBDSPEditor.Data.Utils;
-using PokemonBDSPEditor.Engine.Editor.DTO;
 using PokemonBDSPEditor.Engine.Editor.Model;
 using System;
 using System.Collections.Generic;
@@ -15,13 +14,11 @@ namespace PokemonBDSPEditor.Engine.Editor
     {
         private BundleManipulator bundleManipulator;
         private List<ScriptFile> scriptFiles;
-        private bool scriptFilesLoaded;
 
         public EditorEngine()
         {
             bundleManipulator = new BundleManipulator();
             scriptFiles = new List<ScriptFile>();
-            scriptFilesLoaded = false;
         }
 
         public List<ScriptFile> GetScriptFiles()
@@ -45,6 +42,12 @@ namespace PokemonBDSPEditor.Engine.Editor
 
         private ScriptFile ConvertToScriptFile(AssetTypeValueField root)
         {
+            List<string> strings = new List<string>();
+            foreach (var str in root["StrList"][0].GetChildrenList())
+            {
+                strings.Add(str.GetValue().AsString());
+            }
+
             List<Script> scripts = new List<Script>();
             foreach (var script in root["Scripts"][0].GetChildrenList())
             {
@@ -58,13 +61,7 @@ namespace PokemonBDSPEditor.Engine.Editor
                     }
                     commands.Add(new Command(args));
                 }
-                scripts.Add(new Script(commands));
-            }
-
-            List<string> strings = new List<string>();
-            foreach (var str in root["StrList"][0].GetChildrenList())
-            {
-                strings.Add(str.GetValue().AsString());
+                scripts.Add(new Script(script["Label"].GetValue().AsString(), commands));
             }
 
             return new ScriptFile(strings, scripts, root["m_Name"].GetValue().AsString());
@@ -72,7 +69,7 @@ namespace PokemonBDSPEditor.Engine.Editor
 
         public bool AreScriptFilesLoaded()
         {
-            return scriptFilesLoaded;
+            return bundleManipulator.IsBundleLoaded(FileConstants.ScriptDataBundleKey);
         }
     }
 }
