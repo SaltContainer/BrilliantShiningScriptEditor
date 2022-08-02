@@ -23,6 +23,7 @@ namespace PokemonBDSPEditor.Forms
         {
             InitializeComponent();
             scriptEditorEngine = new ScriptEditorEngine();
+            scriptEditorEngine.SetBasePath("romfs");
 
             dataScriptCommands.DataSource = scriptEditorEngine.GetCommands();
         }

@@ -25,6 +25,11 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             scriptFiles = new List<ScriptFile>();
         }
 
+        public void SetBasePath(string path)
+        {
+            bundleManipulator.SetBasePath(path);
+        }
+
         public List<ScriptFile> GetScriptFiles()
         {
             if (!AreScriptFilesLoaded()) LoadScriptFiles();

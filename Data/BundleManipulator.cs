@@ -16,12 +16,14 @@ namespace PokemonBDSPEditor.Data
         private AssetsManager assetsManager;
         private BundleDecompressor bundleDecompressor;
         private Dictionary<string, BundleData> bundles;
+        private string basePath;
 
         public BundleManipulator()
         {
             assetsManager = new AssetsManager();
             bundleDecompressor = new BundleDecompressor(assetsManager);
             bundles = new Dictionary<string, BundleData>();
+            basePath = "";
         }
 
         public bool IsBundleLoaded(string bundle)
@@ -37,7 +39,7 @@ namespace PokemonBDSPEditor.Data
                 {
                     if (!IsBundleLoaded(entry))
                     {
-                        BundleData data = new BundleData(assetsManager, bundleDecompressor.LoadAndDecompressFile(FileConstants.Bundles[entry].FullPath), entry);
+                        BundleData data = new BundleData(assetsManager, bundleDecompressor.LoadAndDecompressFile(string.Format("{0}\\{1}", basePath, FileConstants.Bundles[entry].FullPath)), entry);
                         this.bundles.Add(entry, data);
                     }
                 }
@@ -88,6 +90,11 @@ namespace PokemonBDSPEditor.Data
         public AssetTypeValueField GetFileOfBundle(string bundleKey, string fileName)
         {
             return bundles[bundleKey].GetFileInBundle(fileName);
+        }
+
+        public void SetBasePath(string path)
+        {
+            this.basePath = path;
         }
     }
 }
