@@ -8,11 +8,11 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor.Model
 {
     enum ArgumentType
     {
-        Command,
-        Number,
-        Variable,
-        Flag,
-        SystemFlag,
-        String
+        Command = 0,
+        Number = 1,
+        Variable = 2,
+        Flag = 3,
+        SystemFlag = 4,
+        String = 5
     }
 }

@@ -176,6 +176,7 @@ namespace PokemonBDSPEditor.Forms
             this.comboScript.Name = "comboScript";
             this.comboScript.Size = new System.Drawing.Size(349, 21);
             this.comboScript.TabIndex = 6;
+            this.comboScript.SelectedIndexChanged += new System.EventHandler(this.comboScript_SelectedIndexChanged);
             // 
             // btnScriptAdd
             // 
@@ -238,12 +239,14 @@ namespace PokemonBDSPEditor.Forms
             this.rtbScript.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbScript.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbScript.BackColor = System.Drawing.SystemColors.Window;
+            this.rtbScript.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbScript.Location = new System.Drawing.Point(559, 6);
             this.rtbScript.Name = "rtbScript";
             this.rtbScript.Size = new System.Drawing.Size(511, 531);
             this.rtbScript.TabIndex = 0;
             this.rtbScript.Text = "";
+            this.rtbScript.WordWrap = false;
             // 
             // tabText
             // 
