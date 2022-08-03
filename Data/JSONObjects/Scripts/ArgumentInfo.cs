@@ -11,7 +11,9 @@ namespace PokemonBDSPEditor.Data.JSONObjects
     {
         [JsonProperty("TentativeName")]
         public string Name { get; set; }
+        [JsonProperty("Description")]
+        public string Description { get; set; }
         [JsonProperty("Type")]
-        public string Type { get; set; }
+        public IList<string> Type { get; set; }
     }
 }

@@ -296,14 +296,20 @@
 	{
 		"Id": 76,
 		"Name": "_AB_KEYWAIT",
-		"Description": "",
+		"Description": "(?) Some sort of key wait usually used before doing a screen fade-out.",
 		"Args": []
 	},
 	{
 		"Id": 77,
 		"Name": "_AB_KEY_TIME_WAIT",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Some sort of key wait with a timer. Only used in union room.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames.",
+				"Type": ["Number", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 695,
@@ -488,7 +494,7 @@
 	{
 		"Id": 39,
 		"Name": "_ADD_WAITICON",
-		"Description": "",
+		"Description": "Display the Autosave text in the corner.",
 		"Args": []
 	},
 	{
@@ -500,8 +506,19 @@
 	{
 		"Id": 58,
 		"Name": "_ADD_WK",
-		"Description": "",
-		"Args": []
+		"Description": "Add to the value of a variable.",
+		"Args": [
+			{
+				"TentativeName": "Variable",
+				"Description": "Variable to add to.",
+				"Type": ["Var"]
+			},
+			{
+				"TentativeName": "Value",
+				"Description": "Value to add.",
+				"Type": ["Var", "Number", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 707,
@@ -608,8 +625,14 @@
 	{
 		"Id": 42,
 		"Name": "_ARRIVE_FLAG_SET",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Sets location flag.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Location flag to set.",
+				"Type": ["System", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 662,
@@ -830,7 +853,7 @@
 	{
 		"Id": 26,
 		"Name": "_BG_ID_JUMP",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -1364,8 +1387,14 @@
 	{
 		"Id": 28,
 		"Name": "_CALL",
-		"Description": "",
-		"Args": []
+		"Description": "Calls a script.",
+		"Args": [
+			{
+				"TentativeName": "Script",
+				"Description": "Script to call.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 1052,
@@ -1478,21 +1507,29 @@
 	{
 		"Id": 38,
 		"Name": "_CASE_CANCEL",
-		"Description": "",
-		"Args": []
+		"Description": "Compares the value of the variable given to the last _SWITCH command ran to the value of \"Cancel\", then jumps to a script if they are equal.",
+		"Args": [
+			{
+				"TentativeName": "Script",
+				"Description": "Script to jump to.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 37,
 		"Name": "_CASE_JUMP",
-		"Description": "Compares the value <Arg> to the value of the variable given to the last _SWITCH command ran, then jumps to <Script> if they are equal.",
+		"Description": "Compares the value of the variable given to the last _SWITCH command ran to a value, then jumps to a script if they are equal.",
 		"Args": [
 			{
-				"TentativeName": "Arg",
-				"Type": "Value"
+				"TentativeName": "Value",
+				"Description": "Value to compare to.",
+				"Type": ["Number", "Label"]
 			},
 			{
 				"TentativeName": "Script",
-				"Type": "Label"
+				"Description": "Script to jump to.",
+				"Type": ["Label"]
 			}
 		]
 	},
@@ -1607,13 +1644,19 @@
 	{
 		"Id": 22,
 		"Name": "_CHG_COMMON_SCR",
-		"Description": "",
-		"Args": []
+		"Description": "Calls a script from the common_scr file.",
+		"Args": [
+			{
+				"TentativeName": "Script",
+				"Description": "Script of common_scr to call.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 23,
 		"Name": "_CHG_LOCAL_SCR",
-		"Description": "",
+		"Description": "Return from the common_scr file after a _CHG_COMMON_SCR call.",
 		"Args": []
 	},
 	{
@@ -1721,14 +1764,25 @@
 	{
 		"Id": 18,
 		"Name": "_CMPVAL",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 19,
 		"Name": "_CMPWK",
-		"Description": "",
-		"Args": []
+		"Description": "Compares the value of a work variable to the value of another work variable. Used once in unused poison scripts.",
+		"Args": [
+			{
+				"TentativeName": "Work1",
+				"Description": "Work variable to compare.",
+				"Type": ["Var"]
+			},
+			{
+				"TentativeName": "Work2",
+				"Description": "Work variable to compare to.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 182,
@@ -2195,37 +2249,37 @@
 	{
 		"Id": 17,
 		"Name": "_CP_ADR_ADR",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 15,
 		"Name": "_CP_ADR_REG",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 16,
 		"Name": "_CP_ADR_VAL",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 14,
 		"Name": "_CP_REG_ADR",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 12,
 		"Name": "_CP_REG_REG",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 13,
 		"Name": "_CP_REG_VAL",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
@@ -2405,8 +2459,14 @@
 	{
 		"Id": 20,
 		"Name": "_DEBUG_WATCH_WORK",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Logs the value of a work variable.",
+		"Args": [
+			{
+				"TentativeName": "Work",
+				"Description": "Work variable to log",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 532,
@@ -2417,7 +2477,7 @@
 	{
 		"Id": 40,
 		"Name": "_DEL_WAITICON",
-		"Description": "",
+		"Description": "Remove the Autosave text in the corner.",
 		"Args": []
 	},
 	{
@@ -2525,7 +2585,7 @@
 	{
 		"Id": 2,
 		"Name": "_DUMMY",
-		"Description": "",
+		"Description": "Unused. Presumably does nothing.",
 		"Args": []
 	},
 	{
@@ -2615,7 +2675,7 @@
 	{
 		"Id": 3,
 		"Name": "_END",
-		"Description": "",
+		"Description": "Ends the script.",
 		"Args": []
 	},
 	{
@@ -2921,32 +2981,50 @@
 	{
 		"Id": 44,
 		"Name": "_FLAG_CHECK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 49,
 		"Name": "_FLAG_CHECK_WK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 43,
 		"Name": "_FLAG_RESET",
-		"Description": "",
-		"Args": []
+		"Description": "Clears a flag.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Flag to clear.",
+				"Type": ["Flag", "System", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 41,
 		"Name": "_FLAG_SET",
-		"Description": "",
-		"Args": []
+		"Description": "Sets a flag.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Flag to set.",
+				"Type": ["Flag", "System", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 50,
 		"Name": "_FLAG_SET_WK",
-		"Description": "",
-		"Args": []
+		"Description": "Sets the flag designated by the value of a variable.",
+		"Args": [
+			{
+				"TentativeName": "Variable",
+				"Description": "Variable containing the flag to set.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 704,
@@ -3611,86 +3689,248 @@
 	{
 		"Id": 33,
 		"Name": "_IFVAL_CALL",
-		"Description": "",
-		"Args": []
+		"Description": "Compares two values, then calls a script if true.",
+		"Args": [
+			{
+				"TentativeName": "Value1",
+				"Description": "Value to compare.",
+				"Type": ["Var", "Number", "Label"]
+			},
+			{
+				"TentativeName": "Condition",
+				"Description": "Condition used for the comparison.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Value2",
+				"Description": "Value to compare to.",
+				"Type": ["Var", "Number", "Label"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to call.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 32,
 		"Name": "_IFVAL_JUMP",
-		"Description": "",
-		"Args": []
+		"Description": "Compares two values, then jumps to a script if true.",
+		"Args": [
+			{
+				"TentativeName": "Value1",
+				"Description": "Value to compare.",
+				"Type": ["Var", "Number", "Label"]
+			},
+			{
+				"TentativeName": "Condition",
+				"Description": "Condition used for the comparison.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Value2",
+				"Description": "Value to compare to.",
+				"Type": ["Var", "Number", "Label"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to jump to.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 35,
 		"Name": "_IFWK_CALL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 34,
 		"Name": "_IFWK_JUMP",
-		"Description": "",
-		"Args": []
+		"Description": "Compares the value of a work variable to a value, then jumps to a script if true.",
+		"Args": [
+			{
+				"TentativeName": "Variable",
+				"Description": "Work variable to compare.",
+				"Type": ["Var"]
+			},
+			{
+				"TentativeName": "Condition",
+				"Description": "Condition used for the comparison.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Value",
+				"Description": "Value to compare to.",
+				"Type": ["Var", "Number"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to jump to.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 31,
 		"Name": "_IF_CALL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 48,
 		"Name": "_IF_FLAGOFF_CALL",
-		"Description": "",
-		"Args": []
+		"Description": "Checks a flag and if it isn't set, calls a script.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Flag to check.",
+				"Type": ["Flag", "System"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to call.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 46,
 		"Name": "_IF_FLAGOFF_JUMP",
-		"Description": "",
-		"Args": []
+		"Description": "Checks a flag and if it isn't set, jumps to a script.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Flag to check.",
+				"Type": ["Flag", "System"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to jump to.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 47,
 		"Name": "_IF_FLAGON_CALL",
-		"Description": "",
-		"Args": []
+		"Description": "Checks a flag and if it is set, calls a script.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Flag to check.",
+				"Type": ["Flag", "System"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to call.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 45,
 		"Name": "_IF_FLAGON_JUMP",
-		"Description": "",
-		"Args": []
+		"Description": "Checks a flag and if it is set, jumps to a script.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Flag to check.",
+				"Type": ["Flag", "System"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to jump to.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 30,
 		"Name": "_IF_JUMP",
-		"Description": "",
-		"Args": []
+		"Description": "Used after _CMPWK. Used once in unused poison scripts.",
+		"Args": [
+			{
+				"TentativeName": "Condition",
+				"Description": "Condition used for the comparison.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to jump to.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 57,
 		"Name": "_IF_TR_FLAGOFF_CALL",
-		"Description": "",
-		"Args": []
+		"Description": "Unused. Checks a trainer flag. If it isn't set, calls a script.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Value of trainer flag to check.",
+				"Type": ["Var", "Number", "Label"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to call.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 55,
 		"Name": "_IF_TR_FLAGOFF_JUMP",
-		"Description": "",
-		"Args": []
+		"Description": "Unused. Checks a trainer flag. If it isn't set, jumps to a script.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Value of trainer flag to check.",
+				"Type": ["Var", "Number", "Label"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to jump to.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 56,
 		"Name": "_IF_TR_FLAGON_CALL",
-		"Description": "",
-		"Args": []
+		"Description": "Unused. Checks a trainer flag. If it is set, calls a script.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Value of trainer flag to check.",
+				"Type": ["Var", "Number", "Label"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to call.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 54,
 		"Name": "_IF_TR_FLAGON_JUMP",
-		"Description": "",
-		"Args": []
+		"Description": "Checks a trainer flag. If it is set, jumps to a script.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Value of trainer flag to check.",
+				"Type": ["Var", "Number", "Label"]
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to jump to.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 245,
@@ -3875,11 +4115,12 @@
 	{
 		"Id": 24,
 		"Name": "_JUMP",
-		"Description": "Jumps to <Script>.",
+		"Description": "Jumps to a script.",
 		"Args": [
 			{
 				"TentativeName": "Script",
-				"Type": "Label"
+				"Description": "Script to jump to.",
+				"Type": ["Label"]
 			}
 		]
 	},
@@ -3922,14 +4163,25 @@
 	{
 		"Id": 78,
 		"Name": "_LAST_KEYWAIT",
-		"Description": "",
+		"Description": "Waits for a key press.",
 		"Args": []
 	},
 	{
 		"Id": 60,
 		"Name": "_LDVAL",
-		"Description": "",
-		"Args": []
+		"Description": "Set a variable to a value.",
+		"Args": [
+			{
+				"TentativeName": "Variable",
+				"Description": "Variable to set.",
+				"Type": ["Var", "Label"]
+			},
+			{
+				"TentativeName": "Value",
+				"Description": "Value to set the variable to.",
+				"Type": ["Var", "Number", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 841,
@@ -3946,55 +4198,66 @@
 	{
 		"Id": 61,
 		"Name": "_LDWK",
-		"Description": "",
-		"Args": []
+		"Description": "Set a variable to a value.",
+		"Args": [
+			{
+				"TentativeName": "Variable",
+				"Description": "Variable to set.",
+				"Type": ["Var"]
+			},
+			{
+				"TentativeName": "Value",
+				"Description": "Value to set the variable to.",
+				"Type": ["Var", "Number", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 62,
 		"Name": "_LDWKVAL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 11,
 		"Name": "_LD_ADR_ADR",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 9,
 		"Name": "_LD_ADR_REG",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 8,
 		"Name": "_LD_ADR_VAL",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 7,
 		"Name": "_LD_REG_ADR",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 10,
 		"Name": "_LD_REG_REG",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 5,
 		"Name": "_LD_REG_VAL",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
 		"Id": 6,
 		"Name": "_LD_REG_WDATA",
-		"Description": "",
+		"Description": "Unused. Probably has arguments.",
 		"Args": []
 	},
 	{
@@ -4360,13 +4623,13 @@
 	{
 		"Id": 0,
 		"Name": "_NONE_USE_NUMBER",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 1,
 		"Name": "_NOP",
-		"Description": "",
+		"Description": "Unused. Presumably does nothing.",
 		"Args": []
 	},
 	{
@@ -4492,7 +4755,7 @@
 	{
 		"Id": 25,
 		"Name": "_OBJ_ID_JUMP",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -4762,7 +5025,7 @@
 	{
 		"Id": 27,
 		"Name": "_PLAYER_DIR_JUMP",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -5254,7 +5517,7 @@
 	{
 		"Id": 29,
 		"Name": "_RET",
-		"Description": "",
+		"Description": "Returns after a call.",
 		"Args": []
 	},
 	{
@@ -5884,8 +6147,19 @@
 	{
 		"Id": 59,
 		"Name": "_SUB_WK",
-		"Description": "",
-		"Args": []
+		"Description": "Subtract to the value of a variable.",
+		"Args": [
+			{
+				"TentativeName": "Variable",
+				"Description": "Variable to subtract from.",
+				"Type": ["Var"]
+			},
+			{
+				"TentativeName": "Value",
+				"Description": "Value to subtract.",
+				"Type": ["Var", "Number", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 751,
@@ -5908,11 +6182,12 @@
 	{
 		"Id": 36,
 		"Name": "_SWITCH",
-		"Description": "Begins a switch statement based on the value of <Arg>.",
+		"Description": "Begins a switch statement based on the value of a variable.",
 		"Args": [
 			{
-				"TentativeName": "Arg",
-				"Type": "Var"
+				"TentativeName": "Variable",
+				"Description": "Variable to use.",
+				"Type": ["Var"]
 			}
 		]
 	},
@@ -6123,80 +6398,142 @@
 	{
 		"Id": 70,
 		"Name": "_TALKMSG",
-		"Description": "",
-		"Args": []
+		"Description": "Shows a textbox with the given message.",
+		"Args": [
+			{
+				"TentativeName": "Message",
+				"Description": "Message to show.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 63,
 		"Name": "_TALKMSG_ALLPUT",
-		"Description": "",
-		"Args": []
+		"Description": "Only used in unused Pal Park scripts. Presumably shows a textbox.",
+		"Args": [
+			{
+				"TentativeName": "Message",
+				"Description": "Message to show.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 64,
 		"Name": "_TALKMSG_ALLPUT_ARC",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 66,
 		"Name": "_TALKMSG_ALLPUT_PMS",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 65,
 		"Name": "_TALKMSG_ARC",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Something related to Mystery Gift. Presumably shows a textbox.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Var"]
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 75,
 		"Name": "_TALKMSG_AUTOGET",
-		"Description": "",
+		"Description": "Only used in one common script, unused otherwise.",
 		"Args": []
 	},
 	{
 		"Id": 68,
 		"Name": "_TALKMSG_BTOWER_APPEAR",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Textboxes related to Battle Tower.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			}
+		]
 	},
 	{
 		"Id": 74,
 		"Name": "_TALKMSG_CON_SIO",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 69,
 		"Name": "_TALKMSG_NG_POKE_NAME",
-		"Description": "",
-		"Args": []
+		"Description": "Shows a textbox with all Battle Tower illegal Pokémon.",
+		"Args": [
+			{
+				"TentativeName": "Message",
+				"Description": "Message to show.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use. Value of 3 when doing single battles, and 4 when doing double battles.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown3",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			}
+		]
 	},
 	{
 		"Id": 73,
 		"Name": "_TALKMSG_NOSKIP",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 67,
 		"Name": "_TALKMSG_PMS",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 71,
 		"Name": "_TALKMSG_SP",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Only used in union room. Presumably shows a textbox.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 72,
 		"Name": "_TALKMSG_SP_AUTO",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Only used in union room. Presumably shows a textbox.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 81,
@@ -6349,11 +6686,11 @@
 		"Args": [
 			{
 				"TentativeName": "Slot",
-				"Type": "Value"
+				"Type": ["Value"]
 			},
 			{
 				"TentativeName": "Result",
-				"Type": "Var"
+				"Type": ["Var"]
 			}
 		]
 	},
@@ -6426,8 +6763,19 @@
 	{
 		"Id": 4,
 		"Name": "_TIME_WAIT",
-		"Description": "",
-		"Args": []
+		"Description": "Waits for the amount of frames provided, then continues execution. Argument 2 seems unused.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Amount of frames to wait.",
+				"Type": ["Number", "Label"]
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 249,
@@ -6462,20 +6810,38 @@
 	{
 		"Id": 53,
 		"Name": "_TRAINER_FLAG_CHECK",
-		"Description": "",
-		"Args": []
+		"Description": "Checks a trainer flag. Used in conjunction with _IF_TR_FLAGON_JUMP, _IF_TR_FLAGON_CALL, _IF_TR_FLAGOFF_JUMP, or _IF_TR_FLAGOFF_CALL.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Value of trainer flag to check.",
+				"Type": ["Var", "Number", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 52,
 		"Name": "_TRAINER_FLAG_RESET",
-		"Description": "",
-		"Args": []
+		"Description": "Clears a trainer flag.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Value of trainer flag to clear.",
+				"Type": ["Var", "Number", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 51,
 		"Name": "_TRAINER_FLAG_SET",
-		"Description": "",
-		"Args": []
+		"Description": "Sets a trainer flag.",
+		"Args": [
+			{
+				"TentativeName": "Flag",
+				"Description": "Value of trainer flag to set.",
+				"Type": ["Var", "Number", "Label"]
+			}
+		]
 	},
 	{
 		"Id": 334,
@@ -7122,7 +7488,7 @@
 	{
 		"Id": 21,
 		"Name": "_VM_ADD",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{

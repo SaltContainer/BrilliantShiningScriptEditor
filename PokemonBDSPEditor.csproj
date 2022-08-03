@@ -82,6 +82,7 @@
     <Compile Include="Data\JSONObjects\Scripts\CommandInfo.cs" />
     <Compile Include="Engine\ScriptEditor\Model\Script.cs" />
     <Compile Include="Engine\ScriptEditor\Model\ScriptFile.cs" />
+    <Compile Include="Engine\ScriptEditor\ScriptValidator.cs" />
     <Compile Include="Forms\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
