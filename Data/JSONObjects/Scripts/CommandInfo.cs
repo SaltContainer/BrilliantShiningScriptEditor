@@ -17,5 +17,10 @@ namespace PokemonBDSPEditor.Data.JSONObjects
         public string Description { get; set; }
         [JsonProperty("Args")]
         public IList<ArgumentInfo> Arguments { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

@@ -25,7 +25,7 @@ namespace PokemonBDSPEditor.Forms
             scriptEditorEngine = new ScriptEditorEngine();
             scriptEditorEngine.SetBasePath("romfs");
 
-            dataScriptCommands.DataSource = scriptEditorEngine.GetCommands();
+            comboScriptCommand.DataSource = FileConstants.Commands;
         }
 
         private void UpdateScriptFileList(List<ScriptFile> scriptFiles)
@@ -40,9 +40,16 @@ namespace PokemonBDSPEditor.Forms
             comboScript.SelectedIndex = 0;
         }
 
-        private void UpdateScriptBox()
+        private void UpdateScriptBox(Script script)
         {
-            rtbScript.Text = scriptEditorEngine.DecompileScript((Script)comboScript.SelectedItem);
+            rtbScript.Text = scriptEditorEngine.DecompileScript(script);
+        }
+
+        private void UpdateCommandInfo(CommandInfo command)
+        {
+            lbScriptCommandName.Text = string.Format("{0} - {1}", command.Id, command.Name);
+            string arguments = string.Join("\n", command.Arguments.Select(a => string.Format("[{0}] {1} - {2}", string.Join(", ", a.Type), a.Name, a.Description)));
+            lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", command.Description, arguments);
         }
 
         private void comboScriptFile_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,7 +59,7 @@ namespace PokemonBDSPEditor.Forms
 
         private void comboScript_SelectedIndexChanged(object sender, EventArgs e)
         {
-            UpdateScriptBox();
+            UpdateScriptBox((Script)comboScript.SelectedItem);
         }
 
         private void btnScriptAdd_Click(object sender, EventArgs e)
@@ -83,6 +90,16 @@ namespace PokemonBDSPEditor.Forms
         private void tbtnSave_Click(object sender, EventArgs e)
         {
             // Save ROMFS
+        }
+
+        private void lbScriptCommandName_SizeChanged(object sender, EventArgs e)
+        {
+            lbScriptCommandDescription.Location = new Point(lbScriptCommandDescription.Location.X, lbScriptCommandName.Size.Height + 74);
+        }
+
+        private void comboScriptCommand_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateCommandInfo((CommandInfo)comboScriptCommand.SelectedItem);
         }
     }
 }

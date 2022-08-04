@@ -859,7 +859,7 @@
 	{
 		"Id": 95,
 		"Name": "_BG_SCROLL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -925,91 +925,203 @@
 	{
 		"Id": 104,
 		"Name": "_BMPLIST_INIT",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Initializes an unused exchange menu.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown3",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown4",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown5",
+				"Description": "Unknown use.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 105,
 		"Name": "_BMPLIST_INIT_EX",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 106,
 		"Name": "_BMPLIST_MAKE_LIST",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Adds an option to the unused choice menu previously initialized by _BMPLIST_INIT.",
+		"Args": [
+			{
+				"TentativeName": "Option",
+				"Description": "Option to add.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use. Always EV_WIN_TALK_MSG_NONE.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Var", "Number"]
+			}
+		]
 	},
 	{
 		"Id": 107,
 		"Name": "_BMPLIST_START",
-		"Description": "",
+		"Description": "(?) Shows the unused choice menu previously initialized by _BMPLIST_INIT.",
 		"Args": []
 	},
 	{
 		"Id": 108,
 		"Name": "_BMPMENU_HV_START",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 98,
 		"Name": "_BMPMENU_INIT",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Initializes an unused choice menu.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown3",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown4",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown5",
+				"Description": "Unknown use.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 99,
 		"Name": "_BMPMENU_INIT_EX",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Initializes an unused choice menu.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown3",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown4",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown5",
+				"Description": "Unknown use.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 100,
 		"Name": "_BMPMENU_MAKE_LIST",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Adds an option to the unused choice menu previously initialized by _BMPMENU_INIT or _BMPMENU_INIT_EX.",
+		"Args": [
+			{
+				"TentativeName": "Option",
+				"Description": "Option to add.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 101,
 		"Name": "_BMPMENU_MAKE_LIST16",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 102,
 		"Name": "_BMPMENU_START",
-		"Description": "",
+		"Description": "(?) Shows the unused choice menu previously initialized by _BMPMENU_INIT or _BMPMENU_INIT_EX.",
 		"Args": []
 	},
 	{
 		"Id": 91,
 		"Name": "_BOARD_END_WAIT",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Waits until the board is closed, then puts a value in a variable.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 86,
 		"Name": "_BOARD_MAKE",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 90,
 		"Name": "_BOARD_MSG",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 88,
 		"Name": "_BOARD_REQ",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Makes a board request.",
+		"Args": [
+			{
+				"TentativeName": "Request",
+				"Description": "Request to make.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 89,
 		"Name": "_BOARD_REQ_WAIT",
-		"Description": "",
+		"Description": "(?) Waits on a board request made previously with command _BOARD_REQ.",
 		"Args": []
 	},
 	{
@@ -1519,7 +1631,7 @@
 	{
 		"Id": 37,
 		"Name": "_CASE_JUMP",
-		"Description": "Compares the value of the variable given to the last _SWITCH command ran to a value, then jumps to a script if they are equal.",
+		"Description": "Compares the value of the variable given to the last _SWITCH command ran to another value, then jumps to a script if they are equal.",
 		"Args": [
 			{
 				"TentativeName": "Value",
@@ -2615,26 +2727,69 @@
 	{
 		"Id": 92,
 		"Name": "_EASY_BOARD_MSG",
-		"Description": "",
-		"Args": []
+		"Description": "Shows a sign message.",
+		"Args": [
+			{
+				"TentativeName": "Message",
+				"Description": "Message to show.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Type",
+				"Description": "Type of sign textbox.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use. Always 0.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Arrow",
+				"Description": "(Optional) The ID of the arrow to show in the textbox. Only used for signs of type BOARD_TYPE_ROAD.",
+				"Type": ["Number"]
+			}
+		]
 	},
 	{
 		"Id": 93,
 		"Name": "_EASY_INFOBOARD_MSG",
-		"Description": "",
-		"Args": []
+		"Description": "Shows an info sign message. Mostly used for Gym signs.",
+		"Args": [
+			{
+				"TentativeName": "Message",
+				"Description": "Message to show.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Type",
+				"Description": "Type of sign textbox. Always BOARD_TYPE_INFO.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use. Always 0.",
+				"Type": ["Number"]
+			}
+		]
 	},
 	{
 		"Id": 85,
 		"Name": "_EASY_MSG",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 84,
 		"Name": "_EASY_OBJ_MSG",
-		"Description": "",
-		"Args": []
+		"Description": "Combines the commands _TALK_OBJ_START, _TALKMSG, _TALK_CLOSE, and _TALK_OBJ_END to show a textbox.",
+		"Args": [
+			{
+				"TentativeName": "Message",
+				"Description": "Message to show.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 114,
@@ -3575,7 +3730,7 @@
 	{
 		"Id": 97,
 		"Name": "_GUINNESS_WIN",
-		"Description": "",
+		"Description": "Unknown use. Pretty much unused.",
 		"Args": []
 	},
 	{
@@ -4329,7 +4484,7 @@
 	{
 		"Id": 94,
 		"Name": "_MENU_REQ",
-		"Description": "",
+		"Description": "(?) Menu request. Presumably opens the menu?",
 		"Args": []
 	},
 	{
@@ -4593,7 +4748,7 @@
 	{
 		"Id": 79,
 		"Name": "_NEXT_ANM_LAST_KEYWAIT",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -5661,7 +5816,7 @@
 	{
 		"Id": 103,
 		"Name": "_SEL_WIN_JUMP",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -5883,14 +6038,36 @@
 	{
 		"Id": 109,
 		"Name": "_SE_PLAY",
-		"Description": "",
-		"Args": []
+		"Description": "Plays a sound effect.",
+		"Args": [
+			{
+				"TentativeName": "SoundEffect",
+				"Description": "Sound effect to play.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Unknown1",
+				"Description": "(Optional) Unknown use. Always 0 when present.",
+				"Type": ["Number"]
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "(Optional) Unknown use. Always 0 when present.",
+				"Type": ["Number"]
+			}
+		]
 	},
 	{
 		"Id": 110,
 		"Name": "_SE_STOP",
-		"Description": "",
-		"Args": []
+		"Description": "Stops a specific sound effect that is playing.",
+		"Args": [
+			{
+				"TentativeName": "SoundEffect",
+				"Description": "Sound effect to stop.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 111,
@@ -6538,13 +6715,13 @@
 	{
 		"Id": 81,
 		"Name": "_TALK_CLOSE",
-		"Description": "",
+		"Description": "Closes the currently open textbox.",
 		"Args": []
 	},
 	{
 		"Id": 82,
 		"Name": "_TALK_CLOSE_NO_CLEAR",
-		"Description": "",
+		"Description": "Closes the currently open textbox. Used before shop commands.",
 		"Args": []
 	},
 	{
@@ -6562,8 +6739,14 @@
 	{
 		"Id": 83,
 		"Name": "_TALK_KEYWAIT",
-		"Description": "",
-		"Args": []
+		"Description": "Shows a textbox with the given message.",
+		"Args": [
+			{
+				"TentativeName": "Message",
+				"Description": "Message to show.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 153,
@@ -6598,7 +6781,7 @@
 	{
 		"Id": 80,
 		"Name": "_TALK_OPEN",
-		"Description": "",
+		"Description": "(?) Opens an empty textbox. Rarely used, and always has some other textbox command soon after.",
 		"Args": []
 	},
 	{
@@ -7668,8 +7851,14 @@
 	{
 		"Id": 96,
 		"Name": "_YES_NO_WIN",
-		"Description": "",
-		"Args": []
+		"Description": "Opens a Yes/No choice window, then puts the result in a variable.",
+		"Args": [
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 651,

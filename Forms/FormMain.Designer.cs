@@ -35,8 +35,6 @@ namespace PokemonBDSPEditor.Forms
             this.tbtnSave = new System.Windows.Forms.ToolStripButton();
             this.tabsMain = new System.Windows.Forms.TabControl();
             this.tabScript = new System.Windows.Forms.TabPage();
-            this.grpScriptCommands = new System.Windows.Forms.GroupBox();
-            this.dataScriptCommands = new System.Windows.Forms.DataGridView();
             this.grpScriptFile = new System.Windows.Forms.GroupBox();
             this.lbScript = new System.Windows.Forms.Label();
             this.comboScript = new System.Windows.Forms.ComboBox();
@@ -48,12 +46,17 @@ namespace PokemonBDSPEditor.Forms
             this.rtbScript = new System.Windows.Forms.RichTextBox();
             this.tabText = new System.Windows.Forms.TabPage();
             this.tabTrainer = new System.Windows.Forms.TabPage();
+            this.btnScriptRemove = new System.Windows.Forms.Button();
+            this.comboScriptCommand = new System.Windows.Forms.ComboBox();
+            this.lbScriptCommand = new System.Windows.Forms.Label();
+            this.lbScriptCommandName = new System.Windows.Forms.Label();
+            this.lbScriptCommandDescription = new System.Windows.Forms.Label();
+            this.grpScriptCommand = new System.Windows.Forms.GroupBox();
             this.stripMain.SuspendLayout();
             this.tabsMain.SuspendLayout();
             this.tabScript.SuspendLayout();
-            this.grpScriptCommands.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataScriptCommands)).BeginInit();
             this.grpScriptFile.SuspendLayout();
+            this.grpScriptCommand.SuspendLayout();
             this.SuspendLayout();
             // 
             // stripMain
@@ -104,7 +107,6 @@ namespace PokemonBDSPEditor.Forms
             // 
             // tabScript
             // 
-            this.tabScript.Controls.Add(this.grpScriptCommands);
             this.tabScript.Controls.Add(this.grpScriptFile);
             this.tabScript.Controls.Add(this.rtbScript);
             this.tabScript.Location = new System.Drawing.Point(4, 22);
@@ -115,45 +117,22 @@ namespace PokemonBDSPEditor.Forms
             this.tabScript.Text = "Script Editor";
             this.tabScript.UseVisualStyleBackColor = true;
             // 
-            // grpScriptCommands
-            // 
-            this.grpScriptCommands.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.grpScriptCommands.Controls.Add(this.dataScriptCommands);
-            this.grpScriptCommands.Location = new System.Drawing.Point(6, 117);
-            this.grpScriptCommands.Name = "grpScriptCommands";
-            this.grpScriptCommands.Size = new System.Drawing.Size(547, 420);
-            this.grpScriptCommands.TabIndex = 6;
-            this.grpScriptCommands.TabStop = false;
-            this.grpScriptCommands.Text = "Commands";
-            // 
-            // dataScriptCommands
-            // 
-            this.dataScriptCommands.AllowUserToAddRows = false;
-            this.dataScriptCommands.AllowUserToDeleteRows = false;
-            this.dataScriptCommands.AllowUserToOrderColumns = true;
-            this.dataScriptCommands.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataScriptCommands.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataScriptCommands.Location = new System.Drawing.Point(6, 19);
-            this.dataScriptCommands.Name = "dataScriptCommands";
-            this.dataScriptCommands.ReadOnly = true;
-            this.dataScriptCommands.Size = new System.Drawing.Size(535, 395);
-            this.dataScriptCommands.TabIndex = 0;
-            // 
             // grpScriptFile
             // 
+            this.grpScriptFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpScriptFile.Controls.Add(this.grpScriptCommand);
             this.grpScriptFile.Controls.Add(this.lbScript);
             this.grpScriptFile.Controls.Add(this.comboScript);
-            this.grpScriptFile.Controls.Add(this.btnScriptAdd);
             this.grpScriptFile.Controls.Add(this.comboScriptFile);
             this.grpScriptFile.Controls.Add(this.lbScriptFile);
-            this.grpScriptFile.Controls.Add(this.btnScriptSave);
+            this.grpScriptFile.Controls.Add(this.btnScriptAdd);
+            this.grpScriptFile.Controls.Add(this.btnScriptRemove);
             this.grpScriptFile.Controls.Add(this.btnScriptCompile);
-            this.grpScriptFile.Location = new System.Drawing.Point(6, 6);
+            this.grpScriptFile.Controls.Add(this.btnScriptSave);
+            this.grpScriptFile.Location = new System.Drawing.Point(820, 6);
             this.grpScriptFile.Name = "grpScriptFile";
-            this.grpScriptFile.Size = new System.Drawing.Size(547, 105);
+            this.grpScriptFile.Size = new System.Drawing.Size(250, 531);
             this.grpScriptFile.TabIndex = 5;
             this.grpScriptFile.TabStop = false;
             this.grpScriptFile.Text = "Script File Control";
@@ -161,7 +140,7 @@ namespace PokemonBDSPEditor.Forms
             // lbScript
             // 
             this.lbScript.AutoSize = true;
-            this.lbScript.Location = new System.Drawing.Point(6, 59);
+            this.lbScript.Location = new System.Drawing.Point(6, 68);
             this.lbScript.Name = "lbScript";
             this.lbScript.Size = new System.Drawing.Size(34, 13);
             this.lbScript.TabIndex = 7;
@@ -172,17 +151,16 @@ namespace PokemonBDSPEditor.Forms
             this.comboScript.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboScript.FormattingEnabled = true;
-            this.comboScript.Location = new System.Drawing.Point(9, 75);
+            this.comboScript.Location = new System.Drawing.Point(6, 84);
             this.comboScript.Name = "comboScript";
-            this.comboScript.Size = new System.Drawing.Size(349, 21);
+            this.comboScript.Size = new System.Drawing.Size(238, 21);
             this.comboScript.TabIndex = 6;
             this.comboScript.SelectedIndexChanged += new System.EventHandler(this.comboScript_SelectedIndexChanged);
             // 
             // btnScriptAdd
             // 
-            this.btnScriptAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptAdd.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
-            this.btnScriptAdd.Location = new System.Drawing.Point(364, 41);
+            this.btnScriptAdd.Location = new System.Drawing.Point(6, 130);
             this.btnScriptAdd.Name = "btnScriptAdd";
             this.btnScriptAdd.Size = new System.Drawing.Size(55, 55);
             this.btnScriptAdd.TabIndex = 5;
@@ -195,9 +173,9 @@ namespace PokemonBDSPEditor.Forms
             this.comboScriptFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboScriptFile.FormattingEnabled = true;
-            this.comboScriptFile.Location = new System.Drawing.Point(9, 34);
+            this.comboScriptFile.Location = new System.Drawing.Point(6, 34);
             this.comboScriptFile.Name = "comboScriptFile";
-            this.comboScriptFile.Size = new System.Drawing.Size(349, 21);
+            this.comboScriptFile.Size = new System.Drawing.Size(238, 21);
             this.comboScriptFile.TabIndex = 1;
             this.comboScriptFile.SelectedIndexChanged += new System.EventHandler(this.comboScriptFile_SelectedIndexChanged);
             // 
@@ -214,7 +192,7 @@ namespace PokemonBDSPEditor.Forms
             // 
             this.btnScriptSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptSave.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
-            this.btnScriptSave.Location = new System.Drawing.Point(486, 41);
+            this.btnScriptSave.Location = new System.Drawing.Point(189, 130);
             this.btnScriptSave.Name = "btnScriptSave";
             this.btnScriptSave.Size = new System.Drawing.Size(55, 55);
             this.btnScriptSave.TabIndex = 4;
@@ -226,7 +204,7 @@ namespace PokemonBDSPEditor.Forms
             // 
             this.btnScriptCompile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptCompile.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
-            this.btnScriptCompile.Location = new System.Drawing.Point(425, 41);
+            this.btnScriptCompile.Location = new System.Drawing.Point(128, 130);
             this.btnScriptCompile.Name = "btnScriptCompile";
             this.btnScriptCompile.Size = new System.Drawing.Size(55, 55);
             this.btnScriptCompile.TabIndex = 3;
@@ -241,9 +219,9 @@ namespace PokemonBDSPEditor.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbScript.BackColor = System.Drawing.SystemColors.Window;
             this.rtbScript.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbScript.Location = new System.Drawing.Point(559, 6);
+            this.rtbScript.Location = new System.Drawing.Point(6, 6);
             this.rtbScript.Name = "rtbScript";
-            this.rtbScript.Size = new System.Drawing.Size(511, 531);
+            this.rtbScript.Size = new System.Drawing.Size(808, 531);
             this.rtbScript.TabIndex = 0;
             this.rtbScript.Text = "";
             this.rtbScript.WordWrap = false;
@@ -268,6 +246,75 @@ namespace PokemonBDSPEditor.Forms
             this.tabTrainer.Text = "Trainer Editor";
             this.tabTrainer.UseVisualStyleBackColor = true;
             // 
+            // btnScriptRemove
+            // 
+            this.btnScriptRemove.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
+            this.btnScriptRemove.Location = new System.Drawing.Point(67, 130);
+            this.btnScriptRemove.Name = "btnScriptRemove";
+            this.btnScriptRemove.Size = new System.Drawing.Size(55, 55);
+            this.btnScriptRemove.TabIndex = 8;
+            this.btnScriptRemove.Text = "remove";
+            this.btnScriptRemove.UseVisualStyleBackColor = true;
+            // 
+            // comboScriptCommand
+            // 
+            this.comboScriptCommand.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboScriptCommand.FormattingEnabled = true;
+            this.comboScriptCommand.Location = new System.Drawing.Point(6, 41);
+            this.comboScriptCommand.Name = "comboScriptCommand";
+            this.comboScriptCommand.Size = new System.Drawing.Size(223, 21);
+            this.comboScriptCommand.TabIndex = 9;
+            this.comboScriptCommand.SelectedIndexChanged += new System.EventHandler(this.comboScriptCommand_SelectedIndexChanged);
+            // 
+            // lbScriptCommand
+            // 
+            this.lbScriptCommand.AutoSize = true;
+            this.lbScriptCommand.Location = new System.Drawing.Point(6, 25);
+            this.lbScriptCommand.Name = "lbScriptCommand";
+            this.lbScriptCommand.Size = new System.Drawing.Size(54, 13);
+            this.lbScriptCommand.TabIndex = 10;
+            this.lbScriptCommand.Text = "Command";
+            // 
+            // lbScriptCommandName
+            // 
+            this.lbScriptCommandName.AutoSize = true;
+            this.lbScriptCommandName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbScriptCommandName.Location = new System.Drawing.Point(6, 65);
+            this.lbScriptCommandName.MaximumSize = new System.Drawing.Size(223, 64);
+            this.lbScriptCommandName.Name = "lbScriptCommandName";
+            this.lbScriptCommandName.Size = new System.Drawing.Size(107, 18);
+            this.lbScriptCommandName.TabIndex = 11;
+            this.lbScriptCommandName.Text = "111 - _NAME";
+            this.lbScriptCommandName.SizeChanged += new System.EventHandler(this.lbScriptCommandName_SizeChanged);
+            // 
+            // lbScriptCommandDescription
+            // 
+            this.lbScriptCommandDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbScriptCommandDescription.Location = new System.Drawing.Point(6, 129);
+            this.lbScriptCommandDescription.Name = "lbScriptCommandDescription";
+            this.lbScriptCommandDescription.Size = new System.Drawing.Size(223, 183);
+            this.lbScriptCommandDescription.TabIndex = 12;
+            this.lbScriptCommandDescription.Text = "Script";
+            // 
+            // grpScriptCommand
+            // 
+            this.grpScriptCommand.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpScriptCommand.Controls.Add(this.lbScriptCommand);
+            this.grpScriptCommand.Controls.Add(this.comboScriptCommand);
+            this.grpScriptCommand.Controls.Add(this.lbScriptCommandDescription);
+            this.grpScriptCommand.Controls.Add(this.lbScriptCommandName);
+            this.grpScriptCommand.Location = new System.Drawing.Point(9, 210);
+            this.grpScriptCommand.Name = "grpScriptCommand";
+            this.grpScriptCommand.Size = new System.Drawing.Size(235, 315);
+            this.grpScriptCommand.TabIndex = 14;
+            this.grpScriptCommand.TabStop = false;
+            this.grpScriptCommand.Text = "Command Reference";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,10 +330,10 @@ namespace PokemonBDSPEditor.Forms
             this.stripMain.PerformLayout();
             this.tabsMain.ResumeLayout(false);
             this.tabScript.ResumeLayout(false);
-            this.grpScriptCommands.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataScriptCommands)).EndInit();
             this.grpScriptFile.ResumeLayout(false);
             this.grpScriptFile.PerformLayout();
+            this.grpScriptCommand.ResumeLayout(false);
+            this.grpScriptCommand.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,12 +353,16 @@ namespace PokemonBDSPEditor.Forms
         private System.Windows.Forms.Label lbScriptFile;
         private System.Windows.Forms.ComboBox comboScriptFile;
         private System.Windows.Forms.RichTextBox rtbScript;
-        private System.Windows.Forms.GroupBox grpScriptCommands;
-        private System.Windows.Forms.DataGridView dataScriptCommands;
         private System.Windows.Forms.GroupBox grpScriptFile;
         private System.Windows.Forms.Button btnScriptAdd;
         private System.Windows.Forms.Label lbScript;
         private System.Windows.Forms.ComboBox comboScript;
+        private System.Windows.Forms.Button btnScriptRemove;
+        private System.Windows.Forms.GroupBox grpScriptCommand;
+        private System.Windows.Forms.Label lbScriptCommand;
+        private System.Windows.Forms.ComboBox comboScriptCommand;
+        private System.Windows.Forms.Label lbScriptCommandDescription;
+        private System.Windows.Forms.Label lbScriptCommandName;
     }
 }
 
