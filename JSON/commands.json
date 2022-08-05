@@ -793,61 +793,90 @@
 	{
 		"Id": 126,
 		"Name": "_BGM_FADEIN",
-		"Description": "",
-		"Args": []
+		"Description": "Only used once in an unused script.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			}
+		]
 	},
 	{
 		"Id": 124,
 		"Name": "_BGM_FADEOUT",
-		"Description": "",
-		"Args": []
+		"Description": "Fades the background music out to the specified volume.",
+		"Args": [
+			{
+				"TentativeName": "Volume",
+				"Description": "Volume to fade out to.",
+				"Type": ["Label", "Number"]
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Number"]
+			}
+		]
 	},
 	{
 		"Id": 125,
 		"Name": "_BGM_FADEOUT_PLAY",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 121,
 		"Name": "_BGM_NOW_MAP_PLAY",
-		"Description": "",
+		"Description": "Plays the background music associated with the current map.",
 		"Args": []
 	},
 	{
 		"Id": 118,
 		"Name": "_BGM_PLAY",
-		"Description": "",
-		"Args": []
+		"Description": "Plays background music.",
+		"Args": [
+			{
+				"TentativeName": "BGM",
+				"Description": "BGM to play.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 127,
 		"Name": "_BGM_PLAYER_PAUSE",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 119,
 		"Name": "_BGM_PLAY_CHECK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 123,
 		"Name": "_BGM_SPECIAL_CLR",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 122,
 		"Name": "_BGM_SPECIAL_SET",
-		"Description": "",
-		"Args": []
+		"Description": "Unknown use. Only used 4 times in the game.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 120,
 		"Name": "_BGM_STOP",
-		"Description": "",
+		"Description": "Unused. Presumably stops the currently playing background music.",
 		"Args": []
 	},
 	{
@@ -2403,13 +2432,13 @@
 	{
 		"Id": 130,
 		"Name": "_CTRL_BGM_FLAG_RESET",
-		"Description": "",
+		"Description": "Unknown use. Only used once during the Spear Pillar cutscenes.",
 		"Args": []
 	},
 	{
 		"Id": 129,
 		"Name": "_CTRL_BGM_FLAG_SET",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -2794,8 +2823,24 @@
 	{
 		"Id": 114,
 		"Name": "_EASY_VOICE_MSG",
-		"Description": "",
-		"Args": []
+		"Description": "Combines multiple commands to show a textbox and play a Pokémon cry.",
+		"Args": [
+			{
+				"TentativeName": "Message",
+				"Description": "Message to show.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Pokémon",
+				"Description": "Label of format PLAY_PV_EV_###_00_##, where ### is the Pokémon ID and ## is 02 for Pikachu, 00 otherwise.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "(Optional) Unknown use. Always 0 when present.",
+				"Type": ["Number"]
+			}
+		]
 	},
 	{
 		"Id": 1161,
@@ -4490,13 +4535,19 @@
 	{
 		"Id": 115,
 		"Name": "_ME_PLAY",
-		"Description": "",
-		"Args": []
+		"Description": "Plays a fanfare.",
+		"Args": [
+			{
+				"TentativeName": "Fanfare",
+				"Description": "Fanfare to play.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 116,
 		"Name": "_ME_WAIT",
-		"Description": "",
+		"Description": "Waits for a playing fanfare to finish.",
 		"Args": []
 	},
 	{
@@ -5150,25 +5201,37 @@
 	{
 		"Id": 131,
 		"Name": "_PERAP_DATA_CHECK",
-		"Description": "",
-		"Args": []
+		"Description": "Unused. Checks if there is Chatot cry data and put the result in a variable.",
+		"Args": [
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 132,
 		"Name": "_PERAP_REC_START",
-		"Description": "",
-		"Args": []
+		"Description": "Unused. Start recording the Chatot cry.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"]
+			}
+		]
 	},
 	{
 		"Id": 133,
 		"Name": "_PERAP_REC_STOP",
-		"Description": "",
+		"Description": "Unused. Stop recording the Chatot cry.",
 		"Args": []
 	},
 	{
 		"Id": 134,
 		"Name": "_PERAP_SAVE",
-		"Description": "",
+		"Description": "Unused. Save the recorded Chatot cry.",
 		"Args": []
 	},
 	{
@@ -5186,8 +5249,14 @@
 	{
 		"Id": 128,
 		"Name": "_PLAYER_FIELD_DEMO_BGM_PLAY",
-		"Description": "",
-		"Args": []
+		"Description": "Plays the specified background music. Used for Dawn/Lucas, Rival, and getting shown around.",
+		"Args": [
+			{
+				"TentativeName": "BGM",
+				"Description": "BGM to play.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 297,
@@ -6072,8 +6141,14 @@
 	{
 		"Id": 111,
 		"Name": "_SE_WAIT",
-		"Description": "",
-		"Args": []
+		"Description": "Waits for a playing sound effect to finish before continuing.",
+		"Args": [
+			{
+				"TentativeName": "SoundEffect",
+				"Description": "Sound effect to wait for.",
+				"Type": ["Label"]
+			}
+		]
 	},
 	{
 		"Id": 396,
@@ -6162,14 +6237,25 @@
 	{
 		"Id": 135,
 		"Name": "_SND_CLIMAX_DATA_LOAD",
-		"Description": "",
+		"Description": "(?) Loads extra sound data during the Spear Pillar cutscenes.",
 		"Args": []
 	},
 	{
 		"Id": 117,
 		"Name": "_SND_INITIAL_VOL_SET",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Sets the volume of a sound effect. Only used once in the player's room during the intro.",
+		"Args": [
+			{
+				"TentativeName": "SoundEffect",
+				"Description": "Sound effect to set the volume of.",
+				"Type": ["Label"]
+			},
+			{
+				"TentativeName": "Volume",
+				"Description": "Volume to set the sound effect to.",
+				"Type": ["Number"]
+			}
+		]
 	},
 	{
 		"Id": 537,
@@ -7677,13 +7763,29 @@
 	{
 		"Id": 112,
 		"Name": "_VOICE_PLAY",
-		"Description": "",
-		"Args": []
+		"Description": "Plays a Pokémon cry.",
+		"Args": [
+			{
+				"TentativeName": "Pokémon",
+				"Description": "The ID of the Pokémon whose cry is played.",
+				"Type": ["Var", "Number"]
+			},
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Var", "Number"]
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use. Always 0.",
+				"Type": ["Number"]
+			}
+		]
 	},
 	{
 		"Id": 113,
 		"Name": "_VOICE_WAIT",
-		"Description": "",
+		"Description": "Waits for a playing Pokémon cry to finish before continuing.",
 		"Args": []
 	},
 	{
