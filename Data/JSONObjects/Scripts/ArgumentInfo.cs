@@ -15,5 +15,7 @@ namespace PokemonBDSPEditor.Data.JSONObjects
         public string Description { get; set; }
         [JsonProperty("Type")]
         public IList<string> Type { get; set; }
+        [JsonProperty("Optional")]
+        public bool Optional { get; set; }
     }
 }

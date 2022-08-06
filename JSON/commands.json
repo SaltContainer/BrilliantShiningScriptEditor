@@ -307,7 +307,8 @@
 			{
 				"TentativeName": "Time",
 				"Description": "Time in frames.",
-				"Type": ["Number", "Label"]
+				"Type": ["Number", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -511,12 +512,14 @@
 			{
 				"TentativeName": "Variable",
 				"Description": "Variable to add to.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Value",
 				"Description": "Value to add.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -601,13 +604,32 @@
 	{
 		"Id": 139,
 		"Name": "_ANIME_DATA",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Executes an animation command without needing a separate script.",
+		"Args": [
+			{
+				"TentativeName": "Command",
+				"Description": "Animation command to execute.",
+				"Type": ["Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Arg1",
+				"Description": "First argument to the animation command.",
+				"Type": ["Number"],
+				"Optional": true
+			},
+			{
+				"TentativeName": "Arg2",
+				"Description": "Second argument to the animation command.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 138,
 		"Name": "_ANIME_LABEL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -630,7 +652,8 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Location flag to set.",
-				"Type": ["System", "Label"]
+				"Type": ["System", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -798,7 +821,8 @@
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			}
 		]
 	},
@@ -810,12 +834,14 @@
 			{
 				"TentativeName": "Volume",
 				"Description": "Volume to fade out to.",
-				"Type": ["Label", "Number"]
+				"Type": ["Label", "Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			}
 		]
 	},
@@ -839,7 +865,8 @@
 			{
 				"TentativeName": "BGM",
 				"Description": "BGM to play.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -869,7 +896,8 @@
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -959,27 +987,32 @@
 			{
 				"TentativeName": "Unknown1",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown3",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown4",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown5",
 				"Description": "Unknown use.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -997,17 +1030,20 @@
 			{
 				"TentativeName": "Option",
 				"Description": "Option to add.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown1",
 				"Description": "Unknown use. Always EV_WIN_TALK_MSG_NONE.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use.",
-				"Type": ["Var", "Number"]
+				"Type": ["Var", "Number"],
+				"Optional": false
 			}
 		]
 	},
@@ -1031,27 +1067,32 @@
 			{
 				"TentativeName": "Unknown1",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown3",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown4",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown5",
 				"Description": "Unknown use.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -1063,27 +1104,32 @@
 			{
 				"TentativeName": "Unknown1",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown3",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown4",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown5",
 				"Description": "Unknown use.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -1095,7 +1141,8 @@
 			{
 				"TentativeName": "Option",
 				"Description": "Option to add.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -1119,7 +1166,8 @@
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -1143,7 +1191,8 @@
 			{
 				"TentativeName": "Request",
 				"Description": "Request to make.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -1533,7 +1582,8 @@
 			{
 				"TentativeName": "Script",
 				"Description": "Script to call.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -1653,7 +1703,8 @@
 			{
 				"TentativeName": "Script",
 				"Description": "Script to jump to.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -1665,12 +1716,14 @@
 			{
 				"TentativeName": "Value",
 				"Description": "Value to compare to.",
-				"Type": ["Number", "Label"]
+				"Type": ["Number", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to jump to.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -1790,7 +1843,8 @@
 			{
 				"TentativeName": "Script",
 				"Description": "Script of common_scr to call.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -1916,12 +1970,14 @@
 			{
 				"TentativeName": "Work1",
 				"Description": "Work variable to compare.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Work2",
 				"Description": "Work variable to compare to.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -2605,7 +2661,8 @@
 			{
 				"TentativeName": "Work",
 				"Description": "Work variable to log",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -2761,22 +2818,26 @@
 			{
 				"TentativeName": "Message",
 				"Description": "Message to show.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Type",
 				"Description": "Type of sign textbox.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use. Always 0.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Arrow",
-				"Description": "(Optional) The ID of the arrow to show in the textbox. Only used for signs of type BOARD_TYPE_ROAD.",
-				"Type": ["Number"]
+				"Description": "The ID of the arrow to show in the textbox. Only used for signs of type BOARD_TYPE_ROAD.",
+				"Type": ["Number"],
+				"Optional": true
 			}
 		]
 	},
@@ -2788,17 +2849,20 @@
 			{
 				"TentativeName": "Message",
 				"Description": "Message to show.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Type",
 				"Description": "Type of sign textbox. Always BOARD_TYPE_INFO.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use. Always 0.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			}
 		]
 	},
@@ -2816,7 +2880,8 @@
 			{
 				"TentativeName": "Message",
 				"Description": "Message to show.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -2828,17 +2893,20 @@
 			{
 				"TentativeName": "Message",
 				"Description": "Message to show.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Pokémon",
 				"Description": "Label of format PLAY_PV_EV_###_00_##, where ### is the Pokémon ID and ## is 02 for Pikachu, 00 otherwise.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown",
-				"Description": "(Optional) Unknown use. Always 0 when present.",
-				"Type": ["Number"]
+				"Description": "Unknown use. Always 0 when present.",
+				"Type": ["Number"],
+				"Optional": true
 			}
 		]
 	},
@@ -3198,7 +3266,8 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Flag to clear.",
-				"Type": ["Flag", "System", "Label"]
+				"Type": ["Flag", "System", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -3210,7 +3279,8 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Flag to set.",
-				"Type": ["Flag", "System", "Label"]
+				"Type": ["Flag", "System", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -3222,7 +3292,8 @@
 			{
 				"TentativeName": "Variable",
 				"Description": "Variable containing the flag to set.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -3894,22 +3965,26 @@
 			{
 				"TentativeName": "Value1",
 				"Description": "Value to compare.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Condition",
 				"Description": "Condition used for the comparison.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Value2",
 				"Description": "Value to compare to.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to call.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -3921,22 +3996,26 @@
 			{
 				"TentativeName": "Value1",
 				"Description": "Value to compare.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Condition",
 				"Description": "Condition used for the comparison.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Value2",
 				"Description": "Value to compare to.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to jump to.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -3954,22 +4033,26 @@
 			{
 				"TentativeName": "Variable",
 				"Description": "Work variable to compare.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Condition",
 				"Description": "Condition used for the comparison.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Value",
 				"Description": "Value to compare to.",
-				"Type": ["Var", "Number"]
+				"Type": ["Var", "Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to jump to.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -3987,12 +4070,14 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Flag to check.",
-				"Type": ["Flag", "System"]
+				"Type": ["Flag", "System"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to call.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4004,12 +4089,14 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Flag to check.",
-				"Type": ["Flag", "System"]
+				"Type": ["Flag", "System"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to jump to.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4021,12 +4108,14 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Flag to check.",
-				"Type": ["Flag", "System"]
+				"Type": ["Flag", "System"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to call.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4038,12 +4127,14 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Flag to check.",
-				"Type": ["Flag", "System"]
+				"Type": ["Flag", "System"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to jump to.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4055,12 +4146,14 @@
 			{
 				"TentativeName": "Condition",
 				"Description": "Condition used for the comparison.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to jump to.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4072,12 +4165,14 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to check.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to call.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4089,12 +4184,14 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to check.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to jump to.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4106,12 +4203,14 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to check.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to call.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4123,12 +4222,14 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to check.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Script",
 				"Description": "Script to jump to.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4320,7 +4421,8 @@
 			{
 				"TentativeName": "Script",
 				"Description": "Script to jump to.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4374,12 +4476,14 @@
 			{
 				"TentativeName": "Variable",
 				"Description": "Variable to set.",
-				"Type": ["Var", "Label"]
+				"Type": ["Var", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Value",
 				"Description": "Value to set the variable to.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4403,12 +4507,14 @@
 			{
 				"TentativeName": "Variable",
 				"Description": "Variable to set.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Value",
 				"Description": "Value to set the variable to.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4540,7 +4646,8 @@
 			{
 				"TentativeName": "Fanfare",
 				"Description": "Fanfare to play.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -4901,14 +5008,40 @@
 	{
 		"Id": 146,
 		"Name": "_OBJ_ADD",
-		"Description": "",
-		"Args": []
+		"Description": "Shows an actor.",
+		"Args": [
+			{
+				"TentativeName": "Actor",
+				"Description": "Actor to show.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 136,
 		"Name": "_OBJ_ANIME",
-		"Description": "",
-		"Args": []
+		"Description": "Animates an actor based on a given animation script.",
+		"Args": [
+			{
+				"TentativeName": "Actor",
+				"Description": "Actor to animate.",
+				"Type": ["Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Animation script to use.",
+				"Type": ["Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 899,
@@ -4919,7 +5052,7 @@
 	{
 		"Id": 137,
 		"Name": "_OBJ_ANIME_POS",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -4931,7 +5064,7 @@
 	{
 		"Id": 140,
 		"Name": "_OBJ_ANIME_WAIT",
-		"Description": "",
+		"Description": "Waits for the current actor animations to finish before resuming execution.",
 		"Args": []
 	},
 	{
@@ -4943,8 +5076,15 @@
 	{
 		"Id": 147,
 		"Name": "_OBJ_DEL",
-		"Description": "",
-		"Args": []
+		"Description": "Hides an actor.",
+		"Args": [
+			{
+				"TentativeName": "Actor",
+				"Description": "Actor to hide.",
+				"Type": ["Label", "Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 509,
@@ -4973,25 +5113,39 @@
 	{
 		"Id": 144,
 		"Name": "_OBJ_PAUSE",
-		"Description": "",
-		"Args": []
+		"Description": "Pauses the movement of an actor.",
+		"Args": [
+			{
+				"TentativeName": "Actor",
+				"Description": "Actor to pause.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 142,
 		"Name": "_OBJ_PAUSE_ALL",
-		"Description": "",
+		"Description": "Pauses the movement of all actors.",
 		"Args": []
 	},
 	{
 		"Id": 145,
 		"Name": "_OBJ_PAUSE_CLEAR",
-		"Description": "",
-		"Args": []
+		"Description": "Unpauses the movement of an actor.",
+		"Args": [
+			{
+				"TentativeName": "Actor",
+				"Description": "Actor to unpause.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 143,
 		"Name": "_OBJ_PAUSE_CLEAR_ALL",
-		"Description": "",
+		"Description": "Unpauses the movement of all actors.",
 		"Args": []
 	},
 	{
@@ -5206,7 +5360,8 @@
 			{
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -5218,7 +5373,8 @@
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -5254,7 +5410,8 @@
 			{
 				"TentativeName": "BGM",
 				"Description": "BGM to play.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -6112,17 +6269,20 @@
 			{
 				"TentativeName": "SoundEffect",
 				"Description": "Sound effect to play.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown1",
-				"Description": "(Optional) Unknown use. Always 0 when present.",
-				"Type": ["Number"]
+				"Description": "Unknown use. Always 0 when present.",
+				"Type": ["Number"],
+				"Optional": true
 			},
 			{
 				"TentativeName": "Unknown2",
-				"Description": "(Optional) Unknown use. Always 0 when present.",
-				"Type": ["Number"]
+				"Description": "Unknown use. Always 0 when present.",
+				"Type": ["Number"],
+				"Optional": true
 			}
 		]
 	},
@@ -6134,7 +6294,8 @@
 			{
 				"TentativeName": "SoundEffect",
 				"Description": "Sound effect to stop.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -6146,7 +6307,8 @@
 			{
 				"TentativeName": "SoundEffect",
 				"Description": "Sound effect to wait for.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -6248,12 +6410,14 @@
 			{
 				"TentativeName": "SoundEffect",
 				"Description": "Sound effect to set the volume of.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Volume",
 				"Description": "Volume to set the sound effect to.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			}
 		]
 	},
@@ -6415,12 +6579,14 @@
 			{
 				"TentativeName": "Variable",
 				"Description": "Variable to subtract from.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Value",
 				"Description": "Value to subtract.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -6450,7 +6616,8 @@
 			{
 				"TentativeName": "Variable",
 				"Description": "Variable to use.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -6666,7 +6833,8 @@
 			{
 				"TentativeName": "Message",
 				"Description": "Message to show.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -6678,7 +6846,8 @@
 			{
 				"TentativeName": "Message",
 				"Description": "Message to show.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -6702,12 +6871,14 @@
 			{
 				"TentativeName": "Unknown1",
 				"Description": "Unknown use.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -6725,7 +6896,8 @@
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			}
 		]
 	},
@@ -6743,22 +6915,26 @@
 			{
 				"TentativeName": "Message",
 				"Description": "Message to show.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown1",
 				"Description": "Unknown use. Value of 3 when doing single battles, and 4 when doing double battles.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown3",
 				"Description": "Unknown use.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			}
 		]
 	},
@@ -6782,7 +6958,8 @@
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -6794,7 +6971,8 @@
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
-				"Type": ["Var", "Label"]
+				"Type": ["Var", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -6830,7 +7008,8 @@
 			{
 				"TentativeName": "Message",
 				"Description": "Message to show.",
-				"Type": ["Label"]
+				"Type": ["Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -6843,7 +7022,7 @@
 	{
 		"Id": 141,
 		"Name": "_TALK_OBJ_PAUSE_ALL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -6955,11 +7134,13 @@
 		"Args": [
 			{
 				"TentativeName": "Slot",
-				"Type": ["Value"]
+				"Type": ["Value"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Result",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -7037,12 +7218,14 @@
 			{
 				"TentativeName": "Time",
 				"Description": "Amount of frames to wait.",
-				"Type": ["Number", "Label"]
+				"Type": ["Number", "Label"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},
@@ -7084,7 +7267,8 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to check.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -7096,7 +7280,8 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to clear.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -7108,7 +7293,8 @@
 			{
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to set.",
-				"Type": ["Var", "Number", "Label"]
+				"Type": ["Var", "Number", "Label"],
+				"Optional": false
 			}
 		]
 	},
@@ -7241,7 +7427,7 @@
 	{
 		"Id": 150,
 		"Name": "_TURN_HERO_SITE",
-		"Description": "",
+		"Description": "Makes the actor the player talks to turn to face the player.",
 		"Args": []
 	},
 	{
@@ -7739,13 +7925,13 @@
 	{
 		"Id": 148,
 		"Name": "_VANISH_DUMMY_OBJ_ADD",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 149,
 		"Name": "_VANISH_DUMMY_OBJ_DEL",
-		"Description": "",
+		"Description": "Unknown use. Only used once during the first Lake Verity visit.",
 		"Args": []
 	},
 	{
@@ -7768,17 +7954,20 @@
 			{
 				"TentativeName": "Pokémon",
 				"Description": "The ID of the Pokémon whose cry is played.",
-				"Type": ["Var", "Number"]
+				"Type": ["Var", "Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown1",
 				"Description": "Unknown use.",
-				"Type": ["Var", "Number"]
+				"Type": ["Var", "Number"],
+				"Optional": false
 			},
 			{
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use. Always 0.",
-				"Type": ["Number"]
+				"Type": ["Number"],
+				"Optional": false
 			}
 		]
 	},
@@ -7958,7 +8147,8 @@
 			{
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
-				"Type": ["Var"]
+				"Type": ["Var"],
+				"Optional": false
 			}
 		]
 	},

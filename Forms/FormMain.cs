@@ -48,7 +48,7 @@ namespace PokemonBDSPEditor.Forms
         private void UpdateCommandInfo(CommandInfo command)
         {
             lbScriptCommandName.Text = string.Format("{0} - {1}", command.Id, command.Name);
-            string arguments = string.Join("\n", command.Arguments.Select(a => string.Format("[{0}] {1} - {2}", string.Join(", ", a.Type), a.Name, a.Description)));
+            string arguments = string.Join("\n", command.Arguments.Select(a => string.Format("[{0}] {1} - {2}{3}", string.Join(", ", a.Type), a.Name, a.Optional ? "(Optional) " : "", a.Description)));
             lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", command.Description, arguments);
         }
 
