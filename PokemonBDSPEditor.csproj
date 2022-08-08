@@ -75,6 +75,7 @@
     <Compile Include="Data\Utils\FileConstants.cs" />
     <Compile Include="Data\Utils\RegexPatterns.cs" />
     <Compile Include="Engine\ScriptEditor\EditorEngine.cs" />
+    <Compile Include="Engine\ScriptEditor\Exceptions\ScriptValidationException.cs" />
     <Compile Include="Engine\ScriptEditor\Model\Argument.cs" />
     <Compile Include="Data\JSONObjects\Scripts\ArgumentInfo.cs" />
     <Compile Include="Engine\ScriptEditor\Model\ArgumentType.cs" />
@@ -129,8 +130,6 @@
   <ItemGroup>
     <None Include="Icons\418.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Engine\ScriptEditor\Exception\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

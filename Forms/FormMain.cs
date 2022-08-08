@@ -1,6 +1,7 @@
 ﻿using PokemonBDSPEditor.Data.JSONObjects;
 using PokemonBDSPEditor.Data.Utils;
 using PokemonBDSPEditor.Engine.ScriptEditor;
+using PokemonBDSPEditor.Engine.ScriptEditor.Exceptions;
 using PokemonBDSPEditor.Engine.ScriptEditor.Model;
 using System;
 using System.Collections.Generic;
@@ -65,13 +66,19 @@ namespace PokemonBDSPEditor.Forms
         private void btnScriptAdd_Click(object sender, EventArgs e)
         {
             // Add Script
-
-            Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name);
         }
 
         private void btnScriptCompile_Click(object sender, EventArgs e)
         {
             // Compile Script
+            try
+            {
+                Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name);
+            }
+            catch (ScriptValidationException ex)
+            {
+                MessageBox.Show(ex.Message, "Compilation Error", MessageBoxButtons.OK, ex.Ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+            }
         }
 
         private void btnScriptSave_Click(object sender, EventArgs e)

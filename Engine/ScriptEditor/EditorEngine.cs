@@ -69,6 +69,7 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
                     scriptFiles.Add(ConvertToScriptFile(file));
                 }
             }
+            scriptFiles = scriptFiles.OrderBy(s => s.FileName).ToList();
         }
 
         private ScriptFile ConvertToScriptFile(AssetTypeValueField root)
