@@ -375,8 +375,15 @@
 	{
 		"Id": 175,
 		"Name": "_ADD_GOLD",
-		"Description": "",
-		"Args": []
+		"Description": "Gives money to the player.",
+		"Args": [
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to give.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 198,
@@ -1965,17 +1972,17 @@
 	{
 		"Id": 19,
 		"Name": "_CMPWK",
-		"Description": "Compares the value of a work variable to the value of another work variable. Used once in unused poison scripts.",
+		"Description": "Compares the value of a variable to the value of another variable. Used once in unused poison scripts.",
 		"Args": [
 			{
-				"TentativeName": "Work1",
-				"Description": "Work variable to compare.",
+				"TentativeName": "Var1",
+				"Description": "Variable to compare.",
 				"Type": ["Var"],
 				"Optional": false
 			},
 			{
-				"TentativeName": "Work2",
-				"Description": "Work variable to compare to.",
+				"TentativeName": "Var2",
+				"Description": "Variable to compare to.",
 				"Type": ["Var"],
 				"Optional": false
 			}
@@ -2656,11 +2663,11 @@
 	{
 		"Id": 20,
 		"Name": "_DEBUG_WATCH_WORK",
-		"Description": "(?) Logs the value of a work variable.",
+		"Description": "(?) Logs the value of a variable.",
 		"Args": [
 			{
-				"TentativeName": "Work",
-				"Description": "Work variable to log",
+				"TentativeName": "Var",
+				"Description": "Variable to log.",
 				"Type": ["Var"],
 				"Optional": false
 			}
@@ -3009,19 +3016,26 @@
 	{
 		"Id": 166,
 		"Name": "_EVENT_DATA",
-		"Description": "",
-		"Args": []
+		"Description": "Unknown use. Only used in the Oreburgh Gym.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 167,
 		"Name": "_EVENT_DATA_END",
-		"Description": "",
+		"Description": "Unknown use. Only used once in Oreburgh Gym.",
 		"Args": []
 	},
 	{
 		"Id": 157,
 		"Name": "_EVENT_END",
-		"Description": "",
+		"Description": "Ends a cutscene event.",
 		"Args": []
 	},
 	{
@@ -3057,7 +3071,7 @@
 	{
 		"Id": 155,
 		"Name": "_EVENT_START",
-		"Description": "",
+		"Description": "Starts a cutscene event.",
 		"Args": []
 	},
 	{
@@ -3243,8 +3257,15 @@
 	{
 		"Id": 172,
 		"Name": "_FLAG_CHANGE_LABEL",
-		"Description": "",
-		"Args": []
+		"Description": "Calls a script of the main script file.",
+		"Args": [
+			{
+				"TentativeName": "Script",
+				"Description": "Script to call.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 44,
@@ -4028,11 +4049,11 @@
 	{
 		"Id": 34,
 		"Name": "_IFWK_JUMP",
-		"Description": "Compares the value of a work variable to a value, then jumps to a script if true.",
+		"Description": "Compares the value of a variable to a value, then jumps to a script if true.",
 		"Args": [
 			{
 				"TentativeName": "Variable",
-				"Description": "Work variable to compare.",
+				"Description": "Variable to compare.",
 				"Type": ["Var"],
 				"Optional": false
 			},
@@ -4308,7 +4329,7 @@
 	{
 		"Id": 174,
 		"Name": "_INIT_CHANGE_LABEL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -4684,13 +4705,26 @@
 	{
 		"Id": 163,
 		"Name": "_MOVE_CODE_CHANGE",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Changes the movement associated with an actor.",
+		"Args": [
+			{
+				"TentativeName": "Actor",
+				"Description": "Affected actor.",
+				"Type": ["Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Movement",
+				"Description": "Movement to associate to the actor.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 164,
 		"Name": "_MOVE_CODE_GET",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -4966,8 +5000,21 @@
 	{
 		"Id": 162,
 		"Name": "_NOT_ZONE_DEL_SET",
-		"Description": "",
-		"Args": []
+		"Description": "Unknown use. Used in relation to partner trainers (Barry, Cheryl, etc.).",
+		"Args": [
+			{
+				"TentativeName": "Actor",
+				"Description": "Unknown use. Always refers to one of the partenr trainer actors.",
+				"Type": ["Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use. Always 0 or 1.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 265,
@@ -5070,8 +5117,15 @@
 	{
 		"Id": 173,
 		"Name": "_OBJ_CHANGE_LABEL",
-		"Description": "",
-		"Args": []
+		"Description": "Calls a script of the main script file.",
+		"Args": [
+			{
+				"TentativeName": "Script",
+				"Description": "Script to call.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 147,
@@ -5169,7 +5223,7 @@
 	{
 		"Id": 159,
 		"Name": "_OBJ_POS_GET",
-		"Description": "",
+		"Description": "Unused. Presumably gets the position of the actor the player is interacting with.",
 		"Args": []
 	},
 	{
@@ -5295,8 +5349,15 @@
 	{
 		"Id": 165,
 		"Name": "_PAIR_OBJID_SET",
-		"Description": "",
-		"Args": []
+		"Description": "Sets an actor as the partner trainer following the player.",
+		"Args": [
+			{
+				"TentativeName": "Actor",
+				"Description": "Actor to set as partner trainer.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 592,
@@ -5393,8 +5454,15 @@
 	{
 		"Id": 161,
 		"Name": "_PLAYER_DIR_GET",
-		"Description": "",
-		"Args": []
+		"Description": "Gets the direction the player is facing.",
+		"Args": [
+			{
+				"TentativeName": "Direction",
+				"Description": "Variable to put the direction in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 27,
@@ -5436,14 +5504,46 @@
 	{
 		"Id": 158,
 		"Name": "_PLAYER_POS_GET",
-		"Description": "",
-		"Args": []
+		"Description": "Gets the player's current XZ position and puts it into two variables.",
+		"Args": [
+			{
+				"TentativeName": "X",
+				"Description": "Variable to put the X coordinate in.",
+				"Type": ["Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Z",
+				"Description": "Variable to put the Z coordinate in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 160,
 		"Name": "_PLAYER_POS_OFFSET_SET",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Sets the player's position to specific coordinates. Only used in Battle Tower.",
+		"Args": [
+			{
+				"TentativeName": "X",
+				"Description": "X coordinate to put the player at.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Y",
+				"Description": "Y coordinate to put the player at.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Z",
+				"Description": "Z coordinate to put the player at.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 476,
@@ -5994,20 +6094,46 @@
 	{
 		"Id": 170,
 		"Name": "_SCENE_CHANGE_DATA",
-		"Description": "",
-		"Args": []
+		"Description": "Calls a script of the main script file if the value of a variable matches a specific value.",
+		"Args": [
+			{
+				"TentativeName": "Variable",
+				"Description": "Variable to check the value of.",
+				"Type": ["Var", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Value",
+				"Description": "Value to compare to.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Script",
+				"Description": "Script to call.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 171,
 		"Name": "_SCENE_CHANGE_END",
-		"Description": "",
+		"Description": "Ends the script containing the map script commands.",
 		"Args": []
 	},
 	{
 		"Id": 169,
 		"Name": "_SCENE_CHANGE_LABEL",
-		"Description": "",
-		"Args": []
+		"Description": "Jumps to a script which contains map script commands.",
+		"Args": [
+			{
+				"TentativeName": "Script",
+				"Description": "Script to jump to.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 346,
@@ -6472,7 +6598,7 @@
 	{
 		"Id": 168,
 		"Name": "_SP_EVENT_DATA_END",
-		"Description": "",
+		"Description": "Ends the map script.",
 		"Args": []
 	},
 	{
@@ -6997,7 +7123,7 @@
 	{
 		"Id": 156,
 		"Name": "_TALK_END",
-		"Description": "",
+		"Description": "Ends the current talking event.",
 		"Args": []
 	},
 	{
@@ -7016,7 +7142,7 @@
 	{
 		"Id": 153,
 		"Name": "_TALK_OBJ_END",
-		"Description": "",
+		"Description": "Ends an object event. Combination of _TALK_CLOSE and _TALK_END.",
 		"Args": []
 	},
 	{
@@ -7028,25 +7154,25 @@
 	{
 		"Id": 151,
 		"Name": "_TALK_OBJ_START",
-		"Description": "",
+		"Description": "Starts an object event with the actor turning to face the player. Combination of _TALK_START, _TALK_OPEN, and _TURN_HERO_SITE.",
 		"Args": []
 	},
 	{
 		"Id": 983,
 		"Name": "_TALK_OBJ_START_LOOK_NONE",
-		"Description": "",
+		"Description": "Starts an object event without the actor turning to face the player. Combination of _TALK_START and _TALK_OPEN.",
 		"Args": []
 	},
 	{
 		"Id": 152,
 		"Name": "_TALK_OBJ_START_TURN_NOT",
-		"Description": "",
+		"Description": "Starts an object event with the actor only turning their head to face the player. Combination of _TALK_START, _TALK_OPEN, and some third command.",
 		"Args": []
 	},
 	{
 		"Id": 80,
 		"Name": "_TALK_OPEN",
-		"Description": "(?) Opens an empty textbox. Rarely used, and always has some other textbox command soon after.",
+		"Description": "Opens an empty textbox.",
 		"Args": []
 	},
 	{
@@ -7058,7 +7184,7 @@
 	{
 		"Id": 154,
 		"Name": "_TALK_START",
-		"Description": "",
+		"Description": "Starts a talking event.",
 		"Args": []
 	},
 	{
@@ -7427,13 +7553,13 @@
 	{
 		"Id": 150,
 		"Name": "_TURN_HERO_SITE",
-		"Description": "Makes the actor the player talks to turn to face the player.",
+		"Description": "Turns the actor to face the player.",
 		"Args": []
 	},
 	{
 		"Id": 835,
 		"Name": "_TURN_HERO_TALK_OBJ",
-		"Description": "",
+		"Description": "Turns the player to face the actor.",
 		"Args": []
 	},
 	{
