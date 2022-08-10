@@ -339,13 +339,13 @@
 	{
 		"Id": 196,
 		"Name": "_ADD_BOX_ITEM",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 185,
 		"Name": "_ADD_COIN",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -388,26 +388,83 @@
 	{
 		"Id": 198,
 		"Name": "_ADD_GOODS",
-		"Description": "",
-		"Args": []
+		"Description": "Gives an amount of one good to the player. Only used in one unused common script.",
+		"Args": [
+			{
+				"TentativeName": "Good",
+				"Description": "ID of the good to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 200,
 		"Name": "_ADD_GOODS_CHK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 189,
 		"Name": "_ADD_ITEM",
-		"Description": "",
-		"Args": []
+		"Description": "Gives an amount of one item to the player.",
+		"Args": [
+			{
+				"TentativeName": "Item",
+				"Description": "ID of the item to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 191,
 		"Name": "_ADD_ITEM_CHK",
-		"Description": "",
-		"Args": []
+		"Description": "Gives an amount of one item to the player after checking if they have enough bag space.",
+		"Args": [
+			{
+				"TentativeName": "Item",
+				"Description": "ID of the item to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put if the player has enough bag space in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 1175,
@@ -1809,8 +1866,21 @@
 	{
 		"Id": 195,
 		"Name": "_CHECK_POCKET",
-		"Description": "",
-		"Args": []
+		"Description": "Checks if any item is present in a given pocket.",
+		"Args": [
+			{
+				"TentativeName": "Pocket",
+				"Description": "ID of the pocket to check.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 937,
@@ -1870,7 +1940,7 @@
 	{
 		"Id": 197,
 		"Name": "_CHK_BOX_ITEM",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -1991,19 +2061,32 @@
 	{
 		"Id": 182,
 		"Name": "_COIN_WIN_DEL",
-		"Description": "",
+		"Description": "Removes the window showing the player's coins.",
 		"Args": []
 	},
 	{
 		"Id": 181,
 		"Name": "_COIN_WIN_WRITE",
-		"Description": "",
-		"Args": []
+		"Description": "Shows a window with the player's coins.",
+		"Args": [
+			{
+				"TentativeName": "X",
+				"Description": "X coordinate of the window. Always 21.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Y",
+				"Description": "Y coordinate of the window. Always 1.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 183,
 		"Name": "_COIN_WRITE",
-		"Description": "",
+		"Description": "Updates the amount shown in the window showing the player's coins.",
 		"Args": []
 	},
 	{
@@ -2075,8 +2158,21 @@
 	{
 		"Id": 177,
 		"Name": "_COMP_GOLD",
-		"Description": "",
-		"Args": []
+		"Description": "Checks if the player has an amount of money.",
+		"Args": [
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to check for.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 548,
@@ -3333,8 +3429,21 @@
 	{
 		"Id": 187,
 		"Name": "_FLD_ITEM_EVENT",
-		"Description": "",
-		"Args": []
+		"Description": "Executes an item pickup event.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use. Always 1.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 767,
@@ -3489,7 +3598,7 @@
 	{
 		"Id": 184,
 		"Name": "_GET_COIN_NUM",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -3603,8 +3712,21 @@
 	{
 		"Id": 194,
 		"Name": "_GET_POCKET_NO",
-		"Description": "",
-		"Args": []
+		"Description": "Gets which pocket an item goes in.",
+		"Args": [
+			{
+				"TentativeName": "Item",
+				"Description": "ID of the item to check.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 417,
@@ -3795,19 +3917,32 @@
 	{
 		"Id": 179,
 		"Name": "_GOLD_WIN_DEL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 178,
 		"Name": "_GOLD_WIN_WRITE",
-		"Description": "",
-		"Args": []
+		"Description": "Shows a window with the player's money.",
+		"Args": [
+			{
+				"TentativeName": "X",
+				"Description": "X coordinate of the window. Always 20.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Y",
+				"Description": "Y coordinate of the window. Always 2.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 180,
 		"Name": "_GOLD_WRITE",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -3921,7 +4056,7 @@
 	{
 		"Id": 188,
 		"Name": "_HIDE_ITEM_EVENT",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -4419,8 +4554,27 @@
 	{
 		"Id": 192,
 		"Name": "_ITEM_CHK",
-		"Description": "",
-		"Args": []
+		"Description": "Checks if the player has an amount of an item.",
+		"Args": [
+			{
+				"TentativeName": "Item",
+				"Description": "ID of the item to check.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to check for.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 310,
@@ -6646,26 +6800,52 @@
 	{
 		"Id": 186,
 		"Name": "_SUB_COIN",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 176,
 		"Name": "_SUB_GOLD",
-		"Description": "",
-		"Args": []
+		"Description": "Takes money from the player.",
+		"Args": [
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to take.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 199,
 		"Name": "_SUB_GOODS",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 190,
 		"Name": "_SUB_ITEM",
-		"Description": "",
-		"Args": []
+		"Description": "Takes an amount of an item from the player.",
+		"Args": [
+			{
+				"TentativeName": "Item",
+				"Description": "ID of the item to take.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to take.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 547,
@@ -8079,7 +8259,7 @@
 		"Args": [
 			{
 				"TentativeName": "Pokémon",
-				"Description": "The ID of the Pokémon whose cry is played.",
+				"Description": "ID of the Pokémon whose cry is played.",
 				"Type": ["Var", "Number"],
 				"Optional": false
 			},
@@ -8178,8 +8358,21 @@
 	{
 		"Id": 193,
 		"Name": "_WAZA_ITEM_CHK",
-		"Description": "",
-		"Args": []
+		"Description": "Checks if an item is a waza item.",
+		"Args": [
+			{
+				"TentativeName": "Item",
+				"Description": "ID of the item to check.",
+				"Type": ["Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 313,
