@@ -1,6 +1,8 @@
 ﻿using AssetsTools.NET;
 using AssetsTools.NET.Extra;
+using Newtonsoft.Json.Linq;
 using PokemonBDSPEditor.Data.Utils;
+using PokemonBDSPEditor.Engine.ScriptEditor.Model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,14 +17,14 @@ namespace PokemonBDSPEditor.Data
     {
         private AssetsManager assetsManager;
         private BundleDecompressor bundleDecompressor;
-        private Dictionary<string, BundleData> bundles;
+        private Dictionary<string, Bundle> bundles;
         private string basePath;
 
         public BundleManipulator()
         {
             assetsManager = new AssetsManager();
             bundleDecompressor = new BundleDecompressor(assetsManager);
-            bundles = new Dictionary<string, BundleData>();
+            bundles = new Dictionary<string, Bundle>();
             basePath = "";
         }
 
@@ -39,7 +41,7 @@ namespace PokemonBDSPEditor.Data
                 {
                     if (!IsBundleLoaded(entry))
                     {
-                        BundleData data = new BundleData(assetsManager, bundleDecompressor.LoadAndDecompressFile(string.Format("{0}\\{1}", basePath, FileConstants.Bundles[entry].FullPath)), entry);
+                        Bundle data = new ScriptBundle(assetsManager, bundleDecompressor.LoadAndDecompressFile(string.Format("{0}\\{1}", basePath, FileConstants.Bundles[entry].FullPath)), entry);
                         this.bundles.Add(entry, data);
                     }
                 }
@@ -71,7 +73,7 @@ namespace PokemonBDSPEditor.Data
 
         private void SaveBundle(string bundleKey, string outFileName)
         {
-            BundleData data = bundles[bundleKey];
+            Bundle data = bundles[bundleKey];
             BundleFileInstance bundleInstance = data.GetBundle();
             string cabDirName = FileConstants.Bundles[bundleKey].CabDirectory;
 
@@ -90,6 +92,11 @@ namespace PokemonBDSPEditor.Data
         public AssetTypeValueField GetFileOfBundle(string bundleKey, string fileName)
         {
             return bundles[bundleKey].GetFileInBundle(fileName);
+        }
+
+        public void SetFilesToBundle(string bundleKey, Dictionary<string, JObject> files)
+        {
+            bundles[bundleKey].SetFilesInBundle(files);
         }
 
         public void SetBasePath(string path)

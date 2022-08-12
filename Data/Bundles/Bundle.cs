@@ -7,18 +7,20 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace PokemonBDSPEditor.Data
 {
-    class BundleData
+    abstract class Bundle
     {
-        private AssetsManager assetsManager;
-        private string bundleKey;
-        private BundleFileInstance bundle;
-        private AssetsFileInstance assetsFile;
-        private byte[] newData;
+        protected AssetsManager assetsManager;
+        protected string bundleKey;
+        protected BundleFileInstance bundle;
+        protected AssetsFileInstance assetsFile;
+        protected byte[] newData;
 
-        public BundleData(AssetsManager assetsManager, BundleFileInstance bundle, string bundleKey)
+        public Bundle(AssetsManager assetsManager, BundleFileInstance bundle, string bundleKey)
         {
             this.assetsManager = assetsManager;
             this.bundle = bundle;
@@ -34,24 +36,22 @@ namespace PokemonBDSPEditor.Data
             return GetBaseField(fileName);
         }
 
-        public void SetFilesInBundle(Dictionary<string, string> files)
+        public void SetFilesInBundle(Dictionary<string, JObject> files)
         {
-            List<AssetsReplacer> replacers = new List<AssetsReplacer>();
-            foreach (var file in files)
-            {
-                AssetFileInfoEx fileInfo = assetsFile.table.GetAssetInfo(file.Key);
-                AssetTypeValueField baseField = assetsManager.GetTypeInstance(assetsFile, fileInfo).GetBaseField();
-                baseField.Get(file.Key).GetValue().Set(file.Value);
-                replacers.Add(new AssetsReplacerFromMemory(0, fileInfo.index, (int)fileInfo.curFileType, 0xffff, baseField.WriteToByteArray()));
-            }
+            List<AssetsReplacer> replacers = GenerateReplacers(files);
 
-            using (var stream = new MemoryStream())
-            using (var writer = new AssetsFileWriter(stream))
+            if (replacers != null)
             {
-                assetsFile.file.Write(writer, 0, replacers, 0);
-                newData = stream.ToArray();
+                using (var stream = new MemoryStream())
+                using (var writer = new AssetsFileWriter(stream))
+                {
+                    assetsFile.file.Write(writer, 0, replacers, 0);
+                    newData = stream.ToArray();
+                }
             }
         }
+
+        protected abstract List<AssetsReplacer> GenerateReplacers(Dictionary<string, JObject> files);
 
         private AssetTypeValueField GetBaseField(string fileName)
         {

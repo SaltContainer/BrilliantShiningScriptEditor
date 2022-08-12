@@ -1,5 +1,6 @@
 ﻿using AssetsTools.NET;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using PokemonBDSPEditor.Data;
 using PokemonBDSPEditor.Data.JSONObjects;
 using PokemonBDSPEditor.Data.Utils;
@@ -36,6 +37,11 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
         {
             if (!AreScriptFilesLoaded()) LoadScriptFiles();
             return scriptFiles;
+        }
+
+        public void SetScriptFiles(List<ScriptFile> scriptFiles)
+        {
+            bundleManipulator.SetFilesToBundle(FileConstants.ScriptDataBundleKey, ConvertFromScriptFiles(scriptFiles));
         }
 
         public bool AreScriptFilesLoaded()
@@ -99,6 +105,49 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             }
 
             return new ScriptFile(strings, scripts, root["m_Name"].GetValue().AsString());
+        }
+
+        private Dictionary<string, JObject> ConvertFromScriptFiles(List<ScriptFile> scriptFiles)
+        {
+            Dictionary<string, JObject> json = new Dictionary<string, JObject>();
+
+            foreach (ScriptFile scriptFile in scriptFiles)
+            {
+                json.Add(scriptFile.FileName, new JObject(
+                    new JProperty("Scripts",
+                        new JArray(
+                            from s in scriptFile.Scripts
+                            select new JObject(
+                                new JProperty("Label", s.Name),
+                                new JProperty("Commands",
+                                    new JArray(
+                                        from c in s.Commands
+                                        select new JObject(
+                                            new JProperty("Arg",
+                                                new JArray(
+                                                    from a in c.Arguments
+                                                    select new JObject(
+                                                        new JProperty("argType", a.Type),
+                                                        new JProperty("data", a.GetNumberValue())
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    ),
+                    new JProperty("StrList",
+                        new JArray(
+                            from s in scriptFile.Strings
+                            select new JValue(s)
+                        )
+                    )
+                ));
+            }
+
+            return json;
         }
     }
 }

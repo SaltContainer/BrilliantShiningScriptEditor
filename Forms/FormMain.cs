@@ -19,6 +19,7 @@ namespace PokemonBDSPEditor.Forms
     public partial class FormMain : Form
     {
         private ScriptEditorEngine scriptEditorEngine;
+        private List<ScriptFile> scriptFiles;
 
         public FormMain()
         {
@@ -90,13 +91,15 @@ namespace PokemonBDSPEditor.Forms
         {
             // Open ROMFS
 
-            List<ScriptFile> scripts = scriptEditorEngine.GetScriptFiles();
-            UpdateScriptFileList(scripts);
+            scriptFiles = scriptEditorEngine.GetScriptFiles();
+            UpdateScriptFileList(scriptFiles);
         }
 
         private void tbtnSave_Click(object sender, EventArgs e)
         {
             // Save ROMFS
+
+            scriptEditorEngine.SetScriptFiles(scriptFiles);
         }
 
         private void lbScriptCommandName_SizeChanged(object sender, EventArgs e)

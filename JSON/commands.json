@@ -487,14 +487,58 @@
 	{
 		"Id": 218,
 		"Name": "_ADD_POKEMON",
-		"Description": "",
-		"Args": []
+		"Description": "Gives a Pokémon to the player.",
+		"Args": [
+			{
+				"TentativeName": "Species",
+				"Description": "ID of the species of Pokémon to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Level",
+				"Description": "Level of the Pokémon to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Item",
+				"Description": "ID of the item held by the Pokémon to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 1209,
 		"Name": "_ADD_POKEMON_UI",
 		"Description": "",
-		"Args": []
+		"Args": [
+			{
+				"TentativeName": "Sphere",
+				"Description": "ID of the sphere to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 694,
@@ -505,43 +549,94 @@
 	{
 		"Id": 210,
 		"Name": "_ADD_TAMA",
-		"Description": "",
-		"Args": []
+		"Description": "Gives an amount of one sphere to the player.",
+		"Args": [
+			{
+				"TentativeName": "Sphere",
+				"Description": "ID of the sphere to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 219,
 		"Name": "_ADD_TAMAGO",
-		"Description": "",
-		"Args": []
+		"Description": "Gives an egg to the player.",
+		"Args": [
+			{
+				"TentativeName": "Species",
+				"Description": "ID of the species of Pokémon to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Origin",
+				"Description": "ID of the origin for the egg.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 212,
 		"Name": "_ADD_TAMA_CHK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 202,
 		"Name": "_ADD_TRAP",
-		"Description": "",
-		"Args": []
+		"Description": "Gives an amount of one trap to the player. Only used in one unused common script.",
+		"Args": [
+			{
+				"TentativeName": "Trap",
+				"Description": "ID of the trap to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to give.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 204,
 		"Name": "_ADD_TRAP_CHK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 206,
 		"Name": "_ADD_TREASURE",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 208,
 		"Name": "_ADD_TREASURE_CHK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -705,7 +800,7 @@
 	{
 		"Id": 223,
 		"Name": "_APPROVE_POISON_DEAD",
-		"Description": "",
+		"Description": "Unknown use. Only used once in unused poison scripts.",
 		"Args": []
 	},
 	{
@@ -1800,19 +1895,45 @@
 	{
 		"Id": 216,
 		"Name": "_CB_ITEM_NUM_ADD",
-		"Description": "",
-		"Args": []
+		"Description": "Gives an amount of one seal to the player.",
+		"Args": [
+			{
+				"TentativeName": "Seal",
+				"Description": "ID of the seal to give.",
+				"Type": ["Var", "Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount to give.",
+				"Type": ["Var", "Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 215,
 		"Name": "_CB_ITEM_NUM_GET",
-		"Description": "",
-		"Args": []
+		"Description": "Checks how many of a seal the player has.",
+		"Args": [
+			{
+				"TentativeName": "Seal",
+				"Description": "ID of the seal to check.",
+				"Type": ["Var", "Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 214,
 		"Name": "_CB_SEAL_KIND_NUM_GET",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -1934,7 +2055,7 @@
 	{
 		"Id": 220,
 		"Name": "_CHG_POKE_WAZA",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -1952,13 +2073,38 @@
 	{
 		"Id": 221,
 		"Name": "_CHK_POKE_WAZA",
-		"Description": "",
-		"Args": []
+		"Description": "Checks if a Pokémon in a specific position has a specific move.",
+		"Args": [
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Move",
+				"Description": "Script of common_scr to call.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Position",
+				"Description": "Position of the Pokémon to check.",
+				"Type": ["Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use. Always -1.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 222,
 		"Name": "_CHK_POKE_WAZA_GROUP",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -2122,8 +2268,15 @@
 	{
 		"Id": 235,
 		"Name": "_COMM_GET_CURRENT_ID",
-		"Description": "",
-		"Args": []
+		"Description": "Checks if this player is the host of the Battle Tower multi-battle group or if they joined.",
+		"Args": [
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 485,
@@ -2790,8 +2943,15 @@
 	{
 		"Id": 236,
 		"Name": "_DENDOU_NUM_GET",
-		"Description": "",
-		"Args": []
+		"Description": "Gets the amount of times the player has entered the Hall of Fame.",
+		"Args": [
+			{
+				"TentativeName": "Var",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 993,
@@ -3299,7 +3459,7 @@
 	{
 		"Id": 231,
 		"Name": "_FINISH_MAP_PROC",
-		"Description": "",
+		"Description": "Finishes refreshing the map after closing the town map in a Pokémon Center.",
 		"Args": []
 	},
 	{
@@ -3670,7 +3830,7 @@
 	{
 		"Id": 228,
 		"Name": "_GET_MAP_POS",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -3881,7 +4041,7 @@
 	{
 		"Id": 229,
 		"Name": "_GET_TEMOTI_POKE_NUM",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -3948,7 +4108,7 @@
 	{
 		"Id": 201,
 		"Name": "_GOODS_CHK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -4512,7 +4672,7 @@
 	{
 		"Id": 225,
 		"Name": "_INIT_WEATHER",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -5966,32 +6126,53 @@
 	{
 		"Id": 240,
 		"Name": "_POKE_WINDOW_ANM",
-		"Description": "",
+		"Description": "Animates the Pokémon shown in a window.",
 		"Args": []
 	},
 	{
 		"Id": 241,
 		"Name": "_POKE_WINDOW_ANM_WAIT",
-		"Description": "",
-		"Args": []
+		"Description": "Waits for the animation of the Pokémon shown in a window to end.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 239,
 		"Name": "_POKE_WINDOW_DEL",
-		"Description": "",
+		"Description": "Closes a window showing a Pokémon.",
 		"Args": []
 	},
 	{
 		"Id": 237,
 		"Name": "_POKE_WINDOW_PUT",
-		"Description": "",
-		"Args": []
+		"Description": "Opens a window showing a Pokémon.",
+		"Args": [
+			{
+				"TentativeName": "Species",
+				"Description": "ID of the species of Pokémon to show.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 238,
 		"Name": "_POKE_WINDOW_PUT_PP",
-		"Description": "",
-		"Args": []
+		"Description": "Opens a window showing a Pokémon. Only used in Chatot scripts.",
+		"Args": [
+			{
+				"TentativeName": "Species",
+				"Description": "ID of the species of Pokémon to show.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 515,
@@ -6170,8 +6351,21 @@
 	{
 		"Id": 224,
 		"Name": "_REVENGE_TRAINER_SEARCH",
-		"Description": "",
-		"Args": []
+		"Description": "Checks if a trainer is currently looking for a rematch.",
+		"Args": [
+			{
+				"TentativeName": "Trainer",
+				"Description": "ID of the trainer to check.",
+				"Type": ["Var", "Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 339,
@@ -6412,7 +6606,7 @@
 	{
 		"Id": 230,
 		"Name": "_SET_MAP_PROC",
-		"Description": "",
+		"Description": "Refreshes the map after commands that load a new scene.",
 		"Args": []
 	},
 	{
@@ -6538,7 +6732,7 @@
 	{
 		"Id": 226,
 		"Name": "_SET_WEATHER",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -6862,19 +7056,19 @@
 	{
 		"Id": 211,
 		"Name": "_SUB_TAMA",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 203,
 		"Name": "_SUB_TRAP",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 207,
 		"Name": "_SUB_TREASURE",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -7388,7 +7582,7 @@
 	{
 		"Id": 213,
 		"Name": "_TAMA_CHK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -7661,7 +7855,7 @@
 	{
 		"Id": 205,
 		"Name": "_TRAP_CHK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -7673,7 +7867,7 @@
 	{
 		"Id": 209,
 		"Name": "_TREASURE_CHK",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -8177,8 +8371,27 @@
 	{
 		"Id": 217,
 		"Name": "_UNKNOWN_FORM_GET",
-		"Description": "",
-		"Args": []
+		"Description": "Gets the form of an Unown.",
+		"Args": [
+			{
+				"TentativeName": "Position1",
+				"Description": "Position of the Unown in party/boxes.",
+				"Type": ["Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Position2",
+				"Description": "Position of the Unown in party/boxes.",
+				"Type": ["Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the form in.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 861,
@@ -8189,7 +8402,7 @@
 	{
 		"Id": 227,
 		"Name": "_UPDATE_WEATHER",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -8358,7 +8571,7 @@
 	{
 		"Id": 193,
 		"Name": "_WAZA_ITEM_CHK",
-		"Description": "Checks if an item is a waza item.",
+		"Description": "Checks if an item is a TM/HM.",
 		"Args": [
 			{
 				"TentativeName": "Item",
@@ -8395,7 +8608,7 @@
 	{
 		"Id": 232,
 		"Name": "_WIFI_AUTO_REG",
-		"Description": "",
+		"Description": "Registers a friend in the Pal Pad (DP). Likely does nothing.",
 		"Args": []
 	},
 	{
@@ -8413,13 +8626,13 @@
 	{
 		"Id": 233,
 		"Name": "_WIFI_P2P_MATCH_EVENT_CALL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 234,
 		"Name": "_WIFI_P2P_MATCH_SET_DEL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
