@@ -35,7 +35,7 @@ namespace PokemonBDSPEditor.Data
                 for (int i = 0; i < jscripts.Count; i++)
                 {
                     JToken jscript = jscripts[i];
-                    baseField["Scripts"][0][i]["Label"].GetValue().Set(jscript["Label"]);
+                    baseField["Scripts"][0][i]["Label"].GetValue().Set(jscript["Label"].ToString());
 
                     JArray jcommands = (JArray)jscript["Commands"];
                     var commandArray = baseField["Scripts"][0][i]["Commands"]["Array"];
@@ -70,6 +70,23 @@ namespace PokemonBDSPEditor.Data
                             baseField["Scripts"][0][i]["Commands"][0][j]["Arg"][0][k]["data"].GetValue().Set(jarg["data"]);
                         }
                     }
+                }
+
+                JArray jstrings = (JArray)jfile.Value["StrList"];
+                var stringArray = baseField["StrList"]["Array"];
+
+                if (jstrings.Count <= stringArray.childrenCount) stringArray.SetChildrenList(stringArray.children.Take(jstrings.Count).ToArray());
+                else
+                {
+                    List<AssetTypeValueField> extra = new List<AssetTypeValueField>();
+                    for (int i = stringArray.childrenCount; i < jstrings.Count; i++) extra.Add(ValueBuilder.DefaultValueFieldFromArrayTemplate(stringArray));
+                    stringArray.SetChildrenList(stringArray.children.Concat(extra).ToArray());
+                }
+
+                for (int i = 0; i < jstrings.Count; i++)
+                {
+                    JToken jstring = jstrings[i];
+                    baseField["StrList"][0][i].GetValue().Set(jstring.ToString());
                 }
 
                 replacers.Add(new AssetsReplacerFromMemory(0, fileInfo.index, (int)fileInfo.curFileType, 0xffff, baseField.WriteToByteArray()));

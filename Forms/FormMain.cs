@@ -69,9 +69,15 @@ namespace PokemonBDSPEditor.Forms
             // Add Script
         }
 
+        private void btnScriptRemove_Click(object sender, EventArgs e)
+        {
+            // Remove Script
+        }
+
         private void btnScriptCompile_Click(object sender, EventArgs e)
         {
             // Compile Script
+
             try
             {
                 Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name);
@@ -85,6 +91,19 @@ namespace PokemonBDSPEditor.Forms
         private void btnScriptSave_Click(object sender, EventArgs e)
         {
             // Save Script
+
+            try
+            {
+                Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name);
+                ScriptFile selected = (ScriptFile)comboScriptFile.SelectedItem;
+                selected.Scripts[selected.Scripts.FindIndex(f => f.Name == script.Name)] = script;
+
+                MessageBox.Show("Successfully saved the script in memory!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (ScriptValidationException ex)
+            {
+                MessageBox.Show(ex.Message, "Compilation Error", MessageBoxButtons.OK, ex.Ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+            }
         }
 
         private void tbtnOpen_Click(object sender, EventArgs e)

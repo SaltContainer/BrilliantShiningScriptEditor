@@ -119,17 +119,18 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
 
         private Dictionary<string, JObject> ConvertFromScriptFiles(List<ScriptFile> scriptFiles)
         {
-            // TODO: Deal with strings
+            List<ScriptFile> convertedScriptFiles = ConvertStringsToIndex(scriptFiles);
+
             Dictionary<string, JObject> json = new Dictionary<string, JObject>();
 
-            foreach (ScriptFile scriptFile in scriptFiles)
+            foreach (ScriptFile scriptFile in convertedScriptFiles)
             {
                 json.Add(scriptFile.FileName, new JObject(
                     new JProperty("Scripts",
                         new JArray(
                             from s in scriptFile.Scripts
                             select new JObject(
-                                new JProperty("Label", s.Name),
+                                new JProperty("Label", new JValue(s.Name)),
                                 new JProperty("Commands",
                                     new JArray(
                                         from c in s.Commands
@@ -159,6 +160,40 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             }
 
             return json;
+        }
+
+        private List<ScriptFile> ConvertStringsToIndex(List<ScriptFile> scriptFiles)
+        {
+            foreach (ScriptFile scriptFile in scriptFiles)
+            {
+                List<string> strings = new List<string>();
+
+                foreach (Script script in scriptFile.Scripts)
+                {
+                    foreach (Command command in script.Commands)
+                    {
+                        foreach (Argument arg in command.Arguments)
+                        {
+                            if (arg.Type == ArgumentType.String)
+                            {
+                                if (strings.Contains(arg.GetStringValue()))
+                                {
+                                    arg.SetNumberValue(strings.IndexOf(arg.GetStringValue()));
+                                }
+                                else
+                                {
+                                    arg.SetNumberValue(strings.Count);
+                                    strings.Add(arg.GetStringValue());
+                                }
+                            }
+                        }
+                    }
+                }
+
+                scriptFile.Strings = strings;
+            }
+
+            return scriptFiles;
         }
     }
 }

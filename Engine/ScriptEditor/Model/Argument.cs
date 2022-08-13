@@ -48,5 +48,10 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor.Model
         {
             return stringValue;
         }
+
+        public void SetNumberValue(int value)
+        {
+            numberValue = value;
+        }
     }
 }
