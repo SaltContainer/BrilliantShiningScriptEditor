@@ -54,13 +54,13 @@ namespace PokemonBDSPEditor.Data
             }
         }
 
-        public bool SaveBundles(string directory)
+        public bool SaveAllBundles(string directory)
         {
             try
             {
                 foreach (var entry in bundles)
                 {
-                    SaveBundle(entry.Key, string.Format("{0}/{1}", directory, FileConstants.Bundles[entry.Key].FullPath));
+                    SaveBundleInFile(entry.Key, string.Format("{0}/{1}", directory, FileConstants.Bundles[entry.Key].FullPath));
                 }
                 return true;
             }
@@ -71,7 +71,38 @@ namespace PokemonBDSPEditor.Data
             }
         }
 
-        private void SaveBundle(string bundleKey, string outFileName)
+        public bool SaveBundles(List<string> bundles, string directory)
+        {
+            try
+            {
+                foreach (var entry in bundles)
+                {
+                    SaveBundleInFile(entry, string.Format("{0}\\{1}", directory, FileConstants.Bundles[entry].FullPath));
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("There was an error writing one of the bundles. Full Exception: " + ex.Message, "Saving Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        public bool SaveBundle(string bundleKey, string directory)
+        {
+            try
+            {
+                SaveBundleInFile(bundleKey, string.Format("{0}\\{1}", directory, FileConstants.Bundles[bundleKey].FullPath));
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("There was an error writing one of the bundles. Full Exception: " + ex.Message, "Saving Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        private void SaveBundleInFile(string bundleKey, string outFileName)
         {
             Bundle data = bundles[bundleKey];
             BundleFileInstance bundleInstance = data.GetBundle();

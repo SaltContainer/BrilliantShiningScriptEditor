@@ -91,8 +91,12 @@ namespace PokemonBDSPEditor.Forms
         {
             // Open ROMFS
 
-            scriptFiles = scriptEditorEngine.GetScriptFiles();
-            UpdateScriptFileList(scriptFiles);
+            List<ScriptFile> scriptFiles = scriptEditorEngine.GetScriptFiles();
+            if (scriptFiles.Count > 0)
+            {
+                this.scriptFiles = scriptFiles;
+                UpdateScriptFileList(this.scriptFiles);
+            }
         }
 
         private void tbtnSave_Click(object sender, EventArgs e)
@@ -100,6 +104,7 @@ namespace PokemonBDSPEditor.Forms
             // Save ROMFS
 
             scriptEditorEngine.SetScriptFiles(scriptFiles);
+            scriptEditorEngine.SaveScriptFiles();
         }
 
         private void lbScriptCommandName_SizeChanged(object sender, EventArgs e)

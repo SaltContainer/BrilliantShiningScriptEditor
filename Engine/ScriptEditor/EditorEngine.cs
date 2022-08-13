@@ -44,6 +44,12 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             bundleManipulator.SetFilesToBundle(FileConstants.ScriptDataBundleKey, ConvertFromScriptFiles(scriptFiles));
         }
 
+        public bool SaveScriptFiles()
+        {
+            //TODO: Replace base path
+            return bundleManipulator.SaveBundles(new List<string>() { FileConstants.ScriptDataBundleKey }, "result");
+        }
+
         public bool AreScriptFilesLoaded()
         {
             return bundleManipulator.IsBundleLoaded(FileConstants.ScriptDataBundleKey);
@@ -64,18 +70,22 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             return scriptValidator.CompileScript(script, name);
         }
 
-        private void LoadScriptFiles()
+        private bool LoadScriptFiles()
         {
-            bundleManipulator.LoadBundles(new List<string>() { FileConstants.ScriptDataBundleKey });
-            var files = bundleManipulator.GetFilesOfBundle(FileConstants.ScriptDataBundleKey);
-            foreach (var file in files)
+            bool result = bundleManipulator.LoadBundles(new List<string>() { FileConstants.ScriptDataBundleKey });
+            if (result)
             {
-                if (file["Scripts"] != null && file["Scripts"].GetChildrenCount() > 0)
+                var files = bundleManipulator.GetFilesOfBundle(FileConstants.ScriptDataBundleKey);
+                foreach (var file in files)
                 {
-                    scriptFiles.Add(ConvertToScriptFile(file));
+                    if (file["Scripts"] != null && file["Scripts"].GetChildrenCount() > 0)
+                    {
+                        scriptFiles.Add(ConvertToScriptFile(file));
+                    }
                 }
+                scriptFiles = scriptFiles.OrderBy(s => s.FileName).ToList();
             }
-            scriptFiles = scriptFiles.OrderBy(s => s.FileName).ToList();
+            return result;
         }
 
         private ScriptFile ConvertToScriptFile(AssetTypeValueField root)
@@ -109,6 +119,7 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
 
         private Dictionary<string, JObject> ConvertFromScriptFiles(List<ScriptFile> scriptFiles)
         {
+            // TODO: Deal with strings
             Dictionary<string, JObject> json = new Dictionary<string, JObject>();
 
             foreach (ScriptFile scriptFile in scriptFiles)
