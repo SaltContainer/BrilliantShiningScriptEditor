@@ -85,7 +85,7 @@ namespace PokemonBDSPEditor.Properties {
         ///	&quot;script-data&quot;: {
         ///		&quot;key&quot;: &quot;script-data&quot;,
         ///		&quot;file_name&quot;: &quot;ev_script&quot;,
-        ///		&quot;full_path&quot;: &quot;StreamingAssets\\AssetAssistant\\Dpr\\ev_script&quot;,
+        ///		&quot;full_path&quot;: &quot;Data\\StreamingAssets\\AssetAssistant\\Dpr\\ev_script&quot;,
         ///		&quot;cab_directory&quot;: &quot;CAB-e856180fe48cd419c06715341f9e3f42&quot;,
         ///		&quot;files&quot;: [
         ///			&quot;trainer&quot;
@@ -100,17 +100,42 @@ namespace PokemonBDSPEditor.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {
-        ///	&quot;script-data&quot;: {
-        ///		&quot;key&quot;: &quot;script-data&quot;,
-        ///		&quot;file_name&quot;: &quot;ev_script&quot;,
-        ///		&quot;full_path&quot;: &quot;StreamingAssets\\AssetAssistant\\Dpr\\ev_script&quot;,
-        ///		&quot;cab_directory&quot;: &quot;CAB-e856180fe48cd419c06715341f9e3f42&quot;,
-        ///		&quot;files&quot;: [
-        ///			&quot;trainer&quot;
-        ///		]
-        ///	}
-        ///}.
+        ///   Looks up a localized string similar to [
+        ///	{
+        ///		&quot;Id&quot;: 777,
+        ///		&quot;Name&quot;: &quot;ACMD_END&quot;,
+        ///		&quot;Description&quot;: &quot;&quot;,
+        ///		&quot;Args&quot;: []
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 811,
+        ///		&quot;Name&quot;: &quot;ACMD_NOT&quot;,
+        ///		&quot;Description&quot;: &quot;&quot;,
+        ///		&quot;Args&quot;: []
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 1155,
+        ///		&quot;Name&quot;: &quot;AC_ANIME_DURATION&quot;,
+        ///		&quot;Description&quot;: &quot;&quot;,
+        ///		&quot;Args&quot;: []
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 805,
+        ///		&quot;Name&quot;: &quot;AC_ANM_PAUSE_OFF&quot;,
+        ///		&quot;Description&quot;: &quot;&quot;,
+        ///		&quot;Args&quot;: []
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 804,
+        ///		&quot;Name&quot;: &quot;AC_ANM_PAUSE_ON&quot;,
+        ///		&quot;Description&quot;: &quot;&quot;,
+        ///		&quot;Args&quot;: []
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 775,
+        ///		&quot;Name&quot;: &quot;AC_DIR_D&quot;,
+        ///		&quot;Description&quot;: &quot;&quot;,
+        ///		&quot;Args&quot;: [ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string commands {
             get {
@@ -124,6 +149,56 @@ namespace PokemonBDSPEditor.Properties {
         internal static System.Drawing.Bitmap folder {
             get {
                 object obj = ResourceManager.GetObject("folder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save {
+            get {
+                object obj = ResourceManager.GetObject("save", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap script_add {
+            get {
+                object obj = ResourceManager.GetObject("script_add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap script_compile {
+            get {
+                object obj = ResourceManager.GetObject("script_compile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap script_remove {
+            get {
+                object obj = ResourceManager.GetObject("script_remove", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap script_save {
+            get {
+                object obj = ResourceManager.GetObject("script_save", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

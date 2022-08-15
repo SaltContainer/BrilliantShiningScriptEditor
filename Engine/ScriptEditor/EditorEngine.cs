@@ -28,9 +28,9 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             scriptFiles = new List<ScriptFile>();
         }
 
-        public void SetBasePath(string path)
+        public bool SetBasePath(string path)
         {
-            bundleManipulator.SetBasePath(path);
+            return bundleManipulator.SetBasePath(path);
         }
 
         public List<ScriptFile> GetScriptFiles()
@@ -44,10 +44,14 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             bundleManipulator.SetFilesToBundle(FileConstants.ScriptDataBundleKey, ConvertFromScriptFiles(scriptFiles));
         }
 
-        public bool SaveScriptFiles()
+        public bool SaveScriptFiles(string path)
         {
-            //TODO: Replace base path
-            return bundleManipulator.SaveBundles(new List<string>() { FileConstants.ScriptDataBundleKey }, "result");
+            return bundleManipulator.SaveBundles(new List<string>() { FileConstants.ScriptDataBundleKey }, path);
+        }
+
+        public bool SaveScriptFilesInBasePath()
+        {
+            return bundleManipulator.SaveBundlesInBasePath(new List<string>() { FileConstants.ScriptDataBundleKey });
         }
 
         public bool AreScriptFilesLoaded()
@@ -194,6 +198,11 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             }
 
             return scriptFiles;
+        }
+
+        public string GetBasePath()
+        {
+            return bundleManipulator.GetBasePath();
         }
     }
 }

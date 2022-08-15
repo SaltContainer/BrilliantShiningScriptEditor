@@ -1,4 +1,5 @@
-﻿using PokemonBDSPEditor.Data.JSONObjects;
+﻿using Microsoft.WindowsAPICodePack.Dialogs;
+using PokemonBDSPEditor.Data.JSONObjects;
 using PokemonBDSPEditor.Data.Utils;
 using PokemonBDSPEditor.Engine.ScriptEditor;
 using PokemonBDSPEditor.Engine.ScriptEditor.Exceptions;
@@ -25,7 +26,6 @@ namespace PokemonBDSPEditor.Forms
         {
             InitializeComponent();
             scriptEditorEngine = new ScriptEditorEngine();
-            scriptEditorEngine.SetBasePath("romfs");
 
             comboScriptCommand.DataSource = FileConstants.Commands;
         }
@@ -110,11 +110,30 @@ namespace PokemonBDSPEditor.Forms
         {
             // Open ROMFS
 
-            List<ScriptFile> scriptFiles = scriptEditorEngine.GetScriptFiles();
-            if (scriptFiles.Count > 0)
+            CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+            //dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            dialog.InitialDirectory = "romfs";
+            dialog.IsFolderPicker = true;
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
-                this.scriptFiles = scriptFiles;
-                UpdateScriptFileList(this.scriptFiles);
+                if (scriptEditorEngine.SetBasePath(dialog.FileName))
+                {
+                    List<ScriptFile> scriptFiles = scriptEditorEngine.GetScriptFiles();
+                    if (scriptFiles.Count > 0)
+                    {
+                        this.scriptFiles = scriptFiles;
+                        UpdateScriptFileList(this.scriptFiles);
+
+                        tbtnSave.Enabled = true;
+                        tbtnOpen.Enabled = false;
+                        btnScriptCompile.Enabled = true;
+                        btnScriptSave.Enabled = true;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(string.Format("\"{0}\" does not contain the \"{1}\" folder, or it could not be read.", dialog.FileName, "Data"), "Invalid folder", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -122,8 +141,11 @@ namespace PokemonBDSPEditor.Forms
         {
             // Save ROMFS
 
-            scriptEditorEngine.SetScriptFiles(scriptFiles);
-            scriptEditorEngine.SaveScriptFiles();
+            if (MessageBox.Show(string.Format("This will overwrite the affected file(s) in \"{0}\". Are you sure you want to export?", scriptEditorEngine.GetBasePath()), "Export Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                scriptEditorEngine.SetScriptFiles(scriptFiles);
+                scriptEditorEngine.SaveScriptFilesInBasePath();
+            }
         }
 
         private void lbScriptCommandName_SizeChanged(object sender, EventArgs e)

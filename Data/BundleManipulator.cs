@@ -88,6 +88,11 @@ namespace PokemonBDSPEditor.Data
             }
         }
 
+        public bool SaveBundlesInBasePath(List<string> bundles)
+        {
+            return SaveBundles(bundles, basePath);
+        }
+
         public bool SaveBundle(string bundleKey, string directory)
         {
             try
@@ -125,14 +130,27 @@ namespace PokemonBDSPEditor.Data
             return bundles[bundleKey].GetFileInBundle(fileName);
         }
 
+        public string GetBasePath()
+        {
+            return basePath;
+        }
+
         public void SetFilesToBundle(string bundleKey, Dictionary<string, JObject> files)
         {
             bundles[bundleKey].SetFilesInBundle(files);
         }
 
-        public void SetBasePath(string path)
+        public bool SetBasePath(string path)
         {
-            this.basePath = path;
+            if (Directory.Exists(string.Format("{0}\\{1}", path, "Data")))
+            {
+                this.basePath = path;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

@@ -84,7 +84,8 @@ namespace PokemonBDSPEditor.Forms
             // tbtnSave
             // 
             this.tbtnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tbtnSave.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
+            this.tbtnSave.Enabled = false;
+            this.tbtnSave.Image = global::PokemonBDSPEditor.Properties.Resources.save;
             this.tbtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tbtnSave.Name = "tbtnSave";
             this.tbtnSave.Size = new System.Drawing.Size(36, 36);
@@ -238,47 +239,47 @@ namespace PokemonBDSPEditor.Forms
             // 
             // btnScriptAdd
             // 
-            this.btnScriptAdd.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
+            this.btnScriptAdd.Enabled = false;
+            this.btnScriptAdd.Image = global::PokemonBDSPEditor.Properties.Resources.script_add;
             this.btnScriptAdd.Location = new System.Drawing.Point(6, 130);
             this.btnScriptAdd.Name = "btnScriptAdd";
             this.btnScriptAdd.Size = new System.Drawing.Size(55, 55);
             this.btnScriptAdd.TabIndex = 5;
-            this.btnScriptAdd.Text = "add";
             this.btnScriptAdd.UseVisualStyleBackColor = true;
             this.btnScriptAdd.Click += new System.EventHandler(this.btnScriptAdd_Click);
             // 
             // btnScriptRemove
             // 
-            this.btnScriptRemove.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
+            this.btnScriptRemove.Enabled = false;
+            this.btnScriptRemove.Image = global::PokemonBDSPEditor.Properties.Resources.script_remove;
             this.btnScriptRemove.Location = new System.Drawing.Point(67, 130);
             this.btnScriptRemove.Name = "btnScriptRemove";
             this.btnScriptRemove.Size = new System.Drawing.Size(55, 55);
             this.btnScriptRemove.TabIndex = 8;
-            this.btnScriptRemove.Text = "remove";
             this.btnScriptRemove.UseVisualStyleBackColor = true;
             this.btnScriptRemove.Click += new System.EventHandler(this.btnScriptRemove_Click);
             // 
             // btnScriptCompile
             // 
             this.btnScriptCompile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnScriptCompile.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
+            this.btnScriptCompile.Enabled = false;
+            this.btnScriptCompile.Image = global::PokemonBDSPEditor.Properties.Resources.script_compile;
             this.btnScriptCompile.Location = new System.Drawing.Point(128, 130);
             this.btnScriptCompile.Name = "btnScriptCompile";
             this.btnScriptCompile.Size = new System.Drawing.Size(55, 55);
             this.btnScriptCompile.TabIndex = 3;
-            this.btnScriptCompile.Text = "compile";
             this.btnScriptCompile.UseVisualStyleBackColor = true;
             this.btnScriptCompile.Click += new System.EventHandler(this.btnScriptCompile_Click);
             // 
             // btnScriptSave
             // 
             this.btnScriptSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnScriptSave.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
+            this.btnScriptSave.Enabled = false;
+            this.btnScriptSave.Image = global::PokemonBDSPEditor.Properties.Resources.script_save;
             this.btnScriptSave.Location = new System.Drawing.Point(189, 130);
             this.btnScriptSave.Name = "btnScriptSave";
             this.btnScriptSave.Size = new System.Drawing.Size(55, 55);
             this.btnScriptSave.TabIndex = 4;
-            this.btnScriptSave.Text = "save";
             this.btnScriptSave.UseVisualStyleBackColor = true;
             this.btnScriptSave.Click += new System.EventHandler(this.btnScriptSave_Click);
             // 
