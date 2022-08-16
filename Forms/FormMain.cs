@@ -38,6 +38,7 @@ namespace PokemonBDSPEditor.Forms
 
         private void UpdateScriptList(List<Script> scripts)
         {
+            comboScript.DataSource = null;
             comboScript.DataSource = scripts;
             comboScript.SelectedIndex = 0;
         }
@@ -50,18 +51,21 @@ namespace PokemonBDSPEditor.Forms
         private void UpdateCommandInfo(CommandInfo command)
         {
             lbScriptCommandName.Text = string.Format("{0} - {1}", command.Id, command.Name);
-            string arguments = string.Join("\n", command.Arguments.Select(a => string.Format("[{0}] {1} - {2}{3}", string.Join(", ", a.Type), a.Name, a.Optional ? "(Optional) " : "", a.Description)));
-            lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", command.Description, arguments);
+            string arguments = "";
+            if (command.Arguments.Count == 0) arguments = "No arguments.";
+            else arguments = string.Join("\n", command.Arguments.Select(a => string.Format("[{0}] {1} - {2}{3}", string.Join(", ", a.Type), a.Name, a.Optional ? "(Optional) " : "", a.Description)));
+            lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", command.Description == "" ? "This command is not documented yet." : command.Description, arguments);
         }
 
         private void comboScriptFile_SelectedIndexChanged(object sender, EventArgs e)
         {
-            UpdateScriptList(scriptEditorEngine.GetScriptFiles()[comboScriptFile.SelectedIndex].Scripts);
+            UpdateScriptList(((ScriptFile)comboScriptFile.SelectedItem).Scripts);
         }
 
         private void comboScript_SelectedIndexChanged(object sender, EventArgs e)
         {
-            UpdateScriptBox((Script)comboScript.SelectedItem);
+            Script script = (Script)comboScript.SelectedItem;
+            if (script != null) UpdateScriptBox(script);
         }
 
         private void btnScriptAdd_Click(object sender, EventArgs e)
@@ -99,6 +103,8 @@ namespace PokemonBDSPEditor.Forms
                 selected.Scripts[selected.Scripts.FindIndex(f => f.Name == script.Name)] = script;
 
                 MessageBox.Show("Successfully saved the script in memory!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                UpdateScriptList(selected.Scripts);
             }
             catch (ScriptValidationException ex)
             {
@@ -111,8 +117,7 @@ namespace PokemonBDSPEditor.Forms
             // Open ROMFS
 
             CommonOpenFileDialog dialog = new CommonOpenFileDialog();
-            //dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            dialog.InitialDirectory = "romfs";
+            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             dialog.IsFolderPicker = true;
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
@@ -141,10 +146,13 @@ namespace PokemonBDSPEditor.Forms
         {
             // Save ROMFS
 
-            if (MessageBox.Show(string.Format("This will overwrite the affected file(s) in \"{0}\". Are you sure you want to export?", scriptEditorEngine.GetBasePath()), "Export Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show(string.Format("This will overwrite the affected file(s) in \"{0}\". Are you sure you want to export?", scriptEditorEngine.GetBasePath()), "Export Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 scriptEditorEngine.SetScriptFiles(scriptFiles);
-                scriptEditorEngine.SaveScriptFilesInBasePath();
+                if (scriptEditorEngine.SaveScriptFilesInBasePath())
+                {
+                    MessageBox.Show(string.Format("Successfully exported all files to \"{0}\"!", scriptEditorEngine.GetBasePath()), "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
 
