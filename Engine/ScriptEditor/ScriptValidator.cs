@@ -70,7 +70,7 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
                             {
                                 CommandInfo result = GetCommandFromName(arg);
                                 if (result != null) convertedArguments.Add(new Argument(ArgumentType.Command, result.Id));
-                                else if (RegexPatterns.RegexValidCommand.IsMatch(arg)) convertedArguments.Add(new Argument(ArgumentType.Command, int.Parse(arg.Split('_')[1])));
+                                else if (RegexPatterns.RegexInvalidCommand.IsMatch(arg)) convertedArguments.Add(new Argument(ArgumentType.Command, int.Parse(arg.Split('_')[1])));
                             }
                         }
                         else if (RegexPatterns.RegexNumber.IsMatch(arg))
