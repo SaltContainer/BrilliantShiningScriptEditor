@@ -2,212 +2,461 @@
 	{
 		"Id": 777,
 		"Name": "ACMD_END",
-		"Description": "",
+		"Description": "Ends a movement script.",
 		"Args": []
 	},
 	{
 		"Id": 811,
 		"Name": "ACMD_NOT",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 1155,
 		"Name": "AC_ANIME_DURATION",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Sets the length of the next animation.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time in seconds.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 805,
 		"Name": "AC_ANM_PAUSE_OFF",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 804,
 		"Name": "AC_ANM_PAUSE_ON",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 775,
 		"Name": "AC_DIR_D",
-		"Description": "",
-		"Args": []
+		"Description": "Turns the affected actor down over an amount of frames.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unused. Likely an error.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 797,
 		"Name": "AC_DIR_DOWN_CENTER",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 776,
 		"Name": "AC_DIR_L",
-		"Description": "",
-		"Args": []
+		"Description": "Turns the affected actor left over an amount of frames.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unused. Likely an error.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 798,
 		"Name": "AC_DIR_LEFT_CENTER",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Turns the affected actor left and centers it on the tile.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 803,
 		"Name": "AC_DIR_PAUSE_OFF",
-		"Description": "",
-		"Args": []
+		"Description": "Unlocks the direction of the affected actor.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 802,
 		"Name": "AC_DIR_PAUSE_ON",
-		"Description": "",
-		"Args": []
+		"Description": "Locks the direction of the affected actor.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 774,
 		"Name": "AC_DIR_R",
-		"Description": "",
-		"Args": []
+		"Description": "Turns the affected actor right over an amount of frames.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unused. Likely an error.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 799,
 		"Name": "AC_DIR_RIGHT_CENTER",
-		"Description": "",
-		"Args": []
+		"Description": "(?) Turns the affected actor right and centers it on the tile.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 773,
 		"Name": "AC_DIR_U",
-		"Description": "",
-		"Args": []
+		"Description": "Turns the affected actor up over an amount of frames.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unused. Likely an error.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 796,
 		"Name": "AC_DIR_UP_CENTER",
-		"Description": "",
+		"Description": "(?) Turns the affected actor up and centers it on the tile.",
 		"Args": []
 	},
 	{
 		"Id": 778,
 		"Name": "AC_DIR_VAL",
-		"Description": "",
-		"Args": []
+		"Description": "Turns the affected actor to a specific angle over an amount of frames.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Angle",
+				"Description": "Angle in degrees.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 769,
 		"Name": "AC_DOWN",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the affected actor down an amount of tiles over an amount of frames.",
+		"Args": [
+			{
+				"TentativeName": "Tiles",
+				"Description": "Amount of tiles to move.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move per tile.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 793,
 		"Name": "AC_DOWN_CENTER",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the affected actor down an amount of tiles over an amount of frames. The actor ends on the center of the final tile.",
+		"Args": [
+			{
+				"TentativeName": "Tiles",
+				"Description": "Amount of tiles to move.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move per tile.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 976,
 		"Name": "AC_FACE_INDEX",
-		"Description": "",
-		"Args": []
+		"Description": "Changes the face of the affected actor.",
+		"Args": [
+			{
+				"TentativeName": "Face",
+				"Description": "ID of the face to change to.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 808,
 		"Name": "AC_HERO_BANZAI",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 810,
 		"Name": "AC_HERO_BANZAI_UKE",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 788,
 		"Name": "AC_HERO_MATCH_X",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the affected actor up or down to match the X position of the player.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move per tile.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 789,
 		"Name": "AC_HERO_MATCH_Z",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the affected actor left or right to match the Z position of the player.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move per tile.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 807,
 		"Name": "AC_HIDE_PULLOFF",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 870,
 		"Name": "AC_INDEX_ANIME",
-		"Description": "",
-		"Args": []
+		"Description": "Animates the affected actor with a specific animation.",
+		"Args": [
+			{
+				"TentativeName": "Animation",
+				"Description": "ID of the animation to use.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use. Always 1 when present.",
+				"Type": ["Number", "Label"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 871,
 		"Name": "AC_INDEX_ANIME_WAIT",
-		"Description": "",
+		"Description": "Waits for the currently playing animation from AC_INDEX_ANIME to end.",
 		"Args": []
 	},
 	{
 		"Id": 965,
 		"Name": "AC_INVISIBLE_OFF",
-		"Description": "",
+		"Description": "Unhides the affected actor.",
 		"Args": []
 	},
 	{
 		"Id": 964,
 		"Name": "AC_INVISIBLE_ON",
-		"Description": "",
+		"Description": "Hides the affected actor.",
 		"Args": []
 	},
 	{
 		"Id": 770,
 		"Name": "AC_LEFT",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the affected actor left an amount of tiles over an amount of frames.",
+		"Args": [
+			{
+				"TentativeName": "Tiles",
+				"Description": "Amount of tiles to move.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move per tile.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 794,
 		"Name": "AC_LEFT_CENTER",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the affected actor left an amount of tiles over an amount of frames. The actor ends on the center of the final tile.",
+		"Args": [
+			{
+				"TentativeName": "Tiles",
+				"Description": "Amount of tiles to move.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move per tile.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 772,
 		"Name": "AC_LOOP",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 900,
 		"Name": "AC_MARK_EMO",
-		"Description": "",
-		"Args": []
+		"Description": "Shows an emotion bubble above the affected actor.",
+		"Args": [
+			{
+				"TentativeName": "Emotion",
+				"Description": "ID of the emotion to show.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 783,
 		"Name": "AC_MARK_GYOE",
-		"Description": "",
-		"Args": []
+		"Description": "Shows a [!] bubble above the affected actor.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use. Always 1 when present.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 809,
 		"Name": "AC_MARK_SAISEN",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 908,
 		"Name": "AC_NECK_ROTATE",
-		"Description": "",
-		"Args": []
+		"Description": "Rotates the head of the affected actor.",
+		"Args": [
+			{
+				"TentativeName": "Rotation1",
+				"Description": "First angle to rotate to.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Rotation2",
+				"Description": "Second angle to rotate to.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Rotation3",
+				"Description": "Third angle to rotate to.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 927,
@@ -224,14 +473,46 @@
 	{
 		"Id": 771,
 		"Name": "AC_RIGHT",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the affected actor right an amount of tiles over an amount of frames.",
+		"Args": [
+			{
+				"TentativeName": "Tiles",
+				"Description": "Amount of tiles to move.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move per tile.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 795,
 		"Name": "AC_RIGHT_CENTER",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the affected actor right an amount of tiles over an amount of frames. The actor ends on the center of the final tile.",
+		"Args": [
+			{
+				"TentativeName": "Tiles",
+				"Description": "Amount of tiles to move.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move per tile.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 1142,
@@ -242,14 +523,46 @@
 	{
 		"Id": 768,
 		"Name": "AC_UP",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the affected actor up an amount of tiles over an amount of frames.",
+		"Args": [
+			{
+				"TentativeName": "Tiles",
+				"Description": "Amount of tiles to move.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move per tile.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 792,
 		"Name": "AC_UP_CENTER",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the affected actor up an amount of tiles over an amount of frames. The actor ends on the center of the final tile.",
+		"Args": [
+			{
+				"TentativeName": "Tiles",
+				"Description": "Amount of tiles to move.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Time",
+				"Description": "Time in frames to move per tile.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 801,
@@ -266,8 +579,15 @@
 	{
 		"Id": 779,
 		"Name": "AC_WAIT",
-		"Description": "",
-		"Args": []
+		"Description": "Waits for the specified amount of frames before continuing the movement script.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time to wait in frames.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 786,
@@ -284,7 +604,7 @@
 	{
 		"Id": 1227,
 		"Name": "CMD_NAME_END",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
