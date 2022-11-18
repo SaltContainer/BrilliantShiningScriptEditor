@@ -95,6 +95,7 @@ namespace PokemonBDSPEditor.Forms
             try
             {
                 Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name, false);
+                MessageBox.Show("No compilation errors found.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (ScriptValidationExceptionListException ex)
             {
