@@ -1277,19 +1277,26 @@
 	{
 		"Id": 263,
 		"Name": "_BAG_GET_RESULT",
-		"Description": "",
-		"Args": []
+		"Description": "Puts the chosen item in the bag into a variable.",
+		"Args": [
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 262,
 		"Name": "_BAG_SET_PROC_KINOMI",
-		"Description": "",
+		"Description": "Opens the bag menu in Berry mode.",
 		"Args": []
 	},
 	{
 		"Id": 261,
 		"Name": "_BAG_SET_PROC_NORMAL",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -1449,14 +1456,40 @@
 	{
 		"Id": 284,
 		"Name": "_BLACK_IN",
-		"Description": "",
-		"Args": []
+		"Description": "Fades the screen back in from black.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Label"],
+				"Optional": true
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Number", "Label"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 283,
 		"Name": "_BLACK_OUT",
-		"Description": "",
-		"Args": []
+		"Description": "Fades the screen into black.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Label"],
+				"Optional": true
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Number", "Label"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 104,
@@ -1714,7 +1747,7 @@
 	{
 		"Id": 250,
 		"Name": "_BOX_SET_PROC",
-		"Description": "",
+		"Description": "Opens the boxes menu.",
 		"Args": []
 	},
 	{
@@ -1756,14 +1789,27 @@
 	{
 		"Id": 243,
 		"Name": "_BTL_SEARCHER_DIR_MV_SET",
-		"Description": "",
+		"Description": "Unknown use. Something related to the VS Seeker.",
 		"Args": []
 	},
 	{
 		"Id": 242,
 		"Name": "_BTL_SEARCHER_EVENT_CALL",
-		"Description": "",
-		"Args": []
+		"Description": "Checks the battery of the VS Seeker.",
+		"Args": [
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in. (Charged, No battery, No trainer)",
+				"Type": ["Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Battery",
+				"Description": "Steps left to charge the battery.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 600,
@@ -2866,19 +2912,19 @@
 	{
 		"Id": 269,
 		"Name": "_CON_POKELIST_GET_RESULT",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 268,
 		"Name": "_CON_POKELIST_SET_PROC",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 270,
 		"Name": "_CON_POKESTATUS_SET_PROC",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -3076,7 +3122,7 @@
 	{
 		"Id": 248,
 		"Name": "_CUSTOM_BALL_EVENT_CALL",
-		"Description": "",
+		"Description": "Opens the Ball Capsule menu.",
 		"Args": []
 	},
 	{
@@ -3282,7 +3328,7 @@
 	{
 		"Id": 255,
 		"Name": "_DENDOU_SET_PROC",
-		"Description": "",
+		"Description": "Adds an entry to Hall of Fame.",
 		"Args": []
 	},
 	{
@@ -3348,7 +3394,7 @@
 	{
 		"Id": 258,
 		"Name": "_DPW_INIT_PROC",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -3574,8 +3620,15 @@
 	{
 		"Id": 942,
 		"Name": "_EVENT_CAMERA_INDEX",
-		"Description": "",
-		"Args": []
+		"Description": "Changes the camera used.",
+		"Args": [
+			{
+				"TentativeName": "Camera",
+				"Description": "Message to show.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 825,
@@ -3671,26 +3724,66 @@
 	{
 		"Id": 276,
 		"Name": "_EYE_TRAINER_ID_GET",
-		"Description": "",
-		"Args": []
+		"Description": "Gets the ID of the trainer(s) that saw the player.",
+		"Args": [
+			{
+				"TentativeName": "Trainer",
+				"Description": "Trainer to get the ID of. 0 for the first trainer and 1 for the second.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 274,
 		"Name": "_EYE_TRAINER_MOVE_CHECK",
-		"Description": "",
-		"Args": []
+		"Description": "Checks if the trainer that was just moved by _EYE_TRAINER_MOVE_SET is still moving.",
+		"Args": [
+			{
+				"TentativeName": "Trainer",
+				"Description": "Trainer to check for. 0 for the first trainer and 1 for the second.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 273,
 		"Name": "_EYE_TRAINER_MOVE_SET",
-		"Description": "",
-		"Args": []
+		"Description": "Moves the trainer(s) that just saw the player.",
+		"Args": [
+			{
+				"TentativeName": "Trainer",
+				"Description": "Trainer to move. 0 for the first trainer and 1 for the second.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 275,
 		"Name": "_EYE_TRAINER_TYPE_GET",
-		"Description": "",
-		"Args": []
+		"Description": "Gets the type of fight that was started. (Single, double, two trainers)",
+		"Args": [
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 975,
@@ -3749,8 +3842,15 @@
 	{
 		"Id": 836,
 		"Name": "_FADE_SPEED",
-		"Description": "",
-		"Args": []
+		"Description": "Sets the speed of fade-ins and fade-outs.",
+		"Args": [
+			{
+				"TentativeName": "Time",
+				"Description": "Time it takes to fade, in frames.",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 784,
@@ -3803,13 +3903,13 @@
 	{
 		"Id": 259,
 		"Name": "_FIRST_POKE_SELECT_PROC",
-		"Description": "",
+		"Description": "Opens the starter choice menu.",
 		"Args": []
 	},
 	{
 		"Id": 260,
 		"Name": "_FIRST_POKE_SELECT_SET_AND_DEL",
-		"Description": "",
+		"Description": "Sets the selected starter to some place in memory. Used right after _FIRST_POKE_SELECT_PROC.",
 		"Args": []
 	},
 	{
@@ -4872,25 +4972,45 @@
 	{
 		"Id": 245,
 		"Name": "_IMAGE_CLIP_SET_PROC",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
 		"Id": 915,
 		"Name": "_IMAGE_CLIP_VIEW_CON_CHECK_PROC",
-		"Description": "",
-		"Args": []
+		"Description": "Unknown use. Something related to contests.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 247,
 		"Name": "_IMAGE_CLIP_VIEW_CON_SET_PROC",
-		"Description": "",
-		"Args": []
+		"Description": "Unknown use. Something related to contests.",
+		"Args": [
+			{
+				"TentativeName": "Unknown",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 246,
 		"Name": "_IMAGE_CLIP_VIEW_TV_SET_PROC",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -5059,8 +5179,27 @@
 	{
 		"Id": 310,
 		"Name": "_ITEM_NAME",
-		"Description": "",
-		"Args": []
+		"Description": "Puts the name of the given item into a buffer.",
+		"Args": [
+			{
+				"TentativeName": "Buffer",
+				"Description": "ID of the buffer to put the name in.",
+				"Type": ["Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Item",
+				"Description": "ID of the item to get the name of.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Amount",
+				"Description": "Amount of the item.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 312,
@@ -5278,14 +5417,76 @@
 	{
 		"Id": 285,
 		"Name": "_MAP_CHANGE",
-		"Description": "",
-		"Args": []
+		"Description": "Warps the player to a map.",
+		"Args": [
+			{
+				"TentativeName": "Map",
+				"Description": "ID of the map to warp to.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Warp",
+				"Description": "ID of the warp on the map to warp to.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "X",
+				"Description": "X coordinate to put the player at.",
+				"Type": ["Number", "Label"],
+				"Optional": true
+			},
+			{
+				"TentativeName": "Z",
+				"Description": "Z coordinate to put the player at.",
+				"Type": ["Number", "Label"],
+				"Optional": true
+			},
+			{
+				"TentativeName": "Y",
+				"Description": "Y coordinate to put the player at.",
+				"Type": ["Number", "Label"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 286,
 		"Name": "_MAP_CHANGE_NONE_FADE",
-		"Description": "",
-		"Args": []
+		"Description": "Warps the player to a map without fading.",
+		"Args": [
+			{
+				"TentativeName": "Map",
+				"Description": "ID of the map to warp to.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Warp",
+				"Description": "ID of the warp on the map to warp to.",
+				"Type": ["Number", "Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "X",
+				"Description": "X coordinate to put the player at.",
+				"Type": ["Number", "Label"],
+				"Optional": true
+			},
+			{
+				"TentativeName": "Z",
+				"Description": "Z coordinate to put the player at.",
+				"Type": ["Number", "Label"],
+				"Optional": true
+			},
+			{
+				"TentativeName": "Y",
+				"Description": "Y coordinate to put the player at.",
+				"Type": ["Number", "Label"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 94,
@@ -5400,7 +5601,7 @@
 	{
 		"Id": 244,
 		"Name": "_MSG_BOY_EVENT",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -5472,7 +5673,7 @@
 	{
 		"Id": 277,
 		"Name": "_NAMEIN",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -5484,8 +5685,27 @@
 	{
 		"Id": 278,
 		"Name": "_NAMEIN_POKE",
-		"Description": "",
-		"Args": []
+		"Description": "Renames the given Pokémon.",
+		"Args": [
+			{
+				"TentativeName": "Pokémon1",
+				"Description": "First part of the Pokémon to rename.",
+				"Type": ["Var", "Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Pokémon2",
+				"Description": "Second part of the Pokémon to rename.",
+				"Type": ["Var", "Number"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Result",
+				"Description": "Variable to put the result in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 292,
@@ -5653,7 +5873,7 @@
 	{
 		"Id": 265,
 		"Name": "_NPC_TRADE_POKELIST_SET_PROC",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -5875,7 +6095,7 @@
 	{
 		"Id": 251,
 		"Name": "_OEKAKI_BOARD_SET_PROC",
-		"Description": "",
+		"Description": "(?) Shows a menu related to the Union Room.",
 		"Args": []
 	},
 	{
@@ -6026,7 +6246,7 @@
 	{
 		"Id": 256,
 		"Name": "_PC_DENDOU_SET_PROC",
-		"Description": "",
+		"Description": "Opens the Hall of Fame records menu.",
 		"Args": []
 	},
 	{
@@ -6302,14 +6522,34 @@
 	{
 		"Id": 267,
 		"Name": "_POKELIST_GET_RESULT",
-		"Description": "",
-		"Args": []
+		"Description": "Returns the chosen Pokémon in the previous Pokémon selection menu.",
+		"Args": [
+			{
+				"TentativeName": "Pokémon1",
+				"Description": "Variable to put the first part of the Pokémon in.",
+				"Type": ["Var"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Pokémon2",
+				"Description": "Variable to put the second part of the Pokémon in.",
+				"Type": ["Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 264,
 		"Name": "_POKELIST_SET_PROC",
-		"Description": "",
-		"Args": []
+		"Description": "Opens the Pokémon selection menu.",
+		"Args": [
+			{
+				"TentativeName": "Procedure",
+				"Description": "Type of menu to open. (Name change, move deleter, etc.)",
+				"Type": ["Number"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 309,
@@ -6350,7 +6590,7 @@
 	{
 		"Id": 271,
 		"Name": "_POKESTATUS_GET_RESULT",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
@@ -6527,7 +6767,7 @@
 	{
 		"Id": 254,
 		"Name": "_RECORD_CORNER_SET_PROC",
-		"Description": "",
+		"Description": "Opens the Record Corner menu in Union Room.",
 		"Args": []
 	},
 	{
@@ -6968,8 +7208,15 @@
 	{
 		"Id": 500,
 		"Name": "_SET_SEED_NUTS",
-		"Description": "",
-		"Args": []
+		"Description": "Plants the given berry.",
+		"Args": [
+			{
+				"TentativeName": "Berry",
+				"Description": "Item ID of the berry to plant.",
+				"Type": ["Number", "Var"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 501,
@@ -7344,13 +7591,13 @@
 			{
 				"TentativeName": "Item",
 				"Description": "ID of the item to take.",
-				"Type": ["Number"],
+				"Type": ["Number", "Var"],
 				"Optional": false
 			},
 			{
 				"TentativeName": "Amount",
 				"Description": "Amount to take.",
-				"Type": ["Number"],
+				"Type": ["Number", "Var"],
 				"Optional": false
 			},
 			{
@@ -8033,7 +8280,7 @@
 	{
 		"Id": 4,
 		"Name": "_TIME_WAIT",
-		"Description": "Waits for the amount of frames provided, then continues execution. Argument 2 seems unused.",
+		"Description": "Waits for the amount of frames provided, then continues execution.",
 		"Args": [
 			{
 				"TentativeName": "Time",
@@ -8052,7 +8299,7 @@
 	{
 		"Id": 249,
 		"Name": "_TMAP_BG_SET_PROC",
-		"Description": "",
+		"Description": "Opens the Town Map from Pokémon Centers.",
 		"Args": []
 	},
 	{
@@ -8064,7 +8311,7 @@
 	{
 		"Id": 253,
 		"Name": "_TRADE_LIST_SET_PROC",
-		"Description": "",
+		"Description": "Opens the trade menu in Union Room.",
 		"Args": []
 	},
 	{
@@ -8193,7 +8440,7 @@
 	{
 		"Id": 252,
 		"Name": "_TR_CARD_SET_PROC",
-		"Description": "",
+		"Description": "Opens the trainer card of another player in Union Room.",
 		"Args": []
 	},
 	{
@@ -8619,7 +8866,7 @@
 	{
 		"Id": 266,
 		"Name": "_UNION_POKELIST_SET_PROC",
-		"Description": "",
+		"Description": "(?) Opens the party in Union Room.",
 		"Args": []
 	},
 	{
@@ -8916,14 +9163,40 @@
 	{
 		"Id": 282,
 		"Name": "_WHITE_IN",
-		"Description": "",
-		"Args": []
+		"Description": "Fades the screen back in from white.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Label"],
+				"Optional": true
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 281,
 		"Name": "_WHITE_OUT",
-		"Description": "",
-		"Args": []
+		"Description": "Fades the screen into white.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Label"],
+				"Optional": true
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Number"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 232,
@@ -8934,8 +9207,21 @@
 	{
 		"Id": 272,
 		"Name": "_WIFI_EARTH_SET_PROC",
-		"Description": "",
-		"Args": []
+		"Description": "Opens the GWS menu.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": true
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Var"],
+				"Optional": true
+			}
+		]
 	},
 	{
 		"Id": 754,
@@ -8964,14 +9250,39 @@
 	{
 		"Id": 280,
 		"Name": "_WIPE_FADE_END_CHECK",
-		"Description": "",
+		"Description": "Waits for a fade-in or fade-out to end.",
 		"Args": []
 	},
 	{
 		"Id": 279,
 		"Name": "_WIPE_FADE_START",
-		"Description": "",
-		"Args": []
+		"Description": "Unknown use. Only used in unused scripts.",
+		"Args": [
+			{
+				"TentativeName": "Unknown1",
+				"Description": "Unknown use.",
+				"Type": ["Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown2",
+				"Description": "Unknown use.",
+				"Type": ["Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown3",
+				"Description": "Unknown use.",
+				"Type": ["Label"],
+				"Optional": false
+			},
+			{
+				"TentativeName": "Unknown4",
+				"Description": "Unknown use.",
+				"Type": ["Label"],
+				"Optional": false
+			}
+		]
 	},
 	{
 		"Id": 756,
@@ -8988,7 +9299,7 @@
 	{
 		"Id": 257,
 		"Name": "_WORLDTRADE_SET_PROC",
-		"Description": "",
+		"Description": "Unused.",
 		"Args": []
 	},
 	{
