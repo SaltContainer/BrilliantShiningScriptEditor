@@ -57,6 +57,16 @@ namespace PokemonBDSPEditor.Forms
             lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", command.Description == "" ? "This command is not documented yet." : command.Description, arguments);
         }
 
+        private void SaveScriptInMemory(Script script)
+        {
+            ScriptFile selected = (ScriptFile)comboScriptFile.SelectedItem;
+            selected.Scripts[selected.Scripts.FindIndex(f => f.Name == script.Name)] = script;
+
+            MessageBox.Show("Successfully saved the script in memory!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            UpdateScriptList(selected.Scripts);
+        }
+
         private void comboScriptFile_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateScriptList(((ScriptFile)comboScriptFile.SelectedItem).Scripts);
@@ -84,11 +94,13 @@ namespace PokemonBDSPEditor.Forms
 
             try
             {
-                Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name);
+                Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name, false);
             }
-            catch (ScriptValidationException ex)
+            catch (ScriptValidationExceptionListException ex)
             {
-                MessageBox.Show(ex.Message, "Compilation Error", MessageBoxButtons.OK, ex.Ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+                bool ignorable = !ex.InnerExceptions.Select(exception => exception.Ignorable).Contains(false);
+                string fullError = string.Join("\n", ex.InnerExceptions.Select(exception => exception.Message));
+                MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.OK, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
             }
         }
 
@@ -98,17 +110,23 @@ namespace PokemonBDSPEditor.Forms
 
             try
             {
-                Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name);
-                ScriptFile selected = (ScriptFile)comboScriptFile.SelectedItem;
-                selected.Scripts[selected.Scripts.FindIndex(f => f.Name == script.Name)] = script;
-
-                MessageBox.Show("Successfully saved the script in memory!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                UpdateScriptList(selected.Scripts);
+                Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name, false);
+                SaveScriptInMemory(script);
             }
-            catch (ScriptValidationException ex)
+            catch (ScriptValidationExceptionListException ex)
             {
-                MessageBox.Show(ex.Message, "Compilation Error", MessageBoxButtons.OK, ex.Ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+                bool ignorable = !ex.InnerExceptions.Select(exception => exception.Ignorable).Contains(false);
+                string fullError = string.Join("\n", ex.InnerExceptions.Select(exception => exception.Message));
+                if (ignorable && !checkScriptSafe.Checked)
+                {
+                    fullError += "\nAre you sure you want to save this script anyways?";
+                    if (MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error) == DialogResult.Yes)
+                    {
+                        Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name, true);
+                        SaveScriptInMemory(script);
+                    }
+                }
+                else MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.OK, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
             }
         }
 

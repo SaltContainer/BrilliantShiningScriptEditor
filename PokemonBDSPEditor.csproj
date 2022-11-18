@@ -89,6 +89,7 @@
     <Compile Include="Data\Utils\RegexPatterns.cs" />
     <Compile Include="Engine\ScriptEditor\EditorEngine.cs" />
     <Compile Include="Engine\ScriptEditor\Exceptions\ScriptValidationException.cs" />
+    <Compile Include="Engine\ScriptEditor\Exceptions\ScriptValidationExceptionListException.cs" />
     <Compile Include="Engine\ScriptEditor\Model\Argument.cs" />
     <Compile Include="Data\JSONObjects\Scripts\ArgumentInfo.cs" />
     <Compile Include="Engine\ScriptEditor\Model\ArgumentType.cs" />

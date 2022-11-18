@@ -52,6 +52,7 @@ namespace PokemonBDSPEditor.Forms
             this.rtbScript = new System.Windows.Forms.RichTextBox();
             this.tabText = new System.Windows.Forms.TabPage();
             this.tabTrainer = new System.Windows.Forms.TabPage();
+            this.checkScriptSafe = new System.Windows.Forms.CheckBox();
             this.stripMain.SuspendLayout();
             this.tabsMain.SuspendLayout();
             this.tabScript.SuspendLayout();
@@ -143,6 +144,7 @@ namespace PokemonBDSPEditor.Forms
             this.grpScriptCommand.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpScriptCommand.Controls.Add(this.checkScriptSafe);
             this.grpScriptCommand.Controls.Add(this.lbScriptCommand);
             this.grpScriptCommand.Controls.Add(this.comboScriptCommand);
             this.grpScriptCommand.Controls.Add(this.lbScriptCommandDescription);
@@ -317,6 +319,18 @@ namespace PokemonBDSPEditor.Forms
             this.tabTrainer.Text = "Trainer Editor";
             this.tabTrainer.UseVisualStyleBackColor = true;
             // 
+            // checkScriptSafe
+            // 
+            this.checkScriptSafe.AutoSize = true;
+            this.checkScriptSafe.Checked = true;
+            this.checkScriptSafe.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkScriptSafe.Location = new System.Drawing.Point(151, 18);
+            this.checkScriptSafe.Name = "checkScriptSafe";
+            this.checkScriptSafe.Size = new System.Drawing.Size(78, 17);
+            this.checkScriptSafe.TabIndex = 13;
+            this.checkScriptSafe.Text = "Safe Mode";
+            this.checkScriptSafe.UseVisualStyleBackColor = true;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,6 +379,7 @@ namespace PokemonBDSPEditor.Forms
         private System.Windows.Forms.ComboBox comboScriptCommand;
         private System.Windows.Forms.Label lbScriptCommandDescription;
         private System.Windows.Forms.Label lbScriptCommandName;
+        private System.Windows.Forms.CheckBox checkScriptSafe;
     }
 }
 

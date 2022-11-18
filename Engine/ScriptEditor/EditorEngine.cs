@@ -69,9 +69,9 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             return scriptValidator.DecompileScript(script);
         }
 
-        public Script CompileScript(string script, string name)
+        public Script CompileScript(string script, string name, bool ignoreExceptions)
         {
-            return scriptValidator.CompileScript(script, name);
+            return scriptValidator.CompileScript(script, name, ignoreExceptions);
         }
 
         private bool LoadScriptFiles()
