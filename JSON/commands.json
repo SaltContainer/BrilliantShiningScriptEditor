@@ -971,7 +971,7 @@
 				"Description": "ID of the good to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -980,7 +980,7 @@
 				"Description": "Amount to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -988,7 +988,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -1014,7 +1014,7 @@
 				"Description": "ID of the item to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1023,7 +1023,7 @@
 				"Description": "Amount to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1031,7 +1031,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -1049,7 +1049,7 @@
 				"Description": "ID of the item to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1058,7 +1058,7 @@
 				"Description": "Amount to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1066,7 +1066,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put if the player has enough bag space in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -1108,7 +1108,7 @@
 				"Description": "ID of the species of PokÃ©mon to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1117,7 +1117,7 @@
 				"Description": "Level of the PokÃ©mon to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1126,7 +1126,7 @@
 				"Description": "ID of the item held by the PokÃ©mon to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1134,7 +1134,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -1152,7 +1152,7 @@
 				"Description": "ID of the sphere to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1161,7 +1161,7 @@
 				"Description": "Amount to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1169,7 +1169,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -1195,7 +1195,7 @@
 				"Description": "ID of the sphere to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1204,7 +1204,7 @@
 				"Description": "Amount to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1212,7 +1212,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -1230,7 +1230,7 @@
 				"Description": "ID of the species of PokÃ©mon to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1239,7 +1239,7 @@
 				"Description": "ID of the origin for the egg.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -1265,7 +1265,7 @@
 				"Description": "ID of the trap to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1274,7 +1274,7 @@
 				"Description": "Amount to give.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1282,7 +1282,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -1355,7 +1355,7 @@
 				"TentativeName": "Variable",
 				"Description": "Variable to add to.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -1363,7 +1363,7 @@
 				"TentativeName": "Value",
 				"Description": "Value to add.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -1745,7 +1745,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -2067,7 +2067,7 @@
 				"TentativeName": "Unknown5",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -2108,7 +2108,7 @@
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number"
 				],
 				"Optional": false
@@ -2174,7 +2174,7 @@
 				"TentativeName": "Unknown5",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -2223,7 +2223,7 @@
 				"TentativeName": "Unknown5",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -2273,7 +2273,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -2435,7 +2435,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in. (Charged, No battery, No trainer)",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -2443,7 +2443,7 @@
 				"TentativeName": "Battery",
 				"Description": "Steps left to charge the battery.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -3056,7 +3056,7 @@
 				"TentativeName": "Seal",
 				"Description": "ID of the seal to give.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number"
 				],
 				"Optional": false
@@ -3065,7 +3065,7 @@
 				"TentativeName": "Amount",
 				"Description": "Amount to give.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number"
 				],
 				"Optional": false
@@ -3083,7 +3083,7 @@
 				"TentativeName": "Seal",
 				"Description": "ID of the seal to check.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number"
 				],
 				"Optional": false
@@ -3092,7 +3092,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -3189,7 +3189,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -3295,7 +3295,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -3311,7 +3311,7 @@
 				"TentativeName": "Position",
 				"Description": "Position of the PokÃ©mon to check.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -3448,7 +3448,7 @@
 				"TentativeName": "Var1",
 				"Description": "Variable to compare.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -3456,7 +3456,7 @@
 				"TentativeName": "Var2",
 				"Description": "Variable to compare to.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -3554,7 +3554,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -3611,7 +3611,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -4409,10 +4409,10 @@
 		"Animation": false,
 		"Args": [
 			{
-				"TentativeName": "Var",
+				"TentativeName": "Work",
 				"Description": "Variable.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -4450,10 +4450,10 @@
 		"Animation": false,
 		"Args": [
 			{
-				"TentativeName": "Var",
+				"TentativeName": "Work",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -5012,7 +5012,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -5037,7 +5037,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -5071,7 +5071,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -5352,7 +5352,7 @@
 				"TentativeName": "Variable",
 				"Description": "Variable containing the flag to set.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -5763,7 +5763,7 @@
 				"Description": "ID of the item to check.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -5771,7 +5771,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -6301,7 +6301,7 @@
 				"TentativeName": "Value1",
 				"Description": "Value to compare.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -6319,7 +6319,7 @@
 				"TentativeName": "Value2",
 				"Description": "Value to compare to.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -6346,7 +6346,7 @@
 				"TentativeName": "Value1",
 				"Description": "Value to compare.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -6364,7 +6364,7 @@
 				"TentativeName": "Value2",
 				"Description": "Value to compare to.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -6399,7 +6399,7 @@
 				"TentativeName": "Variable",
 				"Description": "Variable to compare.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -6415,7 +6415,7 @@
 				"TentativeName": "Value",
 				"Description": "Value to compare to.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number"
 				],
 				"Optional": false
@@ -6578,7 +6578,7 @@
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to check.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -6605,7 +6605,7 @@
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to check.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -6632,7 +6632,7 @@
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to check.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -6659,7 +6659,7 @@
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to check.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -6694,7 +6694,7 @@
 				"TentativeName": "Unknown1",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -6702,7 +6702,7 @@
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -6719,7 +6719,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -6929,7 +6929,7 @@
 				"Description": "ID of the item to check.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -6938,7 +6938,7 @@
 				"Description": "Amount to check for.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -6946,7 +6946,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -6972,7 +6972,7 @@
 				"Description": "ID of the item to get the name of.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -6981,7 +6981,7 @@
 				"Description": "Amount of the item.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -7079,7 +7079,7 @@
 				"TentativeName": "Variable",
 				"Description": "Variable to set.",
 				"Type": [
-					"Var",
+					"Work",
 					"Label"
 				],
 				"Optional": false
@@ -7088,7 +7088,7 @@
 				"TentativeName": "Value",
 				"Description": "Value to set the variable to.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -7123,7 +7123,7 @@
 				"TentativeName": "Variable",
 				"Description": "Variable to set.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -7131,7 +7131,7 @@
 				"TentativeName": "Value",
 				"Description": "Value to set the variable to.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -7652,7 +7652,7 @@
 				"TentativeName": "PokÃ©mon1",
 				"Description": "First part of the PokÃ©mon to rename.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number"
 				],
 				"Optional": false
@@ -7661,7 +7661,7 @@
 				"TentativeName": "PokÃ©mon2",
 				"Description": "Second part of the PokÃ©mon to rename.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number"
 				],
 				"Optional": false
@@ -7670,7 +7670,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -8052,7 +8052,7 @@
 				"Description": "Actor to hide.",
 				"Type": [
 					"Label",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -8432,7 +8432,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -8449,7 +8449,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -8482,7 +8482,7 @@
 				"TentativeName": "Direction",
 				"Description": "Variable to put the direction in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -8548,7 +8548,7 @@
 				"TentativeName": "X",
 				"Description": "Variable to put the X coordinate in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -8556,7 +8556,7 @@
 				"TentativeName": "Z",
 				"Description": "Variable to put the Z coordinate in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -8766,7 +8766,7 @@
 				"TentativeName": "PokÃ©mon1",
 				"Description": "Variable to put the first part of the PokÃ©mon in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -8774,7 +8774,7 @@
 				"TentativeName": "PokÃ©mon2",
 				"Description": "Variable to put the second part of the PokÃ©mon in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -8992,7 +8992,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -9018,7 +9018,7 @@
 				"Description": "ID of the species of PokÃ©mon to show.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -9036,7 +9036,7 @@
 				"Description": "ID of the species of PokÃ©mon to show.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -9285,7 +9285,7 @@
 				"TentativeName": "Trainer",
 				"Description": "ID of the trainer to check.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number"
 				],
 				"Optional": false
@@ -9294,7 +9294,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -9407,7 +9407,7 @@
 				"TentativeName": "Variable",
 				"Description": "Variable to check the value of.",
 				"Type": [
-					"Var",
+					"Work",
 					"Label"
 				],
 				"Optional": false
@@ -9683,7 +9683,7 @@
 				"Description": "Item ID of the berry to plant.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -10186,7 +10186,7 @@
 				"Description": "ID of the item to take.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -10195,7 +10195,7 @@
 				"Description": "Amount to take.",
 				"Type": [
 					"Number",
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -10203,7 +10203,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -10260,7 +10260,7 @@
 				"TentativeName": "Variable",
 				"Description": "Variable to subtract from.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -10268,7 +10268,7 @@
 				"TentativeName": "Value",
 				"Description": "Value to subtract.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -10311,7 +10311,7 @@
 				"TentativeName": "Variable",
 				"Description": "Variable to use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -10650,7 +10650,7 @@
 				"TentativeName": "Unknown1",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -10658,7 +10658,7 @@
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -10765,7 +10765,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -10782,7 +10782,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var",
+					"Work",
 					"Label"
 				],
 				"Optional": false
@@ -11007,7 +11007,7 @@
 			{
 				"TentativeName": "Result",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -11121,7 +11121,7 @@
 				"TentativeName": "Unknown",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -11178,7 +11178,7 @@
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to check.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -11197,7 +11197,7 @@
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to clear.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -11216,7 +11216,7 @@
 				"TentativeName": "Flag",
 				"Description": "Value of trainer flag to set.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number",
 					"Label"
 				],
@@ -11995,7 +11995,7 @@
 				"TentativeName": "Position1",
 				"Description": "Position of the Unown in party/boxes.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -12003,7 +12003,7 @@
 				"TentativeName": "Position2",
 				"Description": "Position of the Unown in party/boxes.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -12124,7 +12124,7 @@
 				"TentativeName": "PokÃ©mon",
 				"Description": "ID of the PokÃ©mon whose cry is played.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number"
 				],
 				"Optional": false
@@ -12133,7 +12133,7 @@
 				"TentativeName": "Form",
 				"Description": "ID of the form of the PokÃ©mon whose cry is played.",
 				"Type": [
-					"Var",
+					"Work",
 					"Number"
 				],
 				"Optional": false
@@ -12263,7 +12263,7 @@
 				"TentativeName": "Item",
 				"Description": "ID of the item to check.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			},
@@ -12271,7 +12271,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
@@ -12354,7 +12354,7 @@
 				"TentativeName": "Unknown1",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": true
 			},
@@ -12362,7 +12362,7 @@
 				"TentativeName": "Unknown2",
 				"Description": "Unknown use.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": true
 			}
@@ -12484,7 +12484,7 @@
 				"TentativeName": "Result",
 				"Description": "Variable to put the result in.",
 				"Type": [
-					"Var"
+					"Work"
 				],
 				"Optional": false
 			}
