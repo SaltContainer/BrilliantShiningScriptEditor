@@ -54,7 +54,10 @@ namespace PokemonBDSPEditor.Forms
             string arguments = "";
             if (command.Arguments.Count == 0) arguments = "No arguments.";
             else arguments = string.Join("\n", command.Arguments.Select(a => string.Format("[{0}] {1} - {2}{3}", string.Join(", ", a.Type), a.Name, a.Optional ? "(Optional) " : "", a.Description)));
-            lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", command.Description == "" ? "This command is not documented yet." : command.Description, arguments);
+            string description = "";
+            if (command.Dummy) description = command.Description == "" ? "This command is dummied out and does nothing." : string.Format("[Dummied out command] {0}", command.Description);
+            else description = command.Description == "" ? "This command is not documented yet." : command.Description;
+            lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", description, arguments);
         }
 
         private void SaveScriptInMemory(Script script)

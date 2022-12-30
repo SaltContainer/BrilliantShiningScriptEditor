@@ -37,6 +37,7 @@ namespace PokemonBDSPEditor.Forms
             this.tabScript = new System.Windows.Forms.TabPage();
             this.grpScriptFile = new System.Windows.Forms.GroupBox();
             this.grpScriptCommand = new System.Windows.Forms.GroupBox();
+            this.checkScriptSafe = new System.Windows.Forms.CheckBox();
             this.lbScriptCommand = new System.Windows.Forms.Label();
             this.comboScriptCommand = new System.Windows.Forms.ComboBox();
             this.lbScriptCommandDescription = new System.Windows.Forms.Label();
@@ -51,8 +52,6 @@ namespace PokemonBDSPEditor.Forms
             this.btnScriptSave = new System.Windows.Forms.Button();
             this.rtbScript = new System.Windows.Forms.RichTextBox();
             this.tabText = new System.Windows.Forms.TabPage();
-            this.tabTrainer = new System.Windows.Forms.TabPage();
-            this.checkScriptSafe = new System.Windows.Forms.CheckBox();
             this.stripMain.SuspendLayout();
             this.tabsMain.SuspendLayout();
             this.tabScript.SuspendLayout();
@@ -100,7 +99,6 @@ namespace PokemonBDSPEditor.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabsMain.Controls.Add(this.tabScript);
             this.tabsMain.Controls.Add(this.tabText);
-            this.tabsMain.Controls.Add(this.tabTrainer);
             this.tabsMain.Location = new System.Drawing.Point(12, 42);
             this.tabsMain.Name = "tabsMain";
             this.tabsMain.SelectedIndex = 0;
@@ -155,6 +153,18 @@ namespace PokemonBDSPEditor.Forms
             this.grpScriptCommand.TabIndex = 14;
             this.grpScriptCommand.TabStop = false;
             this.grpScriptCommand.Text = "Command Reference";
+            // 
+            // checkScriptSafe
+            // 
+            this.checkScriptSafe.AutoSize = true;
+            this.checkScriptSafe.Checked = true;
+            this.checkScriptSafe.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkScriptSafe.Location = new System.Drawing.Point(151, 18);
+            this.checkScriptSafe.Name = "checkScriptSafe";
+            this.checkScriptSafe.Size = new System.Drawing.Size(78, 17);
+            this.checkScriptSafe.TabIndex = 13;
+            this.checkScriptSafe.Text = "Safe Mode";
+            this.checkScriptSafe.UseVisualStyleBackColor = true;
             // 
             // lbScriptCommand
             // 
@@ -309,28 +319,6 @@ namespace PokemonBDSPEditor.Forms
             this.tabText.Text = "Text Editor";
             this.tabText.UseVisualStyleBackColor = true;
             // 
-            // tabTrainer
-            // 
-            this.tabTrainer.Location = new System.Drawing.Point(4, 22);
-            this.tabTrainer.Name = "tabTrainer";
-            this.tabTrainer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTrainer.Size = new System.Drawing.Size(1076, 543);
-            this.tabTrainer.TabIndex = 2;
-            this.tabTrainer.Text = "Trainer Editor";
-            this.tabTrainer.UseVisualStyleBackColor = true;
-            // 
-            // checkScriptSafe
-            // 
-            this.checkScriptSafe.AutoSize = true;
-            this.checkScriptSafe.Checked = true;
-            this.checkScriptSafe.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkScriptSafe.Location = new System.Drawing.Point(151, 18);
-            this.checkScriptSafe.Name = "checkScriptSafe";
-            this.checkScriptSafe.Size = new System.Drawing.Size(78, 17);
-            this.checkScriptSafe.TabIndex = 13;
-            this.checkScriptSafe.Text = "Safe Mode";
-            this.checkScriptSafe.UseVisualStyleBackColor = true;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,7 +351,6 @@ namespace PokemonBDSPEditor.Forms
         private System.Windows.Forms.TabControl tabsMain;
         private System.Windows.Forms.TabPage tabScript;
         private System.Windows.Forms.TabPage tabText;
-        private System.Windows.Forms.TabPage tabTrainer;
         private System.Windows.Forms.Button btnScriptSave;
         private System.Windows.Forms.Button btnScriptCompile;
         private System.Windows.Forms.Label lbScriptFile;
