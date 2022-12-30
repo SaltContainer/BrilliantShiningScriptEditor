@@ -1,0 +1,4837 @@
+[
+    {
+		"Id": 0,
+		"Name":"SYS_FLAG_ARRIVE_START",
+		"Description":""
+	},
+	{
+		"Id": 1,
+		"Name":"SYS_FLAG_BAG_GET",
+		"Description":""
+	},
+	{
+		"Id": 2,
+		"Name":"SYS_FLAG_PAIR",
+		"Description":""
+	},
+	{
+		"Id": 3,
+		"Name":"SYS_FLAG_KAIRIKI",
+		"Description":""
+	},
+	{
+		"Id": 4,
+		"Name":"SYS_FLAG_FNOTE_GET",
+		"Description":""
+	},
+	{
+		"Id": 5,
+		"Name":"SYS_FLAG_GAME_CLEAR",
+		"Description":""
+	},
+	{
+		"Id": 6,
+		"Name":"SYS_FLAG_ONE_STEP",
+		"Description":""
+	},
+	{
+		"Id": 7,
+		"Name":"SYS_FLAG_COMM_COUNTER",
+		"Description":""
+	},
+	{
+		"Id": 8,
+		"Name":"SYS_FLAG_SAFARI_MODE",
+		"Description":""
+	},
+	{
+		"Id": 9,
+		"Name":"SYS_FLAG_CON_STYLE_MASTER",
+		"Description":""
+	},
+	{
+		"Id": 10,
+		"Name":"SYS_FLAG_CON_BEAUTIFUL_MASTER",
+		"Description":""
+	},
+	{
+		"Id": 11,
+		"Name":"SYS_FLAG_CON_CUTE_MASTER",
+		"Description":""
+	},
+	{
+		"Id": 12,
+		"Name":"SYS_FLAG_CON_CLEVER_MASTER",
+		"Description":""
+	},
+	{
+		"Id": 13,
+		"Name":"SYS_FLAG_CON_STRONG_MASTER",
+		"Description":""
+	},
+	{
+		"Id": 14,
+		"Name":"SYS_FLAG_BTL_SEARCHER_USE",
+		"Description":""
+	},
+	{
+		"Id": 15,
+		"Name":"SYS_FLAG_UG_ARRIVE",
+		"Description":""
+	},
+	{
+		"Id": 16,
+		"Name":"SYS_FLAG_UG_DIG",
+		"Description":""
+	},
+	{
+		"Id": 17,
+		"Name":"SYS_FLAG_UG_TAMA",
+		"Description":""
+	},
+	{
+		"Id": 18,
+		"Name":"SYS_FLAG_UG_BASE",
+		"Description":""
+	},
+	{
+		"Id": 19,
+		"Name":"SYS_FLAG_UG_GOODS",
+		"Description":""
+	},
+	{
+		"Id": 20,
+		"Name":"SYS_FLAG_UG_HATA",
+		"Description":""
+	},
+	{
+		"Id": 21,
+		"Name":"SYS_FLAG_GTC_OPEN",
+		"Description":""
+	},
+	{
+		"Id": 22,
+		"Name":"SYS_FLAG_BTOWER_OPEN",
+		"Description":""
+	},
+	{
+		"Id": 23,
+		"Name":"SYS_FLAG_SHIP",
+		"Description":""
+	},
+	{
+		"Id": 24,
+		"Name":"SYS_FLAG_PST",
+		"Description":""
+	},
+	{
+		"Id": 25,
+		"Name":"SYS_FLAG_POKEPARK_MODE",
+		"Description":""
+	},
+	{
+		"Id": 26,
+		"Name":"SYS_FLAG_FLASH",
+		"Description":""
+	},
+	{
+		"Id": 27,
+		"Name":"SYS_FLAG_KIRIBARAI",
+		"Description":""
+	},
+	{
+		"Id": 28,
+		"Name":"SYS_FLAG_POKETCH_HOOK",
+		"Description":""
+	},
+	{
+		"Id": 29,
+		"Name":"SYS_FLAG_REIAIHAI",
+		"Description":""
+	},
+	{
+		"Id": 30,
+		"Name":"SYS_FLAG_MIZUKI",
+		"Description":""
+	},
+	{
+		"Id": 31,
+		"Name":"SYS_FLAG_BS_LV1",
+		"Description":""
+	},
+	{
+		"Id": 32,
+		"Name":"SYS_FLAG_BS_LV2",
+		"Description":""
+	},
+	{
+		"Id": 33,
+		"Name":"SYS_FLAG_BS_LV3",
+		"Description":""
+	},
+	{
+		"Id": 34,
+		"Name":"SYS_FLAG_BS_LV4",
+		"Description":""
+	},
+	{
+		"Id": 35,
+		"Name":"SYS_FLAG_BS_LV5",
+		"Description":""
+	},
+	{
+		"Id": 36,
+		"Name":"SYS_FLAG_BGM_D28",
+		"Description":""
+	},
+	{
+		"Id": 37,
+		"Name":"SYS_FLAG_BGM_GINGA",
+		"Description":""
+	},
+	{
+		"Id": 38,
+		"Name":"SYS_FLAG_BGM_D26",
+		"Description":""
+	},
+	{
+		"Id": 39,
+		"Name":"SYS_FLAG_BGM_C04",
+		"Description":""
+	},
+	{
+		"Id": 40,
+		"Name":"SYS_FLAG_BGM_D02",
+		"Description":""
+	},
+	{
+		"Id": 41,
+		"Name":"SYS_FLAG_BGM_D13",
+		"Description":""
+	},
+	{
+		"Id": 42,
+		"Name":"SYS_FLAG_BGM_R224",
+		"Description":""
+	},
+	{
+		"Id": 43,
+		"Name":"SYS_FLAG_BGM_C10",
+		"Description":""
+	},
+	{
+		"Id": 44,
+		"Name":"SYS_FLAG_WIFI_USE",
+		"Description":""
+	},
+	{
+		"Id": 45,
+		"Name":"SYS_FLAG_T05_GINGA_EVENT",
+		"Description":""
+	},
+	{
+		"Id": 46,
+		"Name":"SYS_FLAG_BGM_D27",
+		"Description":""
+	},
+	{
+		"Id": 47,
+		"Name":"SYS_FLAG_BGM_D29",
+		"Description":""
+	},
+	{
+		"Id": 48,
+		"Name":"SYS_FLAG_BGM_D16",
+		"Description":""
+	},
+	{
+		"Id": 49,
+		"Name":"SYS_FLAG_BGM_C02",
+		"Description":""
+	},
+	{
+		"Id": 50,
+		"Name":"SYS_FLAG_UG_FIRST",
+		"Description":""
+	},
+	{
+		"Id": 51,
+		"Name":"SYS_FLAG_BGM_T02",
+		"Description":""
+	},
+	{
+		"Id": 52,
+		"Name":"SYS_FLAG_CYCLINGROAD",
+		"Description":""
+	},
+	{
+		"Id": 53,
+		"Name":"SYS_FLAG_BGM_D10",
+		"Description":""
+	},
+	{
+		"Id": 54,
+		"Name":"OLD_FLAG_ARRIVE_T01",
+		"Description":""
+	},
+	{
+		"Id": 55,
+		"Name":"OLD_FLAG_ARRIVE_T02",
+		"Description":""
+	},
+	{
+		"Id": 56,
+		"Name":"OLD_FLAG_ARRIVE_T03",
+		"Description":""
+	},
+	{
+		"Id": 57,
+		"Name":"OLD_FLAG_ARRIVE_T04",
+		"Description":""
+	},
+	{
+		"Id": 58,
+		"Name":"OLD_FLAG_ARRIVE_T05",
+		"Description":""
+	},
+	{
+		"Id": 59,
+		"Name":"OLD_FLAG_ARRIVE_T06",
+		"Description":""
+	},
+	{
+		"Id": 60,
+		"Name":"OLD_FLAG_ARRIVE_T07",
+		"Description":""
+	},
+	{
+		"Id": 61,
+		"Name":"OLD_FLAG_ARRIVE_C01",
+		"Description":""
+	},
+	{
+		"Id": 62,
+		"Name":"OLD_FLAG_ARRIVE_C02",
+		"Description":""
+	},
+	{
+		"Id": 63,
+		"Name":"OLD_FLAG_ARRIVE_C03",
+		"Description":""
+	},
+	{
+		"Id": 64,
+		"Name":"OLD_FLAG_ARRIVE_C04",
+		"Description":""
+	},
+	{
+		"Id": 65,
+		"Name":"OLD_FLAG_ARRIVE_C05",
+		"Description":""
+	},
+	{
+		"Id": 66,
+		"Name":"OLD_FLAG_ARRIVE_C06",
+		"Description":""
+	},
+	{
+		"Id": 67,
+		"Name":"OLD_FLAG_ARRIVE_C07",
+		"Description":""
+	},
+	{
+		"Id": 68,
+		"Name":"OLD_FLAG_ARRIVE_C08",
+		"Description":""
+	},
+	{
+		"Id": 69,
+		"Name":"OLD_FLAG_ARRIVE_C09",
+		"Description":""
+	},
+	{
+		"Id": 70,
+		"Name":"OLD_FLAG_ARRIVE_C10",
+		"Description":""
+	},
+	{
+		"Id": 71,
+		"Name":"OLD_FLAG_ARRIVE_C11",
+		"Description":""
+	},
+	{
+		"Id": 72,
+		"Name":"OLD_FLAG_ARRIVE_D01R0101",
+		"Description":""
+	},
+	{
+		"Id": 73,
+		"Name":"OLD_FLAG_ARRIVE_D02R0101",
+		"Description":""
+	},
+	{
+		"Id": 74,
+		"Name":"OLD_FLAG_ARRIVE_D03",
+		"Description":""
+	},
+	{
+		"Id": 75,
+		"Name":"OLD_FLAG_ARRIVE_D04R0101",
+		"Description":""
+	},
+	{
+		"Id": 76,
+		"Name":"OLD_FLAG_ARRIVE_D05",
+		"Description":""
+	},
+	{
+		"Id": 77,
+		"Name":"OLD_FLAG_ARRIVE_D05R0114",
+		"Description":""
+	},
+	{
+		"Id": 78,
+		"Name":"OLD_FLAG_ARRIVE_D06",
+		"Description":""
+	},
+	{
+		"Id": 79,
+		"Name":"OLD_FLAG_ARRIVE_D07R0102",
+		"Description":""
+	},
+	{
+		"Id": 80,
+		"Name":"OLD_FLAG_ARRIVE_D09R0101",
+		"Description":""
+	},
+	{
+		"Id": 81,
+		"Name":"OLD_FLAG_ARRIVE_D10R0101",
+		"Description":""
+	},
+	{
+		"Id": 82,
+		"Name":"OLD_FLAG_ARRIVE_D11R0101",
+		"Description":""
+	},
+	{
+		"Id": 83,
+		"Name":"OLD_FLAG_ARRIVE_D12R0101",
+		"Description":""
+	},
+	{
+		"Id": 84,
+		"Name":"OLD_FLAG_ARRIVE_D13R0101",
+		"Description":""
+	},
+	{
+		"Id": 85,
+		"Name":"OLD_FLAG_ARRIVE_D14R0101",
+		"Description":""
+	},
+	{
+		"Id": 86,
+		"Name":"OLD_FLAG_ARRIVE_D15",
+		"Description":""
+	},
+	{
+		"Id": 87,
+		"Name":"OLD_FLAG_ARRIVE_D16",
+		"Description":""
+	},
+	{
+		"Id": 88,
+		"Name":"OLD_FLAG_ARRIVE_D16R0101",
+		"Description":""
+	},
+	{
+		"Id": 89,
+		"Name":"OLD_FLAG_ARRIVE_D17",
+		"Description":""
+	},
+	{
+		"Id": 90,
+		"Name":"OLD_FLAG_ARRIVE_D17R0102",
+		"Description":""
+	},
+	{
+		"Id": 91,
+		"Name":"OLD_FLAG_ARRIVE_D18",
+		"Description":""
+	},
+	{
+		"Id": 92,
+		"Name":"OLD_FLAG_ARRIVE_D20R0101",
+		"Description":""
+	},
+	{
+		"Id": 93,
+		"Name":"OLD_FLAG_ARRIVE_D21R0101",
+		"Description":""
+	},
+	{
+		"Id": 94,
+		"Name":"OLD_FLAG_ARRIVE_D22R0101",
+		"Description":""
+	},
+	{
+		"Id": 95,
+		"Name":"OLD_FLAG_ARRIVE_D23R0101",
+		"Description":""
+	},
+	{
+		"Id": 96,
+		"Name":"OLD_FLAG_ARRIVE_D24",
+		"Description":""
+	},
+	{
+		"Id": 97,
+		"Name":"OLD_FLAG_ARRIVE_D24R0101",
+		"Description":""
+	},
+	{
+		"Id": 98,
+		"Name":"OLD_FLAG_ARRIVE_D25R0101",
+		"Description":""
+	},
+	{
+		"Id": 99,
+		"Name":"OLD_FLAG_ARRIVE_D26R0101",
+		"Description":""
+	},
+	{
+		"Id": 100,
+		"Name":"OLD_FLAG_ARRIVE_D27",
+		"Description":""
+	},
+	{
+		"Id": 101,
+		"Name":"OLD_FLAG_ARRIVE_D27R0103",
+		"Description":""
+	},
+	{
+		"Id": 102,
+		"Name":"OLD_FLAG_ARRIVE_D28",
+		"Description":""
+	},
+	{
+		"Id": 103,
+		"Name":"OLD_FLAG_ARRIVE_D28R0103",
+		"Description":""
+	},
+	{
+		"Id": 104,
+		"Name":"OLD_FLAG_ARRIVE_D29",
+		"Description":""
+	},
+	{
+		"Id": 105,
+		"Name":"OLD_FLAG_ARRIVE_D29R0103",
+		"Description":""
+	},
+	{
+		"Id": 106,
+		"Name":"OLD_FLAG_ARRIVE_D30",
+		"Description":""
+	},
+	{
+		"Id": 107,
+		"Name":"OLD_FLAG_ARRIVE_C11R0101",
+		"Description":""
+	},
+	{
+		"Id": 108,
+		"Name":"OLD_FLAG_ARRIVE_R206",
+		"Description":""
+	},
+	{
+		"Id": 109,
+		"Name":"OLD_FLAG_ARRIVE_R208R0101",
+		"Description":""
+	},
+	{
+		"Id": 110,
+		"Name":"OLD_FLAG_ARRIVE_R209R0101",
+		"Description":""
+	},
+	{
+		"Id": 111,
+		"Name":"OLD_FLAG_ARRIVE_R210AR0101",
+		"Description":""
+	},
+	{
+		"Id": 112,
+		"Name":"OLD_FLAG_ARRIVE_R210BR0101",
+		"Description":""
+	},
+	{
+		"Id": 113,
+		"Name":"OLD_FLAG_ARRIVE_R212AR0101",
+		"Description":""
+	},
+	{
+		"Id": 114,
+		"Name":"OLD_FLAG_ARRIVE_R212BR0101",
+		"Description":""
+	},
+	{
+		"Id": 115,
+		"Name":"OLD_FLAG_ARRIVE_R213R0201",
+		"Description":""
+	},
+	{
+		"Id": 116,
+		"Name":"OLD_FLAG_ARRIVE_L02R0101",
+		"Description":""
+	},
+	{
+		"Id": 117,
+		"Name":"OLD_FLAG_ARRIVE_R222R0101",
+		"Description":""
+	},
+	{
+		"Id": 118,
+		"Name":"OLD_FLAG_ARRIVE_R222R0201",
+		"Description":""
+	},
+	{
+		"Id": 119,
+		"Name":"OLD_FLAG_ARRIVE_W226R0101",
+		"Description":""
+	},
+	{
+		"Id": 120,
+		"Name":"OLD_FLAG_ARRIVE_R221",
+		"Description":""
+	},
+	{
+		"Id": 121,
+		"Name":"OLD_FLAG_ARRIVE_R221R0101",
+		"Description":""
+	},
+	{
+		"Id": 122,
+		"Name":"OLD_FLAG_ARRIVE_CHAMPLEAGUE",
+		"Description":""
+	},
+	{
+		"Id": 123,
+		"Name":"OLD_FLAG_ARRIVE_MAX",
+		"Description":""
+	},
+	{
+		"Id": 124,
+		"Name":"BADGE_ID_C03",
+		"Description":""
+	},
+	{
+		"Id": 125,
+		"Name":"BADGE_ID_C04",
+		"Description":""
+	},
+	{
+		"Id": 126,
+		"Name":"BADGE_ID_C07",
+		"Description":""
+	},
+	{
+		"Id": 127,
+		"Name":"BADGE_ID_C06",
+		"Description":""
+	},
+	{
+		"Id": 128,
+		"Name":"BADGE_ID_C05",
+		"Description":""
+	},
+	{
+		"Id": 129,
+		"Name":"BADGE_ID_C02",
+		"Description":""
+	},
+	{
+		"Id": 130,
+		"Name":"BADGE_ID_C09",
+		"Description":""
+	},
+	{
+		"Id": 131,
+		"Name":"BADGE_ID_C08",
+		"Description":""
+	},
+	{
+		"Id": 132,
+		"Name":"BADGE_MAX",
+		"Description":""
+	},
+	{
+		"Id": 133,
+		"Name":"FIRST_SAVE",
+		"Description":""
+	},
+	{
+		"Id": 134,
+		"Name":"FLAG_ARRIVE_C01",
+		"Description":""
+	},
+	{
+		"Id": 135,
+		"Name":"FLAG_ARRIVE_C01FS0101",
+		"Description":""
+	},
+	{
+		"Id": 136,
+		"Name":"FLAG_ARRIVE_C01PC0101",
+		"Description":""
+	},
+	{
+		"Id": 137,
+		"Name":"FLAG_ARRIVE_C01PC0102",
+		"Description":""
+	},
+	{
+		"Id": 138,
+		"Name":"FLAG_ARRIVE_C01PC0103",
+		"Description":""
+	},
+	{
+		"Id": 139,
+		"Name":"FLAG_ARRIVE_C01R0101",
+		"Description":""
+	},
+	{
+		"Id": 140,
+		"Name":"FLAG_ARRIVE_C01R0102",
+		"Description":""
+	},
+	{
+		"Id": 141,
+		"Name":"FLAG_ARRIVE_C01R0103",
+		"Description":""
+	},
+	{
+		"Id": 142,
+		"Name":"FLAG_ARRIVE_C01R0201",
+		"Description":""
+	},
+	{
+		"Id": 143,
+		"Name":"FLAG_ARRIVE_C01R0202",
+		"Description":""
+	},
+	{
+		"Id": 144,
+		"Name":"FLAG_ARRIVE_C01R0203",
+		"Description":""
+	},
+	{
+		"Id": 145,
+		"Name":"FLAG_ARRIVE_C01R0204",
+		"Description":""
+	},
+	{
+		"Id": 146,
+		"Name":"FLAG_ARRIVE_C01R0205",
+		"Description":""
+	},
+	{
+		"Id": 147,
+		"Name":"FLAG_ARRIVE_C01R0206",
+		"Description":""
+	},
+	{
+		"Id": 148,
+		"Name":"FLAG_ARRIVE_C01R0207",
+		"Description":""
+	},
+	{
+		"Id": 149,
+		"Name":"FLAG_ARRIVE_C01R0208",
+		"Description":""
+	},
+	{
+		"Id": 150,
+		"Name":"FLAG_ARRIVE_C01R0301",
+		"Description":""
+	},
+	{
+		"Id": 151,
+		"Name":"FLAG_ARRIVE_C01R0302",
+		"Description":""
+	},
+	{
+		"Id": 152,
+		"Name":"FLAG_ARRIVE_C01R0501",
+		"Description":""
+	},
+	{
+		"Id": 153,
+		"Name":"FLAG_ARRIVE_C01R0502",
+		"Description":""
+	},
+	{
+		"Id": 154,
+		"Name":"FLAG_ARRIVE_C01R0601",
+		"Description":""
+	},
+	{
+		"Id": 155,
+		"Name":"FLAG_ARRIVE_C01R0701",
+		"Description":""
+	},
+	{
+		"Id": 156,
+		"Name":"FLAG_ARRIVE_C01R0801",
+		"Description":""
+	},
+	{
+		"Id": 157,
+		"Name":"FLAG_ARRIVE_C01R0802",
+		"Description":""
+	},
+	{
+		"Id": 158,
+		"Name":"FLAG_ARRIVE_C02",
+		"Description":""
+	},
+	{
+		"Id": 159,
+		"Name":"FLAG_ARRIVE_C02FS0101",
+		"Description":""
+	},
+	{
+		"Id": 160,
+		"Name":"FLAG_ARRIVE_C02GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 161,
+		"Name":"FLAG_ARRIVE_C02PC0101",
+		"Description":""
+	},
+	{
+		"Id": 162,
+		"Name":"FLAG_ARRIVE_C02PC0102",
+		"Description":""
+	},
+	{
+		"Id": 163,
+		"Name":"FLAG_ARRIVE_C02PC0103",
+		"Description":""
+	},
+	{
+		"Id": 164,
+		"Name":"FLAG_ARRIVE_C02R0101",
+		"Description":""
+	},
+	{
+		"Id": 165,
+		"Name":"FLAG_ARRIVE_C02R0102",
+		"Description":""
+	},
+	{
+		"Id": 166,
+		"Name":"FLAG_ARRIVE_C02R0103",
+		"Description":""
+	},
+	{
+		"Id": 167,
+		"Name":"FLAG_ARRIVE_C02R0201",
+		"Description":""
+	},
+	{
+		"Id": 168,
+		"Name":"FLAG_ARRIVE_C02R0301",
+		"Description":""
+	},
+	{
+		"Id": 169,
+		"Name":"FLAG_ARRIVE_C02R0401",
+		"Description":""
+	},
+	{
+		"Id": 170,
+		"Name":"FLAG_ARRIVE_C02R0501",
+		"Description":""
+	},
+	{
+		"Id": 171,
+		"Name":"FLAG_ARRIVE_C02R0601",
+		"Description":""
+	},
+	{
+		"Id": 172,
+		"Name":"FLAG_ARRIVE_C03",
+		"Description":""
+	},
+	{
+		"Id": 173,
+		"Name":"FLAG_ARRIVE_C03FS0101",
+		"Description":""
+	},
+	{
+		"Id": 174,
+		"Name":"FLAG_ARRIVE_C03GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 175,
+		"Name":"FLAG_ARRIVE_C03PC0101",
+		"Description":""
+	},
+	{
+		"Id": 176,
+		"Name":"FLAG_ARRIVE_C03PC0102",
+		"Description":""
+	},
+	{
+		"Id": 177,
+		"Name":"FLAG_ARRIVE_C03PC0103",
+		"Description":""
+	},
+	{
+		"Id": 178,
+		"Name":"FLAG_ARRIVE_C03R0101",
+		"Description":""
+	},
+	{
+		"Id": 179,
+		"Name":"FLAG_ARRIVE_C03R0102",
+		"Description":""
+	},
+	{
+		"Id": 180,
+		"Name":"FLAG_ARRIVE_C03R0201",
+		"Description":""
+	},
+	{
+		"Id": 181,
+		"Name":"FLAG_ARRIVE_C03R0202",
+		"Description":""
+	},
+	{
+		"Id": 182,
+		"Name":"FLAG_ARRIVE_C03R0301",
+		"Description":""
+	},
+	{
+		"Id": 183,
+		"Name":"FLAG_ARRIVE_C03R0401",
+		"Description":""
+	},
+	{
+		"Id": 184,
+		"Name":"FLAG_ARRIVE_C03R0501",
+		"Description":""
+	},
+	{
+		"Id": 185,
+		"Name":"FLAG_ARRIVE_C03R0601",
+		"Description":""
+	},
+	{
+		"Id": 186,
+		"Name":"FLAG_ARRIVE_C03R0602",
+		"Description":""
+	},
+	{
+		"Id": 187,
+		"Name":"FLAG_ARRIVE_C03R0701",
+		"Description":""
+	},
+	{
+		"Id": 188,
+		"Name":"FLAG_ARRIVE_C04",
+		"Description":""
+	},
+	{
+		"Id": 189,
+		"Name":"FLAG_ARRIVE_C04FS0101",
+		"Description":""
+	},
+	{
+		"Id": 190,
+		"Name":"FLAG_ARRIVE_C04GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 191,
+		"Name":"FLAG_ARRIVE_C04GYM0102",
+		"Description":""
+	},
+	{
+		"Id": 192,
+		"Name":"FLAG_ARRIVE_C04PC0101",
+		"Description":""
+	},
+	{
+		"Id": 193,
+		"Name":"FLAG_ARRIVE_C04PC0102",
+		"Description":""
+	},
+	{
+		"Id": 194,
+		"Name":"FLAG_ARRIVE_C04PC0103",
+		"Description":""
+	},
+	{
+		"Id": 195,
+		"Name":"FLAG_ARRIVE_C04R0101",
+		"Description":""
+	},
+	{
+		"Id": 196,
+		"Name":"FLAG_ARRIVE_C04R0201",
+		"Description":""
+	},
+	{
+		"Id": 197,
+		"Name":"FLAG_ARRIVE_C04R0202",
+		"Description":""
+	},
+	{
+		"Id": 198,
+		"Name":"FLAG_ARRIVE_C04R0203",
+		"Description":""
+	},
+	{
+		"Id": 199,
+		"Name":"FLAG_ARRIVE_C04R0204",
+		"Description":""
+	},
+	{
+		"Id": 200,
+		"Name":"FLAG_ARRIVE_C04R0301",
+		"Description":""
+	},
+	{
+		"Id": 201,
+		"Name":"FLAG_ARRIVE_C04R0302",
+		"Description":""
+	},
+	{
+		"Id": 202,
+		"Name":"FLAG_ARRIVE_C04R0303",
+		"Description":""
+	},
+	{
+		"Id": 203,
+		"Name":"FLAG_ARRIVE_C04R0401",
+		"Description":""
+	},
+	{
+		"Id": 204,
+		"Name":"FLAG_ARRIVE_C04R0501",
+		"Description":""
+	},
+	{
+		"Id": 205,
+		"Name":"FLAG_ARRIVE_C04R0601",
+		"Description":""
+	},
+	{
+		"Id": 206,
+		"Name":"FLAG_ARRIVE_C04R0701",
+		"Description":""
+	},
+	{
+		"Id": 207,
+		"Name":"FLAG_ARRIVE_C04R0801",
+		"Description":""
+	},
+	{
+		"Id": 208,
+		"Name":"FLAG_ARRIVE_C05",
+		"Description":""
+	},
+	{
+		"Id": 209,
+		"Name":"FLAG_ARRIVE_C05FS0101",
+		"Description":""
+	},
+	{
+		"Id": 210,
+		"Name":"FLAG_ARRIVE_C05GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 211,
+		"Name":"FLAG_ARRIVE_C05GYM0102",
+		"Description":""
+	},
+	{
+		"Id": 212,
+		"Name":"FLAG_ARRIVE_C05GYM0103",
+		"Description":""
+	},
+	{
+		"Id": 213,
+		"Name":"FLAG_ARRIVE_C05GYM0104",
+		"Description":""
+	},
+	{
+		"Id": 214,
+		"Name":"FLAG_ARRIVE_C05GYM0105",
+		"Description":""
+	},
+	{
+		"Id": 215,
+		"Name":"FLAG_ARRIVE_C05GYM0106",
+		"Description":""
+	},
+	{
+		"Id": 216,
+		"Name":"FLAG_ARRIVE_C05GYM0107",
+		"Description":""
+	},
+	{
+		"Id": 217,
+		"Name":"FLAG_ARRIVE_C05GYM0108",
+		"Description":""
+	},
+	{
+		"Id": 218,
+		"Name":"FLAG_ARRIVE_C05GYM0109",
+		"Description":""
+	},
+	{
+		"Id": 219,
+		"Name":"FLAG_ARRIVE_C05GYM0110",
+		"Description":""
+	},
+	{
+		"Id": 220,
+		"Name":"FLAG_ARRIVE_C05GYM0111",
+		"Description":""
+	},
+	{
+		"Id": 221,
+		"Name":"FLAG_ARRIVE_C05GYM0112",
+		"Description":""
+	},
+	{
+		"Id": 222,
+		"Name":"FLAG_ARRIVE_C05GYM0113",
+		"Description":""
+	},
+	{
+		"Id": 223,
+		"Name":"FLAG_ARRIVE_C05PC0101",
+		"Description":""
+	},
+	{
+		"Id": 224,
+		"Name":"FLAG_ARRIVE_C05PC0102",
+		"Description":""
+	},
+	{
+		"Id": 225,
+		"Name":"FLAG_ARRIVE_C05PC0103",
+		"Description":""
+	},
+	{
+		"Id": 226,
+		"Name":"FLAG_ARRIVE_C05R0101",
+		"Description":""
+	},
+	{
+		"Id": 227,
+		"Name":"FLAG_ARRIVE_C05R0102",
+		"Description":""
+	},
+	{
+		"Id": 228,
+		"Name":"FLAG_ARRIVE_C05R0103",
+		"Description":""
+	},
+	{
+		"Id": 229,
+		"Name":"FLAG_ARRIVE_C05R0201",
+		"Description":""
+	},
+	{
+		"Id": 230,
+		"Name":"FLAG_ARRIVE_C05R0301",
+		"Description":""
+	},
+	{
+		"Id": 231,
+		"Name":"FLAG_ARRIVE_C05R0401",
+		"Description":""
+	},
+	{
+		"Id": 232,
+		"Name":"FLAG_ARRIVE_C05R0501",
+		"Description":""
+	},
+	{
+		"Id": 233,
+		"Name":"FLAG_ARRIVE_C05R0601",
+		"Description":""
+	},
+	{
+		"Id": 234,
+		"Name":"FLAG_ARRIVE_C05R0701",
+		"Description":""
+	},
+	{
+		"Id": 235,
+		"Name":"FLAG_ARRIVE_C05R0801",
+		"Description":""
+	},
+	{
+		"Id": 236,
+		"Name":"FLAG_ARRIVE_C05R0802",
+		"Description":""
+	},
+	{
+		"Id": 237,
+		"Name":"FLAG_ARRIVE_C05R0803",
+		"Description":""
+	},
+	{
+		"Id": 238,
+		"Name":"FLAG_ARRIVE_C05R0901",
+		"Description":""
+	},
+	{
+		"Id": 239,
+		"Name":"FLAG_ARRIVE_C05R1001",
+		"Description":""
+	},
+	{
+		"Id": 240,
+		"Name":"FLAG_ARRIVE_C05R1101",
+		"Description":""
+	},
+	{
+		"Id": 241,
+		"Name":"FLAG_ARRIVE_C05R1102",
+		"Description":""
+	},
+	{
+		"Id": 242,
+		"Name":"FLAG_ARRIVE_C05R1103",
+		"Description":""
+	},
+	{
+		"Id": 243,
+		"Name":"FLAG_ARRIVE_C05R1201",
+		"Description":""
+	},
+	{
+		"Id": 244,
+		"Name":"FLAG_ARRIVE_C06",
+		"Description":""
+	},
+	{
+		"Id": 245,
+		"Name":"FLAG_ARRIVE_C06FS0101",
+		"Description":""
+	},
+	{
+		"Id": 246,
+		"Name":"FLAG_ARRIVE_C06GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 247,
+		"Name":"FLAG_ARRIVE_C06PC0101",
+		"Description":""
+	},
+	{
+		"Id": 248,
+		"Name":"FLAG_ARRIVE_C06PC0102",
+		"Description":""
+	},
+	{
+		"Id": 249,
+		"Name":"FLAG_ARRIVE_C06PC0103",
+		"Description":""
+	},
+	{
+		"Id": 250,
+		"Name":"FLAG_ARRIVE_C06R0101",
+		"Description":""
+	},
+	{
+		"Id": 251,
+		"Name":"FLAG_ARRIVE_C06R0102",
+		"Description":""
+	},
+	{
+		"Id": 252,
+		"Name":"FLAG_ARRIVE_C06R0201",
+		"Description":""
+	},
+	{
+		"Id": 253,
+		"Name":"FLAG_ARRIVE_C06R0301",
+		"Description":""
+	},
+	{
+		"Id": 254,
+		"Name":"FLAG_ARRIVE_C06R0401",
+		"Description":""
+	},
+	{
+		"Id": 255,
+		"Name":"FLAG_ARRIVE_C06R0501",
+		"Description":""
+	},
+	{
+		"Id": 256,
+		"Name":"FLAG_ARRIVE_C06R0601",
+		"Description":""
+	},
+	{
+		"Id": 257,
+		"Name":"FLAG_ARRIVE_C07",
+		"Description":""
+	},
+	{
+		"Id": 258,
+		"Name":"FLAG_ARRIVE_C07GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 259,
+		"Name":"FLAG_ARRIVE_C07PC0101",
+		"Description":""
+	},
+	{
+		"Id": 260,
+		"Name":"FLAG_ARRIVE_C07PC0102",
+		"Description":""
+	},
+	{
+		"Id": 261,
+		"Name":"FLAG_ARRIVE_C07PC0103",
+		"Description":""
+	},
+	{
+		"Id": 262,
+		"Name":"FLAG_ARRIVE_C07R0101",
+		"Description":""
+	},
+	{
+		"Id": 263,
+		"Name":"FLAG_ARRIVE_C07R0201",
+		"Description":""
+	},
+	{
+		"Id": 264,
+		"Name":"FLAG_ARRIVE_C07R0202",
+		"Description":""
+	},
+	{
+		"Id": 265,
+		"Name":"FLAG_ARRIVE_C07R0203",
+		"Description":""
+	},
+	{
+		"Id": 266,
+		"Name":"FLAG_ARRIVE_C07R0204",
+		"Description":""
+	},
+	{
+		"Id": 267,
+		"Name":"FLAG_ARRIVE_C07R0205",
+		"Description":""
+	},
+	{
+		"Id": 268,
+		"Name":"FLAG_ARRIVE_C07R0206",
+		"Description":""
+	},
+	{
+		"Id": 269,
+		"Name":"FLAG_ARRIVE_C07R0301",
+		"Description":""
+	},
+	{
+		"Id": 270,
+		"Name":"FLAG_ARRIVE_C07R0401",
+		"Description":""
+	},
+	{
+		"Id": 271,
+		"Name":"FLAG_ARRIVE_C07R0501",
+		"Description":""
+	},
+	{
+		"Id": 272,
+		"Name":"FLAG_ARRIVE_C07R0601",
+		"Description":""
+	},
+	{
+		"Id": 273,
+		"Name":"FLAG_ARRIVE_C07R0701",
+		"Description":""
+	},
+	{
+		"Id": 274,
+		"Name":"FLAG_ARRIVE_C07R0801",
+		"Description":""
+	},
+	{
+		"Id": 275,
+		"Name":"FLAG_ARRIVE_C07R0901",
+		"Description":""
+	},
+	{
+		"Id": 276,
+		"Name":"FLAG_ARRIVE_C08",
+		"Description":""
+	},
+	{
+		"Id": 277,
+		"Name":"FLAG_ARRIVE_C08FS0101",
+		"Description":""
+	},
+	{
+		"Id": 278,
+		"Name":"FLAG_ARRIVE_C08GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 279,
+		"Name":"FLAG_ARRIVE_C08GYM0102",
+		"Description":""
+	},
+	{
+		"Id": 280,
+		"Name":"FLAG_ARRIVE_C08GYM0103",
+		"Description":""
+	},
+	{
+		"Id": 281,
+		"Name":"FLAG_ARRIVE_C08PC0101",
+		"Description":""
+	},
+	{
+		"Id": 282,
+		"Name":"FLAG_ARRIVE_C08PC0102",
+		"Description":""
+	},
+	{
+		"Id": 283,
+		"Name":"FLAG_ARRIVE_C08PC0103",
+		"Description":""
+	},
+	{
+		"Id": 284,
+		"Name":"FLAG_ARRIVE_C08R0101",
+		"Description":""
+	},
+	{
+		"Id": 285,
+		"Name":"FLAG_ARRIVE_C08R0201",
+		"Description":""
+	},
+	{
+		"Id": 286,
+		"Name":"FLAG_ARRIVE_C08R0301",
+		"Description":""
+	},
+	{
+		"Id": 287,
+		"Name":"FLAG_ARRIVE_C08R0401",
+		"Description":""
+	},
+	{
+		"Id": 288,
+		"Name":"FLAG_ARRIVE_C08R0501",
+		"Description":""
+	},
+	{
+		"Id": 289,
+		"Name":"FLAG_ARRIVE_C08R0601",
+		"Description":""
+	},
+	{
+		"Id": 290,
+		"Name":"FLAG_ARRIVE_C08R0701",
+		"Description":""
+	},
+	{
+		"Id": 291,
+		"Name":"FLAG_ARRIVE_C08R0801",
+		"Description":""
+	},
+	{
+		"Id": 292,
+		"Name":"FLAG_ARRIVE_C08R0802",
+		"Description":""
+	},
+	{
+		"Id": 293,
+		"Name":"FLAG_ARRIVE_C09",
+		"Description":""
+	},
+	{
+		"Id": 294,
+		"Name":"FLAG_ARRIVE_C09FS0101",
+		"Description":""
+	},
+	{
+		"Id": 295,
+		"Name":"FLAG_ARRIVE_C09GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 296,
+		"Name":"FLAG_ARRIVE_C09PC0101",
+		"Description":""
+	},
+	{
+		"Id": 297,
+		"Name":"FLAG_ARRIVE_C09PC0102",
+		"Description":""
+	},
+	{
+		"Id": 298,
+		"Name":"FLAG_ARRIVE_C09PC0103",
+		"Description":""
+	},
+	{
+		"Id": 299,
+		"Name":"FLAG_ARRIVE_C09R0101",
+		"Description":""
+	},
+	{
+		"Id": 300,
+		"Name":"FLAG_ARRIVE_C09R0201",
+		"Description":""
+	},
+	{
+		"Id": 301,
+		"Name":"FLAG_ARRIVE_C10",
+		"Description":""
+	},
+	{
+		"Id": 302,
+		"Name":"FLAG_ARRIVE_C10PC0101",
+		"Description":""
+	},
+	{
+		"Id": 303,
+		"Name":"FLAG_ARRIVE_C10PC0102",
+		"Description":""
+	},
+	{
+		"Id": 304,
+		"Name":"FLAG_ARRIVE_C10PC0103",
+		"Description":""
+	},
+	{
+		"Id": 305,
+		"Name":"FLAG_ARRIVE_C10R0101",
+		"Description":""
+	},
+	{
+		"Id": 306,
+		"Name":"FLAG_ARRIVE_C10R0102",
+		"Description":""
+	},
+	{
+		"Id": 307,
+		"Name":"FLAG_ARRIVE_C10R0103",
+		"Description":""
+	},
+	{
+		"Id": 308,
+		"Name":"FLAG_ARRIVE_C10R0104",
+		"Description":""
+	},
+	{
+		"Id": 309,
+		"Name":"FLAG_ARRIVE_C10R0105",
+		"Description":""
+	},
+	{
+		"Id": 310,
+		"Name":"FLAG_ARRIVE_C10R0106",
+		"Description":""
+	},
+	{
+		"Id": 311,
+		"Name":"FLAG_ARRIVE_C10R0107",
+		"Description":""
+	},
+	{
+		"Id": 312,
+		"Name":"FLAG_ARRIVE_C10R0108",
+		"Description":""
+	},
+	{
+		"Id": 313,
+		"Name":"FLAG_ARRIVE_C10R0109",
+		"Description":""
+	},
+	{
+		"Id": 314,
+		"Name":"FLAG_ARRIVE_C10R0110",
+		"Description":""
+	},
+	{
+		"Id": 315,
+		"Name":"FLAG_ARRIVE_C10R0111",
+		"Description":""
+	},
+	{
+		"Id": 316,
+		"Name":"FLAG_ARRIVE_C10R0112",
+		"Description":""
+	},
+	{
+		"Id": 317,
+		"Name":"FLAG_ARRIVE_C10R0113",
+		"Description":""
+	},
+	{
+		"Id": 318,
+		"Name":"FLAG_ARRIVE_C10R0114",
+		"Description":""
+	},
+	{
+		"Id": 319,
+		"Name":"FLAG_ARRIVE_C10R0115",
+		"Description":""
+	},
+	{
+		"Id": 320,
+		"Name":"FLAG_ARRIVE_C11",
+		"Description":""
+	},
+	{
+		"Id": 321,
+		"Name":"FLAG_ARRIVE_C11FS0101",
+		"Description":""
+	},
+	{
+		"Id": 322,
+		"Name":"FLAG_ARRIVE_C11PC0101",
+		"Description":""
+	},
+	{
+		"Id": 323,
+		"Name":"FLAG_ARRIVE_C11PC0102",
+		"Description":""
+	},
+	{
+		"Id": 324,
+		"Name":"FLAG_ARRIVE_C11PC0103",
+		"Description":""
+	},
+	{
+		"Id": 325,
+		"Name":"FLAG_ARRIVE_C11R0101",
+		"Description":""
+	},
+	{
+		"Id": 326,
+		"Name":"FLAG_ARRIVE_C11R0201",
+		"Description":""
+	},
+	{
+		"Id": 327,
+		"Name":"FLAG_ARRIVE_C11R0301",
+		"Description":""
+	},
+	{
+		"Id": 328,
+		"Name":"FLAG_ARRIVE_C11R0401",
+		"Description":""
+	},
+	{
+		"Id": 329,
+		"Name":"FLAG_ARRIVE_D01R0101",
+		"Description":""
+	},
+	{
+		"Id": 330,
+		"Name":"FLAG_ARRIVE_D01R0102",
+		"Description":""
+	},
+	{
+		"Id": 331,
+		"Name":"FLAG_ARRIVE_D02",
+		"Description":""
+	},
+	{
+		"Id": 332,
+		"Name":"FLAG_ARRIVE_D02R0101",
+		"Description":""
+	},
+	{
+		"Id": 333,
+		"Name":"FLAG_ARRIVE_D03",
+		"Description":""
+	},
+	{
+		"Id": 334,
+		"Name":"FLAG_ARRIVE_D03R0101",
+		"Description":""
+	},
+	{
+		"Id": 335,
+		"Name":"FLAG_ARRIVE_D04",
+		"Description":""
+	},
+	{
+		"Id": 336,
+		"Name":"FLAG_ARRIVE_D04R0101",
+		"Description":""
+	},
+	{
+		"Id": 337,
+		"Name":"FLAG_ARRIVE_D05R0101",
+		"Description":""
+	},
+	{
+		"Id": 338,
+		"Name":"FLAG_ARRIVE_D05R0102",
+		"Description":""
+	},
+	{
+		"Id": 339,
+		"Name":"FLAG_ARRIVE_D05R0103",
+		"Description":""
+	},
+	{
+		"Id": 340,
+		"Name":"FLAG_ARRIVE_D05R0104",
+		"Description":""
+	},
+	{
+		"Id": 341,
+		"Name":"FLAG_ARRIVE_D05R0105",
+		"Description":""
+	},
+	{
+		"Id": 342,
+		"Name":"FLAG_ARRIVE_D05R0106",
+		"Description":""
+	},
+	{
+		"Id": 343,
+		"Name":"FLAG_ARRIVE_D05R0107",
+		"Description":""
+	},
+	{
+		"Id": 344,
+		"Name":"FLAG_ARRIVE_D05R0108",
+		"Description":""
+	},
+	{
+		"Id": 345,
+		"Name":"FLAG_ARRIVE_D05R0109",
+		"Description":""
+	},
+	{
+		"Id": 346,
+		"Name":"FLAG_ARRIVE_D05R0110",
+		"Description":""
+	},
+	{
+		"Id": 347,
+		"Name":"FLAG_ARRIVE_D05R0111",
+		"Description":""
+	},
+	{
+		"Id": 348,
+		"Name":"FLAG_ARRIVE_D05R0112",
+		"Description":""
+	},
+	{
+		"Id": 349,
+		"Name":"FLAG_ARRIVE_D05R0113",
+		"Description":""
+	},
+	{
+		"Id": 350,
+		"Name":"FLAG_ARRIVE_D05R0114",
+		"Description":""
+	},
+	{
+		"Id": 351,
+		"Name":"FLAG_ARRIVE_D05R0115",
+		"Description":""
+	},
+	{
+		"Id": 352,
+		"Name":"FLAG_ARRIVE_D05R0116",
+		"Description":""
+	},
+	{
+		"Id": 353,
+		"Name":"FLAG_ARRIVE_D06R0201",
+		"Description":""
+	},
+	{
+		"Id": 354,
+		"Name":"FLAG_ARRIVE_D06R0202",
+		"Description":""
+	},
+	{
+		"Id": 355,
+		"Name":"FLAG_ARRIVE_D06R0203",
+		"Description":""
+	},
+	{
+		"Id": 356,
+		"Name":"FLAG_ARRIVE_D06R0204",
+		"Description":""
+	},
+	{
+		"Id": 357,
+		"Name":"FLAG_ARRIVE_D06R0205",
+		"Description":""
+	},
+	{
+		"Id": 358,
+		"Name":"FLAG_ARRIVE_D06R0206",
+		"Description":""
+	},
+	{
+		"Id": 359,
+		"Name":"FLAG_ARRIVE_D07R0101",
+		"Description":""
+	},
+	{
+		"Id": 360,
+		"Name":"FLAG_ARRIVE_D07R0102",
+		"Description":""
+	},
+	{
+		"Id": 361,
+		"Name":"FLAG_ARRIVE_D07R0103",
+		"Description":""
+	},
+	{
+		"Id": 362,
+		"Name":"FLAG_ARRIVE_D07R0104",
+		"Description":""
+	},
+	{
+		"Id": 363,
+		"Name":"FLAG_ARRIVE_D07R0105",
+		"Description":""
+	},
+	{
+		"Id": 364,
+		"Name":"FLAG_ARRIVE_D07R0106",
+		"Description":""
+	},
+	{
+		"Id": 365,
+		"Name":"FLAG_ARRIVE_D07R0107",
+		"Description":""
+	},
+	{
+		"Id": 366,
+		"Name":"FLAG_ARRIVE_D07R0108",
+		"Description":""
+	},
+	{
+		"Id": 367,
+		"Name":"FLAG_ARRIVE_D07R0109",
+		"Description":""
+	},
+	{
+		"Id": 368,
+		"Name":"FLAG_ARRIVE_D07R0110",
+		"Description":""
+	},
+	{
+		"Id": 369,
+		"Name":"FLAG_ARRIVE_D07R0111",
+		"Description":""
+	},
+	{
+		"Id": 370,
+		"Name":"FLAG_ARRIVE_D07R0112",
+		"Description":""
+	},
+	{
+		"Id": 371,
+		"Name":"FLAG_ARRIVE_D07R0113",
+		"Description":""
+	},
+	{
+		"Id": 372,
+		"Name":"FLAG_ARRIVE_D07R0114",
+		"Description":""
+	},
+	{
+		"Id": 373,
+		"Name":"FLAG_ARRIVE_D07R0115",
+		"Description":""
+	},
+	{
+		"Id": 374,
+		"Name":"FLAG_ARRIVE_D07R0116",
+		"Description":""
+	},
+	{
+		"Id": 375,
+		"Name":"FLAG_ARRIVE_D07R0117",
+		"Description":""
+	},
+	{
+		"Id": 376,
+		"Name":"FLAG_ARRIVE_D07R0118",
+		"Description":""
+	},
+	{
+		"Id": 377,
+		"Name":"FLAG_ARRIVE_D07R0119",
+		"Description":""
+	},
+	{
+		"Id": 378,
+		"Name":"FLAG_ARRIVE_D09R0101",
+		"Description":""
+	},
+	{
+		"Id": 379,
+		"Name":"FLAG_ARRIVE_D09R0102",
+		"Description":""
+	},
+	{
+		"Id": 380,
+		"Name":"FLAG_ARRIVE_D09R0103",
+		"Description":""
+	},
+	{
+		"Id": 381,
+		"Name":"FLAG_ARRIVE_D09R0104",
+		"Description":""
+	},
+	{
+		"Id": 382,
+		"Name":"FLAG_ARRIVE_D09R0105",
+		"Description":""
+	},
+	{
+		"Id": 383,
+		"Name":"FLAG_ARRIVE_D09R0106",
+		"Description":""
+	},
+	{
+		"Id": 384,
+		"Name":"FLAG_ARRIVE_D10R0101",
+		"Description":""
+	},
+	{
+		"Id": 385,
+		"Name":"FLAG_ARRIVE_D11R0101",
+		"Description":""
+	},
+	{
+		"Id": 386,
+		"Name":"FLAG_ARRIVE_D12R0101",
+		"Description":""
+	},
+	{
+		"Id": 387,
+		"Name":"FLAG_ARRIVE_D13R0101",
+		"Description":""
+	},
+	{
+		"Id": 388,
+		"Name":"FLAG_ARRIVE_D13R0102",
+		"Description":""
+	},
+	{
+		"Id": 389,
+		"Name":"FLAG_ARRIVE_D14R0101",
+		"Description":""
+	},
+	{
+		"Id": 390,
+		"Name":"FLAG_ARRIVE_D14R0102",
+		"Description":""
+	},
+	{
+		"Id": 391,
+		"Name":"FLAG_ARRIVE_D15",
+		"Description":""
+	},
+	{
+		"Id": 392,
+		"Name":"FLAG_ARRIVE_D15R0101",
+		"Description":""
+	},
+	{
+		"Id": 393,
+		"Name":"FLAG_ARRIVE_D16",
+		"Description":""
+	},
+	{
+		"Id": 394,
+		"Name":"FLAG_ARRIVE_D16R0101",
+		"Description":""
+	},
+	{
+		"Id": 395,
+		"Name":"FLAG_ARRIVE_D16R0102",
+		"Description":""
+	},
+	{
+		"Id": 396,
+		"Name":"FLAG_ARRIVE_D16R0103",
+		"Description":""
+	},
+	{
+		"Id": 397,
+		"Name":"FLAG_ARRIVE_D17R0101",
+		"Description":""
+	},
+	{
+		"Id": 398,
+		"Name":"FLAG_ARRIVE_D17R0102",
+		"Description":""
+	},
+	{
+		"Id": 399,
+		"Name":"FLAG_ARRIVE_D17R0103",
+		"Description":""
+	},
+	{
+		"Id": 400,
+		"Name":"FLAG_ARRIVE_D17R0104",
+		"Description":""
+	},
+	{
+		"Id": 401,
+		"Name":"FLAG_ARRIVE_D17R0105",
+		"Description":""
+	},
+	{
+		"Id": 402,
+		"Name":"FLAG_ARRIVE_D17R0106",
+		"Description":""
+	},
+	{
+		"Id": 403,
+		"Name":"FLAG_ARRIVE_D17R0107",
+		"Description":""
+	},
+	{
+		"Id": 404,
+		"Name":"FLAG_ARRIVE_D17R0108",
+		"Description":""
+	},
+	{
+		"Id": 405,
+		"Name":"FLAG_ARRIVE_D17R0109",
+		"Description":""
+	},
+	{
+		"Id": 406,
+		"Name":"FLAG_ARRIVE_D17R0110",
+		"Description":""
+	},
+	{
+		"Id": 407,
+		"Name":"FLAG_ARRIVE_D17R0111",
+		"Description":""
+	},
+	{
+		"Id": 408,
+		"Name":"FLAG_ARRIVE_D17R0112",
+		"Description":""
+	},
+	{
+		"Id": 409,
+		"Name":"FLAG_ARRIVE_D17R0113",
+		"Description":""
+	},
+	{
+		"Id": 410,
+		"Name":"FLAG_ARRIVE_D17R0114",
+		"Description":""
+	},
+	{
+		"Id": 411,
+		"Name":"FLAG_ARRIVE_D17R0115",
+		"Description":""
+	},
+	{
+		"Id": 412,
+		"Name":"FLAG_ARRIVE_D17R0116",
+		"Description":""
+	},
+	{
+		"Id": 413,
+		"Name":"FLAG_ARRIVE_D17R0117",
+		"Description":""
+	},
+	{
+		"Id": 414,
+		"Name":"FLAG_ARRIVE_D17R0118",
+		"Description":""
+	},
+	{
+		"Id": 415,
+		"Name":"FLAG_ARRIVE_D17R0119",
+		"Description":""
+	},
+	{
+		"Id": 416,
+		"Name":"FLAG_ARRIVE_D17R0120",
+		"Description":""
+	},
+	{
+		"Id": 417,
+		"Name":"FLAG_ARRIVE_D17R0121",
+		"Description":""
+	},
+	{
+		"Id": 418,
+		"Name":"FLAG_ARRIVE_D17R0122",
+		"Description":""
+	},
+	{
+		"Id": 419,
+		"Name":"FLAG_ARRIVE_D18",
+		"Description":""
+	},
+	{
+		"Id": 420,
+		"Name":"FLAG_ARRIVE_D20R0101",
+		"Description":""
+	},
+	{
+		"Id": 421,
+		"Name":"FLAG_ARRIVE_D20R0102",
+		"Description":""
+	},
+	{
+		"Id": 422,
+		"Name":"FLAG_ARRIVE_D20R0103",
+		"Description":""
+	},
+	{
+		"Id": 423,
+		"Name":"FLAG_ARRIVE_D20R0104",
+		"Description":""
+	},
+	{
+		"Id": 424,
+		"Name":"FLAG_ARRIVE_D20R0105",
+		"Description":""
+	},
+	{
+		"Id": 425,
+		"Name":"FLAG_ARRIVE_D20R0106",
+		"Description":""
+	},
+	{
+		"Id": 426,
+		"Name":"FLAG_ARRIVE_D21R0101",
+		"Description":""
+	},
+	{
+		"Id": 427,
+		"Name":"FLAG_ARRIVE_D21R0102",
+		"Description":""
+	},
+	{
+		"Id": 428,
+		"Name":"FLAG_ARRIVE_D22R0101",
+		"Description":""
+	},
+	{
+		"Id": 429,
+		"Name":"FLAG_ARRIVE_D22R0102",
+		"Description":""
+	},
+	{
+		"Id": 430,
+		"Name":"FLAG_ARRIVE_D22R0103",
+		"Description":""
+	},
+	{
+		"Id": 431,
+		"Name":"FLAG_ARRIVE_D23R0101",
+		"Description":""
+	},
+	{
+		"Id": 432,
+		"Name":"FLAG_ARRIVE_D24",
+		"Description":""
+	},
+	{
+		"Id": 433,
+		"Name":"FLAG_ARRIVE_D24R0101",
+		"Description":""
+	},
+	{
+		"Id": 434,
+		"Name":"FLAG_ARRIVE_D24R0102",
+		"Description":""
+	},
+	{
+		"Id": 435,
+		"Name":"FLAG_ARRIVE_D24R0103",
+		"Description":""
+	},
+	{
+		"Id": 436,
+		"Name":"FLAG_ARRIVE_D24R0104",
+		"Description":""
+	},
+	{
+		"Id": 437,
+		"Name":"FLAG_ARRIVE_D24R0105",
+		"Description":""
+	},
+	{
+		"Id": 438,
+		"Name":"FLAG_ARRIVE_D24R0106",
+		"Description":""
+	},
+	{
+		"Id": 439,
+		"Name":"FLAG_ARRIVE_D24R0201",
+		"Description":""
+	},
+	{
+		"Id": 440,
+		"Name":"FLAG_ARRIVE_D25R0101",
+		"Description":""
+	},
+	{
+		"Id": 441,
+		"Name":"FLAG_ARRIVE_D25R0102",
+		"Description":""
+	},
+	{
+		"Id": 442,
+		"Name":"FLAG_ARRIVE_D25R0103",
+		"Description":""
+	},
+	{
+		"Id": 443,
+		"Name":"FLAG_ARRIVE_D25R0104",
+		"Description":""
+	},
+	{
+		"Id": 444,
+		"Name":"FLAG_ARRIVE_D25R0105",
+		"Description":""
+	},
+	{
+		"Id": 445,
+		"Name":"FLAG_ARRIVE_D25R0106",
+		"Description":""
+	},
+	{
+		"Id": 446,
+		"Name":"FLAG_ARRIVE_D25R0107",
+		"Description":""
+	},
+	{
+		"Id": 447,
+		"Name":"FLAG_ARRIVE_D25R0108",
+		"Description":""
+	},
+	{
+		"Id": 448,
+		"Name":"FLAG_ARRIVE_D25R0109",
+		"Description":""
+	},
+	{
+		"Id": 449,
+		"Name":"FLAG_ARRIVE_D26R0101",
+		"Description":""
+	},
+	{
+		"Id": 450,
+		"Name":"FLAG_ARRIVE_D26R0102",
+		"Description":""
+	},
+	{
+		"Id": 451,
+		"Name":"FLAG_ARRIVE_D26R0103",
+		"Description":""
+	},
+	{
+		"Id": 452,
+		"Name":"FLAG_ARRIVE_D26R0104",
+		"Description":""
+	},
+	{
+		"Id": 453,
+		"Name":"FLAG_ARRIVE_D26R0105",
+		"Description":""
+	},
+	{
+		"Id": 454,
+		"Name":"FLAG_ARRIVE_D26R0106",
+		"Description":""
+	},
+	{
+		"Id": 455,
+		"Name":"FLAG_ARRIVE_D26R0107",
+		"Description":""
+	},
+	{
+		"Id": 456,
+		"Name":"FLAG_ARRIVE_D26R0108",
+		"Description":""
+	},
+	{
+		"Id": 457,
+		"Name":"FLAG_ARRIVE_D27R0101",
+		"Description":""
+	},
+	{
+		"Id": 458,
+		"Name":"FLAG_ARRIVE_D27R0102",
+		"Description":""
+	},
+	{
+		"Id": 459,
+		"Name":"FLAG_ARRIVE_D27R0103",
+		"Description":""
+	},
+	{
+		"Id": 460,
+		"Name":"FLAG_ARRIVE_D28R0101",
+		"Description":""
+	},
+	{
+		"Id": 461,
+		"Name":"FLAG_ARRIVE_D28R0102",
+		"Description":""
+	},
+	{
+		"Id": 462,
+		"Name":"FLAG_ARRIVE_D28R0103",
+		"Description":""
+	},
+	{
+		"Id": 463,
+		"Name":"FLAG_ARRIVE_D29R0101",
+		"Description":""
+	},
+	{
+		"Id": 464,
+		"Name":"FLAG_ARRIVE_D29R0102",
+		"Description":""
+	},
+	{
+		"Id": 465,
+		"Name":"FLAG_ARRIVE_D29R0103",
+		"Description":""
+	},
+	{
+		"Id": 466,
+		"Name":"FLAG_ARRIVE_D30",
+		"Description":""
+	},
+	{
+		"Id": 467,
+		"Name":"FLAG_ARRIVE_D30R0101",
+		"Description":""
+	},
+	{
+		"Id": 468,
+		"Name":"FLAG_ARRIVE_D31",
+		"Description":""
+	},
+	{
+		"Id": 469,
+		"Name":"FLAG_ARRIVE_D31R0101",
+		"Description":""
+	},
+	{
+		"Id": 470,
+		"Name":"FLAG_ARRIVE_D31R0201",
+		"Description":""
+	},
+	{
+		"Id": 471,
+		"Name":"FLAG_ARRIVE_D31R0202",
+		"Description":""
+	},
+	{
+		"Id": 472,
+		"Name":"FLAG_ARRIVE_D31R0203",
+		"Description":""
+	},
+	{
+		"Id": 473,
+		"Name":"FLAG_ARRIVE_D31R0204",
+		"Description":""
+	},
+	{
+		"Id": 474,
+		"Name":"FLAG_ARRIVE_D31R0205",
+		"Description":""
+	},
+	{
+		"Id": 475,
+		"Name":"FLAG_ARRIVE_D31R0206",
+		"Description":""
+	},
+	{
+		"Id": 476,
+		"Name":"FLAG_ARRIVE_D31R0207",
+		"Description":""
+	},
+	{
+		"Id": 477,
+		"Name":"FLAG_ARRIVE_DIRECT2",
+		"Description":""
+	},
+	{
+		"Id": 478,
+		"Name":"FLAG_ARRIVE_DIRECT4",
+		"Description":""
+	},
+	{
+		"Id": 479,
+		"Name":"FLAG_ARRIVE_EVERYWHERE",
+		"Description":""
+	},
+	{
+		"Id": 480,
+		"Name":"FLAG_ARRIVE_L01",
+		"Description":""
+	},
+	{
+		"Id": 481,
+		"Name":"FLAG_ARRIVE_L02",
+		"Description":""
+	},
+	{
+		"Id": 482,
+		"Name":"FLAG_ARRIVE_L02R0101",
+		"Description":""
+	},
+	{
+		"Id": 483,
+		"Name":"FLAG_ARRIVE_L02R0201",
+		"Description":""
+	},
+	{
+		"Id": 484,
+		"Name":"FLAG_ARRIVE_L02R0301",
+		"Description":""
+	},
+	{
+		"Id": 485,
+		"Name":"FLAG_ARRIVE_L03",
+		"Description":""
+	},
+	{
+		"Id": 486,
+		"Name":"FLAG_ARRIVE_L04",
+		"Description":""
+	},
+	{
+		"Id": 487,
+		"Name":"FLAG_ARRIVE_NOTHING",
+		"Description":""
+	},
+	{
+		"Id": 488,
+		"Name":"FLAG_ARRIVE_R201",
+		"Description":""
+	},
+	{
+		"Id": 489,
+		"Name":"FLAG_ARRIVE_R202",
+		"Description":""
+	},
+	{
+		"Id": 490,
+		"Name":"FLAG_ARRIVE_R203",
+		"Description":""
+	},
+	{
+		"Id": 491,
+		"Name":"FLAG_ARRIVE_R204A",
+		"Description":""
+	},
+	{
+		"Id": 492,
+		"Name":"FLAG_ARRIVE_R204B",
+		"Description":""
+	},
+	{
+		"Id": 493,
+		"Name":"FLAG_ARRIVE_R205A",
+		"Description":""
+	},
+	{
+		"Id": 494,
+		"Name":"FLAG_ARRIVE_R205AR0101",
+		"Description":""
+	},
+	{
+		"Id": 495,
+		"Name":"FLAG_ARRIVE_R205B",
+		"Description":""
+	},
+	{
+		"Id": 496,
+		"Name":"FLAG_ARRIVE_R206",
+		"Description":""
+	},
+	{
+		"Id": 497,
+		"Name":"FLAG_ARRIVE_R206R0101",
+		"Description":""
+	},
+	{
+		"Id": 498,
+		"Name":"FLAG_ARRIVE_R207",
+		"Description":""
+	},
+	{
+		"Id": 499,
+		"Name":"FLAG_ARRIVE_R208",
+		"Description":""
+	},
+	{
+		"Id": 500,
+		"Name":"FLAG_ARRIVE_R208R0101",
+		"Description":""
+	},
+	{
+		"Id": 501,
+		"Name":"FLAG_ARRIVE_R209",
+		"Description":""
+	},
+	{
+		"Id": 502,
+		"Name":"FLAG_ARRIVE_R209R0101",
+		"Description":""
+	},
+	{
+		"Id": 503,
+		"Name":"FLAG_ARRIVE_R209R0102",
+		"Description":""
+	},
+	{
+		"Id": 504,
+		"Name":"FLAG_ARRIVE_R209R0103",
+		"Description":""
+	},
+	{
+		"Id": 505,
+		"Name":"FLAG_ARRIVE_R209R0104",
+		"Description":""
+	},
+	{
+		"Id": 506,
+		"Name":"FLAG_ARRIVE_R209R0105",
+		"Description":""
+	},
+	{
+		"Id": 507,
+		"Name":"FLAG_ARRIVE_R210A",
+		"Description":""
+	},
+	{
+		"Id": 508,
+		"Name":"FLAG_ARRIVE_R210AR0101",
+		"Description":""
+	},
+	{
+		"Id": 509,
+		"Name":"FLAG_ARRIVE_R210B",
+		"Description":""
+	},
+	{
+		"Id": 510,
+		"Name":"FLAG_ARRIVE_R210BR0101",
+		"Description":""
+	},
+	{
+		"Id": 511,
+		"Name":"FLAG_ARRIVE_R211A",
+		"Description":""
+	},
+	{
+		"Id": 512,
+		"Name":"FLAG_ARRIVE_R211B",
+		"Description":""
+	},
+	{
+		"Id": 513,
+		"Name":"FLAG_ARRIVE_R212A",
+		"Description":""
+	},
+	{
+		"Id": 514,
+		"Name":"FLAG_ARRIVE_R212AR0101",
+		"Description":""
+	},
+	{
+		"Id": 515,
+		"Name":"FLAG_ARRIVE_R212AR0102",
+		"Description":""
+	},
+	{
+		"Id": 516,
+		"Name":"FLAG_ARRIVE_R212AR0103",
+		"Description":""
+	},
+	{
+		"Id": 517,
+		"Name":"FLAG_ARRIVE_R212B",
+		"Description":""
+	},
+	{
+		"Id": 518,
+		"Name":"FLAG_ARRIVE_R212BR0101",
+		"Description":""
+	},
+	{
+		"Id": 519,
+		"Name":"FLAG_ARRIVE_R213",
+		"Description":""
+	},
+	{
+		"Id": 520,
+		"Name":"FLAG_ARRIVE_R213R0101",
+		"Description":""
+	},
+	{
+		"Id": 521,
+		"Name":"FLAG_ARRIVE_R213R0201",
+		"Description":""
+	},
+	{
+		"Id": 522,
+		"Name":"FLAG_ARRIVE_R213R0301",
+		"Description":""
+	},
+	{
+		"Id": 523,
+		"Name":"FLAG_ARRIVE_R213R0401",
+		"Description":""
+	},
+	{
+		"Id": 524,
+		"Name":"FLAG_ARRIVE_R213R0501",
+		"Description":""
+	},
+	{
+		"Id": 525,
+		"Name":"FLAG_ARRIVE_R213R0601",
+		"Description":""
+	},
+	{
+		"Id": 526,
+		"Name":"FLAG_ARRIVE_R214",
+		"Description":""
+	},
+	{
+		"Id": 527,
+		"Name":"FLAG_ARRIVE_R214R0101",
+		"Description":""
+	},
+	{
+		"Id": 528,
+		"Name":"FLAG_ARRIVE_R215",
+		"Description":""
+	},
+	{
+		"Id": 529,
+		"Name":"FLAG_ARRIVE_R216",
+		"Description":""
+	},
+	{
+		"Id": 530,
+		"Name":"FLAG_ARRIVE_R216R0101",
+		"Description":""
+	},
+	{
+		"Id": 531,
+		"Name":"FLAG_ARRIVE_R217",
+		"Description":""
+	},
+	{
+		"Id": 532,
+		"Name":"FLAG_ARRIVE_R217R0101",
+		"Description":""
+	},
+	{
+		"Id": 533,
+		"Name":"FLAG_ARRIVE_R217R0201",
+		"Description":""
+	},
+	{
+		"Id": 534,
+		"Name":"FLAG_ARRIVE_R218",
+		"Description":""
+	},
+	{
+		"Id": 535,
+		"Name":"FLAG_ARRIVE_R218R0101",
+		"Description":""
+	},
+	{
+		"Id": 536,
+		"Name":"FLAG_ARRIVE_R218R0201",
+		"Description":""
+	},
+	{
+		"Id": 537,
+		"Name":"FLAG_ARRIVE_R219",
+		"Description":""
+	},
+	{
+		"Id": 538,
+		"Name":"FLAG_ARRIVE_R221",
+		"Description":""
+	},
+	{
+		"Id": 539,
+		"Name":"FLAG_ARRIVE_R221R0101",
+		"Description":""
+	},
+	{
+		"Id": 540,
+		"Name":"FLAG_ARRIVE_R221R0201",
+		"Description":""
+	},
+	{
+		"Id": 541,
+		"Name":"FLAG_ARRIVE_R222",
+		"Description":""
+	},
+	{
+		"Id": 542,
+		"Name":"FLAG_ARRIVE_R222R0101",
+		"Description":""
+	},
+	{
+		"Id": 543,
+		"Name":"FLAG_ARRIVE_R222R0201",
+		"Description":""
+	},
+	{
+		"Id": 544,
+		"Name":"FLAG_ARRIVE_R222R0301",
+		"Description":""
+	},
+	{
+		"Id": 545,
+		"Name":"FLAG_ARRIVE_R224",
+		"Description":""
+	},
+	{
+		"Id": 546,
+		"Name":"FLAG_ARRIVE_R225",
+		"Description":""
+	},
+	{
+		"Id": 547,
+		"Name":"FLAG_ARRIVE_R225R0101",
+		"Description":""
+	},
+	{
+		"Id": 548,
+		"Name":"FLAG_ARRIVE_R227",
+		"Description":""
+	},
+	{
+		"Id": 549,
+		"Name":"FLAG_ARRIVE_R227R0101",
+		"Description":""
+	},
+	{
+		"Id": 550,
+		"Name":"FLAG_ARRIVE_R228",
+		"Description":""
+	},
+	{
+		"Id": 551,
+		"Name":"FLAG_ARRIVE_R228R0101",
+		"Description":""
+	},
+	{
+		"Id": 552,
+		"Name":"FLAG_ARRIVE_R228R0201",
+		"Description":""
+	},
+	{
+		"Id": 553,
+		"Name":"FLAG_ARRIVE_R228R0301",
+		"Description":""
+	},
+	{
+		"Id": 554,
+		"Name":"FLAG_ARRIVE_R229",
+		"Description":""
+	},
+	{
+		"Id": 555,
+		"Name":"FLAG_ARRIVE_RECORD",
+		"Description":""
+	},
+	{
+		"Id": 556,
+		"Name":"FLAG_ARRIVE_T01",
+		"Description":""
+	},
+	{
+		"Id": 557,
+		"Name":"FLAG_ARRIVE_T01R0101",
+		"Description":""
+	},
+	{
+		"Id": 558,
+		"Name":"FLAG_ARRIVE_T01R0102",
+		"Description":""
+	},
+	{
+		"Id": 559,
+		"Name":"FLAG_ARRIVE_T01R0201",
+		"Description":""
+	},
+	{
+		"Id": 560,
+		"Name":"FLAG_ARRIVE_T01R0202",
+		"Description":""
+	},
+	{
+		"Id": 561,
+		"Name":"FLAG_ARRIVE_T01R0301",
+		"Description":""
+	},
+	{
+		"Id": 562,
+		"Name":"FLAG_ARRIVE_T01R0401",
+		"Description":""
+	},
+	{
+		"Id": 563,
+		"Name":"FLAG_ARRIVE_T02",
+		"Description":""
+	},
+	{
+		"Id": 564,
+		"Name":"FLAG_ARRIVE_T02FS0101",
+		"Description":""
+	},
+	{
+		"Id": 565,
+		"Name":"FLAG_ARRIVE_T02PC0101",
+		"Description":""
+	},
+	{
+		"Id": 566,
+		"Name":"FLAG_ARRIVE_T02PC0102",
+		"Description":""
+	},
+	{
+		"Id": 567,
+		"Name":"FLAG_ARRIVE_T02PC0103",
+		"Description":""
+	},
+	{
+		"Id": 568,
+		"Name":"FLAG_ARRIVE_T02R0101",
+		"Description":""
+	},
+	{
+		"Id": 569,
+		"Name":"FLAG_ARRIVE_T02R0201",
+		"Description":""
+	},
+	{
+		"Id": 570,
+		"Name":"FLAG_ARRIVE_T02R0202",
+		"Description":""
+	},
+	{
+		"Id": 571,
+		"Name":"FLAG_ARRIVE_T02R0301",
+		"Description":""
+	},
+	{
+		"Id": 572,
+		"Name":"FLAG_ARRIVE_T03",
+		"Description":""
+	},
+	{
+		"Id": 573,
+		"Name":"FLAG_ARRIVE_T03FS0101",
+		"Description":""
+	},
+	{
+		"Id": 574,
+		"Name":"FLAG_ARRIVE_T03PC0101",
+		"Description":""
+	},
+	{
+		"Id": 575,
+		"Name":"FLAG_ARRIVE_T03PC0102",
+		"Description":""
+	},
+	{
+		"Id": 576,
+		"Name":"FLAG_ARRIVE_T03PC0103",
+		"Description":""
+	},
+	{
+		"Id": 577,
+		"Name":"FLAG_ARRIVE_T03R0101",
+		"Description":""
+	},
+	{
+		"Id": 578,
+		"Name":"FLAG_ARRIVE_T03R0201",
+		"Description":""
+	},
+	{
+		"Id": 579,
+		"Name":"FLAG_ARRIVE_T03R0301",
+		"Description":""
+	},
+	{
+		"Id": 580,
+		"Name":"FLAG_ARRIVE_T04",
+		"Description":""
+	},
+	{
+		"Id": 581,
+		"Name":"FLAG_ARRIVE_T04FS0101",
+		"Description":""
+	},
+	{
+		"Id": 582,
+		"Name":"FLAG_ARRIVE_T04PC0101",
+		"Description":""
+	},
+	{
+		"Id": 583,
+		"Name":"FLAG_ARRIVE_T04PC0102",
+		"Description":""
+	},
+	{
+		"Id": 584,
+		"Name":"FLAG_ARRIVE_T04PC0103",
+		"Description":""
+	},
+	{
+		"Id": 585,
+		"Name":"FLAG_ARRIVE_T04R0101",
+		"Description":""
+	},
+	{
+		"Id": 586,
+		"Name":"FLAG_ARRIVE_T04R0201",
+		"Description":""
+	},
+	{
+		"Id": 587,
+		"Name":"FLAG_ARRIVE_T04R0301",
+		"Description":""
+	},
+	{
+		"Id": 588,
+		"Name":"FLAG_ARRIVE_T04R0401",
+		"Description":""
+	},
+	{
+		"Id": 589,
+		"Name":"FLAG_ARRIVE_T04R0501",
+		"Description":""
+	},
+	{
+		"Id": 590,
+		"Name":"FLAG_ARRIVE_T05",
+		"Description":""
+	},
+	{
+		"Id": 591,
+		"Name":"FLAG_ARRIVE_T05PC0101",
+		"Description":""
+	},
+	{
+		"Id": 592,
+		"Name":"FLAG_ARRIVE_T05PC0102",
+		"Description":""
+	},
+	{
+		"Id": 593,
+		"Name":"FLAG_ARRIVE_T05PC0103",
+		"Description":""
+	},
+	{
+		"Id": 594,
+		"Name":"FLAG_ARRIVE_T05R0101",
+		"Description":""
+	},
+	{
+		"Id": 595,
+		"Name":"FLAG_ARRIVE_T05R0201",
+		"Description":""
+	},
+	{
+		"Id": 596,
+		"Name":"FLAG_ARRIVE_T05R0301",
+		"Description":""
+	},
+	{
+		"Id": 597,
+		"Name":"FLAG_ARRIVE_T05R0401",
+		"Description":""
+	},
+	{
+		"Id": 598,
+		"Name":"FLAG_ARRIVE_T05R0501",
+		"Description":""
+	},
+	{
+		"Id": 599,
+		"Name":"FLAG_ARRIVE_T06",
+		"Description":""
+	},
+	{
+		"Id": 600,
+		"Name":"FLAG_ARRIVE_T06FS0101",
+		"Description":""
+	},
+	{
+		"Id": 601,
+		"Name":"FLAG_ARRIVE_T06PC0101",
+		"Description":""
+	},
+	{
+		"Id": 602,
+		"Name":"FLAG_ARRIVE_T06PC0102",
+		"Description":""
+	},
+	{
+		"Id": 603,
+		"Name":"FLAG_ARRIVE_T06PC0103",
+		"Description":""
+	},
+	{
+		"Id": 604,
+		"Name":"FLAG_ARRIVE_T06R0101",
+		"Description":""
+	},
+	{
+		"Id": 605,
+		"Name":"FLAG_ARRIVE_T06R0201",
+		"Description":""
+	},
+	{
+		"Id": 606,
+		"Name":"FLAG_ARRIVE_T06R0301",
+		"Description":""
+	},
+	{
+		"Id": 607,
+		"Name":"FLAG_ARRIVE_T07",
+		"Description":""
+	},
+	{
+		"Id": 608,
+		"Name":"FLAG_ARRIVE_T07FS0101",
+		"Description":""
+	},
+	{
+		"Id": 609,
+		"Name":"FLAG_ARRIVE_T07PC0101",
+		"Description":""
+	},
+	{
+		"Id": 610,
+		"Name":"FLAG_ARRIVE_T07PC0102",
+		"Description":""
+	},
+	{
+		"Id": 611,
+		"Name":"FLAG_ARRIVE_T07PC0103",
+		"Description":""
+	},
+	{
+		"Id": 612,
+		"Name":"FLAG_ARRIVE_T07R0101",
+		"Description":""
+	},
+	{
+		"Id": 613,
+		"Name":"FLAG_ARRIVE_T07R0102",
+		"Description":""
+	},
+	{
+		"Id": 614,
+		"Name":"FLAG_ARRIVE_T07R0103",
+		"Description":""
+	},
+	{
+		"Id": 615,
+		"Name":"FLAG_ARRIVE_T07R0201",
+		"Description":""
+	},
+	{
+		"Id": 616,
+		"Name":"FLAG_ARRIVE_T07R0301",
+		"Description":""
+	},
+	{
+		"Id": 617,
+		"Name":"FLAG_ARRIVE_UG",
+		"Description":""
+	},
+	{
+		"Id": 618,
+		"Name":"FLAG_ARRIVE_UNION",
+		"Description":""
+	},
+	{
+		"Id": 619,
+		"Name":"FLAG_ARRIVE_W220",
+		"Description":""
+	},
+	{
+		"Id": 620,
+		"Name":"FLAG_ARRIVE_W223",
+		"Description":""
+	},
+	{
+		"Id": 621,
+		"Name":"FLAG_ARRIVE_W226",
+		"Description":""
+	},
+	{
+		"Id": 622,
+		"Name":"FLAG_ARRIVE_W226R0101",
+		"Description":""
+	},
+	{
+		"Id": 623,
+		"Name":"FLAG_ARRIVE_W230",
+		"Description":""
+	},
+	{
+		"Id": 624,
+		"Name":"FLAG_ARRIVE_W231",
+		"Description":""
+	},
+	{
+		"Id": 625,
+		"Name":"FLAG_ARRIVE_UNION01",
+		"Description":""
+	},
+	{
+		"Id": 626,
+		"Name":"FLAG_ARRIVE_UNION02",
+		"Description":""
+	},
+	{
+		"Id": 627,
+		"Name":"FLAG_ARRIVE_UNION03",
+		"Description":""
+	},
+	{
+		"Id": 628,
+		"Name":"FLAG_ARRIVE_C04R0205",
+		"Description":""
+	},
+	{
+		"Id": 629,
+		"Name":"FLAG_ARRIVE_D10R0201",
+		"Description":""
+	},
+	{
+		"Id": 630,
+		"Name":"FLAG_ARRIVE_D10R0202",
+		"Description":""
+	},
+	{
+		"Id": 631,
+		"Name":"FLAG_ARRIVE_D10R0301",
+		"Description":""
+	},
+	{
+		"Id": 632,
+		"Name":"FLAG_ARRIVE_D10R0302",
+		"Description":""
+	},
+	{
+		"Id": 633,
+		"Name":"FLAG_ARRIVE_D10R0303",
+		"Description":""
+	},
+	{
+		"Id": 634,
+		"Name":"FLAG_ARRIVE_D10R0401",
+		"Description":""
+	},
+	{
+		"Id": 635,
+		"Name":"FLAG_ARRIVE_D10R0402",
+		"Description":""
+	},
+	{
+		"Id": 636,
+		"Name":"FLAG_ARRIVE_D10R0403",
+		"Description":""
+	},
+	{
+		"Id": 637,
+		"Name":"FLAG_ARRIVE_D10R0501",
+		"Description":""
+	},
+	{
+		"Id": 638,
+		"Name":"FLAG_ARRIVE_D10R0502",
+		"Description":""
+	},
+	{
+		"Id": 639,
+		"Name":"FLAG_ARRIVE_D10R0601",
+		"Description":""
+	},
+	{
+		"Id": 640,
+		"Name":"FLAG_ARRIVE_D10R0701",
+		"Description":""
+	},
+	{
+		"Id": 641,
+		"Name":"FLAG_ARRIVE_D10R0801",
+		"Description":""
+	},
+	{
+		"Id": 642,
+		"Name":"FLAG_ARRIVE_UGA01",
+		"Description":""
+	},
+	{
+		"Id": 643,
+		"Name":"FLAG_ARRIVE_UGA02",
+		"Description":""
+	},
+	{
+		"Id": 644,
+		"Name":"FLAG_ARRIVE_UGA03",
+		"Description":""
+	},
+	{
+		"Id": 645,
+		"Name":"FLAG_ARRIVE_UGA04",
+		"Description":""
+	},
+	{
+		"Id": 646,
+		"Name":"FLAG_ARRIVE_UGA05",
+		"Description":""
+	},
+	{
+		"Id": 647,
+		"Name":"FLAG_ARRIVE_UGA06",
+		"Description":""
+	},
+	{
+		"Id": 648,
+		"Name":"FLAG_ARRIVE_UGA07",
+		"Description":""
+	},
+	{
+		"Id": 649,
+		"Name":"FLAG_ARRIVE_UGA08",
+		"Description":""
+	},
+	{
+		"Id": 650,
+		"Name":"FLAG_ARRIVE_UGA09",
+		"Description":""
+	},
+	{
+		"Id": 651,
+		"Name":"FLAG_ARRIVE_UGA10",
+		"Description":""
+	},
+	{
+		"Id": 652,
+		"Name":"FLAG_ARRIVE_UGB01",
+		"Description":""
+	},
+	{
+		"Id": 653,
+		"Name":"FLAG_ARRIVE_UGB02",
+		"Description":""
+	},
+	{
+		"Id": 654,
+		"Name":"FLAG_ARRIVE_UGB03",
+		"Description":""
+	},
+	{
+		"Id": 655,
+		"Name":"FLAG_ARRIVE_UGB04",
+		"Description":""
+	},
+	{
+		"Id": 656,
+		"Name":"FLAG_ARRIVE_UGB05",
+		"Description":""
+	},
+	{
+		"Id": 657,
+		"Name":"FLAG_ARRIVE_UGB06",
+		"Description":""
+	},
+	{
+		"Id": 658,
+		"Name":"FLAG_ARRIVE_UGB07",
+		"Description":""
+	},
+	{
+		"Id": 659,
+		"Name":"FLAG_ARRIVE_UGC01",
+		"Description":""
+	},
+	{
+		"Id": 660,
+		"Name":"FLAG_ARRIVE_UGD01",
+		"Description":""
+	},
+	{
+		"Id": 661,
+		"Name":"FLAG_ARRIVE_UGD02",
+		"Description":""
+	},
+	{
+		"Id": 662,
+		"Name":"FLAG_ARRIVE_UGD03",
+		"Description":""
+	},
+	{
+		"Id": 663,
+		"Name":"FLAG_ARRIVE_UGD04",
+		"Description":""
+	},
+	{
+		"Id": 664,
+		"Name":"FLAG_ARRIVE_UGD05",
+		"Description":""
+	},
+	{
+		"Id": 665,
+		"Name":"FLAG_ARRIVE_UGE01",
+		"Description":""
+	},
+	{
+		"Id": 666,
+		"Name":"FLAG_ARRIVE_UGE02",
+		"Description":""
+	},
+	{
+		"Id": 667,
+		"Name":"FLAG_ARRIVE_UGE03",
+		"Description":""
+	},
+	{
+		"Id": 668,
+		"Name":"FLAG_ARRIVE_UGE04",
+		"Description":""
+	},
+	{
+		"Id": 669,
+		"Name":"FLAG_ARRIVE_UGE05",
+		"Description":""
+	},
+	{
+		"Id": 670,
+		"Name":"FLAG_ARRIVE_UGF01",
+		"Description":""
+	},
+	{
+		"Id": 671,
+		"Name":"FLAG_ARRIVE_UGF02",
+		"Description":""
+	},
+	{
+		"Id": 672,
+		"Name":"FLAG_ARRIVE_UGF03",
+		"Description":""
+	},
+	{
+		"Id": 673,
+		"Name":"FLAG_ARRIVE_UGF04",
+		"Description":""
+	},
+	{
+		"Id": 674,
+		"Name":"FLAG_ARRIVE_UGF05",
+		"Description":""
+	},
+	{
+		"Id": 675,
+		"Name":"FLAG_ARRIVE_UGF06",
+		"Description":""
+	},
+	{
+		"Id": 676,
+		"Name":"FLAG_ARRIVE_UGF07",
+		"Description":""
+	},
+	{
+		"Id": 677,
+		"Name":"FLAG_ARRIVE_UGSPACE01",
+		"Description":""
+	},
+	{
+		"Id": 678,
+		"Name":"FLAG_ARRIVE_UGSPACE02",
+		"Description":""
+	},
+	{
+		"Id": 679,
+		"Name":"FLAG_ARRIVE_UGSPACE03",
+		"Description":""
+	},
+	{
+		"Id": 680,
+		"Name":"FLAG_ARRIVE_UGSPACE04",
+		"Description":""
+	},
+	{
+		"Id": 681,
+		"Name":"FLAG_ARRIVE_UGSPACE05",
+		"Description":""
+	},
+	{
+		"Id": 682,
+		"Name":"FLAG_ARRIVE_UGSPACE06",
+		"Description":""
+	},
+	{
+		"Id": 683,
+		"Name":"FLAG_ARRIVE_UGSPACE07",
+		"Description":""
+	},
+	{
+		"Id": 684,
+		"Name":"FLAG_ARRIVE_UGSPACE08",
+		"Description":""
+	},
+	{
+		"Id": 685,
+		"Name":"FLAG_ARRIVE_UGSPACE09",
+		"Description":""
+	},
+	{
+		"Id": 686,
+		"Name":"FLAG_ARRIVE_UGSPACE10",
+		"Description":""
+	},
+	{
+		"Id": 687,
+		"Name":"FLAG_ARRIVE_UGSPACE11",
+		"Description":""
+	},
+	{
+		"Id": 688,
+		"Name":"FLAG_ARRIVE_UGSPACE12",
+		"Description":""
+	},
+	{
+		"Id": 689,
+		"Name":"FLAG_ARRIVE_UGSPACE13",
+		"Description":""
+	},
+	{
+		"Id": 690,
+		"Name":"FLAG_ARRIVE_UGSPACE14",
+		"Description":""
+	},
+	{
+		"Id": 691,
+		"Name":"FLAG_ARRIVE_UGSPACE15",
+		"Description":""
+	},
+	{
+		"Id": 692,
+		"Name":"FLAG_ARRIVE_UGSPACE16",
+		"Description":""
+	},
+	{
+		"Id": 693,
+		"Name":"FLAG_ARRIVE_UGSPACE17",
+		"Description":""
+	},
+	{
+		"Id": 694,
+		"Name":"FLAG_ARRIVE_UGSPACE18",
+		"Description":""
+	},
+	{
+		"Id": 695,
+		"Name":"FLAG_ARRIVE_UGSPACE19",
+		"Description":""
+	},
+	{
+		"Id": 696,
+		"Name":"FLAG_ARRIVE_UGSPACE20",
+		"Description":""
+	},
+	{
+		"Id": 697,
+		"Name":"FLAG_ARRIVE_UGSPACE21",
+		"Description":""
+	},
+	{
+		"Id": 698,
+		"Name":"FLAG_ARRIVE_UGSPACE22",
+		"Description":""
+	},
+	{
+		"Id": 699,
+		"Name":"FLAG_ARRIVE_UGSPACE23",
+		"Description":""
+	},
+	{
+		"Id": 700,
+		"Name":"FLAG_ARRIVE_UGSPACE24",
+		"Description":""
+	},
+	{
+		"Id": 701,
+		"Name":"FLAG_ARRIVE_UGSPACE25",
+		"Description":""
+	},
+	{
+		"Id": 702,
+		"Name":"FLAG_ARRIVE_UGSPACE26",
+		"Description":""
+	},
+	{
+		"Id": 703,
+		"Name":"FLAG_ARRIVE_UGSPACE27",
+		"Description":""
+	},
+	{
+		"Id": 704,
+		"Name":"FLAG_ARRIVE_UGSPACE28",
+		"Description":""
+	},
+	{
+		"Id": 705,
+		"Name":"FLAG_ARRIVE_UGSPACE29",
+		"Description":""
+	},
+	{
+		"Id": 706,
+		"Name":"FLAG_ARRIVE_UGSPACE30",
+		"Description":""
+	},
+	{
+		"Id": 707,
+		"Name":"FLAG_ARRIVE_UGSPACE31",
+		"Description":""
+	},
+	{
+		"Id": 708,
+		"Name":"FLAG_ARRIVE_UGSPACE32",
+		"Description":""
+	},
+	{
+		"Id": 709,
+		"Name":"FLAG_ARRIVE_UGSPACE33",
+		"Description":""
+	},
+	{
+		"Id": 710,
+		"Name":"FLAG_ARRIVE_UGSPACE34",
+		"Description":""
+	},
+	{
+		"Id": 711,
+		"Name":"FLAG_ARRIVE_UGSPACE35",
+		"Description":""
+	},
+	{
+		"Id": 712,
+		"Name":"FLAG_ARRIVE_UGSPACE36",
+		"Description":""
+	},
+	{
+		"Id": 713,
+		"Name":"FLAG_ARRIVE_UGSPACE37",
+		"Description":""
+	},
+	{
+		"Id": 714,
+		"Name":"FLAG_ARRIVE_UGSPACE38",
+		"Description":""
+	},
+	{
+		"Id": 715,
+		"Name":"FLAG_ARRIVE_UGSPACE39",
+		"Description":""
+	},
+	{
+		"Id": 716,
+		"Name":"FLAG_ARRIVE_UGSPACE40",
+		"Description":""
+	},
+	{
+		"Id": 717,
+		"Name":"FLAG_ARRIVE_UGSPACE41",
+		"Description":""
+	},
+	{
+		"Id": 718,
+		"Name":"FLAG_ARRIVE_UGSPACE42",
+		"Description":""
+	},
+	{
+		"Id": 719,
+		"Name":"FLAG_ARRIVE_UGSPACE43",
+		"Description":""
+	},
+	{
+		"Id": 720,
+		"Name":"FLAG_ARRIVE_UGSPACE44",
+		"Description":""
+	},
+	{
+		"Id": 721,
+		"Name":"FLAG_ARRIVE_UGSPACE45",
+		"Description":""
+	},
+	{
+		"Id": 722,
+		"Name":"FLAG_ARRIVE_UGSPACE46",
+		"Description":""
+	},
+	{
+		"Id": 723,
+		"Name":"FLAG_ARRIVE_UGSPACE47",
+		"Description":""
+	},
+	{
+		"Id": 724,
+		"Name":"FLAG_ARRIVE_UGSPACE48",
+		"Description":""
+	},
+	{
+		"Id": 725,
+		"Name":"FLAG_ARRIVE_UGSPACE49",
+		"Description":""
+	},
+	{
+		"Id": 726,
+		"Name":"FLAG_ARRIVE_UGSPACE50",
+		"Description":""
+	},
+	{
+		"Id": 727,
+		"Name":"FLAG_ARRIVE_UGSPACE51",
+		"Description":""
+	},
+	{
+		"Id": 728,
+		"Name":"FLAG_ARRIVE_UGSPACE52",
+		"Description":""
+	},
+	{
+		"Id": 729,
+		"Name":"FLAG_ARRIVE_UGSPACE53",
+		"Description":""
+	},
+	{
+		"Id": 730,
+		"Name":"FLAG_ARRIVE_UGSPACE54",
+		"Description":""
+	},
+	{
+		"Id": 731,
+		"Name":"FLAG_ARRIVE_UGSPACE55",
+		"Description":""
+	},
+	{
+		"Id": 732,
+		"Name":"FLAG_ARRIVE_UGSPACE56",
+		"Description":""
+	},
+	{
+		"Id": 733,
+		"Name":"FLAG_ARRIVE_UGSPACE57",
+		"Description":""
+	},
+	{
+		"Id": 734,
+		"Name":"FLAG_ARRIVE_UGSPACE58",
+		"Description":""
+	},
+	{
+		"Id": 735,
+		"Name":"FLAG_ARRIVE_UGSPACE59",
+		"Description":""
+	},
+	{
+		"Id": 736,
+		"Name":"FLAG_ARRIVE_UGSPACE60",
+		"Description":""
+	},
+	{
+		"Id": 737,
+		"Name":"FLAG_ARRIVE_UGSPACE61",
+		"Description":""
+	},
+	{
+		"Id": 738,
+		"Name":"FLAG_ARRIVE_UGSPACE62",
+		"Description":""
+	},
+	{
+		"Id": 739,
+		"Name":"FLAG_ARRIVE_UGSPACE63",
+		"Description":""
+	},
+	{
+		"Id": 740,
+		"Name":"FLAG_ARRIVE_UGSPACE64",
+		"Description":""
+	},
+	{
+		"Id": 741,
+		"Name":"FLAG_ARRIVE_UGSPACE65",
+		"Description":""
+	},
+	{
+		"Id": 742,
+		"Name":"FLAG_ARRIVE_UGSPACE66",
+		"Description":""
+	},
+	{
+		"Id": 743,
+		"Name":"FLAG_ARRIVE_UGSPACE67",
+		"Description":""
+	},
+	{
+		"Id": 744,
+		"Name":"FLAG_ARRIVE_UGSPACE68",
+		"Description":""
+	},
+	{
+		"Id": 745,
+		"Name":"FLAG_ARRIVE_UGSPACEL01",
+		"Description":""
+	},
+	{
+		"Id": 746,
+		"Name":"FLAG_ARRIVE_UGSPACEL02",
+		"Description":""
+	},
+	{
+		"Id": 747,
+		"Name":"FLAG_ARRIVE_UGSPACEL03",
+		"Description":""
+	},
+	{
+		"Id": 748,
+		"Name":"FLAG_ARRIVE_UGSPACEL04",
+		"Description":""
+	},
+	{
+		"Id": 749,
+		"Name":"FLAG_ARRIVE_UGSPACEL05",
+		"Description":""
+	},
+	{
+		"Id": 750,
+		"Name":"FLAG_ARRIVE_UGSPACEL06",
+		"Description":""
+	},
+	{
+		"Id": 751,
+		"Name":"FLAG_ARRIVE_UGSPACEL07",
+		"Description":""
+	},
+	{
+		"Id": 752,
+		"Name":"FLAG_ARRIVE_D05R0117",
+		"Description":""
+	},
+	{
+		"Id": 753,
+		"Name":"FLAG_ARRIVE_D10R0901",
+		"Description":""
+	},
+	{
+		"Id": 754,
+		"Name":"FLAG_ARRIVE_UGSECRETBASE01",
+		"Description":""
+	},
+	{
+		"Id": 755,
+		"Name":"FLAG_ARRIVE_UGSECRETBASE02",
+		"Description":""
+	},
+	{
+		"Id": 756,
+		"Name":"FLAG_ARRIVE_UGSECRETBASE03",
+		"Description":""
+	},
+	{
+		"Id": 757,
+		"Name":"FLAG_ARRIVE_UGSECRETBASE04",
+		"Description":""
+	},
+	{
+		"Id": 758,
+		"Name":"SYS_FLAG_CON_STYLE_NORMAL",
+		"Description":""
+	},
+	{
+		"Id": 759,
+		"Name":"SYS_FLAG_CON_STYLE_GREAT",
+		"Description":""
+	},
+	{
+		"Id": 760,
+		"Name":"SYS_FLAG_CON_STYLE_ULTRA",
+		"Description":""
+	},
+	{
+		"Id": 761,
+		"Name":"SYS_FLAG_CON_BEAUTIFUL_NORMAL",
+		"Description":""
+	},
+	{
+		"Id": 762,
+		"Name":"SYS_FLAG_CON_BEAUTIFUL_GREAT",
+		"Description":""
+	},
+	{
+		"Id": 763,
+		"Name":"SYS_FLAG_CON_BEAUTIFUL_ULTRA",
+		"Description":""
+	},
+	{
+		"Id": 764,
+		"Name":"SYS_FLAG_CON_CUTE_NORMAL",
+		"Description":""
+	},
+	{
+		"Id": 765,
+		"Name":"SYS_FLAG_CON_CUTE_GREAT",
+		"Description":""
+	},
+	{
+		"Id": 766,
+		"Name":"SYS_FLAG_CON_CUTE_ULTRA",
+		"Description":""
+	},
+	{
+		"Id": 767,
+		"Name":"SYS_FLAG_CON_CLEVER_NORMAL",
+		"Description":""
+	},
+	{
+		"Id": 768,
+		"Name":"SYS_FLAG_CON_CLEVER_GREAT",
+		"Description":""
+	},
+	{
+		"Id": 769,
+		"Name":"SYS_FLAG_CON_CLEVER_ULTRA",
+		"Description":""
+	},
+	{
+		"Id": 770,
+		"Name":"SYS_FLAG_CON_STRONG_NORMAL",
+		"Description":""
+	},
+	{
+		"Id": 771,
+		"Name":"SYS_FLAG_CON_STRONG_GREAT",
+		"Description":""
+	},
+	{
+		"Id": 772,
+		"Name":"SYS_FLAG_CON_STRONG_ULTRA",
+		"Description":""
+	},
+	{
+		"Id": 773,
+		"Name":"SYS_FLAG_CAMERA_REVERSAL",
+		"Description":""
+	},
+	{
+		"Id": 774,
+		"Name":"SYS_FLAG_ZENKOKU_GYM_KAIHOU",
+		"Description":""
+	},
+	{
+		"Id": 775,
+		"Name":"SYS_FLAG_FIELD_STOPER_NOTHING",
+		"Description":""
+	},
+	{
+		"Id": 776,
+		"Name":"SYS_FLAG_BATTLE_TOWER_M_S_OPEN",
+		"Description":""
+	},
+	{
+		"Id": 777,
+		"Name":"SYS_FUREAI_EXIT",
+		"Description":""
+	},
+	{
+		"Id": 778,
+		"Name":"SYS_HUSIGINAOKURIMONO_OPEN_FLAG",
+		"Description":""
+	},
+	{
+		"Id": 779,
+		"Name":"SYS_GET_CAP",
+		"Description":""
+	},
+	{
+		"Id": 780,
+		"Name":"SYS_NO_CAP_MODEL",
+		"Description":""
+	},
+	{
+		"Id": 781,
+		"Name":"SYS_INPUT_OFF",
+		"Description":""
+	},
+	{
+		"Id": 782,
+		"Name":"SYS_BOX_SYSTEM_OFF",
+		"Description":""
+	},
+	{
+		"Id": 783,
+		"Name":"SYS_DENDOU_OFF",
+		"Description":""
+	},
+	{
+		"Id": 784,
+		"Name":"SYS_ZENMETU_MUSI",
+		"Description":""
+	},
+	{
+		"Id": 785,
+		"Name":"SYS_FLAG_BATTLE_TOWER_M_D_OPEN",
+		"Description":""
+	},
+	{
+		"Id": 786,
+		"Name":"SYS_ROTOMU_HOT",
+		"Description":""
+	},
+	{
+		"Id": 787,
+		"Name":"SYS_ROTOMU_WASH",
+		"Description":""
+	},
+	{
+		"Id": 788,
+		"Name":"SYS_ROTOMU_COLD",
+		"Description":""
+	},
+	{
+		"Id": 789,
+		"Name":"SYS_ROTOMU_FAN",
+		"Description":""
+	},
+	{
+		"Id": 790,
+		"Name":"SYS_ROTOMU_CUT",
+		"Description":""
+	},
+	{
+		"Id": 791,
+		"Name":"SYS_TRAINER_CARD_OPEN",
+		"Description":""
+	},
+	{
+		"Id": 792,
+		"Name":"SYS_FLAG_CON_FUR_NORMAL",
+		"Description":""
+	},
+	{
+		"Id": 793,
+		"Name":"SYS_FLAG_CON_FUR_GREAT",
+		"Description":""
+	},
+	{
+		"Id": 794,
+		"Name":"SYS_FLAG_CON_FUR_ULTRA",
+		"Description":""
+	},
+	{
+		"Id": 795,
+		"Name":"SYS_FLAG_SUPPORT_HOUSE",
+		"Description":""
+	},
+	{
+		"Id": 796,
+		"Name":"SYS_FLAG_USE_TODAY_IWAKUDAKI",
+		"Description":""
+	},
+	{
+		"Id": 797,
+		"Name":"SYS_FLAG_USE_TODAY_IAIGIRI",
+		"Description":""
+	},
+	{
+		"Id": 798,
+		"Name":"SYS_FLAG_USE_TODAY_SORAWOTOBU",
+		"Description":""
+	},
+	{
+		"Id": 799,
+		"Name":"SYS_FLAG_USE_TODAY_KIRIBARAI",
+		"Description":""
+	},
+	{
+		"Id": 800,
+		"Name":"SYS_FLAG_USE_TODAY_NAMINORI",
+		"Description":""
+	},
+	{
+		"Id": 801,
+		"Name":"SYS_FLAG_USE_TODAY_KAIRIKI",
+		"Description":""
+	},
+	{
+		"Id": 802,
+		"Name":"SYS_FLAG_USE_TODAY_ROKKUKURAIMU",
+		"Description":""
+	},
+	{
+		"Id": 803,
+		"Name":"SYS_FLAG_USE_TODAY_TAKINOBORI",
+		"Description":""
+	},
+	{
+		"Id": 804,
+		"Name":"SYS_FLAG_UG_FRIEND_KASEKIHORI_SUCCESS",
+		"Description":""
+	},
+	{
+		"Id": 805,
+		"Name":"SYS_FLAG_UG_HIMITUKITI_INTO",
+		"Description":""
+	},
+	{
+		"Id": 806,
+		"Name":"SYS_FLAG_WILDCARD_000",
+		"Description":""
+	},
+	{
+		"Id": 807,
+		"Name":"SYS_FLAG_WILDCARD_001",
+		"Description":""
+	},
+	{
+		"Id": 808,
+		"Name":"SYS_FLAG_WILDCARD_002",
+		"Description":""
+	},
+	{
+		"Id": 809,
+		"Name":"SYS_FLAG_WILDCARD_003",
+		"Description":""
+	},
+	{
+		"Id": 810,
+		"Name":"SYS_FLAG_WILDCARD_004",
+		"Description":""
+	},
+	{
+		"Id": 811,
+		"Name":"SYS_FLAG_WILDCARD_005",
+		"Description":""
+	},
+	{
+		"Id": 812,
+		"Name":"SYS_FLAG_WILDCARD_006",
+		"Description":""
+	},
+	{
+		"Id": 813,
+		"Name":"SYS_FLAG_WILDCARD_007",
+		"Description":""
+	},
+	{
+		"Id": 814,
+		"Name":"SYS_FLAG_WILDCARD_008",
+		"Description":""
+	},
+	{
+		"Id": 815,
+		"Name":"SYS_FLAG_WILDCARD_009",
+		"Description":""
+	},
+	{
+		"Id": 816,
+		"Name":"SYS_FLAG_WILDCARD_010",
+		"Description":""
+	},
+	{
+		"Id": 817,
+		"Name":"SYS_FLAG_WILDCARD_011",
+		"Description":""
+	},
+	{
+		"Id": 818,
+		"Name":"SYS_FLAG_WILDCARD_012",
+		"Description":""
+	},
+	{
+		"Id": 819,
+		"Name":"SYS_FLAG_WILDCARD_013",
+		"Description":""
+	},
+	{
+		"Id": 820,
+		"Name":"SYS_FLAG_WILDCARD_014",
+		"Description":""
+	},
+	{
+		"Id": 821,
+		"Name":"SYS_FLAG_WILDCARD_015",
+		"Description":""
+	},
+	{
+		"Id": 822,
+		"Name":"SYS_FLAG_WILDCARD_016",
+		"Description":""
+	},
+	{
+		"Id": 823,
+		"Name":"SYS_FLAG_WILDCARD_017",
+		"Description":""
+	},
+	{
+		"Id": 824,
+		"Name":"SYS_FLAG_WILDCARD_018",
+		"Description":""
+	},
+	{
+		"Id": 825,
+		"Name":"SYS_FLAG_WILDCARD_019",
+		"Description":""
+	},
+	{
+		"Id": 826,
+		"Name":"SYS_FLAG_WILDCARD_020",
+		"Description":""
+	},
+	{
+		"Id": 827,
+		"Name":"SYS_FLAG_WILDCARD_021",
+		"Description":""
+	},
+	{
+		"Id": 828,
+		"Name":"SYS_FLAG_WILDCARD_022",
+		"Description":""
+	},
+	{
+		"Id": 829,
+		"Name":"SYS_FLAG_WILDCARD_023",
+		"Description":""
+	},
+	{
+		"Id": 830,
+		"Name":"SYS_FLAG_WILDCARD_024",
+		"Description":""
+	},
+	{
+		"Id": 831,
+		"Name":"SYS_FLAG_WILDCARD_025",
+		"Description":""
+	},
+	{
+		"Id": 832,
+		"Name":"SYS_FLAG_WILDCARD_026",
+		"Description":""
+	},
+	{
+		"Id": 833,
+		"Name":"SYS_FLAG_WILDCARD_027",
+		"Description":""
+	},
+	{
+		"Id": 834,
+		"Name":"SYS_FLAG_WILDCARD_028",
+		"Description":""
+	},
+	{
+		"Id": 835,
+		"Name":"SYS_FLAG_WILDCARD_029",
+		"Description":""
+	},
+	{
+		"Id": 836,
+		"Name":"SYS_FLAG_WILDCARD_030",
+		"Description":""
+	},
+	{
+		"Id": 837,
+		"Name":"SYS_FLAG_WILDCARD_031",
+		"Description":""
+	},
+	{
+		"Id": 838,
+		"Name":"SYS_FLAG_WILDCARD_032",
+		"Description":""
+	},
+	{
+		"Id": 839,
+		"Name":"SYS_FLAG_WILDCARD_033",
+		"Description":""
+	},
+	{
+		"Id": 840,
+		"Name":"SYS_FLAG_WILDCARD_034",
+		"Description":""
+	},
+	{
+		"Id": 841,
+		"Name":"SYS_FLAG_WILDCARD_035",
+		"Description":""
+	},
+	{
+		"Id": 842,
+		"Name":"SYS_FLAG_WILDCARD_036",
+		"Description":""
+	},
+	{
+		"Id": 843,
+		"Name":"SYS_FLAG_WILDCARD_037",
+		"Description":""
+	},
+	{
+		"Id": 844,
+		"Name":"SYS_FLAG_WILDCARD_038",
+		"Description":""
+	},
+	{
+		"Id": 845,
+		"Name":"SYS_FLAG_WILDCARD_039",
+		"Description":""
+	},
+	{
+		"Id": 846,
+		"Name":"SYS_FLAG_WILDCARD_040",
+		"Description":""
+	},
+	{
+		"Id": 847,
+		"Name":"SYS_FLAG_WILDCARD_041",
+		"Description":""
+	},
+	{
+		"Id": 848,
+		"Name":"SYS_FLAG_WILDCARD_042",
+		"Description":""
+	},
+	{
+		"Id": 849,
+		"Name":"SYS_FLAG_WILDCARD_043",
+		"Description":""
+	},
+	{
+		"Id": 850,
+		"Name":"SYS_FLAG_WILDCARD_044",
+		"Description":""
+	},
+	{
+		"Id": 851,
+		"Name":"SYS_FLAG_WILDCARD_045",
+		"Description":""
+	},
+	{
+		"Id": 852,
+		"Name":"SYS_FLAG_WILDCARD_046",
+		"Description":""
+	},
+	{
+		"Id": 853,
+		"Name":"SYS_FLAG_WILDCARD_047",
+		"Description":""
+	},
+	{
+		"Id": 854,
+		"Name":"SYS_FLAG_WILDCARD_048",
+		"Description":""
+	},
+	{
+		"Id": 855,
+		"Name":"SYS_FLAG_WILDCARD_049",
+		"Description":""
+	},
+	{
+		"Id": 856,
+		"Name":"SYS_FLAG_WILDCARD_050",
+		"Description":""
+	},
+	{
+		"Id": 857,
+		"Name":"SYS_FLAG_WILDCARD_051",
+		"Description":""
+	},
+	{
+		"Id": 858,
+		"Name":"SYS_FLAG_WILDCARD_052",
+		"Description":""
+	},
+	{
+		"Id": 859,
+		"Name":"SYS_FLAG_WILDCARD_053",
+		"Description":""
+	},
+	{
+		"Id": 860,
+		"Name":"SYS_FLAG_WILDCARD_054",
+		"Description":""
+	},
+	{
+		"Id": 861,
+		"Name":"SYS_FLAG_WILDCARD_055",
+		"Description":""
+	},
+	{
+		"Id": 862,
+		"Name":"SYS_FLAG_WILDCARD_056",
+		"Description":""
+	},
+	{
+		"Id": 863,
+		"Name":"SYS_FLAG_WILDCARD_057",
+		"Description":""
+	},
+	{
+		"Id": 864,
+		"Name":"SYS_FLAG_WILDCARD_058",
+		"Description":""
+	},
+	{
+		"Id": 865,
+		"Name":"SYS_FLAG_WILDCARD_059",
+		"Description":""
+	},
+	{
+		"Id": 866,
+		"Name":"SYS_FLAG_WILDCARD_060",
+		"Description":""
+	},
+	{
+		"Id": 867,
+		"Name":"SYS_FLAG_WILDCARD_061",
+		"Description":""
+	},
+	{
+		"Id": 868,
+		"Name":"SYS_FLAG_WILDCARD_062",
+		"Description":""
+	},
+	{
+		"Id": 869,
+		"Name":"SYS_FLAG_WILDCARD_063",
+		"Description":""
+	},
+	{
+		"Id": 870,
+		"Name":"SYS_FLAG_WILDCARD_064",
+		"Description":""
+	},
+	{
+		"Id": 871,
+		"Name":"SYS_FLAG_WILDCARD_065",
+		"Description":""
+	},
+	{
+		"Id": 872,
+		"Name":"SYS_FLAG_WILDCARD_066",
+		"Description":""
+	},
+	{
+		"Id": 873,
+		"Name":"SYS_FLAG_WILDCARD_067",
+		"Description":""
+	},
+	{
+		"Id": 874,
+		"Name":"SYS_FLAG_WILDCARD_068",
+		"Description":""
+	},
+	{
+		"Id": 875,
+		"Name":"SYS_FLAG_WILDCARD_069",
+		"Description":""
+	},
+	{
+		"Id": 876,
+		"Name":"SYS_FLAG_WILDCARD_070",
+		"Description":""
+	},
+	{
+		"Id": 877,
+		"Name":"SYS_FLAG_WILDCARD_071",
+		"Description":""
+	},
+	{
+		"Id": 878,
+		"Name":"SYS_FLAG_WILDCARD_072",
+		"Description":""
+	},
+	{
+		"Id": 879,
+		"Name":"SYS_FLAG_WILDCARD_073",
+		"Description":""
+	},
+	{
+		"Id": 880,
+		"Name":"SYS_FLAG_WILDCARD_074",
+		"Description":""
+	},
+	{
+		"Id": 881,
+		"Name":"SYS_FLAG_WILDCARD_075",
+		"Description":""
+	},
+	{
+		"Id": 882,
+		"Name":"SYS_FLAG_WILDCARD_076",
+		"Description":""
+	},
+	{
+		"Id": 883,
+		"Name":"SYS_FLAG_WILDCARD_077",
+		"Description":""
+	},
+	{
+		"Id": 884,
+		"Name":"SYS_FLAG_WILDCARD_078",
+		"Description":""
+	},
+	{
+		"Id": 885,
+		"Name":"SYS_FLAG_WILDCARD_079",
+		"Description":""
+	},
+	{
+		"Id": 886,
+		"Name":"SYS_FLAG_WILDCARD_080",
+		"Description":""
+	},
+	{
+		"Id": 887,
+		"Name":"SYS_FLAG_WILDCARD_081",
+		"Description":""
+	},
+	{
+		"Id": 888,
+		"Name":"SYS_FLAG_WILDCARD_082",
+		"Description":""
+	},
+	{
+		"Id": 889,
+		"Name":"SYS_FLAG_WILDCARD_083",
+		"Description":""
+	},
+	{
+		"Id": 890,
+		"Name":"SYS_FLAG_WILDCARD_084",
+		"Description":""
+	},
+	{
+		"Id": 891,
+		"Name":"SYS_FLAG_WILDCARD_085",
+		"Description":""
+	},
+	{
+		"Id": 892,
+		"Name":"SYS_FLAG_WILDCARD_086",
+		"Description":""
+	},
+	{
+		"Id": 893,
+		"Name":"SYS_FLAG_WILDCARD_087",
+		"Description":""
+	},
+	{
+		"Id": 894,
+		"Name":"SYS_FLAG_WILDCARD_088",
+		"Description":""
+	},
+	{
+		"Id": 895,
+		"Name":"SYS_FLAG_WILDCARD_089",
+		"Description":""
+	},
+	{
+		"Id": 896,
+		"Name":"SYS_FLAG_WILDCARD_090",
+		"Description":""
+	},
+	{
+		"Id": 897,
+		"Name":"SYS_FLAG_WILDCARD_091",
+		"Description":""
+	},
+	{
+		"Id": 898,
+		"Name":"SYS_FLAG_WILDCARD_092",
+		"Description":""
+	},
+	{
+		"Id": 899,
+		"Name":"SYS_FLAG_WILDCARD_093",
+		"Description":""
+	},
+	{
+		"Id": 900,
+		"Name":"SYS_FLAG_WILDCARD_094",
+		"Description":""
+	},
+	{
+		"Id": 901,
+		"Name":"SYS_FLAG_WILDCARD_095",
+		"Description":""
+	},
+	{
+		"Id": 902,
+		"Name":"SYS_FLAG_WILDCARD_096",
+		"Description":""
+	},
+	{
+		"Id": 903,
+		"Name":"SYS_FLAG_WILDCARD_097",
+		"Description":""
+	},
+	{
+		"Id": 904,
+		"Name":"SYS_FLAG_WILDCARD_098",
+		"Description":""
+	},
+	{
+		"Id": 905,
+		"Name":"SYS_FLAG_WILDCARD_099",
+		"Description":""
+	},
+	{
+		"Id": 906,
+		"Name":"SYS_FLAG_WILDCARD_100",
+		"Description":""
+	},
+	{
+		"Id": 907,
+		"Name":"SYS_FLAG_AUTOSAVE_STOP",
+		"Description":""
+	},
+	{
+		"Id": 908,
+		"Name":"SYS_FLAG_MAP_INFO_STOP",
+		"Description":""
+	},
+	{
+		"Id": 909,
+		"Name":"SYS_FLAG_BTL_RETURN_CALL_SP",
+		"Description":""
+	},
+	{
+		"Id": 910,
+		"Name":"FLAG_ARRIVE_D10R0902",
+		"Description":""
+	},
+	{
+		"Id": 911,
+		"Name":"FLAG_ARRIVE_SEA01",
+		"Description":""
+	},
+	{
+		"Id": 912,
+		"Name":"FLAG_ARRIVE_C01R0209",
+		"Description":""
+	},
+	{
+		"Id": 913,
+		"Name":"FLAG_ARRIVE_UGAASECRETBASE01",
+		"Description":""
+	},
+	{
+		"Id": 914,
+		"Name":"FLAG_ARRIVE_UGAASECRETBASE02",
+		"Description":""
+	},
+	{
+		"Id": 915,
+		"Name":"FLAG_ARRIVE_UGAASECRETBASE03",
+		"Description":""
+	},
+	{
+		"Id": 916,
+		"Name":"FLAG_ARRIVE_UGABSECRETBASE01",
+		"Description":""
+	},
+	{
+		"Id": 917,
+		"Name":"FLAG_ARRIVE_UGABSECRETBASE02",
+		"Description":""
+	},
+	{
+		"Id": 918,
+		"Name":"FLAG_ARRIVE_UGABSECRETBASE03",
+		"Description":""
+	},
+	{
+		"Id": 919,
+		"Name":"FLAG_ARRIVE_UGBASECRETBASE01",
+		"Description":""
+	},
+	{
+		"Id": 920,
+		"Name":"FLAG_ARRIVE_UGBASECRETBASE02",
+		"Description":""
+	},
+	{
+		"Id": 921,
+		"Name":"FLAG_ARRIVE_UGBASECRETBASE03",
+		"Description":""
+	},
+	{
+		"Id": 922,
+		"Name":"FLAG_ARRIVE_UGCASECRETBASE01",
+		"Description":""
+	},
+	{
+		"Id": 923,
+		"Name":"FLAG_ARRIVE_UGCASECRETBASE02",
+		"Description":""
+	},
+	{
+		"Id": 924,
+		"Name":"FLAG_ARRIVE_UGCASECRETBASE03",
+		"Description":""
+	},
+	{
+		"Id": 925,
+		"Name":"FLAG_ARRIVE_UGDASECRETBASE01",
+		"Description":""
+	},
+	{
+		"Id": 926,
+		"Name":"FLAG_ARRIVE_UGDASECRETBASE02",
+		"Description":""
+	},
+	{
+		"Id": 927,
+		"Name":"FLAG_ARRIVE_UGDASECRETBASE03",
+		"Description":""
+	},
+	{
+		"Id": 928,
+		"Name":"FLAG_ARRIVE_UGEASECRETBASE01",
+		"Description":""
+	},
+	{
+		"Id": 929,
+		"Name":"FLAG_ARRIVE_UGEASECRETBASE02",
+		"Description":""
+	},
+	{
+		"Id": 930,
+		"Name":"FLAG_ARRIVE_UGEASECRETBASE03",
+		"Description":""
+	},
+	{
+		"Id": 931,
+		"Name":"FLAG_ARRIVE_UGFASECRETBASE01",
+		"Description":""
+	},
+	{
+		"Id": 932,
+		"Name":"FLAG_ARRIVE_UGFASECRETBASE02",
+		"Description":""
+	},
+	{
+		"Id": 933,
+		"Name":"FLAG_ARRIVE_UGFASECRETBASE03",
+		"Description":""
+	},
+	{
+		"Id": 934,
+		"Name":"FLAG_ARRIVE_D10R0202B",
+		"Description":""
+	},
+	{
+		"Id": 935,
+		"Name":"FLAG_ARRIVE_D10R0301B",
+		"Description":""
+	},
+	{
+		"Id": 936,
+		"Name":"FLAG_ARRIVE_D10R0302B",
+		"Description":""
+	},
+	{
+		"Id": 937,
+		"Name":"FLAG_ARRIVE_D10R0303B",
+		"Description":""
+	},
+	{
+		"Id": 938,
+		"Name":"FLAG_ARRIVE_D10R0401B",
+		"Description":""
+	},
+	{
+		"Id": 939,
+		"Name":"FLAG_ARRIVE_D10R0402B",
+		"Description":""
+	},
+	{
+		"Id": 940,
+		"Name":"FLAG_ARRIVE_D10R0403B",
+		"Description":""
+	},
+	{
+		"Id": 941,
+		"Name":"FLAG_ARRIVE_D10R0501B",
+		"Description":""
+	},
+	{
+		"Id": 942,
+		"Name":"FLAG_ARRIVE_D10R0502B",
+		"Description":""
+	},
+	{
+		"Id": 943,
+		"Name":"FLAG_ARRIVE_D10R0601B",
+		"Description":""
+	},
+	{
+		"Id": 944,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE1",
+		"Description":""
+	},
+	{
+		"Id": 945,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE2",
+		"Description":""
+	},
+	{
+		"Id": 946,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE3",
+		"Description":""
+	},
+	{
+		"Id": 947,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE4",
+		"Description":""
+	},
+	{
+		"Id": 948,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE5",
+		"Description":""
+	},
+	{
+		"Id": 949,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE6",
+		"Description":""
+	},
+	{
+		"Id": 950,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE7",
+		"Description":""
+	},
+	{
+		"Id": 951,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE8",
+		"Description":""
+	},
+	{
+		"Id": 952,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE9",
+		"Description":""
+	},
+	{
+		"Id": 953,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE10",
+		"Description":""
+	},
+	{
+		"Id": 954,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE11",
+		"Description":""
+	},
+	{
+		"Id": 955,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE12",
+		"Description":""
+	},
+	{
+		"Id": 956,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE13",
+		"Description":""
+	},
+	{
+		"Id": 957,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE14",
+		"Description":""
+	},
+	{
+		"Id": 958,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE15",
+		"Description":""
+	},
+	{
+		"Id": 959,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE16",
+		"Description":""
+	},
+	{
+		"Id": 960,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE17",
+		"Description":""
+	},
+	{
+		"Id": 961,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE18",
+		"Description":""
+	},
+	{
+		"Id": 962,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE19",
+		"Description":""
+	},
+	{
+		"Id": 963,
+		"Name":"FLAG_ARRIVE_OTHER_ZONE20",
+		"Description":""
+	},
+	{
+		"Id": 964,
+		"Name":"FLAG_STOP_EYE_ENCOUNT",
+		"Description":""
+	},
+	{
+		"Id": 965,
+		"Name":"SYSFLAG_END",
+		"Description":""
+	},
+    {
+		"Id": 1000,
+		"Name":"SYSFLAG_SAVE_SIZE",
+		"Description":""
+	}
+]

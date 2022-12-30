@@ -41,6 +41,9 @@
       <HintPath>packages\AssetsTools.NET.2.0.9\lib\net40\AssetsTools.NET.dll</HintPath>
     </Reference>
     <Reference Include="CustomMarshalers" />
+    <Reference Include="EasyScintilla, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\EasyScintilla.1.0.5\lib\net40\EasyScintilla.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.4.0, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft-WindowsAPICodePack-Core.1.1.4\lib\net48\Microsoft.WindowsAPICodePack.dll</HintPath>
     </Reference>
@@ -64,6 +67,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\jacobslusser.ScintillaNET.3.6.3\lib\net40\ScintillaNET.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
@@ -85,6 +91,7 @@
     <Compile Include="Data\BundleManipulator.cs" />
     <Compile Include="Data\Bundles\ScriptBundle.cs" />
     <Compile Include="Data\JSONObjects\Bundle\BundleInfo.cs" />
+    <Compile Include="Data\JSONObjects\Scripts\ArgumentTypeInfo.cs" />
     <Compile Include="Data\Utils\FileConstants.cs" />
     <Compile Include="Data\Utils\RegexPatterns.cs" />
     <Compile Include="Engine\ScriptEditor\EditorEngine.cs" />
@@ -98,6 +105,7 @@
     <Compile Include="Engine\ScriptEditor\Model\Script.cs" />
     <Compile Include="Engine\ScriptEditor\Model\ScriptFile.cs" />
     <Compile Include="Engine\ScriptEditor\ScriptValidator.cs" />
+    <Compile Include="Engine\ScriptEditor\Styler\BDSPScriptStyler.cs" />
     <Compile Include="Forms\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +124,9 @@
     </EmbeddedResource>
     <None Include="JSON\bundle_constants.json" />
     <None Include="JSON\commands.json" />
+    <None Include="JSON\flags.json" />
+    <None Include="JSON\sys_flags.json" />
+    <None Include="JSON\work.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

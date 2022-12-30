@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PokemonBDSPEditor.Data.JSONObjects
 {
-    class CommandInfo
+    class ArgumentTypeInfo
     {
         [JsonProperty("Id")]
         public int Id { get; set; }
@@ -15,12 +15,6 @@ namespace PokemonBDSPEditor.Data.JSONObjects
         public string Name { get; set; }
         [JsonProperty("Description")]
         public string Description { get; set; }
-        [JsonProperty("Dummy")]
-        public bool Dummy { get; set; }
-        [JsonProperty("Animation")]
-        public bool Animation { get; set; }
-        [JsonProperty("Args")]
-        public IList<ArgumentInfo> Arguments { get; set; }
 
         public override string ToString()
         {

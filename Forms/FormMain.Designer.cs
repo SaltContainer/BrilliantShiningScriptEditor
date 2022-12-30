@@ -35,6 +35,7 @@ namespace PokemonBDSPEditor.Forms
             this.tbtnSave = new System.Windows.Forms.ToolStripButton();
             this.tabsMain = new System.Windows.Forms.TabControl();
             this.tabScript = new System.Windows.Forms.TabPage();
+            this.editorScript = new EasyScintilla.SimpleEditor();
             this.grpScriptFile = new System.Windows.Forms.GroupBox();
             this.grpScriptCommand = new System.Windows.Forms.GroupBox();
             this.checkScriptSafe = new System.Windows.Forms.CheckBox();
@@ -50,7 +51,6 @@ namespace PokemonBDSPEditor.Forms
             this.btnScriptRemove = new System.Windows.Forms.Button();
             this.btnScriptCompile = new System.Windows.Forms.Button();
             this.btnScriptSave = new System.Windows.Forms.Button();
-            this.rtbScript = new System.Windows.Forms.RichTextBox();
             this.tabText = new System.Windows.Forms.TabPage();
             this.stripMain.SuspendLayout();
             this.tabsMain.SuspendLayout();
@@ -107,8 +107,8 @@ namespace PokemonBDSPEditor.Forms
             // 
             // tabScript
             // 
+            this.tabScript.Controls.Add(this.editorScript);
             this.tabScript.Controls.Add(this.grpScriptFile);
-            this.tabScript.Controls.Add(this.rtbScript);
             this.tabScript.Location = new System.Drawing.Point(4, 22);
             this.tabScript.Name = "tabScript";
             this.tabScript.Padding = new System.Windows.Forms.Padding(3);
@@ -116,6 +116,23 @@ namespace PokemonBDSPEditor.Forms
             this.tabScript.TabIndex = 0;
             this.tabScript.Text = "Script Editor";
             this.tabScript.UseVisualStyleBackColor = true;
+            // 
+            // editorScript
+            // 
+            this.editorScript.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.editorScript.AutoCIgnoreCase = true;
+            this.editorScript.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.editorScript.Enabled = false;
+            this.editorScript.IndentationGuides = ScintillaNET.IndentView.LookBoth;
+            this.editorScript.Location = new System.Drawing.Point(7, 7);
+            this.editorScript.Name = "editorScript";
+            this.editorScript.ScrollWidth = 700;
+            this.editorScript.Size = new System.Drawing.Size(807, 530);
+            this.editorScript.Styler = null;
+            this.editorScript.TabIndex = 6;
+            this.editorScript.UseTabs = true;
             // 
             // grpScriptFile
             // 
@@ -295,20 +312,6 @@ namespace PokemonBDSPEditor.Forms
             this.btnScriptSave.UseVisualStyleBackColor = true;
             this.btnScriptSave.Click += new System.EventHandler(this.btnScriptSave_Click);
             // 
-            // rtbScript
-            // 
-            this.rtbScript.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbScript.BackColor = System.Drawing.SystemColors.Window;
-            this.rtbScript.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbScript.Location = new System.Drawing.Point(6, 6);
-            this.rtbScript.Name = "rtbScript";
-            this.rtbScript.Size = new System.Drawing.Size(808, 531);
-            this.rtbScript.TabIndex = 0;
-            this.rtbScript.Text = "";
-            this.rtbScript.WordWrap = false;
-            // 
             // tabText
             // 
             this.tabText.Location = new System.Drawing.Point(4, 22);
@@ -355,7 +358,6 @@ namespace PokemonBDSPEditor.Forms
         private System.Windows.Forms.Button btnScriptCompile;
         private System.Windows.Forms.Label lbScriptFile;
         private System.Windows.Forms.ComboBox comboScriptFile;
-        private System.Windows.Forms.RichTextBox rtbScript;
         private System.Windows.Forms.GroupBox grpScriptFile;
         private System.Windows.Forms.Button btnScriptAdd;
         private System.Windows.Forms.Label lbScript;
@@ -367,6 +369,7 @@ namespace PokemonBDSPEditor.Forms
         private System.Windows.Forms.Label lbScriptCommandDescription;
         private System.Windows.Forms.Label lbScriptCommandName;
         private System.Windows.Forms.CheckBox checkScriptSafe;
+        private EasyScintilla.SimpleEditor editorScript;
     }
 }
 

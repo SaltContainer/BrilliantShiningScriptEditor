@@ -104,42 +104,87 @@ namespace PokemonBDSPEditor.Properties {
         ///	{
         ///		&quot;Id&quot;: 777,
         ///		&quot;Name&quot;: &quot;ACMD_END&quot;,
-        ///		&quot;Description&quot;: &quot;&quot;,
+        ///		&quot;Description&quot;: &quot;Ends a movement script.&quot;,
+        ///		&quot;Dummy&quot;: false,
+        ///		&quot;Animation&quot;: true,
         ///		&quot;Args&quot;: []
         ///	},
         ///	{
         ///		&quot;Id&quot;: 811,
         ///		&quot;Name&quot;: &quot;ACMD_NOT&quot;,
-        ///		&quot;Description&quot;: &quot;&quot;,
+        ///		&quot;Description&quot;: &quot;Unused.&quot;,
+        ///		&quot;Dummy&quot;: false,
+        ///		&quot;Animation&quot;: true,
         ///		&quot;Args&quot;: []
         ///	},
         ///	{
         ///		&quot;Id&quot;: 1155,
         ///		&quot;Name&quot;: &quot;AC_ANIME_DURATION&quot;,
-        ///		&quot;Description&quot;: &quot;&quot;,
-        ///		&quot;Args&quot;: []
-        ///	},
-        ///	{
-        ///		&quot;Id&quot;: 805,
-        ///		&quot;Name&quot;: &quot;AC_ANM_PAUSE_OFF&quot;,
-        ///		&quot;Description&quot;: &quot;&quot;,
-        ///		&quot;Args&quot;: []
-        ///	},
-        ///	{
-        ///		&quot;Id&quot;: 804,
-        ///		&quot;Name&quot;: &quot;AC_ANM_PAUSE_ON&quot;,
-        ///		&quot;Description&quot;: &quot;&quot;,
-        ///		&quot;Args&quot;: []
-        ///	},
-        ///	{
-        ///		&quot;Id&quot;: 775,
-        ///		&quot;Name&quot;: &quot;AC_DIR_D&quot;,
-        ///		&quot;Description&quot;: &quot;&quot;,
-        ///		&quot;Args&quot;: [ [rest of string was truncated]&quot;;.
+        ///		&quot;Description&quot;: &quot;(?) Sets the length of the next animation.&quot;,
+        ///		&quot;Dummy&quot;: false,
+        ///		&quot;Animation&quot;: true,
+        ///		&quot;Args&quot;: [
+        ///			{
+        ///				&quot;TentativeName&quot;: &quot;Time&quot;,
+        ///				&quot;Description&quot;: &quot;Time in seconds.&quot;,
+        ///				&quot;Type&quot;: [
+        ///	 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string commands {
             get {
                 return ResourceManager.GetString("commands", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [
+        ///    {
+        ///		&quot;Id&quot;: 0,
+        ///		&quot;Name&quot;:&quot;FH_01&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 1,
+        ///		&quot;Name&quot;:&quot;FH_02&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 2,
+        ///		&quot;Name&quot;:&quot;FH_03&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 3,
+        ///		&quot;Name&quot;:&quot;FH_04&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 4,
+        ///		&quot;Name&quot;:&quot;FH_05&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 5,
+        ///		&quot;Name&quot;:&quot;FH_06&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 6,
+        ///		&quot;Name&quot;:&quot;FH_07&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 7,
+        ///		&quot;Name&quot;:&quot;FH_08&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 8,
+        ///		&quot;Name&quot;:&quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string flags {
+            get {
+                return ResourceManager.GetString("flags", resourceCulture);
             }
         }
         
@@ -200,6 +245,99 @@ namespace PokemonBDSPEditor.Properties {
             get {
                 object obj = ResourceManager.GetObject("script_save", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [
+        ///    {
+        ///		&quot;Id&quot;: 0,
+        ///		&quot;Name&quot;:&quot;SYS_FLAG_ARRIVE_START&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 1,
+        ///		&quot;Name&quot;:&quot;SYS_FLAG_BAG_GET&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 2,
+        ///		&quot;Name&quot;:&quot;SYS_FLAG_PAIR&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 3,
+        ///		&quot;Name&quot;:&quot;SYS_FLAG_KAIRIKI&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 4,
+        ///		&quot;Name&quot;:&quot;SYS_FLAG_FNOTE_GET&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 5,
+        ///		&quot;Name&quot;:&quot;SYS_FLAG_GAME_CLEAR&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 6,
+        ///		&quot;Name&quot;:&quot;SYS_FLAG_ONE_STEP&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string sys_flags {
+            get {
+                return ResourceManager.GetString("sys_flags", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [
+        ///    {
+        ///		&quot;Id&quot;: 0,
+        ///		&quot;Name&quot;:&quot;LOCALWORK0&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 1,
+        ///		&quot;Name&quot;:&quot;LOCALWORK1&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 2,
+        ///		&quot;Name&quot;:&quot;LOCALWORK2&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 3,
+        ///		&quot;Name&quot;:&quot;LOCALWORK3&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 4,
+        ///		&quot;Name&quot;:&quot;LOCALWORK4&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 5,
+        ///		&quot;Name&quot;:&quot;LOCALWORK5&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 6,
+        ///		&quot;Name&quot;:&quot;LOCALWORK6&quot;,
+        ///		&quot;Description&quot;:&quot;&quot;
+        ///	},
+        ///	{
+        ///		&quot;Id&quot;: 7,
+        ///		&quot;Name&quot;:&quot;LOCALWORK7&quot;,
+        ///		&quot;Descript [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string work {
+            get {
+                return ResourceManager.GetString("work", resourceCulture);
             }
         }
     }

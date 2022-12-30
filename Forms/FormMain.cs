@@ -4,6 +4,7 @@ using PokemonBDSPEditor.Data.Utils;
 using PokemonBDSPEditor.Engine.ScriptEditor;
 using PokemonBDSPEditor.Engine.ScriptEditor.Exceptions;
 using PokemonBDSPEditor.Engine.ScriptEditor.Model;
+using PokemonBDSPEditor.Engine.ScriptEditor.Styler;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EasyScintilla.Stylers;
 
 namespace PokemonBDSPEditor.Forms
 {
@@ -25,6 +27,9 @@ namespace PokemonBDSPEditor.Forms
         public FormMain()
         {
             InitializeComponent();
+
+            editorScript.Styler = new BDSPScriptStyler();
+
             scriptEditorEngine = new ScriptEditorEngine();
 
             comboScriptCommand.DataSource = FileConstants.Commands;
@@ -45,7 +50,7 @@ namespace PokemonBDSPEditor.Forms
 
         private void UpdateScriptBox(Script script)
         {
-            rtbScript.Text = scriptEditorEngine.DecompileScript(script);
+            editorScript.Text = scriptEditorEngine.DecompileScript(script);
         }
 
         private void UpdateCommandInfo(CommandInfo command)
@@ -54,10 +59,11 @@ namespace PokemonBDSPEditor.Forms
             string arguments = "";
             if (command.Arguments.Count == 0) arguments = "No arguments.";
             else arguments = string.Join("\n", command.Arguments.Select(a => string.Format("[{0}] {1} - {2}{3}", string.Join(", ", a.Type), a.Name, a.Optional ? "(Optional) " : "", a.Description)));
-            string description = "";
-            if (command.Dummy) description = command.Description == "" ? "This command is dummied out and does nothing." : string.Format("[Dummied out command] {0}", command.Description);
-            else description = command.Description == "" ? "This command is not documented yet." : command.Description;
-            lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", description, arguments);
+            List<string> descriptionItems = new List<string>();
+            if (command.Animation) descriptionItems.Add("[Animation command]");
+            if (command.Dummy) descriptionItems.Add("This command is dummied out and does nothing.");
+            else descriptionItems.Add(command.Description == "" ? "This command is not documented yet." : command.Description);
+            lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", string.Join(" ", descriptionItems), arguments);
         }
 
         private void SaveScriptInMemory(Script script)
@@ -97,7 +103,7 @@ namespace PokemonBDSPEditor.Forms
 
             try
             {
-                Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name, false);
+                Script script = scriptEditorEngine.CompileScript(editorScript.Text, ((Script)comboScript.SelectedItem).Name, false);
                 MessageBox.Show("No compilation errors found.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (ScriptValidationExceptionListException ex)
@@ -114,7 +120,7 @@ namespace PokemonBDSPEditor.Forms
 
             try
             {
-                Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name, false);
+                Script script = scriptEditorEngine.CompileScript(editorScript.Text, ((Script)comboScript.SelectedItem).Name, false);
                 SaveScriptInMemory(script);
             }
             catch (ScriptValidationExceptionListException ex)
@@ -126,7 +132,7 @@ namespace PokemonBDSPEditor.Forms
                     fullError += "\nAre you sure you want to save this script anyways?";
                     if (MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error) == DialogResult.Yes)
                     {
-                        Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name, true);
+                        Script script = scriptEditorEngine.CompileScript(editorScript.Text, ((Script)comboScript.SelectedItem).Name, true);
                         SaveScriptInMemory(script);
                     }
                 }
@@ -155,6 +161,7 @@ namespace PokemonBDSPEditor.Forms
                         tbtnOpen.Enabled = false;
                         btnScriptCompile.Enabled = true;
                         btnScriptSave.Enabled = true;
+                        editorScript.Enabled = true;
                     }
                 }
                 else
