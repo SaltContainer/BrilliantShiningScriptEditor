@@ -155,7 +155,8 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
                     {
                         if (i + j - 1 >= commandInfo.Arguments.Count())
                         {
-                            validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}, Argument {1}: Invalid argument type. Expected [{2}], but was {3}.", line + 1, i, string.Join(", ", commandInfo.Arguments[i - 1].Type), arguments[i - 1].Type), true));
+                            validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}, Argument {1}: Invalid argument type. Expected [{2}], but was {3}.", line + 1, i, string.Join(", ", commandInfo.Arguments[i - 1].Type), arguments[i].Type), true));
+                            break;
                         }
 
                         if (commandInfo.Arguments[i + j - 1].Optional)
@@ -168,7 +169,8 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
                         {
                             if (!commandInfo.Arguments[i + j - 1].Type.Contains(GetTypeNameFromType(arguments[i].Type)))
                             {
-                                validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}, Argument {1}: Invalid argument type. Expected [{2}], but was {3}.", line + 1, i, string.Join(", ", commandInfo.Arguments[i + j].Type), arguments[i].Type), true));
+                                validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}, Argument {1}: Invalid argument type. Expected [{2}], but was {3}.", line + 1, i, string.Join(", ", commandInfo.Arguments[i + j - 1].Type), arguments[i].Type), true));
+                                break;
                             }
                             else i++;
                         }
