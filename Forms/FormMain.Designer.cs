@@ -222,6 +222,8 @@ namespace PokemonBDSPEditor.Forms
             // 
             this.comboScript.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboScript.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboScript.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboScript.FormattingEnabled = true;
             this.comboScript.Location = new System.Drawing.Point(6, 84);
             this.comboScript.Name = "comboScript";
@@ -233,6 +235,8 @@ namespace PokemonBDSPEditor.Forms
             // 
             this.comboScriptFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboScriptFile.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboScriptFile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboScriptFile.FormattingEnabled = true;
             this.comboScriptFile.Location = new System.Drawing.Point(6, 34);
             this.comboScriptFile.Name = "comboScriptFile";

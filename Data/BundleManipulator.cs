@@ -120,7 +120,7 @@ namespace PokemonBDSPEditor.Data
             bundleWriter.Close();
         }
 
-        public List<AssetTypeValueField> GetFilesOfBundle(string bundleKey)
+        public Dictionary<long, AssetTypeValueField> GetFilesOfBundle(string bundleKey)
         {
             return bundles[bundleKey].GetFilesInBundle();
         }
@@ -135,7 +135,7 @@ namespace PokemonBDSPEditor.Data
             return basePath;
         }
 
-        public void SetFilesToBundle(string bundleKey, Dictionary<string, JObject> files)
+        public void SetFilesToBundle(string bundleKey, List<JObject> files)
         {
             bundles[bundleKey].SetFilesInBundle(files);
         }

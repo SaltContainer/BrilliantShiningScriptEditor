@@ -82,9 +82,9 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
                 var files = bundleManipulator.GetFilesOfBundle(FileConstants.ScriptDataBundleKey);
                 foreach (var file in files)
                 {
-                    if (file["Scripts"] != null && file["Scripts"].GetChildrenCount() > 0)
+                    if (file.Value["Scripts"] != null && file.Value["Scripts"].GetChildrenCount() > 0)
                     {
-                        scriptFiles.Add(ConvertToScriptFile(file));
+                        scriptFiles.Add(ConvertToScriptFile(file.Key, file.Value));
                     }
                 }
                 scriptFiles = scriptFiles.OrderBy(s => s.FileName).ToList();
@@ -92,7 +92,7 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
             return result;
         }
 
-        private ScriptFile ConvertToScriptFile(AssetTypeValueField root)
+        private ScriptFile ConvertToScriptFile(long pathId, AssetTypeValueField root)
         {
             List<string> strings = new List<string>();
             foreach (var str in root["StrList"][0].GetChildrenList())
@@ -118,18 +118,19 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor
                 scripts.Add(new Script(script["Label"].GetValue().AsString(), commands));
             }
 
-            return new ScriptFile(strings, scripts, root["m_Name"].GetValue().AsString());
+            return new ScriptFile(strings, scripts, root["m_Name"].GetValue().AsString(), pathId);
         }
 
-        private Dictionary<string, JObject> ConvertFromScriptFiles(List<ScriptFile> scriptFiles)
+        private List<JObject> ConvertFromScriptFiles(List<ScriptFile> scriptFiles)
         {
             List<ScriptFile> convertedScriptFiles = ConvertStringsToIndex(scriptFiles);
 
-            Dictionary<string, JObject> json = new Dictionary<string, JObject>();
+            List<JObject> json = new List<JObject>();
 
             foreach (ScriptFile scriptFile in convertedScriptFiles)
             {
-                json.Add(scriptFile.FileName, new JObject(
+                json.Add(new JObject(
+                    new JProperty("PathID", scriptFile.PathID),
                     new JProperty("Scripts",
                         new JArray(
                             from s in scriptFile.Scripts
