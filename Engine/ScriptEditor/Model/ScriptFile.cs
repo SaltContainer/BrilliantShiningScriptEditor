@@ -11,12 +11,14 @@ namespace PokemonBDSPEditor.Engine.ScriptEditor.Model
         public List<string> Strings { get; set; }
         public List<Script> Scripts { get; set; }
         public string FileName { get; set; }
+        public long PathID { get; set; }
 
-        public ScriptFile(List<string> strings, List<Script> scripts, string fileName)
+        public ScriptFile(List<string> strings, List<Script> scripts, string fileName, long pathId)
         {
             Strings = strings;
             Scripts = scripts;
             FileName = fileName;
+            PathID = pathId;
         }
 
         public override string ToString()

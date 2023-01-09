@@ -36,7 +36,7 @@ namespace PokemonBDSPEditor.Data
             return GetBaseField(fileName);
         }
 
-        public void SetFilesInBundle(Dictionary<string, JObject> files)
+        public void SetFilesInBundle(List<JObject> files)
         {
             List<AssetsReplacer> replacers = GenerateReplacers(files);
 
@@ -51,7 +51,7 @@ namespace PokemonBDSPEditor.Data
             }
         }
 
-        protected abstract List<AssetsReplacer> GenerateReplacers(Dictionary<string, JObject> files);
+        protected abstract List<AssetsReplacer> GenerateReplacers(List<JObject> files);
 
         private AssetTypeValueField GetBaseField(string fileName)
         {
@@ -59,12 +59,13 @@ namespace PokemonBDSPEditor.Data
             return assetsManager.GetTypeInstance(assetsFile, fileInfo).GetBaseField();
         }
 
-        public List<AssetTypeValueField> GetFilesInBundle()
+        public Dictionary<long, AssetTypeValueField> GetFilesInBundle()
         {
-            List<AssetTypeValueField> files = new List<AssetTypeValueField>();
+            Dictionary<long, AssetTypeValueField> files = new Dictionary<long, AssetTypeValueField>();
             foreach (var info in assetsFile.table.assetFileInfo)
             {
-                files.Add(assetsManager.GetTypeInstance(assetsFile, info).GetBaseField());
+                AssetTypeValueField file = assetsManager.GetTypeInstance(assetsFile, info).GetBaseField();
+                files.Add(info.index, file);
             }
             return files;
         }

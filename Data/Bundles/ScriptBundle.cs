@@ -13,15 +13,15 @@ namespace PokemonBDSPEditor.Data
     {
         public ScriptBundle(AssetsManager assetsManager, BundleFileInstance bundle, string bundleKey) : base(assetsManager, bundle, bundleKey) { }
 
-        protected override List<AssetsReplacer> GenerateReplacers(Dictionary<string, JObject> files)
+        protected override List<AssetsReplacer> GenerateReplacers(List<JObject> files)
         {
             List<AssetsReplacer> replacers = new List<AssetsReplacer>();
             foreach (var jfile in files)
             {
-                AssetFileInfoEx fileInfo = assetsFile.table.GetAssetInfo(jfile.Key);
+                AssetFileInfoEx fileInfo = assetsFile.table.GetAssetInfo(jfile["PathID"].Value<long>());
                 AssetTypeValueField baseField = assetsManager.GetTypeInstance(assetsFile, fileInfo).GetBaseField();
 
-                JArray jscripts = (JArray)jfile.Value["Scripts"];
+                JArray jscripts = (JArray)jfile["Scripts"];
                 var scriptArray = baseField["Scripts"]["Array"];
                 
                 if (jscripts.Count <= scriptArray.childrenCount) scriptArray.SetChildrenList(scriptArray.children.Take(jscripts.Count).ToArray());
@@ -72,7 +72,7 @@ namespace PokemonBDSPEditor.Data
                     }
                 }
 
-                JArray jstrings = (JArray)jfile.Value["StrList"];
+                JArray jstrings = (JArray)jfile["StrList"];
                 var stringArray = baseField["StrList"]["Array"];
 
                 if (jstrings.Count <= stringArray.childrenCount) stringArray.SetChildrenList(stringArray.children.Take(jstrings.Count).ToArray());
