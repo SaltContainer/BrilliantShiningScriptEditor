@@ -35,7 +35,7 @@ namespace PokemonBDSPEditor.Forms
             this.tbtnSave = new System.Windows.Forms.ToolStripButton();
             this.tabsMain = new System.Windows.Forms.TabControl();
             this.tabScript = new System.Windows.Forms.TabPage();
-            this.editorScript = new EasyScintilla.SimpleEditor();
+            this.webEditor = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.grpScriptFile = new System.Windows.Forms.GroupBox();
             this.grpScriptCommand = new System.Windows.Forms.GroupBox();
             this.checkScriptSafe = new System.Windows.Forms.CheckBox();
@@ -55,12 +55,14 @@ namespace PokemonBDSPEditor.Forms
             this.stripMain.SuspendLayout();
             this.tabsMain.SuspendLayout();
             this.tabScript.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.webEditor)).BeginInit();
             this.grpScriptFile.SuspendLayout();
             this.grpScriptCommand.SuspendLayout();
             this.SuspendLayout();
             // 
             // stripMain
             // 
+            this.stripMain.Enabled = false;
             this.stripMain.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.stripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tbtnOpen,
@@ -107,7 +109,7 @@ namespace PokemonBDSPEditor.Forms
             // 
             // tabScript
             // 
-            this.tabScript.Controls.Add(this.editorScript);
+            this.tabScript.Controls.Add(this.webEditor);
             this.tabScript.Controls.Add(this.grpScriptFile);
             this.tabScript.Location = new System.Drawing.Point(4, 22);
             this.tabScript.Name = "tabScript";
@@ -117,22 +119,20 @@ namespace PokemonBDSPEditor.Forms
             this.tabScript.Text = "Script Editor";
             this.tabScript.UseVisualStyleBackColor = true;
             // 
-            // editorScript
+            // webEditor
             // 
-            this.editorScript.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.webEditor.AllowExternalDrop = true;
+            this.webEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.editorScript.AutoCIgnoreCase = true;
-            this.editorScript.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.editorScript.Enabled = false;
-            this.editorScript.IndentationGuides = ScintillaNET.IndentView.LookBoth;
-            this.editorScript.Location = new System.Drawing.Point(7, 7);
-            this.editorScript.Name = "editorScript";
-            this.editorScript.ScrollWidth = 700;
-            this.editorScript.Size = new System.Drawing.Size(807, 530);
-            this.editorScript.Styler = null;
-            this.editorScript.TabIndex = 6;
-            this.editorScript.UseTabs = true;
+            this.webEditor.CreationProperties = null;
+            this.webEditor.DefaultBackgroundColor = System.Drawing.Color.White;
+            this.webEditor.Location = new System.Drawing.Point(7, 7);
+            this.webEditor.Name = "webEditor";
+            this.webEditor.Size = new System.Drawing.Size(807, 530);
+            this.webEditor.TabIndex = 7;
+            this.webEditor.ZoomFactor = 1D;
+            this.webEditor.NavigationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs>(this.webEditor_NavigationCompleted);
             // 
             // grpScriptFile
             // 
@@ -337,10 +337,12 @@ namespace PokemonBDSPEditor.Forms
             this.MinimumSize = new System.Drawing.Size(1124, 662);
             this.Name = "FormMain";
             this.Text = "Pokémon BDSP Editor";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.stripMain.ResumeLayout(false);
             this.stripMain.PerformLayout();
             this.tabsMain.ResumeLayout(false);
             this.tabScript.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.webEditor)).EndInit();
             this.grpScriptFile.ResumeLayout(false);
             this.grpScriptFile.PerformLayout();
             this.grpScriptCommand.ResumeLayout(false);
@@ -373,7 +375,7 @@ namespace PokemonBDSPEditor.Forms
         private System.Windows.Forms.Label lbScriptCommandDescription;
         private System.Windows.Forms.Label lbScriptCommandName;
         private System.Windows.Forms.CheckBox checkScriptSafe;
-        private EasyScintilla.SimpleEditor editorScript;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webEditor;
     }
 }
 

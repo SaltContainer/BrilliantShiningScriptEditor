@@ -16,6 +16,8 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EasyScintilla.Stylers;
+using System.IO;
+using System.Windows.Threading;
 
 namespace PokemonBDSPEditor.Forms
 {
@@ -28,12 +30,68 @@ namespace PokemonBDSPEditor.Forms
         {
             InitializeComponent();
 
-            editorScript.Styler = new BDSPScriptStyler();
+            //editorScript.Styler = new BDSPScriptStyler();
 
             scriptEditorEngine = new ScriptEditorEngine();
 
             comboScriptCommand.DataSource = FileConstants.Commands;
         }
+
+        #region Web View Stuff
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            webEditor.Source = new Uri(Path.Combine(Application.StartupPath, @"Monaco\index.html"));
+        }
+
+        private void webEditor_NavigationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
+        {
+            stripMain.Enabled = true;
+        }
+
+        private void SetEditorValue(string code)
+        {
+            code = code.Replace("\n", "\\n");
+            EditorWait(webEditor.CoreWebView2.ExecuteScriptAsync($"editor.setValue('{code}')"));
+        }
+
+        private string GetEditorValue()
+        {
+            string code = EditorWait(webEditor.CoreWebView2.ExecuteScriptAsync("editor.getValue()"));
+            code = code.Replace("\"", "");
+            code = code.Replace("\\n", "\n");
+            return code;
+        }
+
+        private string ExecuteEditorScript(string script)
+        {
+            return EditorWait(webEditor.CoreWebView2.ExecuteScriptAsync(script));
+        }
+
+        // NEVER call within a WebView handler, this will deadlock
+        private static string EditorWait(Task<string> task)
+        {
+            System.Timers.Timer timer = new System.Timers.Timer();
+            DispatcherFrame frame = new DispatcherFrame();
+
+            string wait = "Empty";
+
+            task.ContinueWith(
+                _ =>
+                {
+                    if (task.IsFaulted) wait = task.Exception.Message;
+                    else wait = task.Result;
+                    frame.Continue = false;
+                });
+
+            // Timeout if task takes too long
+            timer.Enabled = true;
+            frame.Continue = true;
+            Dispatcher.PushFrame(frame);
+            timer.Enabled = false;
+
+            return wait;
+        }
+        #endregion
 
         private void UpdateScriptFileList(List<ScriptFile> scriptFiles)
         {
@@ -49,8 +107,8 @@ namespace PokemonBDSPEditor.Forms
         }
 
         private void UpdateScriptBox(Script script)
-        {
-            editorScript.Text = scriptEditorEngine.DecompileScript(script);
+        { 
+            SetEditorValue(scriptEditorEngine.DecompileScript(script));
         }
 
         private void UpdateCommandInfo(CommandInfo command)
@@ -103,7 +161,8 @@ namespace PokemonBDSPEditor.Forms
 
             try
             {
-                Script script = scriptEditorEngine.CompileScript(editorScript.Text, ((Script)comboScript.SelectedItem).Name, false);
+                string code = GetEditorValue();
+                Script script = scriptEditorEngine.CompileScript(code, ((Script)comboScript.SelectedItem).Name, false);
                 MessageBox.Show("No compilation errors found.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (ScriptValidationExceptionListException ex)
@@ -120,7 +179,8 @@ namespace PokemonBDSPEditor.Forms
 
             try
             {
-                Script script = scriptEditorEngine.CompileScript(editorScript.Text, ((Script)comboScript.SelectedItem).Name, false);
+                string code = GetEditorValue();
+                Script script = scriptEditorEngine.CompileScript(code, ((Script)comboScript.SelectedItem).Name, false);
                 SaveScriptInMemory(script);
             }
             catch (ScriptValidationExceptionListException ex)
@@ -132,7 +192,8 @@ namespace PokemonBDSPEditor.Forms
                     fullError += "\nAre you sure you want to save this script anyways?";
                     if (MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error) == DialogResult.Yes)
                     {
-                        Script script = scriptEditorEngine.CompileScript(editorScript.Text, ((Script)comboScript.SelectedItem).Name, true);
+                        string code = GetEditorValue();
+                        Script script = scriptEditorEngine.CompileScript(code, ((Script)comboScript.SelectedItem).Name, true);
                         SaveScriptInMemory(script);
                     }
                 }
@@ -161,7 +222,7 @@ namespace PokemonBDSPEditor.Forms
                         tbtnOpen.Enabled = false;
                         btnScriptCompile.Enabled = true;
                         btnScriptSave.Enabled = true;
-                        editorScript.Enabled = true;
+                        ExecuteEditorScript("editor.updateOptions({readOnly: false})");
                     }
                 }
                 else
