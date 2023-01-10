@@ -1,6 +1,6 @@
 ﻿using AssetsTools.NET;
 using AssetsTools.NET.Extra;
-using PokemonBDSPEditor.Data.Utils;
+using BrilliantShiningScriptEditor.Data.Utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace PokemonBDSPEditor.Data
+namespace BrilliantShiningScriptEditor.Data
 {
     abstract class Bundle
     {

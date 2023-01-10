@@ -1,8 +1,8 @@
 ﻿using AssetsTools.NET;
 using AssetsTools.NET.Extra;
 using Newtonsoft.Json.Linq;
-using PokemonBDSPEditor.Data.Utils;
-using PokemonBDSPEditor.Engine.ScriptEditor.Model;
+using BrilliantShiningScriptEditor.Data.Utils;
+using BrilliantShiningScriptEditor.Engine.ScriptEditor.Model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PokemonBDSPEditor.Data
+namespace BrilliantShiningScriptEditor.Data
 {
     class BundleManipulator
     {

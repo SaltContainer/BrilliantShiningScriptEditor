@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace PokemonBDSPEditor.Data.Utils
+namespace BrilliantShiningScriptEditor.Data.Utils
 {
     static class RegexPatterns
     {

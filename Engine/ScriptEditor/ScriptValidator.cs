@@ -1,14 +1,14 @@
-﻿using PokemonBDSPEditor.Data.JSONObjects;
-using PokemonBDSPEditor.Data.Utils;
-using PokemonBDSPEditor.Engine.ScriptEditor.Exceptions;
-using PokemonBDSPEditor.Engine.ScriptEditor.Model;
+﻿using BrilliantShiningScriptEditor.Data.JSONObjects;
+using BrilliantShiningScriptEditor.Data.Utils;
+using BrilliantShiningScriptEditor.Engine.ScriptEditor.Exceptions;
+using BrilliantShiningScriptEditor.Engine.ScriptEditor.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokemonBDSPEditor.Engine.ScriptEditor
+namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
 {
     class ScriptValidator
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PokemonBDSPEditor.Properties {
+namespace BrilliantShiningScriptEditor.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace PokemonBDSPEditor.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PokemonBDSPEditor.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BrilliantShiningScriptEditor.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -126,9 +126,7 @@ namespace PokemonBDSPEditor.Properties {
         ///		&quot;Args&quot;: [
         ///			{
         ///				&quot;TentativeName&quot;: &quot;Time&quot;,
-        ///				&quot;Description&quot;: &quot;Time in seconds.&quot;,
-        ///				&quot;Type&quot;: [
-        ///	 [rest of string was truncated]&quot;;.
+        ///				&quot;Description&quot;: &quot;Time in  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string commands {
             get {

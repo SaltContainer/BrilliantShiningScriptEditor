@@ -1,5 +1,5 @@
 ﻿
-namespace PokemonBDSPEditor.Forms
+namespace BrilliantShiningScriptEditor.Forms
 {
     partial class FormMain
     {
@@ -36,8 +36,8 @@ namespace PokemonBDSPEditor.Forms
             this.tbtnSave = new System.Windows.Forms.ToolStripButton();
             this.webEditor = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.grpScriptFile = new System.Windows.Forms.GroupBox();
-            this.grpScriptCommand = new System.Windows.Forms.GroupBox();
             this.checkScriptSafe = new System.Windows.Forms.CheckBox();
+            this.grpScriptCommand = new System.Windows.Forms.GroupBox();
             this.lbScriptCommand = new System.Windows.Forms.Label();
             this.comboScriptCommand = new System.Windows.Forms.ComboBox();
             this.lbScriptCommandDescription = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@ namespace PokemonBDSPEditor.Forms
             // tbtnOpen
             // 
             this.tbtnOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tbtnOpen.Image = global::PokemonBDSPEditor.Properties.Resources.folder;
+            this.tbtnOpen.Image = global::BrilliantShiningScriptEditor.Properties.Resources.folder;
             this.tbtnOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tbtnOpen.Name = "tbtnOpen";
             this.tbtnOpen.Size = new System.Drawing.Size(36, 36);
@@ -84,7 +84,7 @@ namespace PokemonBDSPEditor.Forms
             // 
             this.tbtnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tbtnSave.Enabled = false;
-            this.tbtnSave.Image = global::PokemonBDSPEditor.Properties.Resources.save;
+            this.tbtnSave.Image = global::BrilliantShiningScriptEditor.Properties.Resources.save;
             this.tbtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tbtnSave.Name = "tbtnSave";
             this.tbtnSave.Size = new System.Drawing.Size(36, 36);
@@ -127,6 +127,18 @@ namespace PokemonBDSPEditor.Forms
             this.grpScriptFile.TabStop = false;
             this.grpScriptFile.Text = "Script File Control";
             // 
+            // checkScriptSafe
+            // 
+            this.checkScriptSafe.AutoSize = true;
+            this.checkScriptSafe.Checked = true;
+            this.checkScriptSafe.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkScriptSafe.Location = new System.Drawing.Point(160, 202);
+            this.checkScriptSafe.Name = "checkScriptSafe";
+            this.checkScriptSafe.Size = new System.Drawing.Size(78, 17);
+            this.checkScriptSafe.TabIndex = 13;
+            this.checkScriptSafe.Text = "Safe Mode";
+            this.checkScriptSafe.UseVisualStyleBackColor = true;
+            // 
             // grpScriptCommand
             // 
             this.grpScriptCommand.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -142,18 +154,6 @@ namespace PokemonBDSPEditor.Forms
             this.grpScriptCommand.TabIndex = 14;
             this.grpScriptCommand.TabStop = false;
             this.grpScriptCommand.Text = "Command Reference";
-            // 
-            // checkScriptSafe
-            // 
-            this.checkScriptSafe.AutoSize = true;
-            this.checkScriptSafe.Checked = true;
-            this.checkScriptSafe.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkScriptSafe.Location = new System.Drawing.Point(160, 202);
-            this.checkScriptSafe.Name = "checkScriptSafe";
-            this.checkScriptSafe.Size = new System.Drawing.Size(78, 17);
-            this.checkScriptSafe.TabIndex = 13;
-            this.checkScriptSafe.Text = "Safe Mode";
-            this.checkScriptSafe.UseVisualStyleBackColor = true;
             // 
             // lbScriptCommand
             // 
@@ -245,7 +245,7 @@ namespace PokemonBDSPEditor.Forms
             // btnScriptAdd
             // 
             this.btnScriptAdd.Enabled = false;
-            this.btnScriptAdd.Image = global::PokemonBDSPEditor.Properties.Resources.script_add;
+            this.btnScriptAdd.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_add;
             this.btnScriptAdd.Location = new System.Drawing.Point(6, 130);
             this.btnScriptAdd.Name = "btnScriptAdd";
             this.btnScriptAdd.Size = new System.Drawing.Size(55, 55);
@@ -256,7 +256,7 @@ namespace PokemonBDSPEditor.Forms
             // btnScriptRemove
             // 
             this.btnScriptRemove.Enabled = false;
-            this.btnScriptRemove.Image = global::PokemonBDSPEditor.Properties.Resources.script_remove;
+            this.btnScriptRemove.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_remove;
             this.btnScriptRemove.Location = new System.Drawing.Point(67, 130);
             this.btnScriptRemove.Name = "btnScriptRemove";
             this.btnScriptRemove.Size = new System.Drawing.Size(55, 55);
@@ -268,7 +268,7 @@ namespace PokemonBDSPEditor.Forms
             // 
             this.btnScriptCompile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptCompile.Enabled = false;
-            this.btnScriptCompile.Image = global::PokemonBDSPEditor.Properties.Resources.script_compile;
+            this.btnScriptCompile.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_compile;
             this.btnScriptCompile.Location = new System.Drawing.Point(128, 130);
             this.btnScriptCompile.Name = "btnScriptCompile";
             this.btnScriptCompile.Size = new System.Drawing.Size(55, 55);
@@ -280,7 +280,7 @@ namespace PokemonBDSPEditor.Forms
             // 
             this.btnScriptSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptSave.Enabled = false;
-            this.btnScriptSave.Image = global::PokemonBDSPEditor.Properties.Resources.script_save;
+            this.btnScriptSave.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_save;
             this.btnScriptSave.Location = new System.Drawing.Point(189, 130);
             this.btnScriptSave.Name = "btnScriptSave";
             this.btnScriptSave.Size = new System.Drawing.Size(55, 55);
@@ -299,7 +299,7 @@ namespace PokemonBDSPEditor.Forms
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1124, 662);
             this.Name = "FormMain";
-            this.Text = "Pokémon BDSP Editor";
+            this.Text = "Brilliant Shining Script Editor";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.stripMain.ResumeLayout(false);
             this.stripMain.PerformLayout();

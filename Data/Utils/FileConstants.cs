@@ -1,13 +1,13 @@
 ﻿using Newtonsoft.Json;
-using PokemonBDSPEditor.Data.JSONObjects;
-using PokemonBDSPEditor.Properties;
+using BrilliantShiningScriptEditor.Data.JSONObjects;
+using BrilliantShiningScriptEditor.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokemonBDSPEditor.Data.Utils
+namespace BrilliantShiningScriptEditor.Data.Utils
 {
     static class FileConstants
     {

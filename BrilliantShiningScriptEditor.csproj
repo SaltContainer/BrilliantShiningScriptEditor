@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F35C76B4-19E4-4C8A-BD2E-14E64266939A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>PokemonBDSPEditor</RootNamespace>
-    <AssemblyName>PokemonBDSPEditor</AssemblyName>
+    <RootNamespace>BrilliantShiningScriptEditor</RootNamespace>
+    <AssemblyName>BrilliantShiningScriptEditor</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokemonBDSPEditor.Data.JSONObjects
+namespace BrilliantShiningScriptEditor.Data.JSONObjects
 {
     class CommandInfo
     {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.WindowsAPICodePack.Dialogs;
-using PokemonBDSPEditor.Data.JSONObjects;
-using PokemonBDSPEditor.Data.Utils;
-using PokemonBDSPEditor.Engine.ScriptEditor;
-using PokemonBDSPEditor.Engine.ScriptEditor.Exceptions;
-using PokemonBDSPEditor.Engine.ScriptEditor.Model;
+using BrilliantShiningScriptEditor.Data.JSONObjects;
+using BrilliantShiningScriptEditor.Data.Utils;
+using BrilliantShiningScriptEditor.Engine.ScriptEditor;
+using BrilliantShiningScriptEditor.Engine.ScriptEditor.Exceptions;
+using BrilliantShiningScriptEditor.Engine.ScriptEditor.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +18,7 @@ using System.IO;
 using System.Windows.Threading;
 using Microsoft.Web.WebView2.Core;
 
-namespace PokemonBDSPEditor.Forms
+namespace BrilliantShiningScriptEditor.Forms
 {
     public partial class FormMain : Form
     {

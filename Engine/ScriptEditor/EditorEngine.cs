@@ -1,11 +1,11 @@
 ﻿using AssetsTools.NET;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using PokemonBDSPEditor.Data;
-using PokemonBDSPEditor.Data.JSONObjects;
-using PokemonBDSPEditor.Data.Utils;
-using PokemonBDSPEditor.Engine.ScriptEditor.Model;
-using PokemonBDSPEditor.Properties;
+using BrilliantShiningScriptEditor.Data;
+using BrilliantShiningScriptEditor.Data.JSONObjects;
+using BrilliantShiningScriptEditor.Data.Utils;
+using BrilliantShiningScriptEditor.Engine.ScriptEditor.Model;
+using BrilliantShiningScriptEditor.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace PokemonBDSPEditor.Engine.ScriptEditor
+namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
 {
     class ScriptEditorEngine
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokemonBDSPEditor.Engine.ScriptEditor.Exceptions
+namespace BrilliantShiningScriptEditor.Engine.ScriptEditor.Exceptions
 {
     class ScriptValidationException : Exception
     {

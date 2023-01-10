@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokemonBDSPEditor.Data
+namespace BrilliantShiningScriptEditor.Data
 {
     class BundleDecompressor
     {
