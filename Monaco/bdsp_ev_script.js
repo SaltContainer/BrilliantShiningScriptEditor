@@ -146,7 +146,13 @@ function registerLanguageAndSyntax()
         // The main tokenizer for our languages
         tokenizer: {
             root: [
-                // identifiers and keywords
+                // unrecognized cmds and args
+                [/cmd_-?\d+/, 'keyword'],
+                [/flag_-?\d+/, 'type.keyword'],
+                [/sys_-?\d+/, 'annotation'],
+                [/var_-?\d+/, 'regexp'],
+
+                // cmds and args
                 [/[a-zA-Z_][\w\-\.']*/, { cases: { '@commands': 'keyword',
                                                 '@flags': 'type.keyword',
                                                 '@sysflags': 'annotation',
@@ -178,8 +184,41 @@ function registerLanguageAndSyntax()
             if (word) {
                 const command = commands.find(c => c.name == word.word);
                 if (command) {
-                    var name = '**' + command.id + ' - ' + command.name + '**';
+                    var name = '**Command ' + command.id + ' - ' + command.name + '**';
                     var description = buildCommandDescription(command);
+                    return {
+                        contents: [
+                            { value: name },
+					        { value: description }
+                        ]
+                    };
+                }
+                const flag = flags.find(f => f.name == word.word);
+                if (flag) {
+                    var name = '**Flag ' + flag.id + ' - ' + flag.name + '**';
+                    var description = flag.description;
+                    return {
+                        contents: [
+                            { value: name },
+					        { value: description }
+                        ]
+                    };
+                }
+                const sysflag = sysflags.find(s => s.name == word.word);
+                if (sysflag) {
+                    var name = '**System Flag ' + sysflag.id + ' - ' + sysflag.name + '**';
+                    var description = sysflag.description;
+                    return {
+                        contents: [
+                            { value: name },
+					        { value: description }
+                        ]
+                    };
+                }
+                const work = works.find(w => w.name == word.word);
+                if (work) {
+                    var name = '**Work ' + work.id + ' - ' + work.name + '**';
+                    var description = work.description;
                     return {
                         contents: [
                             { value: name },
