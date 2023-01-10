@@ -112,6 +112,25 @@ function handleWork(data) {
     }
 }
 
+function buildCommandDescription(command) {
+    var descriptionItems = [];
+    if (command.animation) descriptionItems.push("[Animation command]");
+    if (command.dummy) descriptionItems.push("This command is dummied out and does nothing.");
+    else descriptionItems.push(command.description == "" ? "This command is not documented yet." : command.description);
+    var description = descriptionItems.join(" ");
+    var args = "";
+    if (command.args.length == 0) args = "No arguments.";
+    else
+    {
+        var args = command.args.map(a => {
+            var types = a.type.join(", ");
+            var optional = a.optional ? "(Optional) " : "";
+            return "[" + types + "] **" + a.name + "** - " + optional + a.description;
+        }).join('\n\n');
+    }
+    return description + "\n\n\n\nArguments:\n\n" + args;
+}
+
 function registerLanguageAndSyntax()
 {
     monaco.languages.register({
@@ -159,26 +178,12 @@ function registerLanguageAndSyntax()
             if (word) {
                 const command = commands.find(c => c.name == word.word);
                 if (command) {
-                    var name = '**' + command.id + ' - ' + command.name + '**'
-                    var descriptionItems = [];
-                    if (command.animation) descriptionItems.push("[Animation command]");
-                    if (command.dummy) descriptionItems.push("This command is dummied out and does nothing.");
-                    else descriptionItems.push(command.description == "" ? "This command is not documented yet." : command.description);
-                    var description = descriptionItems.join(" ");
-                    var args = "";
-                    if (command.args.length == 0) args = "No arguments.";
-                    else
-                    {
-                        var args = command.args.map(a => {
-                            var types = a.type.join(", ");
-                            var optional = a.optional ? "(Optional) " : "";
-                            return "[" + types + "] **" + a.name + "** - " + optional + a.description;
-                        }).join('\n\n');
-                    }
+                    var name = '**' + command.id + ' - ' + command.name + '**';
+                    var description = buildCommandDescription(command);
                     return {
                         contents: [
                             { value: name },
-					        { value: description + "\n\n\n\nArguments:\n\n" + args }
+					        { value: description }
                         ]
                     };
                 }
@@ -188,6 +193,81 @@ function registerLanguageAndSyntax()
             return {
                 contents: []
             };
+        }
+    });
+
+    monaco.languages.registerCompletionItemProvider("bdsp", {
+        provideCompletionItems: function(model, position) {
+            let line = model.getLineContent(position.lineNumber);
+            lineTrimmed = line.trimStart();
+            let whiteSpaceLength = line.length - lineTrimmed.length;
+
+            var word = model.getWordUntilPosition(position);
+            var wordLength = word.endColumn - word.startColumn;
+
+            // Check if the position is on the first word of a line
+            if (position.column == 1 || position.column <= 1 + whiteSpaceLength + wordLength) {
+		        var range = {
+			        startLineNumber: position.lineNumber,
+			        endLineNumber: position.lineNumber,
+			        startColumn: word.startColumn,
+			        endColumn: word.endColumn
+		        };
+                var suggestions = commands.map(c => {
+                    return {
+                        label: c.name,
+                        kind: monaco.languages.CompletionItemKind.Function,
+                        documentation: buildCommandDescription(c),
+                        insertText: c.name,
+                        range: range
+                    }
+                });
+		        return {
+			        suggestions: suggestions
+		        };
+            }
+            else
+            {
+                var range = {
+			        startLineNumber: position.lineNumber,
+			        endLineNumber: position.lineNumber,
+			        startColumn: word.startColumn,
+			        endColumn: word.endColumn
+		        };
+                var suggestions = flags.map(f => {
+                    return {
+                        label: f.name,
+                        kind: monaco.languages.CompletionItemKind.Field,
+                        documentation: f.description,
+                        insertText: f.name,
+                        range: range
+                    }
+                }).concat(sysflags.map(s => {
+                    return {
+                        label: s.name,
+                        kind: monaco.languages.CompletionItemKind.Property,
+                        documentation: s.description,
+                        insertText: s.name,
+                        range: range
+                    }
+                }),
+                works.map(w => {
+                    return {
+                        label: w.name,
+                        kind: monaco.languages.CompletionItemKind.Variable,
+                        documentation: w.description,
+                        insertText: w.name,
+                        range: range
+                    }
+                }));
+		        return {
+			        suggestions: suggestions
+		        };
+            }
+
+            return {
+			    suggestions: []
+		    };
         }
     });
 }
