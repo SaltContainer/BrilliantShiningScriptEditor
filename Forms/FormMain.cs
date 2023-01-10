@@ -28,6 +28,7 @@ namespace PokemonBDSPEditor.Forms
         public FormMain()
         {
             InitializeComponent();
+            AddToolTips();
 
             scriptEditorEngine = new ScriptEditorEngine();
 
@@ -98,6 +99,15 @@ namespace PokemonBDSPEditor.Forms
         }
         #endregion
 
+        private void AddToolTips()
+        {
+            ttFormMain.SetToolTip(btnScriptAdd, "Add a Script to this file");
+            ttFormMain.SetToolTip(btnScriptRemove, "Remove this Script from this file");
+            ttFormMain.SetToolTip(btnScriptCompile, "Compile this Script (Check for errors)");
+            ttFormMain.SetToolTip(btnScriptSave, "Save this Script to memory");
+            ttFormMain.SetToolTip(checkScriptSafe, "Disallow saving for Scripts with errors");
+        }
+        
         private void UpdateScriptFileList(List<ScriptFile> scriptFiles)
         {
             comboScriptFile.DataSource = scriptFiles;
