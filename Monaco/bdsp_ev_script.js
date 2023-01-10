@@ -159,11 +159,26 @@ function registerLanguageAndSyntax()
             if (word) {
                 const command = commands.find(c => c.name == word.word);
                 if (command) {
-                    var description = command.description;
+                    var name = '**' + command.id + ' - ' + command.name + '**'
+                    var descriptionItems = [];
+                    if (command.animation) descriptionItems.push("[Animation command]");
+                    if (command.dummy) descriptionItems.push("This command is dummied out and does nothing.");
+                    else descriptionItems.push(command.description == "" ? "This command is not documented yet." : command.description);
+                    var description = descriptionItems.join(" ");
+                    var args = "";
+                    if (command.args.length == 0) args = "No arguments.";
+                    else
+                    {
+                        var args = command.args.map(a => {
+                            var types = a.type.join(", ");
+                            var optional = a.optional ? "(Optional) " : "";
+                            return "[" + types + "] **" + a.name + "** - " + optional + a.description;
+                        }).join('\n\n');
+                    }
                     return {
                         contents: [
-                            { value: '**' + command.name + '**' },
-					        { value: description }
+                            { value: name },
+					        { value: description + "\n\n\n\nArguments:\n\n" + args }
                         ]
                     };
                 }
