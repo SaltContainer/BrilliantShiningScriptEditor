@@ -1,0 +1,2197 @@
+[
+    {
+		"Id": 0,
+		"Name":"LOCALWORK0",
+		"Description":""
+	},
+	{
+		"Id": 1,
+		"Name":"LOCALWORK1",
+		"Description":""
+	},
+	{
+		"Id": 2,
+		"Name":"LOCALWORK2",
+		"Description":""
+	},
+	{
+		"Id": 3,
+		"Name":"LOCALWORK3",
+		"Description":""
+	},
+	{
+		"Id": 4,
+		"Name":"LOCALWORK4",
+		"Description":""
+	},
+	{
+		"Id": 5,
+		"Name":"LOCALWORK5",
+		"Description":""
+	},
+	{
+		"Id": 6,
+		"Name":"LOCALWORK6",
+		"Description":""
+	},
+	{
+		"Id": 7,
+		"Name":"LOCALWORK7",
+		"Description":""
+	},
+	{
+		"Id": 8,
+		"Name":"LOCALWORK8",
+		"Description":""
+	},
+	{
+		"Id": 9,
+		"Name":"LOCALWORK9",
+		"Description":""
+	},
+	{
+		"Id": 10,
+		"Name":"LOCALWORK10",
+		"Description":""
+	},
+	{
+		"Id": 11,
+		"Name":"LOCALWORK11",
+		"Description":""
+	},
+	{
+		"Id": 12,
+		"Name":"LOCALWORK12",
+		"Description":""
+	},
+	{
+		"Id": 13,
+		"Name":"LOCALWORK13",
+		"Description":""
+	},
+	{
+		"Id": 14,
+		"Name":"LOCALWORK14",
+		"Description":""
+	},
+	{
+		"Id": 15,
+		"Name":"LOCALWORK15",
+		"Description":""
+	},
+	{
+		"Id": 16,
+		"Name":"LOCALWORK16",
+		"Description":""
+	},
+	{
+		"Id": 17,
+		"Name":"LOCALWORK17",
+		"Description":""
+	},
+	{
+		"Id": 18,
+		"Name":"LOCALWORK18",
+		"Description":""
+	},
+	{
+		"Id": 19,
+		"Name":"LOCALWORK19",
+		"Description":""
+	},
+	{
+		"Id": 20,
+		"Name":"LOCALWORK20",
+		"Description":""
+	},
+	{
+		"Id": 21,
+		"Name":"LOCALWORK21",
+		"Description":""
+	},
+	{
+		"Id": 22,
+		"Name":"LOCALWORK22",
+		"Description":""
+	},
+	{
+		"Id": 23,
+		"Name":"LOCALWORK23",
+		"Description":""
+	},
+	{
+		"Id": 24,
+		"Name":"LOCALWORK24",
+		"Description":""
+	},
+	{
+		"Id": 25,
+		"Name":"LOCALWORK25",
+		"Description":""
+	},
+	{
+		"Id": 26,
+		"Name":"LOCALWORK26",
+		"Description":""
+	},
+	{
+		"Id": 27,
+		"Name":"LOCALWORK27",
+		"Description":""
+	},
+	{
+		"Id": 28,
+		"Name":"LOCALWORK28",
+		"Description":""
+	},
+	{
+		"Id": 29,
+		"Name":"LOCALWORK29",
+		"Description":""
+	},
+	{
+		"Id": 30,
+		"Name":"LOCALWORK30",
+		"Description":""
+	},
+	{
+		"Id": 31,
+		"Name":"LOCALWORK31",
+		"Description":""
+	},
+	{
+		"Id": 32,
+		"Name":"OBJCHRWORK0",
+		"Description":""
+	},
+	{
+		"Id": 33,
+		"Name":"OBJCHRWORK1",
+		"Description":""
+	},
+	{
+		"Id": 34,
+		"Name":"OBJCHRWORK2",
+		"Description":""
+	},
+	{
+		"Id": 35,
+		"Name":"OBJCHRWORK3",
+		"Description":""
+	},
+	{
+		"Id": 36,
+		"Name":"OBJCHRWORK4",
+		"Description":""
+	},
+	{
+		"Id": 37,
+		"Name":"OBJCHRWORK5",
+		"Description":""
+	},
+	{
+		"Id": 38,
+		"Name":"OBJCHRWORK6",
+		"Description":""
+	},
+	{
+		"Id": 39,
+		"Name":"OBJCHRWORK7",
+		"Description":""
+	},
+	{
+		"Id": 40,
+		"Name":"OBJCHRWORK8",
+		"Description":""
+	},
+	{
+		"Id": 41,
+		"Name":"OBJCHRWORK9",
+		"Description":""
+	},
+	{
+		"Id": 42,
+		"Name":"OBJCHRWORK10",
+		"Description":""
+	},
+	{
+		"Id": 43,
+		"Name":"OBJCHRWORK11",
+		"Description":""
+	},
+	{
+		"Id": 44,
+		"Name":"OBJCHRWORK12",
+		"Description":""
+	},
+	{
+		"Id": 45,
+		"Name":"OBJCHRWORK13",
+		"Description":""
+	},
+	{
+		"Id": 46,
+		"Name":"OBJCHRWORK14",
+		"Description":""
+	},
+	{
+		"Id": 47,
+		"Name":"OBJCHRWORK15",
+		"Description":""
+	},
+	{
+		"Id": 48,
+		"Name":"WK_SCENE_T01",
+		"Description":""
+	},
+	{
+		"Id": 49,
+		"Name":"WK_SCENE_T02",
+		"Description":""
+	},
+	{
+		"Id": 50,
+		"Name":"WK_SCENE_T03",
+		"Description":""
+	},
+	{
+		"Id": 51,
+		"Name":"WK_SCENE_T04",
+		"Description":""
+	},
+	{
+		"Id": 52,
+		"Name":"WK_SCENE_T05",
+		"Description":""
+	},
+	{
+		"Id": 53,
+		"Name":"WK_SCENE_C01",
+		"Description":""
+	},
+	{
+		"Id": 54,
+		"Name":"WK_SCENE_C02",
+		"Description":""
+	},
+	{
+		"Id": 55,
+		"Name":"WK_SCENE_C03",
+		"Description":""
+	},
+	{
+		"Id": 56,
+		"Name":"WK_SCENE_C04",
+		"Description":""
+	},
+	{
+		"Id": 57,
+		"Name":"WK_SCENE_C05",
+		"Description":""
+	},
+	{
+		"Id": 58,
+		"Name":"WK_SCENE_C06",
+		"Description":""
+	},
+	{
+		"Id": 59,
+		"Name":"WK_SCENE_C07",
+		"Description":""
+	},
+	{
+		"Id": 60,
+		"Name":"WK_SCENE_C08",
+		"Description":""
+	},
+	{
+		"Id": 61,
+		"Name":"WK_SCENE_C09",
+		"Description":""
+	},
+	{
+		"Id": 62,
+		"Name":"WK_SCENE_C10",
+		"Description":""
+	},
+	{
+		"Id": 63,
+		"Name":"WK_SCENE_C11",
+		"Description":""
+	},
+	{
+		"Id": 64,
+		"Name":"WK_SCENE_L01",
+		"Description":""
+	},
+	{
+		"Id": 65,
+		"Name":"WK_SCENE_L02",
+		"Description":""
+	},
+	{
+		"Id": 66,
+		"Name":"WK_SCENE_L03",
+		"Description":""
+	},
+	{
+		"Id": 67,
+		"Name":"WK_SCENE_L04",
+		"Description":""
+	},
+	{
+		"Id": 68,
+		"Name":"WK_SCENE_R201",
+		"Description":""
+	},
+	{
+		"Id": 69,
+		"Name":"WK_SCENE_R202",
+		"Description":""
+	},
+	{
+		"Id": 70,
+		"Name":"WK_SCENE_R203",
+		"Description":""
+	},
+	{
+		"Id": 71,
+		"Name":"WK_SCENE_R205A",
+		"Description":""
+	},
+	{
+		"Id": 72,
+		"Name":"WK_SCENE_R209",
+		"Description":""
+	},
+	{
+		"Id": 73,
+		"Name":"WK_SCENE_R227",
+		"Description":""
+	},
+	{
+		"Id": 74,
+		"Name":"WK_SCENE_R207",
+		"Description":""
+	},
+	{
+		"Id": 75,
+		"Name":"WK_SCENE_R224",
+		"Description":""
+	},
+	{
+		"Id": 76,
+		"Name":"WK_SCENE_D09R0104",
+		"Description":""
+	},
+	{
+		"Id": 77,
+		"Name":"WK_SCENE_D21R0101",
+		"Description":""
+	},
+	{
+		"Id": 78,
+		"Name":"WK_SCENE_D24R0105",
+		"Description":""
+	},
+	{
+		"Id": 79,
+		"Name":"WK_SCENE_D14R0101",
+		"Description":""
+	},
+	{
+		"Id": 80,
+		"Name":"WK_SCENE_D16R0102",
+		"Description":""
+	},
+	{
+		"Id": 81,
+		"Name":"WK_SCENE_D27R0101",
+		"Description":""
+	},
+	{
+		"Id": 82,
+		"Name":"WK_SCENE_D05R0101",
+		"Description":""
+	},
+	{
+		"Id": 83,
+		"Name":"WK_SCENE_D27R0102",
+		"Description":""
+	},
+	{
+		"Id": 84,
+		"Name":"WK_SCENE_D05R0114",
+		"Description":""
+	},
+	{
+		"Id": 85,
+		"Name":"WK_SCENE_D11R0101",
+		"Description":""
+	},
+	{
+		"Id": 86,
+		"Name":"WK_SCENE_D11R0101_MONSNO",
+		"Description":""
+	},
+	{
+		"Id": 87,
+		"Name":"WK_SCENE_D11R0101_PRESENT",
+		"Description":""
+	},
+	{
+		"Id": 88,
+		"Name":"WK_SCENE_D11R0101_PRESENT_ACCE_NO",
+		"Description":""
+	},
+	{
+		"Id": 89,
+		"Name":"WK_SCENE_D11R0101_TNO",
+		"Description":""
+	},
+	{
+		"Id": 90,
+		"Name":"WK_SCENE_D16R0103",
+		"Description":""
+	},
+	{
+		"Id": 91,
+		"Name":"WK_SCENE_D11R0101_PRESENT_KINOMI_NO",
+		"Description":""
+	},
+	{
+		"Id": 92,
+		"Name":"WK_SCENE_T01R0101",
+		"Description":""
+	},
+	{
+		"Id": 93,
+		"Name":"WK_SCENE_T01R0102",
+		"Description":""
+	},
+	{
+		"Id": 94,
+		"Name":"WK_SCENE_T01R0201",
+		"Description":""
+	},
+	{
+		"Id": 95,
+		"Name":"WK_SCENE_T01R0202",
+		"Description":""
+	},
+	{
+		"Id": 96,
+		"Name":"WK_SCENE_T02R0101",
+		"Description":""
+	},
+	{
+		"Id": 97,
+		"Name":"WK_SCENE_T07R0101",
+		"Description":""
+	},
+	{
+		"Id": 98,
+		"Name":"WK_SCENE_C01R0101",
+		"Description":""
+	},
+	{
+		"Id": 99,
+		"Name":"WK_SCENE_C04GYM0102",
+		"Description":""
+	},
+	{
+		"Id": 100,
+		"Name":"WK_SCENE_C01R0701",
+		"Description":""
+	},
+	{
+		"Id": 101,
+		"Name":"WK_SCENE_C01R0201",
+		"Description":""
+	},
+	{
+		"Id": 102,
+		"Name":"WK_SCENE_D03R0101",
+		"Description":""
+	},
+	{
+		"Id": 103,
+		"Name":"WK_SCENE_C02R0103",
+		"Description":""
+	},
+	{
+		"Id": 104,
+		"Name":"WK_SCENE_C03R0401",
+		"Description":""
+	},
+	{
+		"Id": 105,
+		"Name":"WK_SCENE_KASEKI_MONSNO",
+		"Description":""
+	},
+	{
+		"Id": 106,
+		"Name":"WK_SCENE_C08R0701",
+		"Description":""
+	},
+	{
+		"Id": 107,
+		"Name":"WK_SCENE_C08R0401",
+		"Description":""
+	},
+	{
+		"Id": 108,
+		"Name":"WK_SCENE_L01R0101",
+		"Description":""
+	},
+	{
+		"Id": 109,
+		"Name":"WK_SCENE_R201R0101",
+		"Description":""
+	},
+	{
+		"Id": 110,
+		"Name":"WK_SCENE_R221R0101",
+		"Description":""
+	},
+	{
+		"Id": 111,
+		"Name":"WK_SCENE_PAIR_R201_RIVAL",
+		"Description":""
+	},
+	{
+		"Id": 112,
+		"Name":"WK_SCENE_PAIR_L01_RIVAL",
+		"Description":""
+	},
+	{
+		"Id": 113,
+		"Name":"WK_SCENE_CONTEST",
+		"Description":""
+	},
+	{
+		"Id": 114,
+		"Name":"WK_SCENE_D03R0101_GHOST",
+		"Description":""
+	},
+	{
+		"Id": 115,
+		"Name":"WK_ELEVATOR_FLOOR",
+		"Description":""
+	},
+	{
+		"Id": 116,
+		"Name":"WK_SCENE_D02R0101",
+		"Description":""
+	},
+	{
+		"Id": 117,
+		"Name":"WK_SCENE_UG",
+		"Description":""
+	},
+	{
+		"Id": 118,
+		"Name":"WK_SCENE_C05_MAIN",
+		"Description":""
+	},
+	{
+		"Id": 119,
+		"Name":"WK_SCENE_D29R0102",
+		"Description":""
+	},
+	{
+		"Id": 120,
+		"Name":"WK_SCENE_PC0103",
+		"Description":""
+	},
+	{
+		"Id": 121,
+		"Name":"WK_SCENE_COMM_ID",
+		"Description":""
+	},
+	{
+		"Id": 122,
+		"Name":"WK_SCENE_D26R0104",
+		"Description":""
+	},
+	{
+		"Id": 123,
+		"Name":"WK_SCENE_SAFARI_GATE",
+		"Description":""
+	},
+	{
+		"Id": 124,
+		"Name":"WK_SCENE_D31R0201",
+		"Description":""
+	},
+	{
+		"Id": 125,
+		"Name":"WK_SCENE_D31R0205",
+		"Description":""
+	},
+	{
+		"Id": 126,
+		"Name":"WK_SCENE_SAFARI_ZONE",
+		"Description":""
+	},
+	{
+		"Id": 127,
+		"Name":"WK_SCENE_D31R0202",
+		"Description":""
+	},
+	{
+		"Id": 128,
+		"Name":"WK_SCENE_D31R0203",
+		"Description":""
+	},
+	{
+		"Id": 129,
+		"Name":"WK_SCENE_D31R0204",
+		"Description":""
+	},
+	{
+		"Id": 130,
+		"Name":"WK_SCENE_D31R0206",
+		"Description":""
+	},
+	{
+		"Id": 131,
+		"Name":"WK_SCENE_D31R0207",
+		"Description":""
+	},
+	{
+		"Id": 132,
+		"Name":"WK_SCENE_POKE_PARK",
+		"Description":""
+	},
+	{
+		"Id": 133,
+		"Name":"WK_SCENE_PAIR_D16R0102_SEVEN5",
+		"Description":""
+	},
+	{
+		"Id": 134,
+		"Name":"WK_SCENE_PAIR_D21R0101_SEVEN2",
+		"Description":""
+	},
+	{
+		"Id": 135,
+		"Name":"WK_SCENE_PAIR_D24R0105_SEVEN3",
+		"Description":""
+	},
+	{
+		"Id": 136,
+		"Name":"WK_SCENE_PAIR_D09R0104_SEVEN4",
+		"Description":""
+	},
+	{
+		"Id": 137,
+		"Name":"WK_SCENE_NEWS_MONSNO",
+		"Description":""
+	},
+	{
+		"Id": 138,
+		"Name":"WK_SCENE_T01_RIVAL",
+		"Description":""
+	},
+	{
+		"Id": 139,
+		"Name":"WK_SCENE_C01_RIVAL",
+		"Description":""
+	},
+	{
+		"Id": 140,
+		"Name":"WK_SCENE_PAIR_D03R0101_SEVEN1",
+		"Description":""
+	},
+	{
+		"Id": 141,
+		"Name":"WK_SCENE_D13R0101",
+		"Description":""
+	},
+	{
+		"Id": 142,
+		"Name":"WK_SCENE_C05_RIVAL",
+		"Description":""
+	},
+	{
+		"Id": 143,
+		"Name":"WK_SCENE_C05R1101",
+		"Description":""
+	},
+	{
+		"Id": 144,
+		"Name":"WK_SCENE_BICYCLE",
+		"Description":""
+	},
+	{
+		"Id": 145,
+		"Name":"WK_SCENE_POSTMAN",
+		"Description":""
+	},
+	{
+		"Id": 146,
+		"Name":"WK_SCENE_T03_ZUKAN",
+		"Description":""
+	},
+	{
+		"Id": 147,
+		"Name":"WK_SCENE_C10R0101",
+		"Description":""
+	},
+	{
+		"Id": 148,
+		"Name":"WK_SCENE_C01_GTC",
+		"Description":""
+	},
+	{
+		"Id": 149,
+		"Name":"WK_SCENE_T05_OLDWOMAN",
+		"Description":""
+	},
+	{
+		"Id": 150,
+		"Name":"WK_SCENE_KUJI_AZUKE_ITEM",
+		"Description":""
+	},
+	{
+		"Id": 151,
+		"Name":"WK_SCENE_D10R0101",
+		"Description":""
+	},
+	{
+		"Id": 152,
+		"Name":"WK_SCENE_DENDOU",
+		"Description":""
+	},
+	{
+		"Id": 153,
+		"Name":"WK_SCENE_C07_SUPPORT",
+		"Description":""
+	},
+	{
+		"Id": 154,
+		"Name":"WK_SCENE_C05_JUDGE",
+		"Description":""
+	},
+	{
+		"Id": 155,
+		"Name":"WK_SCENE_C05R1101_JUDGE",
+		"Description":""
+	},
+	{
+		"Id": 156,
+		"Name":"WK_SCENE_C02R0401",
+		"Description":""
+	},
+	{
+		"Id": 157,
+		"Name":"WK_SCENE_GAME_START",
+		"Description":""
+	},
+	{
+		"Id": 158,
+		"Name":"WK_SCENE_D20R0106",
+		"Description":""
+	},
+	{
+		"Id": 159,
+		"Name":"WK_SCENE_L02R0101_P01",
+		"Description":""
+	},
+	{
+		"Id": 160,
+		"Name":"WK_SCENE_L02R0101_P02",
+		"Description":""
+	},
+	{
+		"Id": 161,
+		"Name":"WK_SCENE_L02R0101_P03",
+		"Description":""
+	},
+	{
+		"Id": 162,
+		"Name":"WK_SCENE_L02R0101_P04",
+		"Description":""
+	},
+	{
+		"Id": 163,
+		"Name":"WK_SCENE_L02R0101_P05",
+		"Description":""
+	},
+	{
+		"Id": 164,
+		"Name":"WK_SCENE_L02R0101_P06",
+		"Description":""
+	},
+	{
+		"Id": 165,
+		"Name":"WK_SCENE_L02R0101_P07",
+		"Description":""
+	},
+	{
+		"Id": 166,
+		"Name":"WK_SCENE_L02R0101_P08",
+		"Description":""
+	},
+	{
+		"Id": 167,
+		"Name":"WK_SCENE_L02R0101_P09",
+		"Description":""
+	},
+	{
+		"Id": 168,
+		"Name":"WK_SCENE_L02R0101_CLOSE",
+		"Description":""
+	},
+	{
+		"Id": 169,
+		"Name":"WK_SCENE_R218R0201_ZUKAN",
+		"Description":""
+	},
+	{
+		"Id": 170,
+		"Name":"WK_SCENE_C02R0501",
+		"Description":""
+	},
+	{
+		"Id": 171,
+		"Name":"WK_SCENE_C07R0201_GET_ACCE_NO",
+		"Description":""
+	},
+	{
+		"Id": 172,
+		"Name":"WK_SCENE_R221R0201_ITEM_LOOP",
+		"Description":""
+	},
+	{
+		"Id": 173,
+		"Name":"WK_SCENE_C05_GOODS_EV",
+		"Description":""
+	},
+	{
+		"Id": 174,
+		"Name":"WK_SCENE_C01R0202_GET_ACCE_NO",
+		"Description":""
+	},
+	{
+		"Id": 175,
+		"Name":"WK_D17SYSTEM_GET_POINT",
+		"Description":""
+	},
+	{
+		"Id": 176,
+		"Name":"WK_D17SYSTEM_PATH_MAP",
+		"Description":""
+	},
+	{
+		"Id": 177,
+		"Name":"WK_SCENE_D26R0107",
+		"Description":""
+	},
+	{
+		"Id": 178,
+		"Name":"WK_SCENE_D31",
+		"Description":""
+	},
+	{
+		"Id": 179,
+		"Name":"WK_SCENE_T01R0201_GAME_CLEAR",
+		"Description":""
+	},
+	{
+		"Id": 180,
+		"Name":"WK_SCENE_D25R0102",
+		"Description":""
+	},
+	{
+		"Id": 181,
+		"Name":"WK_SCENE_D25R0108",
+		"Description":""
+	},
+	{
+		"Id": 182,
+		"Name":"WK_SCENE_L02_BIGMAN",
+		"Description":""
+	},
+	{
+		"Id": 183,
+		"Name":"WK_SCENE_C11R0101",
+		"Description":""
+	},
+	{
+		"Id": 184,
+		"Name":"WK_SCENE_C04_STOPPER",
+		"Description":""
+	},
+	{
+		"Id": 185,
+		"Name":"WK_SCENE_PLATE_MSG",
+		"Description":""
+	},
+	{
+		"Id": 186,
+		"Name":"WK_SCENE_R212AR0101_POLICEMAN",
+		"Description":""
+	},
+	{
+		"Id": 187,
+		"Name":"WK_SCENE_T04R0301_RE_ITEM",
+		"Description":""
+	},
+	{
+		"Id": 188,
+		"Name":"WK_SCENE_D05R0116",
+		"Description":""
+	},
+	{
+		"Id": 189,
+		"Name":"WK_SCENE_R227_SEVEN2",
+		"Description":""
+	},
+	{
+		"Id": 190,
+		"Name":"WK_SCENE_C07_SUPPORT_GYM_AFTER",
+		"Description":""
+	},
+	{
+		"Id": 191,
+		"Name":"WK_SCENE_C04_STOPPER_02",
+		"Description":""
+	},
+	{
+		"Id": 192,
+		"Name":"WK_SCENE_CYCLINGROAD",
+		"Description":""
+	},
+	{
+		"Id": 193,
+		"Name":"SCWK_EVWIN",
+		"Description":""
+	},
+	{
+		"Id": 194,
+		"Name":"SCWK_MSGWINDAT",
+		"Description":""
+	},
+	{
+		"Id": 195,
+		"Name":"SCWK_MENUWORK",
+		"Description":""
+	},
+	{
+		"Id": 196,
+		"Name":"SCWK_MSGINDEX",
+		"Description":""
+	},
+	{
+		"Id": 197,
+		"Name":"SCWK_ANMCOUNT",
+		"Description":""
+	},
+	{
+		"Id": 198,
+		"Name":"SCWK_COMMON_SCR_FLAG",
+		"Description":""
+	},
+	{
+		"Id": 199,
+		"Name":"SCWK_WIN_OPEN_FLAG",
+		"Description":""
+	},
+	{
+		"Id": 200,
+		"Name":"SCWK_VM_MACHINE_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 201,
+		"Name":"SCWK_SCRIPT_ID",
+		"Description":""
+	},
+	{
+		"Id": 202,
+		"Name":"SCWK_PLAYER_DIR",
+		"Description":""
+	},
+	{
+		"Id": 203,
+		"Name":"SCWK_TARGET_OBJ",
+		"Description":""
+	},
+	{
+		"Id": 204,
+		"Name":"SCWK_DUMMY_OBJ",
+		"Description":""
+	},
+	{
+		"Id": 205,
+		"Name":"SCWK_RETURN_SCRIPT_WK",
+		"Description":""
+	},
+	{
+		"Id": 206,
+		"Name":"SCWK_VM_MAIN",
+		"Description":""
+	},
+	{
+		"Id": 207,
+		"Name":"SCWK_VM_SUB1",
+		"Description":""
+	},
+	{
+		"Id": 208,
+		"Name":"SCWK_WORDSET",
+		"Description":""
+	},
+	{
+		"Id": 209,
+		"Name":"SCWK_MSGBUF",
+		"Description":""
+	},
+	{
+		"Id": 210,
+		"Name":"SCWK_TMPBUF",
+		"Description":""
+	},
+	{
+		"Id": 211,
+		"Name":"SCWK_WAITICON",
+		"Description":""
+	},
+	{
+		"Id": 212,
+		"Name":"SCWK_SUBPROC_WORK",
+		"Description":""
+	},
+	{
+		"Id": 213,
+		"Name":"SCWK_PWORK",
+		"Description":""
+	},
+	{
+		"Id": 214,
+		"Name":"SCWK_EOA",
+		"Description":""
+	},
+	{
+		"Id": 215,
+		"Name":"SCWK_PLAYER_TCB",
+		"Description":""
+	},
+	{
+		"Id": 216,
+		"Name":"SCWK_WIN_FLAG",
+		"Description":""
+	},
+	{
+		"Id": 217,
+		"Name":"SCWK_TR0_RANGE",
+		"Description":""
+	},
+	{
+		"Id": 218,
+		"Name":"SCWK_TR0_DIR",
+		"Description":""
+	},
+	{
+		"Id": 219,
+		"Name":"SCWK_TR0_SCR_ID",
+		"Description":""
+	},
+	{
+		"Id": 220,
+		"Name":"SCWK_TR0_ID",
+		"Description":""
+	},
+	{
+		"Id": 221,
+		"Name":"SCWK_TR0_TYPE",
+		"Description":""
+	},
+	{
+		"Id": 222,
+		"Name":"SCWK_TR0_FLDOBJ",
+		"Description":""
+	},
+	{
+		"Id": 223,
+		"Name":"SCWK_TR0_TCB",
+		"Description":""
+	},
+	{
+		"Id": 224,
+		"Name":"SCWK_TR1_RANGE",
+		"Description":""
+	},
+	{
+		"Id": 225,
+		"Name":"SCWK_TR1_DIR",
+		"Description":""
+	},
+	{
+		"Id": 226,
+		"Name":"SCWK_TR1_SCR_ID",
+		"Description":""
+	},
+	{
+		"Id": 227,
+		"Name":"SCWK_TR1_ID",
+		"Description":""
+	},
+	{
+		"Id": 228,
+		"Name":"SCWK_TR1_TYPE",
+		"Description":""
+	},
+	{
+		"Id": 229,
+		"Name":"SCWK_TR1_FLDOBJ",
+		"Description":""
+	},
+	{
+		"Id": 230,
+		"Name":"SCWK_TR1_TCB",
+		"Description":""
+	},
+	{
+		"Id": 231,
+		"Name":"SCWK_COINWINDAT",
+		"Description":""
+	},
+	{
+		"Id": 232,
+		"Name":"SCWK_GOLDWINDAT",
+		"Description":""
+	},
+	{
+		"Id": 233,
+		"Name":"SCWK_REPORTWIN",
+		"Description":""
+	},
+	{
+		"Id": 234,
+		"Name":"SCWK_PARAM0",
+		"Description":""
+	},
+	{
+		"Id": 235,
+		"Name":"SCWK_PARAM1",
+		"Description":""
+	},
+	{
+		"Id": 236,
+		"Name":"SCWK_PARAM2",
+		"Description":""
+	},
+	{
+		"Id": 237,
+		"Name":"SCWK_PARAM3",
+		"Description":""
+	},
+	{
+		"Id": 238,
+		"Name":"SCWK_TEMP0",
+		"Description":""
+	},
+	{
+		"Id": 239,
+		"Name":"SCWK_TEMP1",
+		"Description":""
+	},
+	{
+		"Id": 240,
+		"Name":"SCWK_TEMP2",
+		"Description":""
+	},
+	{
+		"Id": 241,
+		"Name":"SCWK_TEMP3",
+		"Description":""
+	},
+	{
+		"Id": 242,
+		"Name":"SCWK_REG0",
+		"Description":""
+	},
+	{
+		"Id": 243,
+		"Name":"SCWK_REG1",
+		"Description":""
+	},
+	{
+		"Id": 244,
+		"Name":"SCWK_REG2",
+		"Description":""
+	},
+	{
+		"Id": 245,
+		"Name":"SCWK_REG3",
+		"Description":""
+	},
+	{
+		"Id": 246,
+		"Name":"SCWK_ANSWER",
+		"Description":""
+	},
+	{
+		"Id": 247,
+		"Name":"SCWK_TARGET_OBJID",
+		"Description":""
+	},
+	{
+		"Id": 248,
+		"Name":"EV_WIN_B_CANCEL",
+		"Description":""
+	},
+	{
+		"Id": 249,
+		"Name":"TOWNMAP_GUIDE_SEQUENCE",
+		"Description":""
+	},
+	{
+		"Id": 250,
+		"Name":"SYS_WORK_FIRST_POKE_NO",
+		"Description":""
+	},
+	{
+		"Id": 251,
+		"Name":"SYS_WORK_BTL_SEARCHER_BATTERY",
+		"Description":""
+	},
+	{
+		"Id": 252,
+		"Name":"SYS_WORK_BTL_SEARCHER_CLEAR",
+		"Description":""
+	},
+	{
+		"Id": 253,
+		"Name":"SYS_WORK_OOKISA_RECORD",
+		"Description":""
+	},
+	{
+		"Id": 254,
+		"Name":"SYS_WORK_HIDEMAP_01",
+		"Description":""
+	},
+	{
+		"Id": 255,
+		"Name":"SYS_WORK_HIDEMAP_02",
+		"Description":""
+	},
+	{
+		"Id": 256,
+		"Name":"SYS_WORK_HIDEMAP_03",
+		"Description":""
+	},
+	{
+		"Id": 257,
+		"Name":"SYS_WORK_HIDEMAP_04",
+		"Description":""
+	},
+	{
+		"Id": 258,
+		"Name":"SYS_WORK_PARK_WALK_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 259,
+		"Name":"SYS_WORK_NEWS_DAYS_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 260,
+		"Name":"SYS_WORK_POKELOT_RND1",
+		"Description":""
+	},
+	{
+		"Id": 261,
+		"Name":"SYS_WORK_POKELOT_RND2",
+		"Description":""
+	},
+	{
+		"Id": 262,
+		"Name":"SYS_WORK_UG_TALK_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 263,
+		"Name":"SYS_WORK_PAIR_TRAINER_ID",
+		"Description":""
+	},
+	{
+		"Id": 264,
+		"Name":"SYS_WORK_RENSYOU_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 265,
+		"Name":"SYS_WORK_POKE_LEVEL_NO",
+		"Description":""
+	},
+	{
+		"Id": 266,
+		"Name":"SYS_WORK_DEPART_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 267,
+		"Name":"SYS_WORK_HAIHU_EVENT01",
+		"Description":""
+	},
+	{
+		"Id": 268,
+		"Name":"SYS_WORK_HAIHU_EVENT02",
+		"Description":""
+	},
+	{
+		"Id": 269,
+		"Name":"SYS_WORK_HAIHU_EVENT03",
+		"Description":""
+	},
+	{
+		"Id": 270,
+		"Name":"SYS_WORK_UG_TOOL_GIVE_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 271,
+		"Name":"SYS_WORK_UG_KASEKI_DIG_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 272,
+		"Name":"SYS_WORK_UG_TRAP_HIT_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 273,
+		"Name":"SYS_WORK_UG_TALK_COUNT2",
+		"Description":""
+	},
+	{
+		"Id": 274,
+		"Name":"SYS_WORK_FRIENDLY_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 275,
+		"Name":"HAIHUEVENT_ID_D30",
+		"Description":""
+	},
+	{
+		"Id": 276,
+		"Name":"HAIHUEVENT_ID_D18",
+		"Description":""
+	},
+	{
+		"Id": 277,
+		"Name":"HAIHUEVENT_ID_D05",
+		"Description":""
+	},
+	{
+		"Id": 278,
+		"Name":"HIDEMAP_ID_D15",
+		"Description":""
+	},
+	{
+		"Id": 279,
+		"Name":"HIDEMAP_ID_D30",
+		"Description":""
+	},
+	{
+		"Id": 280,
+		"Name":"HIDEMAP_ID_L04",
+		"Description":""
+	},
+	{
+		"Id": 281,
+		"Name":"HIDEMAP_ID_D18",
+		"Description":""
+	},
+	{
+		"Id": 282,
+		"Name":"WK_SCENE_D31R0101_TOKKUN",
+		"Description":""
+	},
+	{
+		"Id": 283,
+		"Name":"CON_TEMP01",
+		"Description":""
+	},
+	{
+		"Id": 284,
+		"Name":"CON_TEMP02",
+		"Description":""
+	},
+	{
+		"Id": 285,
+		"Name":"CON_TEMP03",
+		"Description":""
+	},
+	{
+		"Id": 286,
+		"Name":"CON_TEMP04",
+		"Description":""
+	},
+	{
+		"Id": 287,
+		"Name":"CON_TEMP05",
+		"Description":""
+	},
+	{
+		"Id": 288,
+		"Name":"CON_TEMP06",
+		"Description":""
+	},
+	{
+		"Id": 289,
+		"Name":"CON_TEMP07",
+		"Description":""
+	},
+	{
+		"Id": 290,
+		"Name":"CON_TEMP08",
+		"Description":""
+	},
+	{
+		"Id": 291,
+		"Name":"HIDEMAP_ID_C10",
+		"Description":""
+	},
+	{
+		"Id": 292,
+		"Name":"HIDEMAP_ID_D10R0101",
+		"Description":""
+	},
+	{
+		"Id": 293,
+		"Name":"WK_TV_PROGRAMID_1_2",
+		"Description":""
+	},
+	{
+		"Id": 294,
+		"Name":"WK_TV_PROGRAMID_1_4",
+		"Description":""
+	},
+	{
+		"Id": 295,
+		"Name":"WK_TV_PROGRAMID_1_6",
+		"Description":""
+	},
+	{
+		"Id": 296,
+		"Name":"WK_TV_PROGRAMID_1_7",
+		"Description":""
+	},
+	{
+		"Id": 297,
+		"Name":"WK_TV_PROGRAMID_1_10",
+		"Description":""
+	},
+	{
+		"Id": 298,
+		"Name":"WK_TV_PROGRAMID_1_11",
+		"Description":""
+	},
+	{
+		"Id": 299,
+		"Name":"WK_TV_PROGRAMID_1_13",
+		"Description":""
+	},
+	{
+		"Id": 300,
+		"Name":"WK_TV_PROGRAMID_1_14",
+		"Description":""
+	},
+	{
+		"Id": 301,
+		"Name":"WK_TV_PROGRAMID_2_1",
+		"Description":""
+	},
+	{
+		"Id": 302,
+		"Name":"WK_TV_PROGRAMID_2_2",
+		"Description":""
+	},
+	{
+		"Id": 303,
+		"Name":"WK_TV_PROGRAMID_2_3",
+		"Description":""
+	},
+	{
+		"Id": 304,
+		"Name":"WK_TV_PROGRAMID_2_4",
+		"Description":""
+	},
+	{
+		"Id": 305,
+		"Name":"WK_TV_PROGRAMID_2_6",
+		"Description":""
+	},
+	{
+		"Id": 306,
+		"Name":"WK_TV_PROGRAMID_2_8",
+		"Description":""
+	},
+	{
+		"Id": 307,
+		"Name":"WK_TV_PROGRAMID_2_10",
+		"Description":""
+	},
+	{
+		"Id": 308,
+		"Name":"WK_TV_PROGRAMID_2_13",
+		"Description":""
+	},
+	{
+		"Id": 309,
+		"Name":"WK_TV_PROGRAMID_2_15",
+		"Description":""
+	},
+	{
+		"Id": 310,
+		"Name":"WK_TV_PROGRAMID_2_17",
+		"Description":""
+	},
+	{
+		"Id": 311,
+		"Name":"WK_TV_PROGRAMID_2_18",
+		"Description":""
+	},
+	{
+		"Id": 312,
+		"Name":"WK_TV_PROGRAMID_2_20",
+		"Description":""
+	},
+	{
+		"Id": 313,
+		"Name":"WK_TV_PROGRAMID_2_21",
+		"Description":""
+	},
+	{
+		"Id": 314,
+		"Name":"WK_TV_PROGRAMID_2_24",
+		"Description":""
+	},
+	{
+		"Id": 315,
+		"Name":"WK_TV_PROGRAMID_2_25",
+		"Description":""
+	},
+	{
+		"Id": 316,
+		"Name":"WK_TV_PROGRAMID_2_26",
+		"Description":""
+	},
+	{
+		"Id": 317,
+		"Name":"WK_TV_PROGRAMID_3_1",
+		"Description":""
+	},
+	{
+		"Id": 318,
+		"Name":"WK_TV_PROGRAMID_3_3",
+		"Description":""
+	},
+	{
+		"Id": 319,
+		"Name":"WK_TV_PROGRAMID_3_6",
+		"Description":""
+	},
+	{
+		"Id": 320,
+		"Name":"WK_TV_PROGRAMID_3_10",
+		"Description":""
+	},
+	{
+		"Id": 321,
+		"Name":"WK_TV_PROGRAMID_3_11",
+		"Description":""
+	},
+	{
+		"Id": 322,
+		"Name":"WK_TV_PROGRAMID_3_12",
+		"Description":""
+	},
+	{
+		"Id": 323,
+		"Name":"WK_TV_PROGRAMID_4_1",
+		"Description":""
+	},
+	{
+		"Id": 324,
+		"Name":"WK_TV_PROGRAMID_4_2",
+		"Description":""
+	},
+	{
+		"Id": 325,
+		"Name":"WK_TV_PROGRAMID_4_5",
+		"Description":""
+	},
+	{
+		"Id": 326,
+		"Name":"WK_TV_PROGRAMID_4_7",
+		"Description":""
+	},
+	{
+		"Id": 327,
+		"Name":"WK_TV_PROGRAMID_4_9",
+		"Description":""
+	},
+	{
+		"Id": 328,
+		"Name":"WK_TV_PROGRAMID_4_11",
+		"Description":""
+	},
+	{
+		"Id": 329,
+		"Name":"WK_TV_PROGRAMID_4_18",
+		"Description":""
+	},
+	{
+		"Id": 330,
+		"Name":"HAIHUEVENT_ID_C04",
+		"Description":""
+	},
+	{
+		"Id": 331,
+		"Name":"WK_PLAYER_BIRTH_MOUNTH",
+		"Description":""
+	},
+	{
+		"Id": 332,
+		"Name":"WK_PLAYER_BIRTH_DAY",
+		"Description":""
+	},
+	{
+		"Id": 333,
+		"Name":"WK_SAVE_GIMMICK_001",
+		"Description":""
+	},
+	{
+		"Id": 334,
+		"Name":"WK_SAVE_GIMMICK_002",
+		"Description":""
+	},
+	{
+		"Id": 335,
+		"Name":"WK_SAVE_GIMMICK_003",
+		"Description":""
+	},
+	{
+		"Id": 336,
+		"Name":"WK_SCENE_C04R0101",
+		"Description":""
+	},
+	{
+		"Id": 337,
+		"Name":"WK_SCENE_COMMUNITY_ROOM_RECEPTION",
+		"Description":""
+	},
+	{
+		"Id": 338,
+		"Name":"WK_BATTLE_TOWER_MODE",
+		"Description":""
+	},
+	{
+		"Id": 339,
+		"Name":"UNION_TEMP0",
+		"Description":""
+	},
+	{
+		"Id": 340,
+		"Name":"UNION_TEMP1",
+		"Description":""
+	},
+	{
+		"Id": 341,
+		"Name":"UNION_TEMP2",
+		"Description":""
+	},
+	{
+		"Id": 342,
+		"Name":"UNION_TEMP3",
+		"Description":""
+	},
+	{
+		"Id": 343,
+		"Name":"UNION_TEMP4",
+		"Description":""
+	},
+	{
+		"Id": 344,
+		"Name":"UNION_TEMP5",
+		"Description":""
+	},
+	{
+		"Id": 345,
+		"Name":"UNION_TEMP6",
+		"Description":""
+	},
+	{
+		"Id": 346,
+		"Name":"UNION_TEMP7",
+		"Description":""
+	},
+	{
+		"Id": 347,
+		"Name":"UNION_TEMP8",
+		"Description":""
+	},
+	{
+		"Id": 348,
+		"Name":"UNION_TEMP9",
+		"Description":""
+	},
+	{
+		"Id": 349,
+		"Name":"WK_SCENE_C03GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 350,
+		"Name":"WK_SCENE_C04GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 351,
+		"Name":"WK_SCENE_C05GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 352,
+		"Name":"WK_SCENE_C06GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 353,
+		"Name":"WK_SCENE_C07GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 354,
+		"Name":"WK_SCENE_C02GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 355,
+		"Name":"WK_SCENE_C08GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 356,
+		"Name":"WK_SCENE_C09GYM0101",
+		"Description":""
+	},
+	{
+		"Id": 357,
+		"Name":"WK_BT_M_S_PRESENT_RANK",
+		"Description":""
+	},
+	{
+		"Id": 358,
+		"Name":"WK_BT_M_W_PRESENT_RANK",
+		"Description":""
+	},
+	{
+		"Id": 359,
+		"Name":"WK_PAIR_POKEMON_INDEX",
+		"Description":""
+	},
+	{
+		"Id": 360,
+		"Name":"_UNION_VIEW_CHAR_NO",
+		"Description":""
+	},
+	{
+		"Id": 361,
+		"Name":"WK_SCENE_T04R0501_BALL",
+		"Description":""
+	},
+	{
+		"Id": 362,
+		"Name":"WK_SCENE_GLOBAL_COUNTER",
+		"Description":""
+	},
+	{
+		"Id": 363,
+		"Name":"WK_SCENE_T03_SP_MADAM",
+		"Description":""
+	},
+	{
+		"Id": 364,
+		"Name":"WK_SCENE_T03_SP_GENTLEMAN",
+		"Description":""
+	},
+	{
+		"Id": 365,
+		"Name":"WK_UGSHOP_WEEK",
+		"Description":""
+	},
+	{
+		"Id": 366,
+		"Name":"WK_SCENE_WILDCARD_001",
+		"Description":""
+	},
+	{
+		"Id": 367,
+		"Name":"WK_SCENE_WILDCARD_002",
+		"Description":""
+	},
+	{
+		"Id": 368,
+		"Name":"WK_SCENE_WILDCARD_003",
+		"Description":""
+	},
+	{
+		"Id": 369,
+		"Name":"WK_SCENE_WILDCARD_004",
+		"Description":""
+	},
+	{
+		"Id": 370,
+		"Name":"WK_SCENE_WILDCARD_005",
+		"Description":""
+	},
+	{
+		"Id": 371,
+		"Name":"WK_SCENE_WILDCARD_006",
+		"Description":""
+	},
+	{
+		"Id": 372,
+		"Name":"WK_SCENE_WILDCARD_007",
+		"Description":""
+	},
+	{
+		"Id": 373,
+		"Name":"WK_SCENE_WILDCARD_008",
+		"Description":""
+	},
+	{
+		"Id": 374,
+		"Name":"WK_SCENE_WILDCARD_009",
+		"Description":""
+	},
+	{
+		"Id": 375,
+		"Name":"WK_SCENE_WILDCARD_010",
+		"Description":""
+	},
+	{
+		"Id": 376,
+		"Name":"WK_SCENE_WILDCARD_011",
+		"Description":""
+	},
+	{
+		"Id": 377,
+		"Name":"WK_SCENE_WILDCARD_012",
+		"Description":""
+	},
+	{
+		"Id": 378,
+		"Name":"WK_SCENE_WILDCARD_013",
+		"Description":""
+	},
+	{
+		"Id": 379,
+		"Name":"WK_SCENE_WILDCARD_014",
+		"Description":""
+	},
+	{
+		"Id": 380,
+		"Name":"WK_SCENE_WILDCARD_015",
+		"Description":""
+	},
+	{
+		"Id": 381,
+		"Name":"WK_SCENE_WILDCARD_016",
+		"Description":""
+	},
+	{
+		"Id": 382,
+		"Name":"WK_SCENE_WILDCARD_017",
+		"Description":""
+	},
+	{
+		"Id": 383,
+		"Name":"WK_SCENE_WILDCARD_018",
+		"Description":""
+	},
+	{
+		"Id": 384,
+		"Name":"WK_SCENE_WILDCARD_019",
+		"Description":""
+	},
+	{
+		"Id": 385,
+		"Name":"WK_SCENE_WILDCARD_020",
+		"Description":""
+	},
+	{
+		"Id": 386,
+		"Name":"WK_SCENE_WILDCARD_021",
+		"Description":""
+	},
+	{
+		"Id": 387,
+		"Name":"WK_SCENE_WILDCARD_022",
+		"Description":""
+	},
+	{
+		"Id": 388,
+		"Name":"WK_SCENE_WILDCARD_023",
+		"Description":""
+	},
+	{
+		"Id": 389,
+		"Name":"WK_SCENE_WILDCARD_024",
+		"Description":""
+	},
+	{
+		"Id": 390,
+		"Name":"WK_SCENE_WILDCARD_025",
+		"Description":""
+	},
+	{
+		"Id": 391,
+		"Name":"WK_SCENE_WILDCARD_026",
+		"Description":""
+	},
+	{
+		"Id": 392,
+		"Name":"WK_SCENE_WILDCARD_027",
+		"Description":""
+	},
+	{
+		"Id": 393,
+		"Name":"WK_SCENE_WILDCARD_028",
+		"Description":""
+	},
+	{
+		"Id": 394,
+		"Name":"WK_SCENE_WILDCARD_029",
+		"Description":""
+	},
+	{
+		"Id": 395,
+		"Name":"WK_SCENE_WILDCARD_030",
+		"Description":""
+	},
+	{
+		"Id": 396,
+		"Name":"WK_SCENE_WILDCARD_031",
+		"Description":""
+	},
+	{
+		"Id": 397,
+		"Name":"WK_SCENE_WILDCARD_032",
+		"Description":""
+	},
+	{
+		"Id": 398,
+		"Name":"WK_SCENE_WILDCARD_033",
+		"Description":""
+	},
+	{
+		"Id": 399,
+		"Name":"WK_SCENE_WILDCARD_034",
+		"Description":""
+	},
+	{
+		"Id": 400,
+		"Name":"WK_SCENE_WILDCARD_035",
+		"Description":""
+	},
+	{
+		"Id": 401,
+		"Name":"WK_SCENE_WILDCARD_036",
+		"Description":""
+	},
+	{
+		"Id": 402,
+		"Name":"WK_SCENE_WILDCARD_037",
+		"Description":""
+	},
+	{
+		"Id": 403,
+		"Name":"WK_SCENE_WILDCARD_038",
+		"Description":""
+	},
+	{
+		"Id": 404,
+		"Name":"WK_SCENE_WILDCARD_039",
+		"Description":""
+	},
+	{
+		"Id": 405,
+		"Name":"WK_SCENE_WILDCARD_040",
+		"Description":""
+	},
+	{
+		"Id": 406,
+		"Name":"WK_SCENE_WILDCARD_041",
+		"Description":""
+	},
+	{
+		"Id": 407,
+		"Name":"WK_SCENE_WILDCARD_042",
+		"Description":""
+	},
+	{
+		"Id": 408,
+		"Name":"WK_SCENE_WILDCARD_043",
+		"Description":""
+	},
+	{
+		"Id": 409,
+		"Name":"WK_SCENE_WILDCARD_044",
+		"Description":""
+	},
+	{
+		"Id": 410,
+		"Name":"WK_SCENE_WILDCARD_045",
+		"Description":""
+	},
+	{
+		"Id": 411,
+		"Name":"WK_SCENE_WILDCARD_046",
+		"Description":""
+	},
+	{
+		"Id": 412,
+		"Name":"WK_SCENE_WILDCARD_047",
+		"Description":""
+	},
+	{
+		"Id": 413,
+		"Name":"WK_SCENE_WILDCARD_048",
+		"Description":""
+	},
+	{
+		"Id": 414,
+		"Name":"WK_SCENE_WILDCARD_049",
+		"Description":""
+	},
+	{
+		"Id": 415,
+		"Name":"WK_SCENE_WILDCARD_050",
+		"Description":""
+	},
+	{
+		"Id": 416,
+		"Name":"MONOHIROI_TIME",
+		"Description":""
+	},
+	{
+		"Id": 417,
+		"Name":"WK_SCENE_CL_DOOR",
+		"Description":""
+	},
+	{
+		"Id": 418,
+		"Name":"USE_COMMAND_TIME",
+		"Description":""
+	},
+	{
+		"Id": 419,
+		"Name":"WK_SCENE_HEART_UROKO",
+		"Description":""
+	},
+	{
+		"Id": 420,
+		"Name":"WK_TV_INT_DATA048_MY",
+		"Description":""
+	},
+	{
+		"Id": 421,
+		"Name":"WK_TV_INT_DATA048_USE",
+		"Description":""
+	},
+	{
+		"Id": 422,
+		"Name":"WK_BT_MASTER_ACCUMULATION_WINS",
+		"Description":""
+	},
+	{
+		"Id": 423,
+		"Name":"WK_BT_MASTER_WINS_COUNT",
+		"Description":""
+	},
+	{
+		"Id": 424,
+		"Name":"WK_BT_MASTER_WINS_COUNT_NEXT",
+		"Description":""
+	},
+	{
+		"Id": 425,
+		"Name":"WK_BT_MASTER_WINS_PREZENT_MINTO",
+		"Description":""
+	},
+	{
+		"Id": 426,
+		"Name":"WK_PALPARK_EVENT_CAMERA",
+		"Description":""
+	},
+	{
+		"Id": 427,
+		"Name":"WK_SCENE_R221R0101_ZOU",
+		"Description":""
+	},
+	{
+		"Id": 428,
+		"Name":"WK_PLAY_REPO_NO",
+		"Description":""
+	},
+	{
+		"Id": 429,
+		"Name":"WK_TV_STR_DATA006_USE_GENDER",
+		"Description":""
+	},
+	{
+		"Id": 430,
+		"Name":"WK_TV_STR_DATA021_MY_GENDER",
+		"Description":""
+	},
+	{
+		"Id": 431,
+		"Name":"WK_TV_STR_DATA021_USE_GENDER",
+		"Description":""
+	},
+	{
+		"Id": 432,
+		"Name":"WK_TV_STR_DATA037_MY_GENDER",
+		"Description":""
+	},
+	{
+		"Id": 433,
+		"Name":"WK_TV_STR_DATA037_USE_GENDER",
+		"Description":""
+	},
+	{
+		"Id": 434,
+		"Name":"WK_TV_STR_DATA041_MY_GENDER",
+		"Description":""
+	},
+	{
+		"Id": 435,
+		"Name":"WK_TV_STR_DATA041_USE_GENDER",
+		"Description":""
+	},
+	{
+		"Id": 436,
+		"Name":"WK_DAILY_RANDOM",
+		"Description":""
+	},
+	{
+		"Id": 437,
+		"Name":"SCWK_WK_END",
+		"Description":""
+	},
+    {
+		"Id": 500,
+		"Name":"SCWK_WK_SAVE_SIZE",
+		"Description":""
+	}
+]

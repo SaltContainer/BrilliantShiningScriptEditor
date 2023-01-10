@@ -14,6 +14,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Windows.Threading;
+using Microsoft.Web.WebView2.Core;
 
 namespace PokemonBDSPEditor.Forms
 {
@@ -25,11 +28,86 @@ namespace PokemonBDSPEditor.Forms
         public FormMain()
         {
             InitializeComponent();
+            AddToolTips();
+
             scriptEditorEngine = new ScriptEditorEngine();
 
             comboScriptCommand.DataSource = FileConstants.Commands;
         }
 
+        #region Web View Stuff
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            LoadPage();
+        }
+
+        private void webEditor_NavigationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
+        {
+            stripMain.Enabled = true;
+        }
+
+        private async void LoadPage()
+        {
+            var options = new CoreWebView2EnvironmentOptions("--allow-file-access-from-files");
+            var environment = await CoreWebView2Environment.CreateAsync(null, null, options);
+            await webEditor.EnsureCoreWebView2Async(environment);
+            webEditor.Source = new Uri(Path.Combine(Application.StartupPath, @"Monaco\index.html"));
+        }
+
+        private void SetEditorValue(string code)
+        {
+            code = code.Replace("\n", "\\n");
+            ExecuteEditorScript($"editor.setValue('{code}')");
+        }
+
+        private string GetEditorValue()
+        {
+            string code = ExecuteEditorScript("editor.getValue()");
+            code = code.Replace("\"", "");
+            code = code.Replace("\\n", "\n");
+            return code;
+        }
+
+        private string ExecuteEditorScript(string script)
+        {
+            return EditorWait(webEditor.CoreWebView2.ExecuteScriptAsync(script));
+        }
+
+        // NEVER call within a WebView handler, this will deadlock
+        private static string EditorWait(Task<string> task)
+        {
+            System.Timers.Timer timer = new System.Timers.Timer();
+            DispatcherFrame frame = new DispatcherFrame();
+
+            string wait = "Empty";
+
+            task.ContinueWith(
+                _ =>
+                {
+                    if (task.IsFaulted) wait = task.Exception.Message;
+                    else wait = task.Result;
+                    frame.Continue = false;
+                });
+
+            // Timeout if task takes too long
+            timer.Enabled = true;
+            frame.Continue = true;
+            Dispatcher.PushFrame(frame);
+            timer.Enabled = false;
+
+            return wait;
+        }
+        #endregion
+
+        private void AddToolTips()
+        {
+            ttFormMain.SetToolTip(btnScriptAdd, "Add a Script to this file");
+            ttFormMain.SetToolTip(btnScriptRemove, "Remove this Script from this file");
+            ttFormMain.SetToolTip(btnScriptCompile, "Compile this Script (Check for errors)");
+            ttFormMain.SetToolTip(btnScriptSave, "Save this Script to memory");
+            ttFormMain.SetToolTip(checkScriptSafe, "Disallow saving for Scripts with errors");
+        }
+        
         private void UpdateScriptFileList(List<ScriptFile> scriptFiles)
         {
             comboScriptFile.DataSource = scriptFiles;
@@ -44,8 +122,8 @@ namespace PokemonBDSPEditor.Forms
         }
 
         private void UpdateScriptBox(Script script)
-        {
-            rtbScript.Text = scriptEditorEngine.DecompileScript(script);
+        { 
+            SetEditorValue(scriptEditorEngine.DecompileScript(script));
         }
 
         private void UpdateCommandInfo(CommandInfo command)
@@ -54,10 +132,11 @@ namespace PokemonBDSPEditor.Forms
             string arguments = "";
             if (command.Arguments.Count == 0) arguments = "No arguments.";
             else arguments = string.Join("\n", command.Arguments.Select(a => string.Format("[{0}] {1} - {2}{3}", string.Join(", ", a.Type), a.Name, a.Optional ? "(Optional) " : "", a.Description)));
-            string description = "";
-            if (command.Dummy) description = command.Description == "" ? "This command is dummied out and does nothing." : string.Format("[Dummied out command] {0}", command.Description);
-            else description = command.Description == "" ? "This command is not documented yet." : command.Description;
-            lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", description, arguments);
+            List<string> descriptionItems = new List<string>();
+            if (command.Animation) descriptionItems.Add("[Animation command]");
+            if (command.Dummy) descriptionItems.Add("This command is dummied out and does nothing.");
+            else descriptionItems.Add(command.Description == "" ? "This command is not documented yet." : command.Description);
+            lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", string.Join(" ", descriptionItems), arguments);
         }
 
         private void SaveScriptInMemory(Script script)
@@ -97,7 +176,8 @@ namespace PokemonBDSPEditor.Forms
 
             try
             {
-                Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name, false);
+                string code = GetEditorValue();
+                Script script = scriptEditorEngine.CompileScript(code, ((Script)comboScript.SelectedItem).Name, false);
                 MessageBox.Show("No compilation errors found.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (ScriptValidationExceptionListException ex)
@@ -114,7 +194,8 @@ namespace PokemonBDSPEditor.Forms
 
             try
             {
-                Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name, false);
+                string code = GetEditorValue();
+                Script script = scriptEditorEngine.CompileScript(code, ((Script)comboScript.SelectedItem).Name, false);
                 SaveScriptInMemory(script);
             }
             catch (ScriptValidationExceptionListException ex)
@@ -126,7 +207,8 @@ namespace PokemonBDSPEditor.Forms
                     fullError += "\nAre you sure you want to save this script anyways?";
                     if (MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error) == DialogResult.Yes)
                     {
-                        Script script = scriptEditorEngine.CompileScript(rtbScript.Text, ((Script)comboScript.SelectedItem).Name, true);
+                        string code = GetEditorValue();
+                        Script script = scriptEditorEngine.CompileScript(code, ((Script)comboScript.SelectedItem).Name, true);
                         SaveScriptInMemory(script);
                     }
                 }
@@ -155,6 +237,7 @@ namespace PokemonBDSPEditor.Forms
                         tbtnOpen.Enabled = false;
                         btnScriptCompile.Enabled = true;
                         btnScriptSave.Enabled = true;
+                        ExecuteEditorScript("editor.updateOptions({readOnly: false})");
                     }
                 }
                 else

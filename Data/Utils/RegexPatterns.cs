@@ -10,7 +10,7 @@ namespace PokemonBDSPEditor.Data.Utils
     static class RegexPatterns
     {
         public static string ValidCommandArgument { get; } = @"^([A-Z0-9]*_[A-Z0-9]*)+$";
-        public static string InvalidCommandArgument { get; } = @"^cmd_\d+$";
+        public static string InvalidCommandArgument { get; } = @"^cmd_-?\d+$";
         public static string NumberArgument { get; } = @"^-?(\d+\.)?\d+$";
         public static string VariableArgument { get; } = @"^var_\d+$";
         public static string FlagArgument { get; } = @"^flag_\d+$";
