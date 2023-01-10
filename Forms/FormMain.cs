@@ -4,7 +4,6 @@ using PokemonBDSPEditor.Data.Utils;
 using PokemonBDSPEditor.Engine.ScriptEditor;
 using PokemonBDSPEditor.Engine.ScriptEditor.Exceptions;
 using PokemonBDSPEditor.Engine.ScriptEditor.Model;
-using PokemonBDSPEditor.Engine.ScriptEditor.Styler;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,9 +14,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using EasyScintilla.Stylers;
 using System.IO;
 using System.Windows.Threading;
+using Microsoft.Web.WebView2.Core;
 
 namespace PokemonBDSPEditor.Forms
 {
@@ -30,8 +29,6 @@ namespace PokemonBDSPEditor.Forms
         {
             InitializeComponent();
 
-            //editorScript.Styler = new BDSPScriptStyler();
-
             scriptEditorEngine = new ScriptEditorEngine();
 
             comboScriptCommand.DataSource = FileConstants.Commands;
@@ -40,7 +37,7 @@ namespace PokemonBDSPEditor.Forms
         #region Web View Stuff
         private void FormMain_Load(object sender, EventArgs e)
         {
-            webEditor.Source = new Uri(Path.Combine(Application.StartupPath, @"Monaco\index.html"));
+            LoadPage();
         }
 
         private void webEditor_NavigationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
@@ -48,15 +45,23 @@ namespace PokemonBDSPEditor.Forms
             stripMain.Enabled = true;
         }
 
+        private async void LoadPage()
+        {
+            var options = new CoreWebView2EnvironmentOptions("--allow-file-access-from-files");
+            var environment = await CoreWebView2Environment.CreateAsync(null, null, options);
+            await webEditor.EnsureCoreWebView2Async(environment);
+            webEditor.Source = new Uri(Path.Combine(Application.StartupPath, @"Monaco\index.html"));
+        }
+
         private void SetEditorValue(string code)
         {
             code = code.Replace("\n", "\\n");
-            EditorWait(webEditor.CoreWebView2.ExecuteScriptAsync($"editor.setValue('{code}')"));
+            ExecuteEditorScript($"editor.setValue('{code}')");
         }
 
         private string GetEditorValue()
         {
-            string code = EditorWait(webEditor.CoreWebView2.ExecuteScriptAsync("editor.getValue()"));
+            string code = ExecuteEditorScript("editor.getValue()");
             code = code.Replace("\"", "");
             code = code.Replace("\\n", "\n");
             return code;

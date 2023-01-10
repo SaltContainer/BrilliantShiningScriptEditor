@@ -131,12 +131,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="JSON\bundle_constants.json" />
-    <None Include="JSON\commands.json" />
-    <None Include="JSON\flags.json" />
-    <None Include="JSON\sys_flags.json" />
-    <None Include="JSON\work.json" />
-    <None Include="Monaco\min\vs\base\browser\ui\codicons\codicon\codicon.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -210,6 +204,11 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Monaco\**">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JSON\**">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
