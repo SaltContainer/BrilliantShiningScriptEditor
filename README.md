@@ -1,8 +1,8 @@
-# PokemonBDSPEditor
+# Brilliant Shining Script Editor
 
 A WIP Script Editor for Pokémon Brilliant Diamond and Shining Pearl.
 
-![Picture showing the application](https://i.imgur.com/Kj0pKER.png "The Script Editor")<br>
+![Picture showing the application](https://i.imgur.com/xupxjIs.png "The Script Editor")<br>
 
 The most recent version can be downloaded from the releases page. Supported features are described further down.
 
