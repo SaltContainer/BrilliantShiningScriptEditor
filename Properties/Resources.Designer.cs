@@ -136,6 +136,38 @@ namespace BrilliantShiningScriptEditor.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to [
+        ///	{
+        ///		&quot;PathID&quot;: -4159401333858848265,
+        ///		&quot;FileName&quot;: &quot;battle_room&quot;,
+        ///		&quot;FriendlyName&quot;: &quot;Unused Wireless Battle Room (?)&quot;
+        ///	},
+        ///	{
+        ///		&quot;PathID&quot;: -594893302899321786,
+        ///		&quot;FileName&quot;: &quot;bg_attr&quot;,
+        ///		&quot;FriendlyName&quot;: &quot;Tile-specific Scripts&quot;
+        ///	},
+        ///	{
+        ///		&quot;PathID&quot;: -524791092379703435,
+        ///		&quot;FileName&quot;: &quot;c01&quot;,
+        ///		&quot;FriendlyName&quot;: &quot;Jubilife City&quot;
+        ///	},
+        ///	{
+        ///		&quot;PathID&quot;: -696005077699342123,
+        ///		&quot;FileName&quot;: &quot;c01fs0101&quot;,
+        ///		&quot;FriendlyName&quot;: &quot;Jubilife - Poké Mart&quot;
+        ///	},
+        ///	{
+        ///		&quot;PathID&quot;: -4737298874747568407,
+        ///		&quot;FileName&quot;: &quot;c01 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string file_names {
+            get {
+                return ResourceManager.GetString("file_names", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [
         ///    {
         ///		&quot;Id&quot;: 0,
         ///		&quot;Name&quot;:&quot;FH_01&quot;,

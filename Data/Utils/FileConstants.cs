@@ -16,6 +16,7 @@ namespace BrilliantShiningScriptEditor.Data.Utils
         public static List<ArgumentTypeInfo> Flags { get; } = JsonConvert.DeserializeObject<List<ArgumentTypeInfo>>(Resources.flags);
         public static List<ArgumentTypeInfo> SystemFlags { get; } = JsonConvert.DeserializeObject<List<ArgumentTypeInfo>>(Resources.sys_flags);
         public static List<ArgumentTypeInfo> WorkVariables { get; } = JsonConvert.DeserializeObject<List<ArgumentTypeInfo>>(Resources.work);
+        public static List<FileInfo> ScriptFileNames { get; } = JsonConvert.DeserializeObject<List<FileInfo>>(Resources.file_names);
         public static string ScriptDataBundleKey { get; } = "script-data";
     }
 }

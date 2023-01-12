@@ -124,6 +124,9 @@
   <data name="commands" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\json\commands.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;iso-8859-1</value>
   </data>
+  <data name="file_names" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\json\file_names.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
   <data name="flags" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JSON\flags.json;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;iso-8859-1</value>
   </data>

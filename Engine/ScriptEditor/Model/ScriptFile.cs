@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BrilliantShiningScriptEditor.Data.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,7 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor.Model
 
         public override string ToString()
         {
-            return FileName;
+            return FileConstants.ScriptFileNames.Where(f => f.PathID == PathID).Select(f => f.FriendlyName).DefaultIfEmpty(FileName).First();
         }
     }
 }
