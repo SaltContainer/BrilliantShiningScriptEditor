@@ -110,7 +110,7 @@ namespace BrilliantShiningScriptEditor.Forms
         
         private void UpdateScriptFileList(List<ScriptFile> scriptFiles)
         {
-            comboScriptFile.DataSource = scriptFiles;
+            comboScriptFile.DataSource = scriptFiles.OrderBy(s => s.ToString()).ToList();
             comboScriptFile.SelectedIndex = 0;
         }
 

@@ -87,7 +87,6 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
                         scriptFiles.Add(ConvertToScriptFile(file.Key, file.Value));
                     }
                 }
-                scriptFiles = scriptFiles.OrderBy(s => s.FileName).ToList();
             }
             return result;
         }

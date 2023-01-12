@@ -27,17 +27,17 @@
 	{
 		"PathID": 659998836812983807,
 		"FileName": "c01pc0101",
-		"FriendlyName": "Jubilife - Pokémon Center 1F"
+		"FriendlyName": "Jubilife - Center 1F"
 	},
 	{
 		"PathID": -2863782311377592546,
 		"FileName": "c01pc0102",
-		"FriendlyName": "Jubilife - Pokémon Center 2F"
+		"FriendlyName": "Jubilife - Center 2F"
 	},
 	{
 		"PathID": 1007029453000532060,
 		"FileName": "c01pc0103",
-		"FriendlyName": "Jubilife - Pokémon Center B1F"
+		"FriendlyName": "Jubilife - Center B1F"
 	},
 	{
 		"PathID": -356148885588687280,
@@ -77,7 +77,7 @@
 	{
 		"PathID": 6469428919713866853,
 		"FileName": "c01r0205",
-		"FriendlyName": "Jubilife TV - Gym Leader Ball Capsule Room"
+		"FriendlyName": "Jubilife TV - Gym Leader Capsules"
 	},
 	{
 		"PathID": -4072057606964786993,
@@ -92,32 +92,32 @@
 	{
 		"PathID": -300943930687443580,
 		"FileName": "c01r0208",
-		"FriendlyName": "Jubilife TV - Elevator"
+		"FriendlyName": "Jubilife TV - Elv."
 	},
 	{
 		"PathID": -3709748490603166259,
 		"FileName": "c01r0209",
-		"FriendlyName": "Jubilife TV - E4 Ball Capsule Room"
+		"FriendlyName": "Jubilife TV - E4 Ball Capsules"
 	},
 	{
 		"PathID": -8449764827886916754,
 		"FileName": "c01r0301",
-		"FriendlyName": "Jubilife - Building 1 1F (South)"
+		"FriendlyName": "Jubilife - Bdg. 1 1F (South)"
 	},
 	{
 		"PathID": -1056286593685185415,
 		"FileName": "c01r0302",
-		"FriendlyName": "Jubilife - Building 1 2F (South)"
+		"FriendlyName": "Jubilife - Bdg. 1 2F (South)"
 	},
 	{
 		"PathID": 7914147577486553208,
 		"FileName": "c01r0501",
-		"FriendlyName": "Jubilife - Building 2 1F (Condominiums)"
+		"FriendlyName": "Jubilife - Bdg. 2 1F (Condominiums)"
 	},
 	{
 		"PathID": -3066505292164151122,
 		"FileName": "c01r0502",
-		"FriendlyName": "Jubilife - Building 2 2F (Condominiums)"
+		"FriendlyName": "Jubilife - Bdg. 2 2F (Condominiums)"
 	},
 	{
 		"PathID": 6462447867668662831,
@@ -132,12 +132,12 @@
 	{
 		"PathID": 717042327188242698,
 		"FileName": "c01r0801",
-		"FriendlyName": "Jubilife - Building 3 1F (Southwest by GWS)"
+		"FriendlyName": "Jubilife - Bdg. 3 1F (SW by GWS)"
 	},
 	{
 		"PathID": 3950814302616638454,
 		"FileName": "c01r0802",
-		"FriendlyName": "Jubilife - Building 3 2F (Southwest by GWS)"
+		"FriendlyName": "Jubilife - Bdg. 3 2F (SW by GWS)"
 	},
 	{
 		"PathID": -7609341707377888811,
@@ -157,17 +157,17 @@
 	{
 		"PathID": -4922575389704199296,
 		"FileName": "c02pc0101",
-		"FriendlyName": "Canalave - Pokémon Center 1F"
+		"FriendlyName": "Canalave - Center 1F"
 	},
 	{
 		"PathID": 1114886727331413315,
 		"FileName": "c02pc0102",
-		"FriendlyName": "Canalave - Pokémon Center 2F"
+		"FriendlyName": "Canalave - Center 2F"
 	},
 	{
 		"PathID": -206555767572115360,
 		"FileName": "c02pc0103",
-		"FriendlyName": "Canalave - Pokémon Center B1F"
+		"FriendlyName": "Canalave - Center B1F"
 	},
 	{
 		"PathID": -3907690889447257840,
@@ -227,57 +227,57 @@
 	{
 		"PathID": -4400274530859959502,
 		"FileName": "c03pc0101",
-		"FriendlyName": "Oreburgh - Pokémon Center 1F"
+		"FriendlyName": "Oreburgh - Center 1F"
 	},
 	{
 		"PathID": -1944789832992577555,
 		"FileName": "c03pc0102",
-		"FriendlyName": "Oreburgh - Pokémon Center 2F"
+		"FriendlyName": "Oreburgh - Center 2F"
 	},
 	{
 		"PathID": 7551223657722333272,
 		"FileName": "c03pc0103",
-		"FriendlyName": "Oreburgh - Pokémon Center B1F"
+		"FriendlyName": "Oreburgh - Center B1F"
 	},
 	{
 		"PathID": 4472356305758767,
 		"FileName": "c03r0101",
-		"FriendlyName": "Oreburgh - Building 1 1F (most NW)"
+		"FriendlyName": "Oreburgh - Bdg. 1 1F (most NW)"
 	},
 	{
 		"PathID": -2677498612946979773,
 		"FileName": "c03r0102",
-		"FriendlyName": "Oreburgh - Building 1 2F (most NW)"
+		"FriendlyName": "Oreburgh - Bdg. 1 2F (most NW)"
 	},
 	{
 		"PathID": -8073681548828529207,
 		"FileName": "c03r0103",
-		"FriendlyName": "Oreburgh - Unused Building 1 3F (most NW)"
+		"FriendlyName": "Oreburgh - Unused Bdg. 1 3F (most NW)"
 	},
 	{
 		"PathID": 2270757575649760506,
 		"FileName": "c03r0104",
-		"FriendlyName": "Oreburgh - Unused Building 1 4F (most NW)"
+		"FriendlyName": "Oreburgh - Unused Bdg. 1 4F (most NW)"
 	},
 	{
 		"PathID": -4403169954718960412,
 		"FileName": "c03r0201",
-		"FriendlyName": "Oreburgh - Building 2 1F (West of Mart)"
+		"FriendlyName": "Oreburgh - Bdg. 2 1F (West of Mart)"
 	},
 	{
 		"PathID": 8519369431641563875,
 		"FileName": "c03r0202",
-		"FriendlyName": "Oreburgh - Building 2 2F (West of Mart)"
+		"FriendlyName": "Oreburgh - Bdg. 2 2F (West of Mart)"
 	},
 	{
 		"PathID": 2120796038368535464,
 		"FileName": "c03r0203",
-		"FriendlyName": "Oreburgh - Unused Building 2 3F (West of Mart)"
+		"FriendlyName": "Oreburgh - Unused Bdg. 2 3F (West of Mart)"
 	},
 	{
 		"PathID": 6173487249005603417,
 		"FileName": "c03r0204",
-		"FriendlyName": "Oreburgh - Unused Building 2 4F (West of Mart)"
+		"FriendlyName": "Oreburgh - Unused Bdg. 2 4F (West of Mart)"
 	},
 	{
 		"PathID": 6575104209706416340,
@@ -297,17 +297,17 @@
 	{
 		"PathID": -2918357938107052166,
 		"FileName": "c03r0601",
-		"FriendlyName": "Oreburgh - Building 3 1F (SE of Center)"
+		"FriendlyName": "Oreburgh - Bdg. 3 1F (SE of Center)"
 	},
 	{
 		"PathID": -5191003860399927759,
 		"FileName": "c03r0602",
-		"FriendlyName": "Oreburgh - Building 3 2F (SE of Center)"
+		"FriendlyName": "Oreburgh - Bdg. 3 2F (SE of Center)"
 	},
 	{
 		"PathID": -3304478424674050320,
 		"FileName": "c03r0603",
-		"FriendlyName": "Oreburgh - Unused Building 3 3F (SE of Center)"
+		"FriendlyName": "Oreburgh - Unused Bdg. 3 3F (SE of Center)"
 	},
 	{
 		"PathID": 6609881675163210560,
@@ -337,17 +337,17 @@
 	{
 		"PathID": -4610172093759500563,
 		"FileName": "c04pc0101",
-		"FriendlyName": "Eterna - Pokémon Center 1F"
+		"FriendlyName": "Eterna - Center 1F"
 	},
 	{
 		"PathID": 1256831797076228444,
 		"FileName": "c04pc0102",
-		"FriendlyName": "Eterna - Pokémon Center 2F"
+		"FriendlyName": "Eterna - Center 2F"
 	},
 	{
 		"PathID": 4241534501364550273,
 		"FileName": "c04pc0103",
-		"FriendlyName": "Eterna - Pokémon Center B1F"
+		"FriendlyName": "Eterna - Center B1F"
 	},
 	{
 		"PathID": 6527336997437405313,
@@ -357,27 +357,27 @@
 	{
 		"PathID": -1492747598438370372,
 		"FileName": "c04r0201",
-		"FriendlyName": "Eterna - Team Galactic Building 1F"
+		"FriendlyName": "Eterna - Galac. Bdg. 1F"
 	},
 	{
 		"PathID": 9159137562157137479,
 		"FileName": "c04r0202",
-		"FriendlyName": "Eterna - Team Galactic Building 2F"
+		"FriendlyName": "Eterna - Galac. Bdg. 2F"
 	},
 	{
 		"PathID": -4878036365407419074,
 		"FileName": "c04r0203",
-		"FriendlyName": "Eterna - Team Galactic Building 3F"
+		"FriendlyName": "Eterna - Galac. Bdg. 3F"
 	},
 	{
 		"PathID": 781709697721297196,
 		"FileName": "c04r0204",
-		"FriendlyName": "Eterna - Team Galactic Building 4F"
+		"FriendlyName": "Eterna - Galac. Bdg. 4F"
 	},
 	{
 		"PathID": 3704447591867355401,
 		"FileName": "c04r0205",
-		"FriendlyName": "Eterna - Team Galactic Building Rotom Room"
+		"FriendlyName": "Eterna - Galac. Bdg. Rotom Room"
 	},
 	{
 		"PathID": 2946331652160004136,
@@ -462,32 +462,32 @@
 	{
 		"PathID": 8050101571868548052,
 		"FileName": "c05pc0101",
-		"FriendlyName": "Hearthome - Pokémon Center 1F"
+		"FriendlyName": "Hearthome - Center 1F"
 	},
 	{
 		"PathID": 842181907859737984,
 		"FileName": "c05pc0102",
-		"FriendlyName": "Hearthome - Pokémon Center 2F"
+		"FriendlyName": "Hearthome - Center 2F"
 	},
 	{
 		"PathID": -6350847916785306047,
 		"FileName": "c05pc0103",
-		"FriendlyName": "Hearthome - Pokémon Center B1F"
+		"FriendlyName": "Hearthome - Center B1F"
 	},
 	{
 		"PathID": 4999771763457479784,
 		"FileName": "c05r0101",
-		"FriendlyName": "Hearthome - Building 1 1F (East of Fanclub)"
+		"FriendlyName": "Hearthome - Bdg. 1 1F (East of Fanclub)"
 	},
 	{
 		"PathID": -905449764166752065,
 		"FileName": "c05r0102",
-		"FriendlyName": "Hearthome - Building 1 2F (East of Fanclub)"
+		"FriendlyName": "Hearthome - Bdg. 1 2F (East of Fanclub)"
 	},
 	{
 		"PathID": 1555448797942946074,
 		"FileName": "c05r0103",
-		"FriendlyName": "Hearthome - Building 1 Elevator (East of Fanclub)"
+		"FriendlyName": "Hearthome - Bdg. 1 Elv. (East of Fanclub)"
 	},
 	{
 		"PathID": 4854966199269760477,
@@ -522,17 +522,17 @@
 	{
 		"PathID": 6725327419098223177,
 		"FileName": "c05r0801",
-		"FriendlyName": "Hearthome - Building 2 1F (West of Gym)"
+		"FriendlyName": "Hearthome - Bdg. 2 1F (West of Gym)"
 	},
 	{
 		"PathID": -1000973672358381188,
 		"FileName": "c05r0802",
-		"FriendlyName": "Hearthome - Building 2 2F (West of Gym)"
+		"FriendlyName": "Hearthome - Bdg. 2 2F (West of Gym)"
 	},
 	{
 		"PathID": 2559163716374068377,
 		"FileName": "c05r0803",
-		"FriendlyName": "Hearthome - Building 2 Elevator (West of Gym)"
+		"FriendlyName": "Hearthome - Bdg. 2 Elv. (West of Gym)"
 	},
 	{
 		"PathID": 6712485787399980338,
@@ -582,17 +582,17 @@
 	{
 		"PathID": 4081672397430261521,
 		"FileName": "c06pc0101",
-		"FriendlyName": "Pastoria - Pokémon Center 1F"
+		"FriendlyName": "Pastoria - Center 1F"
 	},
 	{
 		"PathID": -3118987891007640730,
 		"FileName": "c06pc0102",
-		"FriendlyName": "Pastoria - Pokémon Center 2F"
+		"FriendlyName": "Pastoria - Center 2F"
 	},
 	{
 		"PathID": -8436614633509180080,
 		"FileName": "c06pc0103",
-		"FriendlyName": "Pastoria - Pokémon Center B1F"
+		"FriendlyName": "Pastoria - Center B1F"
 	},
 	{
 		"PathID": 4873799736933644456,
@@ -642,17 +642,17 @@
 	{
 		"PathID": 1096804126272166693,
 		"FileName": "c07pc0101",
-		"FriendlyName": "Veilstone - Pokémon Center 1F"
+		"FriendlyName": "Veilstone - Center 1F"
 	},
 	{
 		"PathID": 2456575521317326400,
 		"FileName": "c07pc0102",
-		"FriendlyName": "Veilstone - Pokémon Center 2F"
+		"FriendlyName": "Veilstone - Center 2F"
 	},
 	{
 		"PathID": 6910118926053439720,
 		"FileName": "c07pc0103",
-		"FriendlyName": "Veilstone - Pokémon Center B1F"
+		"FriendlyName": "Veilstone - Center B1F"
 	},
 	{
 		"PathID": 3432059034243943797,
@@ -687,7 +687,7 @@
 	{
 		"PathID": 1547791053260802021,
 		"FileName": "c07r0206",
-		"FriendlyName": "Veilstone - Department Store Elevator"
+		"FriendlyName": "Veilstone - Department Store Elv."
 	},
 	{
 		"PathID": -8921025707502554093,
@@ -752,17 +752,17 @@
 	{
 		"PathID": 9045166745297360655,
 		"FileName": "c08pc0101",
-		"FriendlyName": "Sunyshore - Pokémon Center 1F"
+		"FriendlyName": "Sunyshore - Center 1F"
 	},
 	{
 		"PathID": 6625835378687681712,
 		"FileName": "c08pc0102",
-		"FriendlyName": "Sunyshore - Pokémon Center 2F"
+		"FriendlyName": "Sunyshore - Center 2F"
 	},
 	{
 		"PathID": -3328724653050786067,
 		"FileName": "c08pc0103",
-		"FriendlyName": "Sunyshore - Pokémon Center B1F"
+		"FriendlyName": "Sunyshore - Center B1F"
 	},
 	{
 		"PathID": -3620857383078708687,
@@ -802,12 +802,12 @@
 	{
 		"PathID": 8118203997565218135,
 		"FileName": "c08r0801",
-		"FriendlyName": "Sunyshore - Vista Lighthouse Observation Deck"
+		"FriendlyName": "Sunyshore - Lighthouse Top"
 	},
 	{
 		"PathID": 3358089596741111887,
 		"FileName": "c08r0802",
-		"FriendlyName": "Sunyshore - Vista Lighthouse Elevator"
+		"FriendlyName": "Sunyshore - Lighthouse Elv."
 	},
 	{
 		"PathID": 651792761134723168,
@@ -832,17 +832,17 @@
 	{
 		"PathID": -7054368251000723358,
 		"FileName": "c09pc0101",
-		"FriendlyName": "Snowpoint - Pokémon Center 1F"
+		"FriendlyName": "Snowpoint - Center 1F"
 	},
 	{
 		"PathID": 8157972065933984719,
 		"FileName": "c09pc0102",
-		"FriendlyName": "Snowpoint - Pokémon Center 2F"
+		"FriendlyName": "Snowpoint - Center 2F"
 	},
 	{
 		"PathID": 863195601189122307,
 		"FileName": "c09pc0103",
-		"FriendlyName": "Snowpoint - Pokémon Center B1F"
+		"FriendlyName": "Snowpoint - Center B1F"
 	},
 	{
 		"PathID": -3902212390859044535,
@@ -862,17 +862,17 @@
 	{
 		"PathID": -843628138531862411,
 		"FileName": "c10pc0101",
-		"FriendlyName": "Pokémon League - Victory Road Pokémon Center 1F"
+		"FriendlyName": "Pokémon League - VR Center 1F"
 	},
 	{
 		"PathID": 4232928699097898555,
 		"FileName": "c10pc0102",
-		"FriendlyName": "Pokémon League - Victory Road Pokémon Center 2F"
+		"FriendlyName": "Pokémon League - VR Center 2F"
 	},
 	{
 		"PathID": -2054255526986656075,
 		"FileName": "c10pc0103",
-		"FriendlyName": "Pokémon League - Victory Road Pokémon Center B1F"
+		"FriendlyName": "Pokémon League - VR Center B1F"
 	},
 	{
 		"PathID": -648459172028040515,
@@ -962,17 +962,17 @@
 	{
 		"PathID": -6702834109745277922,
 		"FileName": "c11pc0101",
-		"FriendlyName": "Fight Area - Pokémon Center 1F"
+		"FriendlyName": "Fight Area - Center 1F"
 	},
 	{
 		"PathID": 185153936879138343,
 		"FileName": "c11pc0102",
-		"FriendlyName": "Fight Area - Pokémon Center 2F"
+		"FriendlyName": "Fight Area - Center 2F"
 	},
 	{
 		"PathID": -8613491953323342316,
 		"FileName": "c11pc0103",
-		"FriendlyName": "Fight Area - Pokémon Center B1F"
+		"FriendlyName": "Fight Area - Center B1F"
 	},
 	{
 		"PathID": -447467066646121676,
@@ -1337,17 +1337,17 @@
 	{
 		"PathID": 7982135422212439028,
 		"FileName": "d10r0401",
-		"FriendlyName": "Ramanas Park - Groudon's Ramanas Room"
+		"FriendlyName": "Ramanas Park - Groudon"
 	},
 	{
 		"PathID": 617602228981917674,
 		"FileName": "d10r0402",
-		"FriendlyName": "Ramanas Park - Kyogre's Ramanas Room"
+		"FriendlyName": "Ramanas Park - Kyogre"
 	},
 	{
 		"PathID": 1306351879396196439,
 		"FileName": "d10r0403",
-		"FriendlyName": "Ramanas Park - Rayquaza's Ramanas Room"
+		"FriendlyName": "Ramanas Park - Rayquaza"
 	},
 	{
 		"PathID": 943906460809780645,
@@ -1362,7 +1362,7 @@
 	{
 		"PathID": -9181470316481347373,
 		"FileName": "d10r0601",
-		"FriendlyName": "Ramanas Park - Mewtwo's Ramanas Room"
+		"FriendlyName": "Ramanas Park - Mewtwo"
 	},
 	{
 		"PathID": -8202967335443481394,
@@ -2392,1502 +2392,1502 @@
 	{
 		"PathID": 490441876945423001,
 		"FileName": "sp_c01",
-		"FriendlyName": "Jubilife City ~ Map Scripts"
+		"FriendlyName": "Jubilife City ~ Map Scr."
 	},
 	{
 		"PathID": -272534968377122285,
 		"FileName": "sp_c01pc0101",
-		"FriendlyName": "Jubilife - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Jubilife - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": -7691825951907722890,
 		"FileName": "sp_c01pc0102",
-		"FriendlyName": "Jubilife - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Jubilife - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -1032415090862826169,
 		"FileName": "sp_c01pc0103",
-		"FriendlyName": "Jubilife - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Jubilife - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": 6038066286667953877,
 		"FileName": "sp_c01r0101",
-		"FriendlyName": "Jubilife - Pokétch Company 1F ~ Map Scripts"
+		"FriendlyName": "Jubilife - Pokétch Company 1F ~ Map Scr."
 	},
 	{
 		"PathID": -3726768886728720632,
 		"FileName": "sp_c01r0201",
-		"FriendlyName": "Jubilife TV - 1F ~ Map Scripts"
+		"FriendlyName": "Jubilife TV - 1F ~ Map Scr."
 	},
 	{
 		"PathID": -2490804652711404801,
 		"FileName": "sp_c01r0202",
-		"FriendlyName": "Jubilife TV - 2F ~ Map Scripts"
+		"FriendlyName": "Jubilife TV - 2F ~ Map Scr."
 	},
 	{
 		"PathID": -9077990139198721174,
 		"FileName": "sp_c01r0203",
-		"FriendlyName": "Jubilife TV - 3F ~ Map Scripts"
+		"FriendlyName": "Jubilife TV - 3F ~ Map Scr."
 	},
 	{
 		"PathID": -6662866231789068160,
 		"FileName": "sp_c01r0204",
-		"FriendlyName": "Jubilife TV - 4F ~ Map Scripts"
+		"FriendlyName": "Jubilife TV - 4F ~ Map Scr."
 	},
 	{
 		"PathID": 7636103484361030169,
 		"FileName": "sp_c01r0205",
-		"FriendlyName": "Jubilife TV - Gym Leader Ball Capsule Room ~ Map Scripts"
+		"FriendlyName": "Jubilife TV - Gym Leader Capsules ~ Map Scr."
 	},
 	{
 		"PathID": 6068995377097112517,
 		"FileName": "sp_c01r0206",
-		"FriendlyName": "Jubilife TV - Global Ranking Room ~ Map Scripts"
+		"FriendlyName": "Jubilife TV - Global Ranking Room ~ Map Scr."
 	},
 	{
 		"PathID": 8053580150942703938,
 		"FileName": "sp_c01r0207",
-		"FriendlyName": "Jubilife TV - Group Ranking Room ~ Map Scripts"
+		"FriendlyName": "Jubilife TV - Group Ranking Room ~ Map Scr."
 	},
 	{
 		"PathID": -8614343961115042616,
 		"FileName": "sp_c01r0208",
-		"FriendlyName": "Jubilife TV - Elevator ~ Map Scripts"
+		"FriendlyName": "Jubilife TV - Elv. ~ Map Scr."
 	},
 	{
 		"PathID": -4521883386625646392,
 		"FileName": "sp_c01r0601",
-		"FriendlyName": "Jubilife - GWS ~ Map Scripts"
+		"FriendlyName": "Jubilife - GWS ~ Map Scr."
 	},
 	{
 		"PathID": 13250739711251151,
 		"FileName": "sp_c02",
-		"FriendlyName": "Canalave City ~ Map Scripts"
+		"FriendlyName": "Canalave City ~ Map Scr."
 	},
 	{
 		"PathID": 5064220811241012597,
 		"FileName": "sp_c02gym0101",
-		"FriendlyName": "Canalave - Gym ~ Map Scripts"
+		"FriendlyName": "Canalave - Gym ~ Map Scr."
 	},
 	{
 		"PathID": -6387303432095636916,
 		"FileName": "sp_c02pc0101",
-		"FriendlyName": "Canalave - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Canalave - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": 5659891975967352193,
 		"FileName": "sp_c02pc0102",
-		"FriendlyName": "Canalave - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Canalave - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": 1781975047714887439,
 		"FileName": "sp_c02pc0103",
-		"FriendlyName": "Canalave - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Canalave - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": -8502677247526701604,
 		"FileName": "sp_c02r0103",
-		"FriendlyName": "Canalave - Library 3F ~ Map Scripts"
+		"FriendlyName": "Canalave - Library 3F ~ Map Scr."
 	},
 	{
 		"PathID": -5051378638436561142,
 		"FileName": "sp_c02r0401",
-		"FriendlyName": "Canalave - Darkrai House ~ Map Scripts"
+		"FriendlyName": "Canalave - Darkrai House ~ Map Scr."
 	},
 	{
 		"PathID": -1987969889554363879,
 		"FileName": "sp_c02r0501",
-		"FriendlyName": "Canalave - House 4 (SW) ~ Map Scripts"
+		"FriendlyName": "Canalave - House 4 (SW) ~ Map Scr."
 	},
 	{
 		"PathID": -704303198759757098,
 		"FileName": "sp_c02r0601",
-		"FriendlyName": "Canalave - House 5 (South of Gym) ~ Map Scripts"
+		"FriendlyName": "Canalave - House 5 (South of Gym) ~ Map Scr."
 	},
 	{
 		"PathID": 5346746720104298565,
 		"FileName": "sp_c03",
-		"FriendlyName": "Oreburgh City ~ Map Scripts"
+		"FriendlyName": "Oreburgh City ~ Map Scr."
 	},
 	{
 		"PathID": -2306454304406418671,
 		"FileName": "sp_c03gym0101",
-		"FriendlyName": "Oreburgh - Gym ~ Map Scripts"
+		"FriendlyName": "Oreburgh - Gym ~ Map Scr."
 	},
 	{
 		"PathID": 20018293203448565,
 		"FileName": "sp_c03pc0101",
-		"FriendlyName": "Oreburgh - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Oreburgh - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": 3183246262903036279,
 		"FileName": "sp_c03pc0102",
-		"FriendlyName": "Oreburgh - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Oreburgh - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -4675714791591201044,
 		"FileName": "sp_c03pc0103",
-		"FriendlyName": "Oreburgh - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Oreburgh - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": -6545849872396772752,
 		"FileName": "sp_c04",
-		"FriendlyName": "Eterna City ~ Map Scripts"
+		"FriendlyName": "Eterna City ~ Map Scr."
 	},
 	{
 		"PathID": -6981495060448949443,
 		"FileName": "sp_c04gym0101",
-		"FriendlyName": "Eterna - Gym Lobby ~ Map Scripts"
+		"FriendlyName": "Eterna - Gym Lobby ~ Map Scr."
 	},
 	{
 		"PathID": -1824129679777785344,
 		"FileName": "sp_c04gym0102",
-		"FriendlyName": "Eterna - Gym Main Room ~ Map Scripts"
+		"FriendlyName": "Eterna - Gym Main Room ~ Map Scr."
 	},
 	{
 		"PathID": 8800395063757165597,
 		"FileName": "sp_c04pc0101",
-		"FriendlyName": "Eterna - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Eterna - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": -6123190187912459371,
 		"FileName": "sp_c04pc0102",
-		"FriendlyName": "Eterna - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Eterna - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -831678875902647061,
 		"FileName": "sp_c04pc0103",
-		"FriendlyName": "Eterna - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Eterna - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": 7749417876499569186,
 		"FileName": "sp_c04r0201",
-		"FriendlyName": "Eterna - Team Galactic Eterna Building 1F ~ Map Scripts"
+		"FriendlyName": "Eterna - Galac. Bdg. 1F ~ Map Scr."
 	},
 	{
 		"PathID": 3296556247780170024,
 		"FileName": "sp_c04r0205",
-		"FriendlyName": "Eterna - Team Galactic Building Rotom Room ~ Map Scripts"
+		"FriendlyName": "Eterna - Galac. Bdg. Rotom Room ~ Map Scr."
 	},
 	{
 		"PathID": 2216280770550836240,
 		"FileName": "sp_c04r0401",
-		"FriendlyName": "Eterna - Cycling Road Gate ~ Map Scripts"
+		"FriendlyName": "Eterna - Cycling Road Gate ~ Map Scr."
 	},
 	{
 		"PathID": -1061612787513836069,
 		"FileName": "sp_c05",
-		"FriendlyName": "Hearthome City ~ Map Scripts"
+		"FriendlyName": "Hearthome City ~ Map Scr."
 	},
 	{
 		"PathID": 6285826600328330698,
 		"FileName": "sp_c05gym0101",
-		"FriendlyName": "Hearthome - Gym Lobby ~ Map Scripts"
+		"FriendlyName": "Hearthome - Gym Lobby ~ Map Scr."
 	},
 	{
 		"PathID": -1419806147322387698,
 		"FileName": "sp_c05gym0104",
-		"FriendlyName": "Hearthome - Gym Question 2 ~ Map Scripts"
+		"FriendlyName": "Hearthome - Gym Question 2 ~ Map Scr."
 	},
 	{
 		"PathID": 1684600776808538616,
 		"FileName": "sp_c05gym0106",
-		"FriendlyName": "Hearthome - Gym Question 3 ~ Map Scripts"
+		"FriendlyName": "Hearthome - Gym Question 3 ~ Map Scr."
 	},
 	{
 		"PathID": -2760251456363068946,
 		"FileName": "sp_c05gym0108",
-		"FriendlyName": "Hearthome - Gym Question 4 ~ Map Scripts"
+		"FriendlyName": "Hearthome - Gym Question 4 ~ Map Scr."
 	},
 	{
 		"PathID": -7249193902458469399,
 		"FileName": "sp_c05pc0101",
-		"FriendlyName": "Hearthome - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Hearthome - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": 5242518668128656807,
 		"FileName": "sp_c05pc0102",
-		"FriendlyName": "Hearthome - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Hearthome - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": 7217107519370192778,
 		"FileName": "sp_c05pc0103",
-		"FriendlyName": "Hearthome - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Hearthome - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": -1806786223551606444,
 		"FileName": "sp_c05r0101",
-		"FriendlyName": "Hearthome - Building 1 1F (East of Fanclub) ~ Map Scripts"
+		"FriendlyName": "Hearthome - Bdg. 1 1F (East of Fanclub) ~ Map Scr."
 	},
 	{
 		"PathID": 615310765598092728,
 		"FileName": "sp_c05r0102",
-		"FriendlyName": "Hearthome - Building 1 2F (East of Fanclub) ~ Map Scripts"
+		"FriendlyName": "Hearthome - Bdg. 1 2F (East of Fanclub) ~ Map Scr."
 	},
 	{
 		"PathID": 6294238064332520071,
 		"FileName": "sp_c05r0103",
-		"FriendlyName": "Hearthome - Building 1 Elevator (East of Fanclub) ~ Map Scripts"
+		"FriendlyName": "Hearthome - Bdg. 1 Elv. (East of Fanclub) ~ Map Scr."
 	},
 	{
 		"PathID": 3371041954922836215,
 		"FileName": "sp_c05r0201",
-		"FriendlyName": "Hearthome - Pokémon Fan Club ~ Map Scripts"
+		"FriendlyName": "Hearthome - Pokémon Fan Club ~ Map Scr."
 	},
 	{
 		"PathID": 8625693992223699267,
 		"FileName": "sp_c05r0301",
-		"FriendlyName": "Hearthome - Amity Square West Gate ~ Map Scripts"
+		"FriendlyName": "Hearthome - Amity Square West Gate ~ Map Scr."
 	},
 	{
 		"PathID": -2744118300011418262,
 		"FileName": "sp_c05r0401",
-		"FriendlyName": "Hearthome - Amity Square East Gate ~ Map Scripts"
+		"FriendlyName": "Hearthome - Amity Square East Gate ~ Map Scr."
 	},
 	{
 		"PathID": 1301165742488098070,
 		"FileName": "sp_c05r0801",
-		"FriendlyName": "Hearthome - Building 2 1F (West of Gym) ~ Map Scripts"
+		"FriendlyName": "Hearthome - Bdg. 2 1F (West of Gym) ~ Map Scr."
 	},
 	{
 		"PathID": 9011515845722164208,
 		"FileName": "sp_c05r0802",
-		"FriendlyName": "Hearthome - Building 2 2F (West of Gym) ~ Map Scripts"
+		"FriendlyName": "Hearthome - Bdg. 2 2F (West of Gym) ~ Map Scr."
 	},
 	{
 		"PathID": -286419667650397275,
 		"FileName": "sp_c05r0803",
-		"FriendlyName": "Hearthome - Building 2 Elevator (West of Gym) ~ Map Scripts"
+		"FriendlyName": "Hearthome - Bdg. 2 Elv. (West of Gym) ~ Map Scr."
 	},
 	{
 		"PathID": -5384015692220634150,
 		"FileName": "sp_c05r1001",
-		"FriendlyName": "Hearthome - Poffin House (West of Mart) ~ Map Scripts"
+		"FriendlyName": "Hearthome - Poffin House (West of Mart) ~ Map Scr."
 	},
 	{
 		"PathID": 9139779796254229246,
 		"FileName": "sp_c05r1101",
-		"FriendlyName": "Hearthome - Contest Hall (Main Lobby) ~ Map Scripts"
+		"FriendlyName": "Hearthome - Contest Hall (Main Lobby) ~ Map Scr."
 	},
 	{
 		"PathID": -2777142065102361723,
 		"FileName": "sp_c05r1102",
-		"FriendlyName": "Hearthome - Contest Hall? (inaccessible?) ~ Map Scripts"
+		"FriendlyName": "Hearthome - Contest Hall? (inaccessible?) ~ Map Scr."
 	},
 	{
 		"PathID": -8449379380456461788,
 		"FileName": "sp_c06",
-		"FriendlyName": "Pastoria City ~ Map Scripts"
+		"FriendlyName": "Pastoria City ~ Map Scr."
 	},
 	{
 		"PathID": 8283328961167335800,
 		"FileName": "sp_c06gym0101",
-		"FriendlyName": "Pastoria - Gym ~ Map Scripts"
+		"FriendlyName": "Pastoria - Gym ~ Map Scr."
 	},
 	{
 		"PathID": 7960859723786206205,
 		"FileName": "sp_c06pc0101",
-		"FriendlyName": "Pastoria - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Pastoria - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": -8029682273295517206,
 		"FileName": "sp_c06pc0102",
-		"FriendlyName": "Pastoria - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Pastoria - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -826492181304068915,
 		"FileName": "sp_c06pc0103",
-		"FriendlyName": "Pastoria - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Pastoria - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": 6256217777512066711,
 		"FileName": "sp_c06r0101",
-		"FriendlyName": "Pastoria - Great Marsh Gate 1F ~ Map Scripts"
+		"FriendlyName": "Pastoria - Great Marsh Gate 1F ~ Map Scr."
 	},
 	{
 		"PathID": -7994310251372417950,
 		"FileName": "sp_c07",
-		"FriendlyName": "Veilstone City ~ Map Scripts"
+		"FriendlyName": "Veilstone City ~ Map Scr."
 	},
 	{
 		"PathID": 714902039211731092,
 		"FileName": "sp_c07gym0101",
-		"FriendlyName": "Veilstone - Gym ~ Map Scripts"
+		"FriendlyName": "Veilstone - Gym ~ Map Scr."
 	},
 	{
 		"PathID": 3367320131683450023,
 		"FileName": "sp_c07pc0101",
-		"FriendlyName": "Veilstone - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Veilstone - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": -6843147920603534536,
 		"FileName": "sp_c07pc0102",
-		"FriendlyName": "Veilstone - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Veilstone - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -3642176140323970257,
 		"FileName": "sp_c07pc0103",
-		"FriendlyName": "Veilstone - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Veilstone - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": 921316452145977099,
 		"FileName": "sp_c07r0201",
-		"FriendlyName": "Veilstone - Department Store 1F ~ Map Scripts"
+		"FriendlyName": "Veilstone - Department Store 1F ~ Map Scr."
 	},
 	{
 		"PathID": -91676389671143183,
 		"FileName": "sp_c07r0202",
-		"FriendlyName": "Veilstone - Department Store 2F ~ Map Scripts"
+		"FriendlyName": "Veilstone - Department Store 2F ~ Map Scr."
 	},
 	{
 		"PathID": -8899825100389625779,
 		"FileName": "sp_c07r0203",
-		"FriendlyName": "Veilstone - Department Store 3F ~ Map Scripts"
+		"FriendlyName": "Veilstone - Department Store 3F ~ Map Scr."
 	},
 	{
 		"PathID": 4674037181418662807,
 		"FileName": "sp_c07r0204",
-		"FriendlyName": "Veilstone - Department Store 4F ~ Map Scripts"
+		"FriendlyName": "Veilstone - Department Store 4F ~ Map Scr."
 	},
 	{
 		"PathID": 2081837275215966296,
 		"FileName": "sp_c07r0205",
-		"FriendlyName": "Veilstone - Department Store 5F ~ Map Scripts"
+		"FriendlyName": "Veilstone - Department Store 5F ~ Map Scr."
 	},
 	{
 		"PathID": -3897552123746479379,
 		"FileName": "sp_c07r0206",
-		"FriendlyName": "Veilstone - Department Store Elevator ~ Map Scripts"
+		"FriendlyName": "Veilstone - Department Store Elv. ~ Map Scr."
 	},
 	{
 		"PathID": 8782697109305057004,
 		"FileName": "sp_c07r0301",
-		"FriendlyName": "Veilstone - Warehouse ~ Map Scripts"
+		"FriendlyName": "Veilstone - Warehouse ~ Map Scr."
 	},
 	{
 		"PathID": 1100552560633027107,
 		"FileName": "sp_c08",
-		"FriendlyName": "Sunyshore City ~ Map Scripts"
+		"FriendlyName": "Sunyshore City ~ Map Scr."
 	},
 	{
 		"PathID": 7478887968462278067,
 		"FileName": "sp_c08gym0101",
-		"FriendlyName": "Sunyshore - Gym Room 1 ~ Map Scripts"
+		"FriendlyName": "Sunyshore - Gym Room 1 ~ Map Scr."
 	},
 	{
 		"PathID": 3085485971296639309,
 		"FileName": "sp_c08gym0102",
-		"FriendlyName": "Sunyshore - Gym Room 2 ~ Map Scripts"
+		"FriendlyName": "Sunyshore - Gym Room 2 ~ Map Scr."
 	},
 	{
 		"PathID": 257620834702612771,
 		"FileName": "sp_c08gym0103",
-		"FriendlyName": "Sunyshore - Gym Room 3 ~ Map Scripts"
+		"FriendlyName": "Sunyshore - Gym Room 3 ~ Map Scr."
 	},
 	{
 		"PathID": -6722750404186960136,
 		"FileName": "sp_c08pc0101",
-		"FriendlyName": "Sunyshore - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Sunyshore - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": 6232995213667918652,
 		"FileName": "sp_c08pc0102",
-		"FriendlyName": "Sunyshore - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Sunyshore - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -3774099116218052908,
 		"FileName": "sp_c08pc0103",
-		"FriendlyName": "Sunyshore - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Sunyshore - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": -5337691433799098743,
 		"FileName": "sp_c08r0101",
-		"FriendlyName": "Sunyshore - Sunyshore Market ~ Map Scripts"
+		"FriendlyName": "Sunyshore - Sunyshore Market ~ Map Scr."
 	},
 	{
 		"PathID": 2316823150703930537,
 		"FileName": "sp_c08r0801",
-		"FriendlyName": "Sunyshore - Vista Lighthouse Observation Deck ~ Map Scripts"
+		"FriendlyName": "Sunyshore - Lighthouse Top ~ Map Scr."
 	},
 	{
 		"PathID": 8521301322863089795,
 		"FileName": "sp_c08r0802",
-		"FriendlyName": "Sunyshore - Vista Lighthouse Elevator ~ Map Scripts"
+		"FriendlyName": "Sunyshore - Lighthouse Elv. ~ Map Scr."
 	},
 	{
 		"PathID": 2790146221836408360,
 		"FileName": "sp_c09",
-		"FriendlyName": "Snowpoint City ~ Map Scripts"
+		"FriendlyName": "Snowpoint City ~ Map Scr."
 	},
 	{
 		"PathID": 5072555716342746127,
 		"FileName": "sp_c09gym0101",
-		"FriendlyName": "Snowpoint - Gym ~ Map Scripts"
+		"FriendlyName": "Snowpoint - Gym ~ Map Scr."
 	},
 	{
 		"PathID": 4275999731759851550,
 		"FileName": "sp_c09pc0101",
-		"FriendlyName": "Snowpoint - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Snowpoint - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": 1315941858066461526,
 		"FileName": "sp_c09pc0102",
-		"FriendlyName": "Snowpoint - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Snowpoint - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -1042747061019258674,
 		"FileName": "sp_c09pc0103",
-		"FriendlyName": "Snowpoint - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Snowpoint - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": 3768400794441194243,
 		"FileName": "sp_c10",
-		"FriendlyName": "Pokémon League ~ Map Scripts"
+		"FriendlyName": "Pokémon League ~ Map Scr."
 	},
 	{
 		"PathID": 4746677513629718887,
 		"FileName": "sp_c10pc0101",
-		"FriendlyName": "Pokémon League - Victory Road Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Pokémon League - VR Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": -7089308808219511993,
 		"FileName": "sp_c10pc0102",
-		"FriendlyName": "Pokémon League - Victory Road Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Pokémon League - VR Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": 3196311313847346699,
 		"FileName": "sp_c10pc0103",
-		"FriendlyName": "Pokémon League - Victory Road Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Pokémon League - VR Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": 4874121888230963761,
 		"FileName": "sp_c10r0101",
-		"FriendlyName": "Pokémon League - League Lobby ~ Map Scripts"
+		"FriendlyName": "Pokémon League - League Lobby ~ Map Scr."
 	},
 	{
 		"PathID": -7953678453348776664,
 		"FileName": "sp_c10r0102",
-		"FriendlyName": "Pokémon League - Lift to Elite Four 1 ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Lift to Elite Four 1 ~ Map Scr."
 	},
 	{
 		"PathID": -6543957320373810186,
 		"FileName": "sp_c10r0103",
-		"FriendlyName": "Pokémon League - Elite Four 1 ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Elite Four 1 ~ Map Scr."
 	},
 	{
 		"PathID": 6300713773083177752,
 		"FileName": "sp_c10r0104",
-		"FriendlyName": "Pokémon League - Lift to Elite Four 2 ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Lift to Elite Four 2 ~ Map Scr."
 	},
 	{
 		"PathID": 6844711966977201666,
 		"FileName": "sp_c10r0105",
-		"FriendlyName": "Pokémon League - Elite Four 2 ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Elite Four 2 ~ Map Scr."
 	},
 	{
 		"PathID": -7011188520814813136,
 		"FileName": "sp_c10r0106",
-		"FriendlyName": "Pokémon League - Lift to Elite Four 3 ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Lift to Elite Four 3 ~ Map Scr."
 	},
 	{
 		"PathID": -4371660954774800754,
 		"FileName": "sp_c10r0107",
-		"FriendlyName": "Pokémon League - Elite Four 3 ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Elite Four 3 ~ Map Scr."
 	},
 	{
 		"PathID": 7313410490204362921,
 		"FileName": "sp_c10r0108",
-		"FriendlyName": "Pokémon League - Lift to Elite Four 4 ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Lift to Elite Four 4 ~ Map Scr."
 	},
 	{
 		"PathID": -4086580872052145200,
 		"FileName": "sp_c10r0109",
-		"FriendlyName": "Pokémon League - Elite Four 4 ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Elite Four 4 ~ Map Scr."
 	},
 	{
 		"PathID": 5456125981524690363,
 		"FileName": "sp_c10r0110",
-		"FriendlyName": "Pokémon League - Lift to Champion ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Lift to Champion ~ Map Scr."
 	},
 	{
 		"PathID": 3125825508672091984,
 		"FileName": "sp_c10r0111",
-		"FriendlyName": "Pokémon League - Champion Room ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Champion Room ~ Map Scr."
 	},
 	{
 		"PathID": -1853174203866920680,
 		"FileName": "sp_c10r0112",
-		"FriendlyName": "Pokémon League - Hall to Hall of Fame ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Hall to Hall of Fame ~ Map Scr."
 	},
 	{
 		"PathID": 4240192492031700965,
 		"FileName": "sp_c10r0113",
-		"FriendlyName": "Pokémon League - Hall of Fame ~ Map Scripts"
+		"FriendlyName": "Pokémon League - Hall of Fame ~ Map Scr."
 	},
 	{
 		"PathID": 3480662629643940901,
 		"FileName": "sp_c10r0114",
-		"FriendlyName": "Pokémon League - League 2F ~ Map Scripts"
+		"FriendlyName": "Pokémon League - League 2F ~ Map Scr."
 	},
 	{
 		"PathID": -8281543543423022224,
 		"FileName": "sp_c10r0115",
-		"FriendlyName": "Pokémon League - League B1F ~ Map Scripts"
+		"FriendlyName": "Pokémon League - League B1F ~ Map Scr."
 	},
 	{
 		"PathID": -6441654979511395746,
 		"FileName": "sp_c11",
-		"FriendlyName": "Fight Area ~ Map Scripts"
+		"FriendlyName": "Fight Area ~ Map Scr."
 	},
 	{
 		"PathID": -8725001645540934637,
 		"FileName": "sp_c11pc0101",
-		"FriendlyName": "Fight Area - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Fight Area - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": 3018535261680837500,
 		"FileName": "sp_c11pc0102",
-		"FriendlyName": "Fight Area - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Fight Area - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -5684344279799977093,
 		"FileName": "sp_c11pc0103",
-		"FriendlyName": "Fight Area - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Fight Area - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": 4266139523377604981,
 		"FileName": "sp_c11r0101",
-		"FriendlyName": "Fight Area - Battle Park Gate ~ Map Scripts"
+		"FriendlyName": "Fight Area - Battle Park Gate ~ Map Scr."
 	},
 	{
 		"PathID": 8074357252101204958,
 		"FileName": "sp_d02",
-		"FriendlyName": "Valley Windworks (Outside) ~ Map Scripts"
+		"FriendlyName": "Valley Windworks (Outside) ~ Map Scr."
 	},
 	{
 		"PathID": -6842789442415308501,
 		"FileName": "sp_d02r0101",
-		"FriendlyName": "Valley Windworks (Inside) ~ Map Scripts"
+		"FriendlyName": "Valley Windworks (Inside) ~ Map Scr."
 	},
 	{
 		"PathID": -6048732168198074628,
 		"FileName": "sp_d03r0101",
-		"FriendlyName": "Eterna Forest ~ Map Scripts"
+		"FriendlyName": "Eterna Forest ~ Map Scr."
 	},
 	{
 		"PathID": -5644693418488795880,
 		"FileName": "sp_d04r0101",
-		"FriendlyName": "Fuego Ironworks (Inside) ~ Map Scripts"
+		"FriendlyName": "Fuego Ironworks (Inside) ~ Map Scr."
 	},
 	{
 		"PathID": -7070908652990222503,
 		"FileName": "sp_d05r0101",
-		"FriendlyName": "Mt. Coronet - South 1F 1 (207-208) ~ Map Scripts"
+		"FriendlyName": "Mt. Coronet - South 1F 1 (207-208) ~ Map Scr."
 	},
 	{
 		"PathID": 1469639003959295980,
 		"FileName": "sp_d05r0102",
-		"FriendlyName": "Mt. Coronet - 2F ~ Map Scripts"
+		"FriendlyName": "Mt. Coronet - 2F ~ Map Scr."
 	},
 	{
 		"PathID": -2143832505036365854,
 		"FileName": "sp_d05r0109",
-		"FriendlyName": "Mt. Coronet - 6F ~ Map Scripts"
+		"FriendlyName": "Mt. Coronet - 6F ~ Map Scr."
 	},
 	{
 		"PathID": 4408983954614274022,
 		"FileName": "sp_d05r0112",
-		"FriendlyName": "Mt. Coronet - North 1F 1 (211) ~ Map Scripts"
+		"FriendlyName": "Mt. Coronet - North 1F 1 (211) ~ Map Scr."
 	},
 	{
 		"PathID": -2599156301345195782,
 		"FileName": "sp_d05r0114",
-		"FriendlyName": "Spear Pillar - Diamond ~ Map Scripts"
+		"FriendlyName": "Spear Pillar - Diamond ~ Map Scr."
 	},
 	{
 		"PathID": 5140977996137005995,
 		"FileName": "sp_d05r0115",
-		"FriendlyName": "Spear Pillar - Pearl ~ Map Scripts"
+		"FriendlyName": "Spear Pillar - Pearl ~ Map Scr."
 	},
 	{
 		"PathID": 2056588180609055039,
 		"FileName": "sp_d05r0116",
-		"FriendlyName": "Hall of Origin 1/2 ~ Map Scripts"
+		"FriendlyName": "Hall of Origin 1/2 ~ Map Scr."
 	},
 	{
 		"PathID": -3549601753983179003,
 		"FileName": "sp_d05r0117",
-		"FriendlyName": "Hall of Origin 3 ~ Map Scripts"
+		"FriendlyName": "Hall of Origin 3 ~ Map Scr."
 	},
 	{
 		"PathID": -6911349845970970562,
 		"FileName": "sp_d06r0201",
-		"FriendlyName": "Great Marsh - Area 1 ~ Map Scripts"
+		"FriendlyName": "Great Marsh - Area 1 ~ Map Scr."
 	},
 	{
 		"PathID": 4066105879172516077,
 		"FileName": "sp_d06r0202",
-		"FriendlyName": "Great Marsh - Area 2 ~ Map Scripts"
+		"FriendlyName": "Great Marsh - Area 2 ~ Map Scr."
 	},
 	{
 		"PathID": 2961368321528664591,
 		"FileName": "sp_d06r0203",
-		"FriendlyName": "Great Marsh - Area 3 ~ Map Scripts"
+		"FriendlyName": "Great Marsh - Area 3 ~ Map Scr."
 	},
 	{
 		"PathID": -6779171916663794196,
 		"FileName": "sp_d06r0204",
-		"FriendlyName": "Great Marsh - Area 4 ~ Map Scripts"
+		"FriendlyName": "Great Marsh - Area 4 ~ Map Scr."
 	},
 	{
 		"PathID": -4968996593368711564,
 		"FileName": "sp_d06r0205",
-		"FriendlyName": "Great Marsh - Area 5 ~ Map Scripts"
+		"FriendlyName": "Great Marsh - Area 5 ~ Map Scr."
 	},
 	{
 		"PathID": 3101927865076835828,
 		"FileName": "sp_d06r0206",
-		"FriendlyName": "Great Marsh - Area 6 ~ Map Scripts"
+		"FriendlyName": "Great Marsh - Area 6 ~ Map Scr."
 	},
 	{
 		"PathID": -3870366120851763653,
 		"FileName": "sp_d07r0102",
-		"FriendlyName": "Solaceon Ruins - 1F ~ Map Scripts"
+		"FriendlyName": "Solaceon Ruins - 1F ~ Map Scr."
 	},
 	{
 		"PathID": -6761058302373162497,
 		"FileName": "sp_d09r0101",
-		"FriendlyName": "Victory Road - 1F ~ Map Scripts"
+		"FriendlyName": "Victory Road - 1F ~ Map Scr."
 	},
 	{
 		"PathID": 8829843076696528447,
 		"FileName": "sp_d09r0104",
-		"FriendlyName": "Victory Road - 1F Back (Marley) ~ Map Scripts"
+		"FriendlyName": "Victory Road - 1F Back (Marley) ~ Map Scr."
 	},
 	{
 		"PathID": -46125028796671412,
 		"FileName": "sp_d10r0101",
-		"FriendlyName": "Pal Park - Unused ~ Map Scripts"
+		"FriendlyName": "Pal Park - Unused ~ Map Scr."
 	},
 	{
 		"PathID": 656995453447950156,
 		"FileName": "sp_d10r0202",
-		"FriendlyName": "Ramanas Park - d10r0202 ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0202 ~ Map Scr."
 	},
 	{
 		"PathID": -2114452445954433908,
 		"FileName": "sp_d10r0202b",
-		"FriendlyName": "Ramanas Park - d10r0202b ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0202b ~ Map Scr."
 	},
 	{
 		"PathID": 4373381977763124362,
 		"FileName": "sp_d10r0301",
-		"FriendlyName": "Ramanas Park - d10r0301 ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0301 ~ Map Scr."
 	},
 	{
 		"PathID": -5190033448579156410,
 		"FileName": "sp_d10r0301b",
-		"FriendlyName": "Ramanas Park - d10r0301b ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0301b ~ Map Scr."
 	},
 	{
 		"PathID": -4879848439744867909,
 		"FileName": "sp_d10r0302",
-		"FriendlyName": "Ramanas Park - d10r0302 ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0302 ~ Map Scr."
 	},
 	{
 		"PathID": -5960364018125305237,
 		"FileName": "sp_d10r0302b",
-		"FriendlyName": "Ramanas Park - d10r0302b ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0302b ~ Map Scr."
 	},
 	{
 		"PathID": 7435083286663890623,
 		"FileName": "sp_d10r0303",
-		"FriendlyName": "Ramanas Park - d10r0303 ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0303 ~ Map Scr."
 	},
 	{
 		"PathID": 2631001993948635225,
 		"FileName": "sp_d10r0303b",
-		"FriendlyName": "Ramanas Park - d10r0303b ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0303b ~ Map Scr."
 	},
 	{
 		"PathID": -5337363775733435760,
 		"FileName": "sp_d10r0401",
-		"FriendlyName": "Ramanas Park - Groudon's Ramanas Room ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - Groudon ~ Map Scr."
 	},
 	{
 		"PathID": 963512018939583036,
 		"FileName": "sp_d10r0401b",
-		"FriendlyName": "Ramanas Park - Groudon's Ramanas Room B ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - Groudon B ~ Map Scr."
 	},
 	{
 		"PathID": -737181787989226958,
 		"FileName": "sp_d10r0402",
-		"FriendlyName": "Ramanas Park - Kyogre's Ramanas Room ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - Kyogre ~ Map Scr."
 	},
 	{
 		"PathID": 3577639492998516608,
 		"FileName": "sp_d10r0402b",
-		"FriendlyName": "Ramanas Park - Kyogre's Ramanas Room B ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - Kyogre B ~ Map Scr."
 	},
 	{
 		"PathID": 8062479416600691358,
 		"FileName": "sp_d10r0403",
-		"FriendlyName": "Ramanas Park - Rayquaza's Ramanas Room ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - Rayquaza ~ Map Scr."
 	},
 	{
 		"PathID": -2085066347245264733,
 		"FileName": "sp_d10r0403b",
-		"FriendlyName": "Ramanas Park - Rayquaza's Ramanas Room B ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - Rayquaza B ~ Map Scr."
 	},
 	{
 		"PathID": 410764195784162171,
 		"FileName": "sp_d10r0501",
-		"FriendlyName": "Ramanas Park - d10r0501 ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0501 ~ Map Scr."
 	},
 	{
 		"PathID": -6211976950308390981,
 		"FileName": "sp_d10r0501b",
-		"FriendlyName": "Ramanas Park - d10r0501b ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0501b ~ Map Scr."
 	},
 	{
 		"PathID": 7995467813193376498,
 		"FileName": "sp_d10r0502",
-		"FriendlyName": "Ramanas Park - d10r0502 ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0502 ~ Map Scr."
 	},
 	{
 		"PathID": -7187559669248250847,
 		"FileName": "sp_d10r0502b",
-		"FriendlyName": "Ramanas Park - d10r0502b ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0502b ~ Map Scr."
 	},
 	{
 		"PathID": 9167873122764160353,
 		"FileName": "sp_d10r0601",
-		"FriendlyName": "Ramanas Park - Mewtwo's Ramanas Room ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - Mewtwo ~ Map Scr."
 	},
 	{
 		"PathID": -159099114849887772,
 		"FileName": "sp_d10r0601b",
-		"FriendlyName": "Ramanas Park - Mewtwo's Ramanas Room B ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - Mewtwo B ~ Map Scr."
 	},
 	{
 		"PathID": -7606344955457239301,
 		"FileName": "sp_d10r0701",
-		"FriendlyName": "Ramanas Park - d10r0701 ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0701 ~ Map Scr."
 	},
 	{
 		"PathID": 3576410138500202573,
 		"FileName": "sp_d10r0801",
-		"FriendlyName": "Ramanas Park - d10r0801 ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0801 ~ Map Scr."
 	},
 	{
 		"PathID": -1290610871366435098,
 		"FileName": "sp_d10r0901",
-		"FriendlyName": "Ramanas Park - d10r0901 ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0901 ~ Map Scr."
 	},
 	{
 		"PathID": -4176766273212480659,
 		"FileName": "sp_d10r0902",
-		"FriendlyName": "Ramanas Park - d10r0902 ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - d10r0902 ~ Map Scr."
 	},
 	{
 		"PathID": -1968420253750660855,
 		"FileName": "sp_d11r0101",
-		"FriendlyName": "Amity Square ~ Map Scripts"
+		"FriendlyName": "Amity Square ~ Map Scr."
 	},
 	{
 		"PathID": -5125639451691688354,
 		"FileName": "sp_d12r0101",
-		"FriendlyName": "Ravaged Path ~ Map Scripts"
+		"FriendlyName": "Ravaged Path ~ Map Scr."
 	},
 	{
 		"PathID": -5774536153058515387,
 		"FileName": "sp_d13r0101",
-		"FriendlyName": "Floaroma Meadow ~ Map Scripts"
+		"FriendlyName": "Floaroma Meadow ~ Map Scr."
 	},
 	{
 		"PathID": -4476720402878185304,
 		"FileName": "sp_d13r0102",
-		"FriendlyName": "Floaroma Meadow - House ~ Map Scripts"
+		"FriendlyName": "Floaroma Meadow - House ~ Map Scr."
 	},
 	{
 		"PathID": 347250069141064649,
 		"FileName": "sp_d14r0101",
-		"FriendlyName": "Oreburgh Tunnel - 1F ~ Map Scripts"
+		"FriendlyName": "Oreburgh Tunnel - 1F ~ Map Scr."
 	},
 	{
 		"PathID": -7883493276367893132,
 		"FileName": "sp_d15",
-		"FriendlyName": "Fullmoon Island ~ Map Scripts"
+		"FriendlyName": "Fullmoon Island ~ Map Scr."
 	},
 	{
 		"PathID": -8075505719868697370,
 		"FileName": "sp_d16r0101",
-		"FriendlyName": "Stark Mountain - Entrance ~ Map Scripts"
+		"FriendlyName": "Stark Mountain - Entrance ~ Map Scr."
 	},
 	{
 		"PathID": -2723139288570212799,
 		"FileName": "sp_d16r0102",
-		"FriendlyName": "Stark Mountain - Interior ~ Map Scripts"
+		"FriendlyName": "Stark Mountain - Interior ~ Map Scr."
 	},
 	{
 		"PathID": 5496615601404405216,
 		"FileName": "sp_d16r0103",
-		"FriendlyName": "Stark Mountain - Heatran's Room ~ Map Scripts"
+		"FriendlyName": "Stark Mountain - Heatran's Room ~ Map Scr."
 	},
 	{
 		"PathID": 5030618746830075159,
 		"FileName": "sp_d17r0102",
-		"FriendlyName": "Turnback Cave - Entrance ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - Entrance ~ Map Scr."
 	},
 	{
 		"PathID": -1514243889917849796,
 		"FileName": "sp_d17r0103",
-		"FriendlyName": "Turnback Cave - d17r0103 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0103 ~ Map Scr."
 	},
 	{
 		"PathID": -2887415242340332627,
 		"FileName": "sp_d17r0104",
-		"FriendlyName": "Turnback Cave - d17r0104 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0104 ~ Map Scr."
 	},
 	{
 		"PathID": -2964688152667660705,
 		"FileName": "sp_d17r0105",
-		"FriendlyName": "Turnback Cave - d17r0105 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0105 ~ Map Scr."
 	},
 	{
 		"PathID": 6453091146260878153,
 		"FileName": "sp_d17r0106",
-		"FriendlyName": "Turnback Cave - d17r0106 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0106 ~ Map Scr."
 	},
 	{
 		"PathID": -7230253166656675974,
 		"FileName": "sp_d17r0107",
-		"FriendlyName": "Turnback Cave - d17r0107 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0107 ~ Map Scr."
 	},
 	{
 		"PathID": -6546229617875163904,
 		"FileName": "sp_d17r0108",
-		"FriendlyName": "Turnback Cave - d17r0108 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0108 ~ Map Scr."
 	},
 	{
 		"PathID": 8931702230708261743,
 		"FileName": "sp_d17r0109",
-		"FriendlyName": "Turnback Cave - d17r0109 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0109 ~ Map Scr."
 	},
 	{
 		"PathID": -4552802510214948307,
 		"FileName": "sp_d17r0110",
-		"FriendlyName": "Turnback Cave - d17r0110 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0110 ~ Map Scr."
 	},
 	{
 		"PathID": 4087645083322319237,
 		"FileName": "sp_d17r0111",
-		"FriendlyName": "Turnback Cave - d17r0111 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0111 ~ Map Scr."
 	},
 	{
 		"PathID": 3820333065460143791,
 		"FileName": "sp_d17r0112",
-		"FriendlyName": "Turnback Cave - d17r0112 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0112 ~ Map Scr."
 	},
 	{
 		"PathID": 2570148620994134240,
 		"FileName": "sp_d17r0113",
-		"FriendlyName": "Turnback Cave - d17r0113 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0113 ~ Map Scr."
 	},
 	{
 		"PathID": 4630779557563597686,
 		"FileName": "sp_d17r0114",
-		"FriendlyName": "Turnback Cave - d17r0114 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0114 ~ Map Scr."
 	},
 	{
 		"PathID": -2797435477370766591,
 		"FileName": "sp_d17r0115",
-		"FriendlyName": "Turnback Cave - d17r0115 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0115 ~ Map Scr."
 	},
 	{
 		"PathID": -5339508672290184183,
 		"FileName": "sp_d17r0116",
-		"FriendlyName": "Turnback Cave - d17r0116 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0116 ~ Map Scr."
 	},
 	{
 		"PathID": -4559892505570420594,
 		"FileName": "sp_d17r0117",
-		"FriendlyName": "Turnback Cave - d17r0117 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0117 ~ Map Scr."
 	},
 	{
 		"PathID": -3621472662314160003,
 		"FileName": "sp_d17r0118",
-		"FriendlyName": "Turnback Cave - d17r0118 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0118 ~ Map Scr."
 	},
 	{
 		"PathID": -7588371926350993602,
 		"FileName": "sp_d17r0119",
-		"FriendlyName": "Turnback Cave - d17r0119 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0119 ~ Map Scr."
 	},
 	{
 		"PathID": -8526592329312529187,
 		"FileName": "sp_d17r0120",
-		"FriendlyName": "Turnback Cave - d17r0120 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0120 ~ Map Scr."
 	},
 	{
 		"PathID": 6220790734093511453,
 		"FileName": "sp_d17r0121",
-		"FriendlyName": "Turnback Cave - d17r0121 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0121 ~ Map Scr."
 	},
 	{
 		"PathID": -8094108757611718983,
 		"FileName": "sp_d17r0122",
-		"FriendlyName": "Turnback Cave - d17r0122 ~ Map Scripts"
+		"FriendlyName": "Turnback Cave - d17r0122 ~ Map Scr."
 	},
 	{
 		"PathID": -8192644321301069741,
 		"FileName": "sp_d18",
-		"FriendlyName": "Flower Paradise ~ Map Scripts"
+		"FriendlyName": "Flower Paradise ~ Map Scr."
 	},
 	{
 		"PathID": -7708899591586029617,
 		"FileName": "sp_d20r0101",
-		"FriendlyName": "Snowpoint Temple - 1F ~ Map Scripts"
+		"FriendlyName": "Snowpoint Temple - 1F ~ Map Scr."
 	},
 	{
 		"PathID": -1595673042349164724,
 		"FileName": "sp_d20r0106",
-		"FriendlyName": "Snowpoint Temple - B5F ~ Map Scripts"
+		"FriendlyName": "Snowpoint Temple - B5F ~ Map Scr."
 	},
 	{
 		"PathID": -8136979400438635738,
 		"FileName": "sp_d21r0101",
-		"FriendlyName": "Wayward Cave - Main Area ~ Map Scripts"
+		"FriendlyName": "Wayward Cave - Main Area ~ Map Scr."
 	},
 	{
 		"PathID": -8716725325723652650,
 		"FileName": "sp_d22r0101",
-		"FriendlyName": "Ruin Maniac Cave - Small ~ Map Scripts"
+		"FriendlyName": "Ruin Maniac Cave - Small ~ Map Scr."
 	},
 	{
 		"PathID": -4921758679915926364,
 		"FileName": "sp_d22r0103",
-		"FriendlyName": "Maniac Tunnel ~ Map Scripts"
+		"FriendlyName": "Maniac Tunnel ~ Map Scr."
 	},
 	{
 		"PathID": -6499513935094149864,
 		"FileName": "sp_d23r0101",
-		"FriendlyName": "Trophy Garden ~ Map Scripts"
+		"FriendlyName": "Trophy Garden ~ Map Scr."
 	},
 	{
 		"PathID": -5851979282647195336,
 		"FileName": "sp_d24",
-		"FriendlyName": "Iron Island (Overworld) ~ Map Scripts"
+		"FriendlyName": "Iron Island (Overworld) ~ Map Scr."
 	},
 	{
 		"PathID": -6321691711110806407,
 		"FileName": "sp_d24r0101",
-		"FriendlyName": "Iron Island - 1F ~ Map Scripts"
+		"FriendlyName": "Iron Island - 1F ~ Map Scr."
 	},
 	{
 		"PathID": 1593623838233233236,
 		"FileName": "sp_d24r0103",
-		"FriendlyName": "Iron Island - B1F Right ~ Map Scripts"
+		"FriendlyName": "Iron Island - B1F Right ~ Map Scr."
 	},
 	{
 		"PathID": -2381964170639168280,
 		"FileName": "sp_d24r0105",
-		"FriendlyName": "Iron Island - B2F Left (Riley's Room) ~ Map Scripts"
+		"FriendlyName": "Iron Island - B2F Left (Riley's Room) ~ Map Scr."
 	},
 	{
 		"PathID": 6668687839405868716,
 		"FileName": "sp_d24r0106",
-		"FriendlyName": "Iron Island - B3F ~ Map Scripts"
+		"FriendlyName": "Iron Island - B3F ~ Map Scr."
 	},
 	{
 		"PathID": 3609314011427950100,
 		"FileName": "sp_d24r0201",
-		"FriendlyName": "Iron Island - House ~ Map Scripts"
+		"FriendlyName": "Iron Island - House ~ Map Scr."
 	},
 	{
 		"PathID": -168260217457141196,
 		"FileName": "sp_d25r0101",
-		"FriendlyName": "Old Chateau - Lobby ~ Map Scripts"
+		"FriendlyName": "Old Chateau - Lobby ~ Map Scr."
 	},
 	{
 		"PathID": 3455945807512777274,
 		"FileName": "sp_d25r0102",
-		"FriendlyName": "Old Chateau - Dining Room ~ Map Scripts"
+		"FriendlyName": "Old Chateau - Dining Room ~ Map Scr."
 	},
 	{
 		"PathID": -2214252850898662855,
 		"FileName": "sp_d25r0108",
-		"FriendlyName": "Old Chateau - Hallway Room 4 ~ Map Scripts"
+		"FriendlyName": "Old Chateau - Hallway Room 4 ~ Map Scr."
 	},
 	{
 		"PathID": -633766942103476820,
 		"FileName": "sp_d26r0101",
-		"FriendlyName": "Team Galactic HQ - 1F ~ Map Scripts"
+		"FriendlyName": "Team Galactic HQ - 1F ~ Map Scr."
 	},
 	{
 		"PathID": -7223328358976046642,
 		"FileName": "sp_d26r0103",
-		"FriendlyName": "Team Galactic HQ - 3F ~ Map Scripts"
+		"FriendlyName": "Team Galactic HQ - 3F ~ Map Scr."
 	},
 	{
 		"PathID": -6938059755301223415,
 		"FileName": "sp_d26r0104",
-		"FriendlyName": "Team Galactic HQ - 4F ~ Map Scripts"
+		"FriendlyName": "Team Galactic HQ - 4F ~ Map Scr."
 	},
 	{
 		"PathID": -2426819852664343178,
 		"FileName": "sp_d26r0106",
-		"FriendlyName": "Team Galactic HQ - B2F ~ Map Scripts"
+		"FriendlyName": "Team Galactic HQ - B2F ~ Map Scr."
 	},
 	{
 		"PathID": -2396858462346922821,
 		"FileName": "sp_d26r0107",
-		"FriendlyName": "Team Galactic HQ - Lake Trio Room ~ Map Scripts"
+		"FriendlyName": "Team Galactic HQ - Lake Trio Room ~ Map Scr."
 	},
 	{
 		"PathID": -5516759764903244828,
 		"FileName": "sp_d27r0101",
-		"FriendlyName": "Lake Verity (Before) ~ Map Scripts"
+		"FriendlyName": "Lake Verity (Before) ~ Map Scr."
 	},
 	{
 		"PathID": -8772039129958140222,
 		"FileName": "sp_d27r0102",
-		"FriendlyName": "Lake Verity (After) ~ Map Scripts"
+		"FriendlyName": "Lake Verity (After) ~ Map Scr."
 	},
 	{
 		"PathID": 7173195867427274191,
 		"FileName": "sp_d27r0103",
-		"FriendlyName": "Verity Cavern ~ Map Scripts"
+		"FriendlyName": "Verity Cavern ~ Map Scr."
 	},
 	{
 		"PathID": -2181830598607925173,
 		"FileName": "sp_d28r0101",
-		"FriendlyName": "Lake Valor (Before) ~ Map Scripts"
+		"FriendlyName": "Lake Valor (Before) ~ Map Scr."
 	},
 	{
 		"PathID": -8218572855223996552,
 		"FileName": "sp_d28r0103",
-		"FriendlyName": "Valor Cavern ~ Map Scripts"
+		"FriendlyName": "Valor Cavern ~ Map Scr."
 	},
 	{
 		"PathID": -3427555883723122695,
 		"FileName": "sp_d29r0102",
-		"FriendlyName": "Lake Acuity (After) ~ Map Scripts"
+		"FriendlyName": "Lake Acuity (After) ~ Map Scr."
 	},
 	{
 		"PathID": 6009280872081717624,
 		"FileName": "sp_d29r0103",
-		"FriendlyName": "Acuity Cavern ~ Map Scripts"
+		"FriendlyName": "Acuity Cavern ~ Map Scr."
 	},
 	{
 		"PathID": 2220682524507337422,
 		"FileName": "sp_d30",
-		"FriendlyName": "Newmoon Island ~ Map Scripts"
+		"FriendlyName": "Newmoon Island ~ Map Scr."
 	},
 	{
 		"PathID": 1793691987276673746,
 		"FileName": "sp_d30r0101",
-		"FriendlyName": "Newmoon Island - Darkrai Room ~ Map Scripts"
+		"FriendlyName": "Newmoon Island - Darkrai Room ~ Map Scr."
 	},
 	{
 		"PathID": -2997250046497328636,
 		"FileName": "sp_d31r0201",
-		"FriendlyName": "Battle Tower - Lobby ~ Map Scripts"
+		"FriendlyName": "Battle Tower - Lobby ~ Map Scr."
 	},
 	{
 		"PathID": -1237068356866827162,
 		"FileName": "sp_d31r0202",
-		"FriendlyName": "Battle Tower - d31r0202 ~ Map Scripts"
+		"FriendlyName": "Battle Tower - d31r0202 ~ Map Scr."
 	},
 	{
 		"PathID": 6037604418796287174,
 		"FileName": "sp_d31r0203",
-		"FriendlyName": "Battle Tower - d31r0203 ~ Map Scripts"
+		"FriendlyName": "Battle Tower - d31r0203 ~ Map Scr."
 	},
 	{
 		"PathID": -5715216937793121641,
 		"FileName": "sp_d31r0204",
-		"FriendlyName": "Battle Tower - d31r0204 ~ Map Scripts"
+		"FriendlyName": "Battle Tower - d31r0204 ~ Map Scr."
 	},
 	{
 		"PathID": -4322607582752084502,
 		"FileName": "sp_d31r0205",
-		"FriendlyName": "Battle Tower - d31r0205 ~ Map Scripts"
+		"FriendlyName": "Battle Tower - d31r0205 ~ Map Scr."
 	},
 	{
 		"PathID": 6440065231750715513,
 		"FileName": "sp_d31r0206",
-		"FriendlyName": "Battle Tower - d31r0206 ~ Map Scripts"
+		"FriendlyName": "Battle Tower - d31r0206 ~ Map Scr."
 	},
 	{
 		"PathID": -6954709512767300950,
 		"FileName": "sp_d31r0207",
-		"FriendlyName": "Battle Tower - d31r0207 ~ Map Scripts"
+		"FriendlyName": "Battle Tower - d31r0207 ~ Map Scr."
 	},
 	{
 		"PathID": 7212633250911127360,
 		"FileName": "sp_l01",
-		"FriendlyName": "Verity Lakefront ~ Map Scripts"
+		"FriendlyName": "Verity Lakefront ~ Map Scr."
 	},
 	{
 		"PathID": -3452296479140755722,
 		"FileName": "sp_l02",
-		"FriendlyName": "Valor Lakefront ~ Map Scripts"
+		"FriendlyName": "Valor Lakefront ~ Map Scr."
 	},
 	{
 		"PathID": -185908567302383871,
 		"FileName": "sp_l02r0101",
-		"FriendlyName": "Valor Lakefront - Restaurant ~ Map Scripts"
+		"FriendlyName": "Valor Lakefront - Restaurant ~ Map Scr."
 	},
 	{
 		"PathID": -770165418328828819,
 		"FileName": "sp_l02r0301",
-		"FriendlyName": "Valor Lakefront - House 2 (NW) ~ Map Scripts"
+		"FriendlyName": "Valor Lakefront - House 2 (NW) ~ Map Scr."
 	},
 	{
 		"PathID": 410790735175928453,
 		"FileName": "sp_l03",
-		"FriendlyName": "Acuity Lakefront ~ Map Scripts"
+		"FriendlyName": "Acuity Lakefront ~ Map Scr."
 	},
 	{
 		"PathID": -3533550983511171558,
 		"FileName": "sp_r201",
-		"FriendlyName": "Route 201 ~ Map Scripts"
+		"FriendlyName": "Route 201 ~ Map Scr."
 	},
 	{
 		"PathID": -828881302000906265,
 		"FileName": "sp_r206",
-		"FriendlyName": "Route 206 ~ Map Scripts"
+		"FriendlyName": "Route 206 ~ Map Scr."
 	},
 	{
 		"PathID": -2716745169590444820,
 		"FileName": "sp_r206r0101",
-		"FriendlyName": "Route 206 - Cycling Road Gate ~ Map Scripts"
+		"FriendlyName": "Route 206 - Cycling Road Gate ~ Map Scr."
 	},
 	{
 		"PathID": -1133802570159222502,
 		"FileName": "sp_r207",
-		"FriendlyName": "Route 207 ~ Map Scripts"
+		"FriendlyName": "Route 207 ~ Map Scr."
 	},
 	{
 		"PathID": 3770721519536805215,
 		"FileName": "sp_r209",
-		"FriendlyName": "Route 209 ~ Map Scripts"
+		"FriendlyName": "Route 209 ~ Map Scr."
 	},
 	{
 		"PathID": -3827076308896240593,
 		"FileName": "sp_r209r0101",
-		"FriendlyName": "Lost Tower - 1F ~ Map Scripts"
+		"FriendlyName": "Lost Tower - 1F ~ Map Scr."
 	},
 	{
 		"PathID": 3610045280578875870,
 		"FileName": "sp_r209r0102",
-		"FriendlyName": "Lost Tower - 2F ~ Map Scripts"
+		"FriendlyName": "Lost Tower - 2F ~ Map Scr."
 	},
 	{
 		"PathID": 7793304636032986714,
 		"FileName": "sp_r209r0103",
-		"FriendlyName": "Lost Tower - 3F ~ Map Scripts"
+		"FriendlyName": "Lost Tower - 3F ~ Map Scr."
 	},
 	{
 		"PathID": 8954473029511532564,
 		"FileName": "sp_r209r0104",
-		"FriendlyName": "Lost Tower - 4F ~ Map Scripts"
+		"FriendlyName": "Lost Tower - 4F ~ Map Scr."
 	},
 	{
 		"PathID": -5269502241897265696,
 		"FileName": "sp_r209r0105",
-		"FriendlyName": "Lost Tower - 5F ~ Map Scripts"
+		"FriendlyName": "Lost Tower - 5F ~ Map Scr."
 	},
 	{
 		"PathID": 6908398983428920710,
 		"FileName": "sp_r210a",
-		"FriendlyName": "Route 210 (South) ~ Map Scripts"
+		"FriendlyName": "Route 210 (South) ~ Map Scr."
 	},
 	{
 		"PathID": 8766835973739023785,
 		"FileName": "sp_r210ar0101",
-		"FriendlyName": "Route 210 - Café Cabin ~ Map Scripts"
+		"FriendlyName": "Route 210 - Café Cabin ~ Map Scr."
 	},
 	{
 		"PathID": -7226336144994339770,
 		"FileName": "sp_r210br0101",
-		"FriendlyName": "Route 210 - House (North) ~ Map Scripts"
+		"FriendlyName": "Route 210 - House (North) ~ Map Scr."
 	},
 	{
 		"PathID": -3233425442585309170,
 		"FileName": "sp_r212a",
-		"FriendlyName": "Route 212 (North) ~ Map Scripts"
+		"FriendlyName": "Route 212 (North) ~ Map Scr."
 	},
 	{
 		"PathID": 3186006436692738580,
 		"FileName": "sp_r212ar0101",
-		"FriendlyName": "Pokémon Mansion - Lobby ~ Map Scripts"
+		"FriendlyName": "Pokémon Mansion - Lobby ~ Map Scr."
 	},
 	{
 		"PathID": 8507682721247036396,
 		"FileName": "sp_r212ar0103",
-		"FriendlyName": "Pokémon Mansion - Backlot Room ~ Map Scripts"
+		"FriendlyName": "Pokémon Mansion - Backlot Room ~ Map Scr."
 	},
 	{
 		"PathID": -1348654230584019009,
 		"FileName": "sp_r212b",
-		"FriendlyName": "Route 212 (South) ~ Map Scripts"
+		"FriendlyName": "Route 212 (South) ~ Map Scr."
 	},
 	{
 		"PathID": 4045544640152792703,
 		"FileName": "sp_r213",
-		"FriendlyName": "Route 213 ~ Map Scripts"
+		"FriendlyName": "Route 213 ~ Map Scr."
 	},
 	{
 		"PathID": -4969234770645773236,
 		"FileName": "sp_r213r0201",
-		"FriendlyName": "Route 213 - House ~ Map Scripts"
+		"FriendlyName": "Route 213 - House ~ Map Scr."
 	},
 	{
 		"PathID": 4841874349450242479,
 		"FileName": "sp_r213r0301",
-		"FriendlyName": "Valor Lakefront - Hotel ~ Map Scripts"
+		"FriendlyName": "Valor Lakefront - Hotel ~ Map Scr."
 	},
 	{
 		"PathID": 4120942533118516219,
 		"FileName": "sp_r214",
-		"FriendlyName": "Route 214 ~ Map Scripts"
+		"FriendlyName": "Route 214 ~ Map Scr."
 	},
 	{
 		"PathID": -5045140741563899578,
 		"FileName": "sp_r215",
-		"FriendlyName": "Route 215 ~ Map Scripts"
+		"FriendlyName": "Route 215 ~ Map Scr."
 	},
 	{
 		"PathID": -4048755675765831529,
 		"FileName": "sp_r217",
-		"FriendlyName": "Route 217 ~ Map Scripts"
+		"FriendlyName": "Route 217 ~ Map Scr."
 	},
 	{
 		"PathID": -6002137751491408194,
 		"FileName": "sp_r221",
-		"FriendlyName": "Route 221 ~ Map Scripts"
+		"FriendlyName": "Route 221 ~ Map Scr."
 	},
 	{
 		"PathID": -5895824975629851144,
 		"FileName": "sp_r221r0101",
-		"FriendlyName": "Ramanas Park - Lobby ~ Map Scripts"
+		"FriendlyName": "Ramanas Park - Lobby ~ Map Scr."
 	},
 	{
 		"PathID": -4000659775327718183,
 		"FileName": "sp_r222",
-		"FriendlyName": "Route 222 ~ Map Scripts"
+		"FriendlyName": "Route 222 ~ Map Scr."
 	},
 	{
 		"PathID": -993000205357757808,
 		"FileName": "sp_r222r0101",
-		"FriendlyName": "Route 222 - House 1 (Left) ~ Map Scripts"
+		"FriendlyName": "Route 222 - House 1 (Left) ~ Map Scr."
 	},
 	{
 		"PathID": 4093071647975971853,
 		"FileName": "sp_r222r0201",
-		"FriendlyName": "Route 222 - House 2 (Right) ~ Map Scripts"
+		"FriendlyName": "Route 222 - House 2 (Right) ~ Map Scr."
 	},
 	{
 		"PathID": 2566712159194843423,
 		"FileName": "sp_r224",
-		"FriendlyName": "Route 224 ~ Map Scripts"
+		"FriendlyName": "Route 224 ~ Map Scr."
 	},
 	{
 		"PathID": -6066569273999842981,
 		"FileName": "sp_r227",
-		"FriendlyName": "Route 227 ~ Map Scripts"
+		"FriendlyName": "Route 227 ~ Map Scr."
 	},
 	{
 		"PathID": -6011259725781814732,
 		"FileName": "sp_SEA01",
-		"FriendlyName": "Boat Cutscene ~ Map Scripts"
+		"FriendlyName": "Boat Cutscene ~ Map Scr."
 	},
 	{
 		"PathID": 5606836097587585825,
 		"FileName": "sp_t01",
-		"FriendlyName": "Twinleaf Town ~ Map Scripts"
+		"FriendlyName": "Twinleaf Town ~ Map Scr."
 	},
 	{
 		"PathID": 8495785745393384955,
 		"FileName": "sp_t01r0102",
-		"FriendlyName": "Twinleaf - Rival's House 2F ~ Map Scripts"
+		"FriendlyName": "Twinleaf - Rival's House 2F ~ Map Scr."
 	},
 	{
 		"PathID": -6751365085317114471,
 		"FileName": "sp_t01r0201",
-		"FriendlyName": "Twinleaf - Player's House 1F ~ Map Scripts"
+		"FriendlyName": "Twinleaf - Player's House 1F ~ Map Scr."
 	},
 	{
 		"PathID": 5152663839286912568,
 		"FileName": "sp_t01r0202",
-		"FriendlyName": "Twinleaf - Player's House 2F ~ Map Scripts"
+		"FriendlyName": "Twinleaf - Player's House 2F ~ Map Scr."
 	},
 	{
 		"PathID": 392053455090341798,
 		"FileName": "sp_t02",
-		"FriendlyName": "Sandgem Town ~ Map Scripts"
+		"FriendlyName": "Sandgem Town ~ Map Scr."
 	},
 	{
 		"PathID": 2399561324800795567,
 		"FileName": "sp_t02pc0101",
-		"FriendlyName": "Sandgem - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Sandgem - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": -3402193842167644362,
 		"FileName": "sp_t02pc0102",
-		"FriendlyName": "Sandgem - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Sandgem - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -7101366949605689480,
 		"FileName": "sp_t02pc0103",
-		"FriendlyName": "Sandgem - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Sandgem - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": 9053983930897482906,
 		"FileName": "sp_t02r0101",
-		"FriendlyName": "Sandgem - Pokémon Research Lab ~ Map Scripts"
+		"FriendlyName": "Sandgem - Pokémon Research Lab ~ Map Scr."
 	},
 	{
 		"PathID": -7934916681373076060,
 		"FileName": "sp_t03pc0101",
-		"FriendlyName": "Floaroma - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Floaroma - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": -1425685803401042292,
 		"FileName": "sp_t03pc0102",
-		"FriendlyName": "Floaroma - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Floaroma - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": 1223784362378049808,
 		"FileName": "sp_t03pc0103",
-		"FriendlyName": "Floaroma - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Floaroma - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": -216282012176939564,
 		"FileName": "sp_t04",
-		"FriendlyName": "Solaceon Town ~ Map Scripts"
+		"FriendlyName": "Solaceon Town ~ Map Scr."
 	},
 	{
 		"PathID": -7535022023009999413,
 		"FileName": "sp_t04pc0101",
-		"FriendlyName": "Solaceon - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Solaceon - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": -4097770898608337298,
 		"FileName": "sp_t04pc0102",
-		"FriendlyName": "Solaceon - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Solaceon - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": 5840039820095360502,
 		"FileName": "sp_t04pc0103",
-		"FriendlyName": "Solaceon - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Solaceon - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": 8525091070289583381,
 		"FileName": "sp_t04r0101",
-		"FriendlyName": "Solaceon - Pokémon Nursery ~ Map Scripts"
+		"FriendlyName": "Solaceon - Pokémon Nursery ~ Map Scr."
 	},
 	{
 		"PathID": 1220010620855506651,
 		"FileName": "sp_t05",
-		"FriendlyName": "Celestic Town ~ Map Scripts"
+		"FriendlyName": "Celestic Town ~ Map Scr."
 	},
 	{
 		"PathID": -1122080362918346432,
 		"FileName": "sp_t05pc0101",
-		"FriendlyName": "Celestic - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Celestic - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": 7013402796782949476,
 		"FileName": "sp_t05pc0102",
-		"FriendlyName": "Celestic - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Celestic - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": 8348228258947019585,
 		"FileName": "sp_t05pc0103",
-		"FriendlyName": "Celestic - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Celestic - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": -2199330594955276066,
 		"FileName": "sp_t06pc0101",
-		"FriendlyName": "Survival Area - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Survival Area - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": -3469480888975960986,
 		"FileName": "sp_t06pc0102",
-		"FriendlyName": "Survival Area - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Survival Area - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -4408842048557486423,
 		"FileName": "sp_t06pc0103",
-		"FriendlyName": "Survival Area - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Survival Area - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": -4785869726349792121,
 		"FileName": "sp_t07pc0101",
-		"FriendlyName": "Resort Area - Pokémon Center 1F ~ Map Scripts"
+		"FriendlyName": "Resort Area - Center 1F ~ Map Scr."
 	},
 	{
 		"PathID": 8972181059415683570,
 		"FileName": "sp_t07pc0102",
-		"FriendlyName": "Resort Area - Pokémon Center 2F ~ Map Scripts"
+		"FriendlyName": "Resort Area - Center 2F ~ Map Scr."
 	},
 	{
 		"PathID": -5418272058243652694,
 		"FileName": "sp_t07pc0103",
-		"FriendlyName": "Resort Area - Pokémon Center B1F ~ Map Scripts"
+		"FriendlyName": "Resort Area - Center B1F ~ Map Scr."
 	},
 	{
 		"PathID": 525916868361415610,
 		"FileName": "sp_t07r0101",
-		"FriendlyName": "Resort Area - Ribbon Syndicate 1F ~ Map Scripts"
+		"FriendlyName": "Resort Area - Ribbon Syndicate 1F ~ Map Scr."
 	},
 	{
 		"PathID": -3374130053141515171,
 		"FileName": "sp_t07r0102",
-		"FriendlyName": "Resort Area - Ribbon Syndicate 2F ~ Map Scripts"
+		"FriendlyName": "Resort Area - Ribbon Syndicate 2F ~ Map Scr."
 	},
 	{
 		"PathID": 9009009293026754729,
 		"FileName": "sp_t07r0103",
-		"FriendlyName": "Resort Area - Ribbon Syndicate Elevator ~ Map Scripts"
+		"FriendlyName": "Resort Area - Ribbon Syndicate Elv. ~ Map Scr."
 	},
 	{
 		"PathID": -2564065781624006021,
 		"FileName": "sp_ug",
-		"FriendlyName": "Underground Scripts ~ Map Scripts"
+		"FriendlyName": "Underground Scripts ~ Map Scr."
 	},
 	{
 		"PathID": 1446737053497400494,
 		"FileName": "sp_uga04",
-		"FriendlyName": "Underground Area 4 (Eterna) ~ Map Scripts"
+		"FriendlyName": "Underground Area 4 (Eterna) ~ Map Scr."
 	},
 	{
 		"PathID": -1551062123381344746,
 		"FileName": "sp_union01",
-		"FriendlyName": "Union Room Receptionist - union01 ~ Map Scripts"
+		"FriendlyName": "Union Room Receptionist - union01 ~ Map Scr."
 	},
 	{
 		"PathID": 1833564524380350592,
 		"FileName": "sp_union02",
-		"FriendlyName": "Union Room Receptionist - union02 ~ Map Scripts"
+		"FriendlyName": "Union Room Receptionist - union02 ~ Map Scr."
 	},
 	{
 		"PathID": -7300600190314711665,
 		"FileName": "sp_union03",
-		"FriendlyName": "Union Room Receptionist - union03 ~ Map Scripts"
+		"FriendlyName": "Union Room Receptionist - union03 ~ Map Scr."
 	},
 	{
 		"PathID": -2184764802173845365,
 		"FileName": "sp_w230",
-		"FriendlyName": "Route 230 ~ Map Scripts"
+		"FriendlyName": "Route 230 ~ Map Scr."
 	},
 	{
 		"PathID": 3705246518089958113,
 		"FileName": "sp_w231",
-		"FriendlyName": "Seabreak Path ~ Map Scripts"
+		"FriendlyName": "Seabreak Path ~ Map Scr."
 	},
 	{
 		"PathID": -6681700904500053561,
@@ -3942,17 +3942,17 @@
 	{
 		"PathID": 103003971004444661,
 		"FileName": "t02pc0101",
-		"FriendlyName": "Sandgem - Pokémon Center 1F"
+		"FriendlyName": "Sandgem - Center 1F"
 	},
 	{
 		"PathID": -3478857308308792874,
 		"FileName": "t02pc0102",
-		"FriendlyName": "Sandgem - Pokémon Center 2F"
+		"FriendlyName": "Sandgem - Center 2F"
 	},
 	{
 		"PathID": 1312296818597789023,
 		"FileName": "t02pc0103",
-		"FriendlyName": "Sandgem - Pokémon Center B1F"
+		"FriendlyName": "Sandgem - Center B1F"
 	},
 	{
 		"PathID": -2237120961410616129,
@@ -3987,17 +3987,17 @@
 	{
 		"PathID": 7703721124268796992,
 		"FileName": "t03pc0101",
-		"FriendlyName": "Floaroma - Pokémon Center 1F"
+		"FriendlyName": "Floaroma - Center 1F"
 	},
 	{
 		"PathID": -722452745152054841,
 		"FileName": "t03pc0102",
-		"FriendlyName": "Floaroma - Pokémon Center 2F"
+		"FriendlyName": "Floaroma - Center 2F"
 	},
 	{
 		"PathID": 6787552448135620102,
 		"FileName": "t03pc0103",
-		"FriendlyName": "Floaroma - Pokémon Center B1F"
+		"FriendlyName": "Floaroma - Center B1F"
 	},
 	{
 		"PathID": -2422847043401027374,
@@ -4027,17 +4027,17 @@
 	{
 		"PathID": 9124431867936031127,
 		"FileName": "t04pc0101",
-		"FriendlyName": "Solaceon - Pokémon Center 1F"
+		"FriendlyName": "Solaceon - Center 1F"
 	},
 	{
 		"PathID": -8794071574586011378,
 		"FileName": "t04pc0102",
-		"FriendlyName": "Solaceon - Pokémon Center 2F"
+		"FriendlyName": "Solaceon - Center 2F"
 	},
 	{
 		"PathID": 4097190116998759008,
 		"FileName": "t04pc0103",
-		"FriendlyName": "Solaceon - Pokémon Center B1F"
+		"FriendlyName": "Solaceon - Center B1F"
 	},
 	{
 		"PathID": -7866444181350441977,
@@ -4077,17 +4077,17 @@
 	{
 		"PathID": -8601262105795400334,
 		"FileName": "t05pc0101",
-		"FriendlyName": "Celestic - Pokémon Center 1F"
+		"FriendlyName": "Celestic - Center 1F"
 	},
 	{
 		"PathID": 2712943776378476749,
 		"FileName": "t05pc0102",
-		"FriendlyName": "Celestic - Pokémon Center 2F"
+		"FriendlyName": "Celestic - Center 2F"
 	},
 	{
 		"PathID": 5703264370631940821,
 		"FileName": "t05pc0103",
-		"FriendlyName": "Celestic - Pokémon Center B1F"
+		"FriendlyName": "Celestic - Center B1F"
 	},
 	{
 		"PathID": 3026580659956695962,
@@ -4127,17 +4127,17 @@
 	{
 		"PathID": -6606991990818741592,
 		"FileName": "t06pc0101",
-		"FriendlyName": "Survival Area - Pokémon Center 1F"
+		"FriendlyName": "Survival Area - Center 1F"
 	},
 	{
 		"PathID": -5441623284220005159,
 		"FileName": "t06pc0102",
-		"FriendlyName": "Survival Area - Pokémon Center 2F"
+		"FriendlyName": "Survival Area - Center 2F"
 	},
 	{
 		"PathID": -1714431642060089830,
 		"FileName": "t06pc0103",
-		"FriendlyName": "Survival Area - Pokémon Center B1F"
+		"FriendlyName": "Survival Area - Center B1F"
 	},
 	{
 		"PathID": -7837201740848965472,
@@ -4167,17 +4167,17 @@
 	{
 		"PathID": -6632593731386633599,
 		"FileName": "t07pc0101",
-		"FriendlyName": "Resort Area - Pokémon Center 1F"
+		"FriendlyName": "Resort Area - Center 1F"
 	},
 	{
 		"PathID": -3402472288116439598,
 		"FileName": "t07pc0102",
-		"FriendlyName": "Resort Area - Pokémon Center 2F"
+		"FriendlyName": "Resort Area - Center 2F"
 	},
 	{
 		"PathID": 36387151132732751,
 		"FileName": "t07pc0103",
-		"FriendlyName": "Resort Area - Pokémon Center B1F"
+		"FriendlyName": "Resort Area - Center B1F"
 	},
 	{
 		"PathID": 6696318906673148557,
@@ -4192,7 +4192,7 @@
 	{
 		"PathID": 8278052583061167737,
 		"FileName": "t07r0103",
-		"FriendlyName": "Resort Area - Ribbon Syndicate Elevator"
+		"FriendlyName": "Resort Area - Ribbon Syndicate Elv."
 	},
 	{
 		"PathID": -5138412101080376936,
