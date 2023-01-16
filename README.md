@@ -15,7 +15,7 @@ A full-blown editor for all scripts used by the game!
 - Editor powered by Monaco Editor, with support for autocompletion and syntax highlighting
 - "Compile" the script to validate if there are any missing arguments or other issues
 - Look through the 1000+ commands that can be used and get details on what they do and what arguments they need
-- Add or delete scripts (Not yet implemented)
+- Add or delete scripts
 
 [Usage Example](https://youtu.be/CkC6rlwUOvw)
 
