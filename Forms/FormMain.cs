@@ -41,7 +41,7 @@ namespace BrilliantShiningScriptEditor.Forms
             LoadPage();
         }
 
-        private void webEditor_NavigationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
+        private void webEditor_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
         {
             stripMain.Enabled = true;
         }
@@ -65,6 +65,7 @@ namespace BrilliantShiningScriptEditor.Forms
             string code = ExecuteEditorScript("editor.getValue()");
             code = code.Replace("\"", "");
             code = code.Replace("\\n", "\n");
+            code = code.Replace("\\r", "");
             return code;
         }
 
@@ -97,6 +98,11 @@ namespace BrilliantShiningScriptEditor.Forms
 
             return wait;
         }
+
+        private void FormMain_SizeChanged(object sender, EventArgs e)
+        {
+            ExecuteEditorScript("editor.layout()");
+        }
         #endregion
 
         private void AddToolTips()
@@ -122,8 +128,9 @@ namespace BrilliantShiningScriptEditor.Forms
         }
 
         private void UpdateScriptBox(Script script)
-        { 
+        {
             SetEditorValue(scriptEditorEngine.DecompileScript(script));
+            ExecuteEditorScript("editor.updateOptions({readOnly: false})");
         }
 
         private void UpdateCommandInfo(CommandInfo command)
@@ -163,11 +170,45 @@ namespace BrilliantShiningScriptEditor.Forms
         private void btnScriptAdd_Click(object sender, EventArgs e)
         {
             // Add Script
+
+            FormTextBox newScriptForm = new FormTextBox("Add Script", "Enter the name for the script:", "Confirm", "Cancel");
+
+            if (newScriptForm.ShowDialog() == DialogResult.OK)
+            {
+                string result = newScriptForm.Result;
+                List<Script> list = ((ScriptFile)comboScriptFile.SelectedItem).Scripts;
+                if (string.IsNullOrWhiteSpace(result))
+                {
+                    MessageBox.Show("The given Script name is empty.", "Invalid Script Name", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (list.Select(s => s.Name).Contains(result))
+                {
+                    MessageBox.Show("The given Script name already exists in this file.", "Invalid Script Name", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    int endId = FileConstants.Commands.Where(c => c.Name == "_END").Select(c => c.Id).DefaultIfEmpty(0).First();
+                    Argument endArgument = new Argument(ArgumentType.Command, endId);
+                    Script script = new Script(result, new List<Command>() { new Command(new List<Argument>() { endArgument }) });
+                    list.Add(script);
+                    MessageBox.Show("Added the new script in memory successfully! Don't forget to export all your changes.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    comboScriptFile_SelectedIndexChanged(this, new EventArgs());
+                }
+            }
         }
 
         private void btnScriptRemove_Click(object sender, EventArgs e)
         {
             // Remove Script
+
+            if (MessageBox.Show("Are you sure you want to delete this script from memory? The script will be completely gone when you export your changes.", "Script Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                List<Script> list = ((ScriptFile)comboScriptFile.SelectedItem).Scripts;
+                Script script = (Script)comboScript.SelectedItem;
+                list.Remove(script);
+                MessageBox.Show("Removed the new script from memory successfully! Don't forget to export all your changes.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboScriptFile_SelectedIndexChanged(this, new EventArgs());
+            }
         }
 
         private void btnScriptCompile_Click(object sender, EventArgs e)
@@ -237,7 +278,8 @@ namespace BrilliantShiningScriptEditor.Forms
                         tbtnOpen.Enabled = false;
                         btnScriptCompile.Enabled = true;
                         btnScriptSave.Enabled = true;
-                        ExecuteEditorScript("editor.updateOptions({readOnly: false})");
+                        btnScriptAdd.Enabled = true;
+                        btnScriptRemove.Enabled = true;
                     }
                 }
                 else

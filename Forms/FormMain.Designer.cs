@@ -301,6 +301,7 @@ namespace BrilliantShiningScriptEditor.Forms
             this.Name = "FormMain";
             this.Text = "Brilliant Shining Script Editor";
             this.Load += new System.EventHandler(this.FormMain_Load);
+            this.SizeChanged += new System.EventHandler(this.FormMain_SizeChanged);
             this.stripMain.ResumeLayout(false);
             this.stripMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webEditor)).EndInit();

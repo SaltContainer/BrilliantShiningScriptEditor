@@ -6,3 +6,9 @@
 	readOnly: true,
 	theme: 'vs-dark'
 });
+var outputElem = document.getElementById('output');
+var model = editor.getModel();
+model.setEOL(monaco.editor.EndOfLineSequence.LF);
+editor.onDidChangeModelContent(async (e) => {
+	outputElem.innerHTML = JSON.stringify(editor.getValue());
+});
