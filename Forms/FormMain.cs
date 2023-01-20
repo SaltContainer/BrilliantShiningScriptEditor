@@ -25,6 +25,8 @@ namespace BrilliantShiningScriptEditor.Forms
         private ScriptEditorEngine scriptEditorEngine;
         private List<ScriptFile> scriptFiles;
 
+        private bool editorLoaded = false;
+
         public FormMain()
         {
             InitializeComponent();
@@ -44,6 +46,7 @@ namespace BrilliantShiningScriptEditor.Forms
         private void webEditor_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
         {
             stripMain.Enabled = true;
+            editorLoaded = true;
         }
 
         private async void LoadPage()
@@ -101,7 +104,7 @@ namespace BrilliantShiningScriptEditor.Forms
 
         private void FormMain_SizeChanged(object sender, EventArgs e)
         {
-            ExecuteEditorScript("editor.layout()");
+            if (editorLoaded) ExecuteEditorScript("editor.layout()");
         }
         #endregion
 
