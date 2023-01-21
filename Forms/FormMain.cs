@@ -22,6 +22,8 @@ namespace BrilliantShiningScriptEditor.Forms
 {
     public partial class FormMain : Form
     {
+        private FormReference formReference;
+
         private ScriptEditorEngine scriptEditorEngine;
         private List<ScriptFile> scriptFiles;
 
@@ -33,8 +35,6 @@ namespace BrilliantShiningScriptEditor.Forms
             AddToolTips();
 
             scriptEditorEngine = new ScriptEditorEngine();
-
-            comboScriptCommand.DataSource = FileConstants.Commands;
         }
 
         #region Web View Stuff
@@ -134,19 +134,6 @@ namespace BrilliantShiningScriptEditor.Forms
         {
             SetEditorValue(scriptEditorEngine.DecompileScript(script));
             ExecuteEditorScript("editor.updateOptions({readOnly: false})");
-        }
-
-        private void UpdateCommandInfo(CommandInfo command)
-        {
-            lbScriptCommandName.Text = string.Format("{0} - {1}", command.Id, command.Name);
-            string arguments = "";
-            if (command.Arguments.Count == 0) arguments = "No arguments.";
-            else arguments = string.Join("\n", command.Arguments.Select(a => string.Format("[{0}] {1} - {2}{3}", string.Join(", ", a.Type), a.Name, a.Optional ? "(Optional) " : "", a.Description)));
-            List<string> descriptionItems = new List<string>();
-            if (command.Animation) descriptionItems.Add("[Animation command]");
-            if (command.Dummy) descriptionItems.Add("This command is dummied out and does nothing.");
-            else descriptionItems.Add(command.Description == "" ? "This command is not documented yet." : command.Description);
-            lbScriptCommandDescription.Text = string.Format("{0}\n\nArguments:\n{1}", string.Join(" ", descriptionItems), arguments);
         }
 
         private void SaveScriptInMemory(Script script)
@@ -306,14 +293,16 @@ namespace BrilliantShiningScriptEditor.Forms
             }
         }
 
-        private void lbScriptCommandName_SizeChanged(object sender, EventArgs e)
+        private void tbtnReference_Click(object sender, EventArgs e)
         {
-            lbScriptCommandDescription.Location = new Point(lbScriptCommandDescription.Location.X, lbScriptCommandName.Size.Height + 74);
-        }
-
-        private void comboScriptCommand_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            UpdateCommandInfo((CommandInfo)comboScriptCommand.SelectedItem);
+            if (formReference == null)
+            {
+                formReference = new FormReference();
+            }
+            if (!formReference.Visible)
+            {
+                formReference.Show(this);
+            }
         }
     }
 }

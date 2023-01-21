@@ -34,14 +34,11 @@ namespace BrilliantShiningScriptEditor.Forms
             this.stripMain = new System.Windows.Forms.ToolStrip();
             this.tbtnOpen = new System.Windows.Forms.ToolStripButton();
             this.tbtnSave = new System.Windows.Forms.ToolStripButton();
+            this.tsepFirst = new System.Windows.Forms.ToolStripSeparator();
+            this.tbtnReference = new System.Windows.Forms.ToolStripButton();
             this.webEditor = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.grpScriptFile = new System.Windows.Forms.GroupBox();
             this.checkScriptSafe = new System.Windows.Forms.CheckBox();
-            this.grpScriptCommand = new System.Windows.Forms.GroupBox();
-            this.lbScriptCommand = new System.Windows.Forms.Label();
-            this.comboScriptCommand = new System.Windows.Forms.ComboBox();
-            this.lbScriptCommandDescription = new System.Windows.Forms.Label();
-            this.lbScriptCommandName = new System.Windows.Forms.Label();
             this.lbScript = new System.Windows.Forms.Label();
             this.comboScript = new System.Windows.Forms.ComboBox();
             this.comboScriptFile = new System.Windows.Forms.ComboBox();
@@ -54,7 +51,6 @@ namespace BrilliantShiningScriptEditor.Forms
             this.stripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webEditor)).BeginInit();
             this.grpScriptFile.SuspendLayout();
-            this.grpScriptCommand.SuspendLayout();
             this.SuspendLayout();
             // 
             // stripMain
@@ -63,7 +59,9 @@ namespace BrilliantShiningScriptEditor.Forms
             this.stripMain.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.stripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tbtnOpen,
-            this.tbtnSave});
+            this.tbtnSave,
+            this.tsepFirst,
+            this.tbtnReference});
             this.stripMain.Location = new System.Drawing.Point(0, 0);
             this.stripMain.Name = "stripMain";
             this.stripMain.Size = new System.Drawing.Size(1108, 39);
@@ -91,6 +89,21 @@ namespace BrilliantShiningScriptEditor.Forms
             this.tbtnSave.Text = "Export Changes";
             this.tbtnSave.Click += new System.EventHandler(this.tbtnSave_Click);
             // 
+            // tsepFirst
+            // 
+            this.tsepFirst.Name = "tsepFirst";
+            this.tsepFirst.Size = new System.Drawing.Size(6, 39);
+            // 
+            // tbtnReference
+            // 
+            this.tbtnReference.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbtnReference.Image = global::BrilliantShiningScriptEditor.Properties.Resources.info;
+            this.tbtnReference.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbtnReference.Name = "tbtnReference";
+            this.tbtnReference.Size = new System.Drawing.Size(36, 36);
+            this.tbtnReference.Text = "tbtnReference";
+            this.tbtnReference.Click += new System.EventHandler(this.tbtnReference_Click);
+            // 
             // webEditor
             // 
             this.webEditor.AllowExternalDrop = true;
@@ -111,7 +124,6 @@ namespace BrilliantShiningScriptEditor.Forms
             this.grpScriptFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpScriptFile.Controls.Add(this.checkScriptSafe);
-            this.grpScriptFile.Controls.Add(this.grpScriptCommand);
             this.grpScriptFile.Controls.Add(this.lbScript);
             this.grpScriptFile.Controls.Add(this.comboScript);
             this.grpScriptFile.Controls.Add(this.comboScriptFile);
@@ -138,65 +150,6 @@ namespace BrilliantShiningScriptEditor.Forms
             this.checkScriptSafe.TabIndex = 13;
             this.checkScriptSafe.Text = "Safe Mode";
             this.checkScriptSafe.UseVisualStyleBackColor = true;
-            // 
-            // grpScriptCommand
-            // 
-            this.grpScriptCommand.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpScriptCommand.Controls.Add(this.lbScriptCommand);
-            this.grpScriptCommand.Controls.Add(this.comboScriptCommand);
-            this.grpScriptCommand.Controls.Add(this.lbScriptCommandDescription);
-            this.grpScriptCommand.Controls.Add(this.lbScriptCommandName);
-            this.grpScriptCommand.Location = new System.Drawing.Point(9, 225);
-            this.grpScriptCommand.Name = "grpScriptCommand";
-            this.grpScriptCommand.Size = new System.Drawing.Size(235, 338);
-            this.grpScriptCommand.TabIndex = 14;
-            this.grpScriptCommand.TabStop = false;
-            this.grpScriptCommand.Text = "Command Reference";
-            // 
-            // lbScriptCommand
-            // 
-            this.lbScriptCommand.AutoSize = true;
-            this.lbScriptCommand.Location = new System.Drawing.Point(6, 25);
-            this.lbScriptCommand.Name = "lbScriptCommand";
-            this.lbScriptCommand.Size = new System.Drawing.Size(54, 13);
-            this.lbScriptCommand.TabIndex = 10;
-            this.lbScriptCommand.Text = "Command";
-            // 
-            // comboScriptCommand
-            // 
-            this.comboScriptCommand.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboScriptCommand.FormattingEnabled = true;
-            this.comboScriptCommand.Location = new System.Drawing.Point(6, 41);
-            this.comboScriptCommand.Name = "comboScriptCommand";
-            this.comboScriptCommand.Size = new System.Drawing.Size(223, 21);
-            this.comboScriptCommand.TabIndex = 9;
-            this.comboScriptCommand.SelectedIndexChanged += new System.EventHandler(this.comboScriptCommand_SelectedIndexChanged);
-            // 
-            // lbScriptCommandDescription
-            // 
-            this.lbScriptCommandDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbScriptCommandDescription.Location = new System.Drawing.Point(6, 129);
-            this.lbScriptCommandDescription.Name = "lbScriptCommandDescription";
-            this.lbScriptCommandDescription.Size = new System.Drawing.Size(223, 206);
-            this.lbScriptCommandDescription.TabIndex = 12;
-            this.lbScriptCommandDescription.Text = "Script";
-            // 
-            // lbScriptCommandName
-            // 
-            this.lbScriptCommandName.AutoSize = true;
-            this.lbScriptCommandName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbScriptCommandName.Location = new System.Drawing.Point(6, 65);
-            this.lbScriptCommandName.MaximumSize = new System.Drawing.Size(223, 64);
-            this.lbScriptCommandName.Name = "lbScriptCommandName";
-            this.lbScriptCommandName.Size = new System.Drawing.Size(107, 18);
-            this.lbScriptCommandName.TabIndex = 11;
-            this.lbScriptCommandName.Text = "111 - _NAME";
-            this.lbScriptCommandName.SizeChanged += new System.EventHandler(this.lbScriptCommandName_SizeChanged);
             // 
             // lbScript
             // 
@@ -307,8 +260,6 @@ namespace BrilliantShiningScriptEditor.Forms
             ((System.ComponentModel.ISupportInitialize)(this.webEditor)).EndInit();
             this.grpScriptFile.ResumeLayout(false);
             this.grpScriptFile.PerformLayout();
-            this.grpScriptCommand.ResumeLayout(false);
-            this.grpScriptCommand.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,14 +279,11 @@ namespace BrilliantShiningScriptEditor.Forms
         private System.Windows.Forms.Label lbScript;
         private System.Windows.Forms.ComboBox comboScript;
         private System.Windows.Forms.Button btnScriptRemove;
-        private System.Windows.Forms.GroupBox grpScriptCommand;
-        private System.Windows.Forms.Label lbScriptCommand;
-        private System.Windows.Forms.ComboBox comboScriptCommand;
-        private System.Windows.Forms.Label lbScriptCommandDescription;
-        private System.Windows.Forms.Label lbScriptCommandName;
         private System.Windows.Forms.CheckBox checkScriptSafe;
         private Microsoft.Web.WebView2.WinForms.WebView2 webEditor;
         private System.Windows.Forms.ToolTip ttFormMain;
+        private System.Windows.Forms.ToolStripSeparator tsepFirst;
+        private System.Windows.Forms.ToolStripButton tbtnReference;
     }
 }
 
