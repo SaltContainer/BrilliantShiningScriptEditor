@@ -115,6 +115,12 @@
     <Compile Include="Forms\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormReference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReference.Designer.cs">
+      <DependentUpon>FormReference.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormTextBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReference.resx">
+      <DependentUpon>FormReference.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormTextBox.resx">
       <DependentUpon>FormTextBox.cs</DependentUpon>
@@ -207,6 +216,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Icons\info.png" />
+    <None Include="Icons\script_info.png" />
     <Content Include="Monaco\**">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

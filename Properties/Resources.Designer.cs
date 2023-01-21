@@ -231,6 +231,16 @@ namespace BrilliantShiningScriptEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap info {
+            get {
+                object obj = ResourceManager.GetObject("info", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save {
             get {
                 object obj = ResourceManager.GetObject("save", resourceCulture);
@@ -254,6 +264,16 @@ namespace BrilliantShiningScriptEditor.Properties {
         internal static System.Drawing.Bitmap script_compile {
             get {
                 object obj = ResourceManager.GetObject("script_compile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap script_info {
+            get {
+                object obj = ResourceManager.GetObject("script_info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
