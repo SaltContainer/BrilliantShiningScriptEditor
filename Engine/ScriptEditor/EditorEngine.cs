@@ -130,6 +130,7 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
             {
                 json.Add(new JObject(
                     new JProperty("PathID", scriptFile.PathID),
+                    new JProperty("FileName", scriptFile.FileName),
                     new JProperty("Scripts",
                         new JArray(
                             from s in scriptFile.Scripts

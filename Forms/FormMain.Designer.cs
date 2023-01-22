@@ -38,19 +38,25 @@ namespace BrilliantShiningScriptEditor.Forms
             this.tbtnReference = new System.Windows.Forms.ToolStripButton();
             this.webEditor = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.grpScriptFile = new System.Windows.Forms.GroupBox();
+            this.treeFiles = new System.Windows.Forms.TreeView();
+            this.imgTree = new System.Windows.Forms.ImageList(this.components);
             this.checkScriptSafe = new System.Windows.Forms.CheckBox();
-            this.lbScript = new System.Windows.Forms.Label();
-            this.comboScript = new System.Windows.Forms.ComboBox();
-            this.comboScriptFile = new System.Windows.Forms.ComboBox();
-            this.lbScriptFile = new System.Windows.Forms.Label();
-            this.btnScriptAdd = new System.Windows.Forms.Button();
-            this.btnScriptRemove = new System.Windows.Forms.Button();
             this.btnScriptCompile = new System.Windows.Forms.Button();
             this.btnScriptSave = new System.Windows.Forms.Button();
             this.ttFormMain = new System.Windows.Forms.ToolTip(this.components);
+            this.cntxtScriptFile = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cntxtitemScriptFileOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.cntxtitemScriptFileRename = new System.Windows.Forms.ToolStripMenuItem();
+            this.cntxtitemScriptFileAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.cntxtScript = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cntxtitemScriptOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.cntxtitemScriptRename = new System.Windows.Forms.ToolStripMenuItem();
+            this.cntxtitemScriptDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.stripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webEditor)).BeginInit();
             this.grpScriptFile.SuspendLayout();
+            this.cntxtScriptFile.SuspendLayout();
+            this.cntxtScript.SuspendLayout();
             this.SuspendLayout();
             // 
             // stripMain
@@ -123,13 +129,8 @@ namespace BrilliantShiningScriptEditor.Forms
             // 
             this.grpScriptFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpScriptFile.Controls.Add(this.treeFiles);
             this.grpScriptFile.Controls.Add(this.checkScriptSafe);
-            this.grpScriptFile.Controls.Add(this.lbScript);
-            this.grpScriptFile.Controls.Add(this.comboScript);
-            this.grpScriptFile.Controls.Add(this.comboScriptFile);
-            this.grpScriptFile.Controls.Add(this.lbScriptFile);
-            this.grpScriptFile.Controls.Add(this.btnScriptAdd);
-            this.grpScriptFile.Controls.Add(this.btnScriptRemove);
             this.grpScriptFile.Controls.Add(this.btnScriptCompile);
             this.grpScriptFile.Controls.Add(this.btnScriptSave);
             this.grpScriptFile.Location = new System.Drawing.Point(846, 42);
@@ -139,90 +140,46 @@ namespace BrilliantShiningScriptEditor.Forms
             this.grpScriptFile.TabStop = false;
             this.grpScriptFile.Text = "Script File Control";
             // 
+            // treeFiles
+            // 
+            this.treeFiles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.treeFiles.Enabled = false;
+            this.treeFiles.ImageIndex = 0;
+            this.treeFiles.ImageList = this.imgTree;
+            this.treeFiles.Location = new System.Drawing.Point(6, 19);
+            this.treeFiles.Name = "treeFiles";
+            this.treeFiles.SelectedImageIndex = 0;
+            this.treeFiles.Size = new System.Drawing.Size(238, 483);
+            this.treeFiles.TabIndex = 14;
+            this.treeFiles.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeFiles_NodeMouseClick);
+            this.treeFiles.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeFiles_NodeMouseDoubleClick);
+            // 
+            // imgTree
+            // 
+            this.imgTree.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgTree.ImageStream")));
+            this.imgTree.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgTree.Images.SetKeyName(0, "script_base.png");
+            this.imgTree.Images.SetKeyName(1, "script_stack.png");
+            // 
             // checkScriptSafe
             // 
             this.checkScriptSafe.AutoSize = true;
             this.checkScriptSafe.Checked = true;
             this.checkScriptSafe.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkScriptSafe.Location = new System.Drawing.Point(160, 202);
+            this.checkScriptSafe.Location = new System.Drawing.Point(148, 528);
             this.checkScriptSafe.Name = "checkScriptSafe";
             this.checkScriptSafe.Size = new System.Drawing.Size(78, 17);
             this.checkScriptSafe.TabIndex = 13;
             this.checkScriptSafe.Text = "Safe Mode";
             this.checkScriptSafe.UseVisualStyleBackColor = true;
             // 
-            // lbScript
-            // 
-            this.lbScript.AutoSize = true;
-            this.lbScript.Location = new System.Drawing.Point(6, 68);
-            this.lbScript.Name = "lbScript";
-            this.lbScript.Size = new System.Drawing.Size(34, 13);
-            this.lbScript.TabIndex = 7;
-            this.lbScript.Text = "Script";
-            // 
-            // comboScript
-            // 
-            this.comboScript.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboScript.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboScript.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboScript.FormattingEnabled = true;
-            this.comboScript.Location = new System.Drawing.Point(6, 84);
-            this.comboScript.Name = "comboScript";
-            this.comboScript.Size = new System.Drawing.Size(238, 21);
-            this.comboScript.TabIndex = 6;
-            this.comboScript.SelectedIndexChanged += new System.EventHandler(this.comboScript_SelectedIndexChanged);
-            // 
-            // comboScriptFile
-            // 
-            this.comboScriptFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboScriptFile.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboScriptFile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboScriptFile.FormattingEnabled = true;
-            this.comboScriptFile.Location = new System.Drawing.Point(6, 34);
-            this.comboScriptFile.Name = "comboScriptFile";
-            this.comboScriptFile.Size = new System.Drawing.Size(238, 21);
-            this.comboScriptFile.TabIndex = 1;
-            this.comboScriptFile.SelectedIndexChanged += new System.EventHandler(this.comboScriptFile_SelectedIndexChanged);
-            // 
-            // lbScriptFile
-            // 
-            this.lbScriptFile.AutoSize = true;
-            this.lbScriptFile.Location = new System.Drawing.Point(6, 18);
-            this.lbScriptFile.Name = "lbScriptFile";
-            this.lbScriptFile.Size = new System.Drawing.Size(53, 13);
-            this.lbScriptFile.TabIndex = 2;
-            this.lbScriptFile.Text = "Script File";
-            // 
-            // btnScriptAdd
-            // 
-            this.btnScriptAdd.Enabled = false;
-            this.btnScriptAdd.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_add;
-            this.btnScriptAdd.Location = new System.Drawing.Point(6, 130);
-            this.btnScriptAdd.Name = "btnScriptAdd";
-            this.btnScriptAdd.Size = new System.Drawing.Size(55, 55);
-            this.btnScriptAdd.TabIndex = 5;
-            this.btnScriptAdd.UseVisualStyleBackColor = true;
-            this.btnScriptAdd.Click += new System.EventHandler(this.btnScriptAdd_Click);
-            // 
-            // btnScriptRemove
-            // 
-            this.btnScriptRemove.Enabled = false;
-            this.btnScriptRemove.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_remove;
-            this.btnScriptRemove.Location = new System.Drawing.Point(67, 130);
-            this.btnScriptRemove.Name = "btnScriptRemove";
-            this.btnScriptRemove.Size = new System.Drawing.Size(55, 55);
-            this.btnScriptRemove.TabIndex = 8;
-            this.btnScriptRemove.UseVisualStyleBackColor = true;
-            this.btnScriptRemove.Click += new System.EventHandler(this.btnScriptRemove_Click);
-            // 
             // btnScriptCompile
             // 
             this.btnScriptCompile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptCompile.Enabled = false;
             this.btnScriptCompile.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_compile;
-            this.btnScriptCompile.Location = new System.Drawing.Point(128, 130);
+            this.btnScriptCompile.Location = new System.Drawing.Point(6, 508);
             this.btnScriptCompile.Name = "btnScriptCompile";
             this.btnScriptCompile.Size = new System.Drawing.Size(55, 55);
             this.btnScriptCompile.TabIndex = 3;
@@ -234,12 +191,73 @@ namespace BrilliantShiningScriptEditor.Forms
             this.btnScriptSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptSave.Enabled = false;
             this.btnScriptSave.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_save;
-            this.btnScriptSave.Location = new System.Drawing.Point(189, 130);
+            this.btnScriptSave.Location = new System.Drawing.Point(67, 508);
             this.btnScriptSave.Name = "btnScriptSave";
             this.btnScriptSave.Size = new System.Drawing.Size(55, 55);
             this.btnScriptSave.TabIndex = 4;
             this.btnScriptSave.UseVisualStyleBackColor = true;
             this.btnScriptSave.Click += new System.EventHandler(this.btnScriptSave_Click);
+            // 
+            // cntxtScriptFile
+            // 
+            this.cntxtScriptFile.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cntxtitemScriptFileOpen,
+            this.cntxtitemScriptFileRename,
+            this.cntxtitemScriptFileAdd});
+            this.cntxtScriptFile.Name = "cntxtScriptFile";
+            this.cntxtScriptFile.Size = new System.Drawing.Size(130, 70);
+            this.cntxtScriptFile.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cntxtScriptFile_ItemClicked);
+            // 
+            // cntxtitemScriptFileOpen
+            // 
+            this.cntxtitemScriptFileOpen.Enabled = false;
+            this.cntxtitemScriptFileOpen.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_base;
+            this.cntxtitemScriptFileOpen.Name = "cntxtitemScriptFileOpen";
+            this.cntxtitemScriptFileOpen.Size = new System.Drawing.Size(129, 22);
+            this.cntxtitemScriptFileOpen.Text = "Open";
+            // 
+            // cntxtitemScriptFileRename
+            // 
+            this.cntxtitemScriptFileRename.Name = "cntxtitemScriptFileRename";
+            this.cntxtitemScriptFileRename.Size = new System.Drawing.Size(129, 22);
+            this.cntxtitemScriptFileRename.Text = "Rename";
+            // 
+            // cntxtitemScriptFileAdd
+            // 
+            this.cntxtitemScriptFileAdd.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_add;
+            this.cntxtitemScriptFileAdd.Name = "cntxtitemScriptFileAdd";
+            this.cntxtitemScriptFileAdd.Size = new System.Drawing.Size(129, 22);
+            this.cntxtitemScriptFileAdd.Text = "Add Script";
+            // 
+            // cntxtScript
+            // 
+            this.cntxtScript.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cntxtitemScriptOpen,
+            this.cntxtitemScriptRename,
+            this.cntxtitemScriptDelete});
+            this.cntxtScript.Name = "cntxtScriptFile";
+            this.cntxtScript.Size = new System.Drawing.Size(181, 92);
+            this.cntxtScript.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cntxtScript_ItemClicked);
+            // 
+            // cntxtitemScriptOpen
+            // 
+            this.cntxtitemScriptOpen.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_base;
+            this.cntxtitemScriptOpen.Name = "cntxtitemScriptOpen";
+            this.cntxtitemScriptOpen.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptOpen.Text = "Open";
+            // 
+            // cntxtitemScriptRename
+            // 
+            this.cntxtitemScriptRename.Name = "cntxtitemScriptRename";
+            this.cntxtitemScriptRename.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptRename.Text = "Rename";
+            // 
+            // cntxtitemScriptDelete
+            // 
+            this.cntxtitemScriptDelete.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_remove;
+            this.cntxtitemScriptDelete.Name = "cntxtitemScriptDelete";
+            this.cntxtitemScriptDelete.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptDelete.Text = "Delete";
             // 
             // FormMain
             // 
@@ -260,6 +278,8 @@ namespace BrilliantShiningScriptEditor.Forms
             ((System.ComponentModel.ISupportInitialize)(this.webEditor)).EndInit();
             this.grpScriptFile.ResumeLayout(false);
             this.grpScriptFile.PerformLayout();
+            this.cntxtScriptFile.ResumeLayout(false);
+            this.cntxtScript.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,18 +292,22 @@ namespace BrilliantShiningScriptEditor.Forms
         private System.Windows.Forms.ToolStripButton tbtnSave;
         private System.Windows.Forms.Button btnScriptSave;
         private System.Windows.Forms.Button btnScriptCompile;
-        private System.Windows.Forms.Label lbScriptFile;
-        private System.Windows.Forms.ComboBox comboScriptFile;
         private System.Windows.Forms.GroupBox grpScriptFile;
-        private System.Windows.Forms.Button btnScriptAdd;
-        private System.Windows.Forms.Label lbScript;
-        private System.Windows.Forms.ComboBox comboScript;
-        private System.Windows.Forms.Button btnScriptRemove;
         private System.Windows.Forms.CheckBox checkScriptSafe;
         private Microsoft.Web.WebView2.WinForms.WebView2 webEditor;
         private System.Windows.Forms.ToolTip ttFormMain;
         private System.Windows.Forms.ToolStripSeparator tsepFirst;
         private System.Windows.Forms.ToolStripButton tbtnReference;
+        private System.Windows.Forms.TreeView treeFiles;
+        private System.Windows.Forms.ImageList imgTree;
+        private System.Windows.Forms.ContextMenuStrip cntxtScriptFile;
+        private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptFileOpen;
+        private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptFileRename;
+        private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptFileAdd;
+        private System.Windows.Forms.ContextMenuStrip cntxtScript;
+        private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptOpen;
+        private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptRename;
+        private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptDelete;
     }
 }
 
