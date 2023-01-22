@@ -193,6 +193,55 @@ namespace BrilliantShiningScriptEditor.Forms
             }
         }
 
+        private void RenameScriptFile(ScriptFile scriptFile)
+        {
+            FormTextBox renameScriptForm = new FormTextBox("Rename Script File", "Enter the new name for the script file (This will replace the actual file name, not the friendly name):", "Confirm", "Cancel");
+
+            if (renameScriptForm.ShowDialog() == DialogResult.OK)
+            {
+                string result = renameScriptForm.Result;
+                if (string.IsNullOrWhiteSpace(result))
+                {
+                    MessageBox.Show("The given Script File name is empty.", "Invalid Script File Name", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (scriptFiles.Select(s => s.FileName).Contains(result))
+                {
+                    MessageBox.Show("The given Script File name already exists.", "Invalid Script File Name", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    scriptFile.FileName = result;
+                    MessageBox.Show("Renamed the Script File in memory successfully! Don't forget to export all your changes.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    UpdateScriptFileList(scriptFiles);
+                }
+            }
+        }
+
+        private void RenameScript(ScriptFile scriptFile, Script script)
+        {
+            FormTextBox renameScriptForm = new FormTextBox("Rename Script", "Enter the new name for the script:", "Confirm", "Cancel");
+
+            if (renameScriptForm.ShowDialog() == DialogResult.OK)
+            {
+                string result = renameScriptForm.Result;
+                List<Script> list = scriptFile.Scripts;
+                if (string.IsNullOrWhiteSpace(result))
+                {
+                    MessageBox.Show("The given Script name is empty.", "Invalid Script Name", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (list.Select(s => s.Name).Contains(result))
+                {
+                    MessageBox.Show("The given Script name already exists in this file.", "Invalid Script Name", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    script.Name = result;
+                    MessageBox.Show("Renamed the Script in memory successfully! Don't forget to export all your changes.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    UpdateScriptFileList(scriptFiles);
+                }
+            }
+        }
+
         private void DeleteScript(ScriptFile scriptFile, Script script)
         {
             if (MessageBox.Show("Are you sure you want to delete this script from memory? The script will be completely gone when you export your changes.", "Script Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
@@ -326,7 +375,7 @@ namespace BrilliantShiningScriptEditor.Forms
             }
             else if (e.ClickedItem == cntxtitemScriptFileRename)
             {
-                // TODO: Implement Rename here
+                RenameScriptFile((ScriptFile)treeFiles.SelectedNode.Tag);
             }
             else if (e.ClickedItem == cntxtitemScriptFileAdd)
             {
@@ -343,7 +392,7 @@ namespace BrilliantShiningScriptEditor.Forms
             }
             else if (e.ClickedItem == cntxtitemScriptRename)
             {
-                // TODO: Implement Rename here
+                RenameScript((ScriptFile)treeFiles.SelectedNode.Parent.Tag, (Script)treeFiles.SelectedNode.Tag);
             }
             else if (e.ClickedItem == cntxtitemScriptDelete)
             {

@@ -213,12 +213,11 @@ namespace BrilliantShiningScriptEditor.Forms
             this.cntxtitemScriptFileOpen.Enabled = false;
             this.cntxtitemScriptFileOpen.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_base;
             this.cntxtitemScriptFileOpen.Name = "cntxtitemScriptFileOpen";
-            this.cntxtitemScriptFileOpen.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptFileOpen.Size = new System.Drawing.Size(129, 22);
             this.cntxtitemScriptFileOpen.Text = "Open";
             // 
             // cntxtitemScriptFileRename
             // 
-            this.cntxtitemScriptFileRename.Enabled = false;
             this.cntxtitemScriptFileRename.Name = "cntxtitemScriptFileRename";
             this.cntxtitemScriptFileRename.Size = new System.Drawing.Size(129, 22);
             this.cntxtitemScriptFileRename.Text = "Rename";
@@ -237,7 +236,7 @@ namespace BrilliantShiningScriptEditor.Forms
             this.cntxtitemScriptRename,
             this.cntxtitemScriptDelete});
             this.cntxtScript.Name = "cntxtScriptFile";
-            this.cntxtScript.Size = new System.Drawing.Size(118, 70);
+            this.cntxtScript.Size = new System.Drawing.Size(181, 92);
             this.cntxtScript.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cntxtScript_ItemClicked);
             // 
             // cntxtitemScriptOpen
@@ -249,7 +248,6 @@ namespace BrilliantShiningScriptEditor.Forms
             // 
             // cntxtitemScriptRename
             // 
-            this.cntxtitemScriptRename.Enabled = false;
             this.cntxtitemScriptRename.Name = "cntxtitemScriptRename";
             this.cntxtitemScriptRename.Size = new System.Drawing.Size(180, 22);
             this.cntxtitemScriptRename.Text = "Rename";

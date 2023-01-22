@@ -21,6 +21,8 @@ namespace BrilliantShiningScriptEditor.Data
                 AssetFileInfoEx fileInfo = assetsFile.table.GetAssetInfo(jfile["PathID"].Value<long>());
                 AssetTypeValueField baseField = assetsManager.GetTypeInstance(assetsFile, fileInfo).GetBaseField();
 
+                baseField["m_Name"].GetValue().Set(jfile["FileName"].ToString());
+
                 JArray jscripts = (JArray)jfile["Scripts"];
                 var scriptArray = baseField["Scripts"]["Array"];
                 
