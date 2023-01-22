@@ -26,6 +26,8 @@ namespace BrilliantShiningScriptEditor.Forms
 
         private ScriptEditorEngine scriptEditorEngine;
         private List<ScriptFile> scriptFiles;
+        private ScriptFile parentOfLoadedFile;
+        private Script loadedScript;
 
         private bool editorLoaded = false;
 
@@ -110,24 +112,42 @@ namespace BrilliantShiningScriptEditor.Forms
 
         private void AddToolTips()
         {
-            ttFormMain.SetToolTip(btnScriptAdd, "Add a Script to this file");
-            ttFormMain.SetToolTip(btnScriptRemove, "Remove this Script from this file");
             ttFormMain.SetToolTip(btnScriptCompile, "Compile this Script (Check for errors)");
             ttFormMain.SetToolTip(btnScriptSave, "Save this Script to memory");
             ttFormMain.SetToolTip(checkScriptSafe, "Disallow saving for Scripts with errors");
         }
+
+        private void EnableControlsOnOpen()
+        {
+            tbtnSave.Enabled = true;
+            tbtnOpen.Enabled = false;
+            treeFiles.Enabled = true;
+        }
         
         private void UpdateScriptFileList(List<ScriptFile> scriptFiles)
         {
-            comboScriptFile.DataSource = scriptFiles.OrderBy(s => s.ToString()).ToList();
-            comboScriptFile.SelectedIndex = 0;
-        }
+            treeFiles.Nodes.Clear();
 
-        private void UpdateScriptList(List<Script> scripts)
-        {
-            comboScript.DataSource = null;
-            comboScript.DataSource = scripts;
-            comboScript.SelectedIndex = 0;
+            List<ScriptFile> sortedFiles = scriptFiles.OrderBy(s => s.ToString()).ToList();
+            foreach (ScriptFile file in sortedFiles)
+            {
+                List<TreeNode> children = new List<TreeNode>();
+                foreach (Script script in file.Scripts)
+                {
+                    TreeNode node = new TreeNode(script.Name);
+                    node.Tag = script;
+                    node.ImageIndex = 0;
+                    node.SelectedImageIndex = 0;
+                    node.ContextMenuStrip = cntxtScript;
+                    children.Add(node);
+                }
+                TreeNode fileNode = new TreeNode(file.ToString(), children.ToArray());
+                fileNode.Tag = file;
+                fileNode.ImageIndex = 1;
+                fileNode.SelectedImageIndex = 1;
+                fileNode.ContextMenuStrip = cntxtScriptFile;
+                treeFiles.Nodes.Add(fileNode);
+            }
         }
 
         private void UpdateScriptBox(Script script)
@@ -136,37 +156,23 @@ namespace BrilliantShiningScriptEditor.Forms
             ExecuteEditorScript("editor.updateOptions({readOnly: false})");
         }
 
-        private void SaveScriptInMemory(Script script)
+        private void OpenScript(ScriptFile scriptFile, Script script)
         {
-            ScriptFile selected = (ScriptFile)comboScriptFile.SelectedItem;
-            selected.Scripts[selected.Scripts.FindIndex(f => f.Name == script.Name)] = script;
-
-            MessageBox.Show("Successfully saved the script in memory!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            UpdateScriptList(selected.Scripts);
+            parentOfLoadedFile = scriptFile;
+            loadedScript = script;
+            UpdateScriptBox(script);
+            btnScriptCompile.Enabled = true;
+            btnScriptSave.Enabled = true;
         }
 
-        private void comboScriptFile_SelectedIndexChanged(object sender, EventArgs e)
+        private void AddScript(ScriptFile scriptFile)
         {
-            UpdateScriptList(((ScriptFile)comboScriptFile.SelectedItem).Scripts);
-        }
-
-        private void comboScript_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Script script = (Script)comboScript.SelectedItem;
-            if (script != null) UpdateScriptBox(script);
-        }
-
-        private void btnScriptAdd_Click(object sender, EventArgs e)
-        {
-            // Add Script
-
             FormTextBox newScriptForm = new FormTextBox("Add Script", "Enter the name for the script:", "Confirm", "Cancel");
 
             if (newScriptForm.ShowDialog() == DialogResult.OK)
             {
                 string result = newScriptForm.Result;
-                List<Script> list = ((ScriptFile)comboScriptFile.SelectedItem).Scripts;
+                List<Script> list = scriptFile.Scripts;
                 if (string.IsNullOrWhiteSpace(result))
                 {
                     MessageBox.Show("The given Script name is empty.", "Invalid Script Name", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -182,23 +188,27 @@ namespace BrilliantShiningScriptEditor.Forms
                     Script script = new Script(result, new List<Command>() { new Command(new List<Argument>() { endArgument }) });
                     list.Add(script);
                     MessageBox.Show("Added the new script in memory successfully! Don't forget to export all your changes.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    comboScriptFile_SelectedIndexChanged(this, new EventArgs());
+                    UpdateScriptFileList(scriptFiles);
                 }
             }
         }
 
-        private void btnScriptRemove_Click(object sender, EventArgs e)
+        private void DeleteScript(ScriptFile scriptFile, Script script)
         {
-            // Remove Script
-
             if (MessageBox.Show("Are you sure you want to delete this script from memory? The script will be completely gone when you export your changes.", "Script Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                List<Script> list = ((ScriptFile)comboScriptFile.SelectedItem).Scripts;
-                Script script = (Script)comboScript.SelectedItem;
+                List<Script> list = scriptFile.Scripts;
                 list.Remove(script);
                 MessageBox.Show("Removed the new script from memory successfully! Don't forget to export all your changes.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                comboScriptFile_SelectedIndexChanged(this, new EventArgs());
+                UpdateScriptFileList(scriptFiles);
             }
+        }
+
+        private void SaveScriptInMemory(Script script)
+        {
+            parentOfLoadedFile.Scripts[parentOfLoadedFile.Scripts.FindIndex(f => f.Name == script.Name)] = script;
+            MessageBox.Show("Successfully saved the script in memory!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            UpdateScriptFileList(scriptFiles);
         }
 
         private void btnScriptCompile_Click(object sender, EventArgs e)
@@ -208,7 +218,7 @@ namespace BrilliantShiningScriptEditor.Forms
             try
             {
                 string code = GetEditorValue();
-                Script script = scriptEditorEngine.CompileScript(code, ((Script)comboScript.SelectedItem).Name, false);
+                Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, false);
                 MessageBox.Show("No compilation errors found.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (ScriptValidationExceptionListException ex)
@@ -226,7 +236,7 @@ namespace BrilliantShiningScriptEditor.Forms
             try
             {
                 string code = GetEditorValue();
-                Script script = scriptEditorEngine.CompileScript(code, ((Script)comboScript.SelectedItem).Name, false);
+                Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, false);
                 SaveScriptInMemory(script);
             }
             catch (ScriptValidationExceptionListException ex)
@@ -239,7 +249,7 @@ namespace BrilliantShiningScriptEditor.Forms
                     if (MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error) == DialogResult.Yes)
                     {
                         string code = GetEditorValue();
-                        Script script = scriptEditorEngine.CompileScript(code, ((Script)comboScript.SelectedItem).Name, true);
+                        Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, true);
                         SaveScriptInMemory(script);
                     }
                 }
@@ -263,13 +273,7 @@ namespace BrilliantShiningScriptEditor.Forms
                     {
                         this.scriptFiles = scriptFiles;
                         UpdateScriptFileList(this.scriptFiles);
-
-                        tbtnSave.Enabled = true;
-                        tbtnOpen.Enabled = false;
-                        btnScriptCompile.Enabled = true;
-                        btnScriptSave.Enabled = true;
-                        btnScriptAdd.Enabled = true;
-                        btnScriptRemove.Enabled = true;
+                        EnableControlsOnOpen();
                     }
                 }
                 else
@@ -303,6 +307,53 @@ namespace BrilliantShiningScriptEditor.Forms
             {
                 formReference.Show(this);
             }
+        }
+
+        private void treeFiles_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            if (e.Node.Tag is Script && e.Button == MouseButtons.Left)
+            {
+                OpenScript((ScriptFile)e.Node.Parent.Tag, (Script)e.Node.Tag);
+            }
+        }
+
+        private void cntxtScriptFile_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            cntxtScriptFile.Close();
+            if (e.ClickedItem == cntxtitemScriptFileOpen)
+            {
+                // TODO: Implement full Script File here
+            }
+            else if (e.ClickedItem == cntxtitemScriptFileRename)
+            {
+                // TODO: Implement Rename here
+            }
+            else if (e.ClickedItem == cntxtitemScriptFileAdd)
+            {
+                AddScript((ScriptFile)treeFiles.SelectedNode.Tag);
+            }
+        }
+
+        private void cntxtScript_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            cntxtScript.Close();
+            if (e.ClickedItem == cntxtitemScriptOpen)
+            {
+                OpenScript((ScriptFile)treeFiles.SelectedNode.Parent.Tag, (Script)treeFiles.SelectedNode.Tag);
+            }
+            else if (e.ClickedItem == cntxtitemScriptRename)
+            {
+                // TODO: Implement Rename here
+            }
+            else if (e.ClickedItem == cntxtitemScriptDelete)
+            {
+                DeleteScript((ScriptFile)treeFiles.SelectedNode.Parent.Tag, (Script)treeFiles.SelectedNode.Tag);
+            }
+        }
+
+        private void treeFiles_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            treeFiles.SelectedNode = e.Node;
         }
     }
 }

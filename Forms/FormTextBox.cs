@@ -18,7 +18,7 @@ namespace BrilliantShiningScriptEditor.Forms
         {
             InitializeComponent();
 
-            Name = title;
+            Text = title;
             lbInfo.Text = description;
             btnYes.Text = yesButton;
             btnNo.Text = noButton;

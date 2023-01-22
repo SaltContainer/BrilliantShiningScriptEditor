@@ -218,6 +218,8 @@
   <ItemGroup>
     <None Include="Icons\info.png" />
     <None Include="Icons\script_info.png" />
+    <None Include="Icons\script_base.png" />
+    <None Include="Icons\script_stack.png" />
     <Content Include="Monaco\**">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
