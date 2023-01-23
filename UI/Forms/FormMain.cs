@@ -17,8 +17,9 @@ using System.Windows.Forms;
 using System.IO;
 using System.Windows.Threading;
 using Microsoft.Web.WebView2.Core;
+using BrilliantShiningScriptEditor.UI.DataView;
 
-namespace BrilliantShiningScriptEditor.Forms
+namespace BrilliantShiningScriptEditor.UI.Forms
 {
     public partial class FormMain : Form
     {
@@ -30,11 +31,11 @@ namespace BrilliantShiningScriptEditor.Forms
         private Script loadedScript;
 
         private bool editorLoaded = false;
+        private bool collapsedErrorList = false;
 
         public FormMain()
         {
             InitializeComponent();
-            AddToolTips();
 
             scriptEditorEngine = new ScriptEditorEngine();
         }
@@ -104,17 +105,15 @@ namespace BrilliantShiningScriptEditor.Forms
             return wait;
         }
 
-        private void FormMain_SizeChanged(object sender, EventArgs e)
+        private void ResizeEditor()
         {
             if (editorLoaded) ExecuteEditorScript("editor.layout()");
         }
         #endregion
 
-        private void AddToolTips()
+        private void FormMain_SizeChanged(object sender, EventArgs e)
         {
-            ttFormMain.SetToolTip(btnScriptCompile, "Compile this Script (Check for errors)");
-            ttFormMain.SetToolTip(btnScriptSave, "Save this Script to memory");
-            ttFormMain.SetToolTip(checkScriptSafe, "Disallow saving for Scripts with errors");
+            ResizeEditor();
         }
 
         private void EnableControlsOnOpen()
@@ -260,28 +259,22 @@ namespace BrilliantShiningScriptEditor.Forms
             UpdateScriptFileList(scriptFiles);
         }
 
-        private void btnScriptCompile_Click(object sender, EventArgs e)
+        private void CompileScript()
         {
-            // Compile Script
-
             try
             {
                 string code = GetEditorValue();
                 Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, false);
-                MessageBox.Show("No compilation errors found.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearErrors();
             }
             catch (ScriptValidationExceptionListException ex)
             {
-                bool ignorable = !ex.InnerExceptions.Select(exception => exception.Ignorable).Contains(false);
-                string fullError = string.Join("\n", ex.InnerExceptions.Select(exception => exception.Message));
-                MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.OK, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+                UpdateErrors(ex);
             }
         }
 
-        private void btnScriptSave_Click(object sender, EventArgs e)
+        private void SaveScript()
         {
-            // Save Script
-
             try
             {
                 string code = GetEditorValue();
@@ -291,19 +284,71 @@ namespace BrilliantShiningScriptEditor.Forms
             catch (ScriptValidationExceptionListException ex)
             {
                 bool ignorable = !ex.InnerExceptions.Select(exception => exception.Ignorable).Contains(false);
-                string fullError = string.Join("\n", ex.InnerExceptions.Select(exception => exception.Message));
-                if (ignorable && !checkScriptSafe.Checked)
+                if (ignorable)
                 {
-                    fullError += "\nAre you sure you want to save this script anyways?";
-                    if (MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error) == DialogResult.Yes)
+                    int errors = ex.InnerExceptions.Count;
+                    string fullError = "There " + (errors > 1 ? "were" : "was a") + " compilation warning" + (errors > 1 ? "s" : "") + ". See the Error List for more details.";
+                    if (checkScriptSafe.Checked)
                     {
-                        string code = GetEditorValue();
-                        Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, true);
-                        SaveScriptInMemory(script);
+                        MessageBox.Show(fullError, "Compilation Warning" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        fullError += "\nAre you sure you want to save this script anyways?";
+                        if (MessageBox.Show(fullError, "Compilation Warning" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        {
+                            string code = GetEditorValue();
+                            Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, true);
+                            SaveScriptInMemory(script);
+                        }
                     }
                 }
-                else MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.OK, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+                else
+                {
+                    int errors = ex.InnerExceptions.Where(exception => !exception.Ignorable).Count();
+                    string description = "There " + (errors > 1 ? "were" : "was a") + " compilation error" + (errors > 1 ? "s" : "") + " and the script cannot be saved. See the Error List for more details.";
+                    MessageBox.Show(description, "Compilation Error" + (errors > 1 ? "s" : ""), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+        }
+
+        public void ClearErrors()
+        {
+            gridErrors.DataSource = new List<Error>();
+        }
+
+        public void UpdateErrors(ScriptValidationExceptionListException errors)
+        {
+            List<Error> messages = errors.InnerExceptions.Select(ex => new Error(ex.Ignorable, ex.Line, ex.Message)).ToList();
+            gridErrors.DataSource = messages;
+        }
+
+        public void ToggleErrorList()
+        {
+            collapsedErrorList = !collapsedErrorList;
+
+            if (collapsedErrorList)
+            {
+                splitEditor.Panel2Collapsed = true;
+                splitEditor.Panel2.Hide();
+            }
+            else
+            {
+                splitEditor.Panel2Collapsed = false;
+                splitEditor.Panel2.Show();
+            }
+
+            ResizeEditor();
+        }
+
+        private void btnScriptCompile_Click(object sender, EventArgs e)
+        {
+            CompileScript();
+        }
+
+        private void btnScriptSave_Click(object sender, EventArgs e)
+        {
+            SaveScript();
         }
 
         private void tbtnOpen_Click(object sender, EventArgs e)
@@ -356,6 +401,11 @@ namespace BrilliantShiningScriptEditor.Forms
             {
                 formReference.Show(this);
             }
+        }
+
+        private void tbtnError_Click(object sender, EventArgs e)
+        {
+            ToggleErrorList();
         }
 
         private void treeFiles_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)

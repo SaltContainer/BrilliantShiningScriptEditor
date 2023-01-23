@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BrilliantShiningScriptEditor.Engine.ScriptEditor.Exceptions
 {
-    class ScriptValidationExceptionListException : Exception
+    public class ScriptValidationExceptionListException : Exception
     {
         public List<ScriptValidationException> InnerExceptions { get; set; }
 

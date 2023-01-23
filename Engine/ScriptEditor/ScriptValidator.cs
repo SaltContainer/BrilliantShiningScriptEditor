@@ -125,14 +125,14 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
             }
             if (arguments[0].Type != ArgumentType.Command)
             {
-                validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}: Not a command.", line + 1), false));
+                validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}: Not a command.", line + 1), false, line + 1));
                 return false;
             }
 
             CommandInfo commandInfo = GetCommandFromId(arguments[0].GetNumberValue());
             if (commandInfo == null)
             {
-                validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}: Unrecognized command.", line + 1), true));
+                validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}: Unrecognized command.", line + 1), true, line + 1));
             }
             else
             {
@@ -140,11 +140,11 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
                 {
                     if (commandInfo.Arguments.Where(a => !a.Optional).Count() == commandInfo.Arguments.Count())
                     {
-                        validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}: Invalid argument count. Expected {1} argument(s) but got {2}.", line + 1, commandInfo.Arguments.Count(), arguments.Count() - 1), true));
+                        validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}: Invalid argument count. Expected {1} argument(s) but got {2}.", line + 1, commandInfo.Arguments.Count(), arguments.Count() - 1), true, line + 1));
                     }
                     else
                     {
-                        validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}: Invalid argument count. Expected {1} to {2} argument(s) but got {3}.", line + 1, commandInfo.Arguments.Where(a => !a.Optional).Count(), commandInfo.Arguments.Count(), arguments.Count() - 1), true));
+                        validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}: Invalid argument count. Expected {1} to {2} argument(s) but got {3}.", line + 1, commandInfo.Arguments.Where(a => !a.Optional).Count(), commandInfo.Arguments.Count(), arguments.Count() - 1), true, line + 1));
                     }
                 }
                 else
@@ -155,7 +155,7 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
                     {
                         if (i + j - 1 >= commandInfo.Arguments.Count())
                         {
-                            validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}, Argument {1}: Invalid argument type. Expected [{2}], but was {3}.", line + 1, i, string.Join(", ", commandInfo.Arguments[i - 1].Type), arguments[i].Type), true));
+                            validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}, Argument {1}: Invalid argument type. Expected [{2}], but was {3}.", line + 1, i, string.Join(", ", commandInfo.Arguments[i - 1].Type), arguments[i].Type), true, line + 1));
                             break;
                         }
 
@@ -169,7 +169,7 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
                         {
                             if (!commandInfo.Arguments[i + j - 1].Type.Contains(GetTypeNameFromType(arguments[i].Type)))
                             {
-                                validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}, Argument {1}: Invalid argument type. Expected [{2}], but was {3}.", line + 1, i, string.Join(", ", commandInfo.Arguments[i + j - 1].Type), arguments[i].Type), true));
+                                validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}, Argument {1}: Invalid argument type. Expected [{2}], but was {3}.", line + 1, i, string.Join(", ", commandInfo.Arguments[i + j - 1].Type), arguments[i].Type), true, line + 1));
                                 break;
                             }
                             else i++;
@@ -194,7 +194,7 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
                 }
                 else
                 {
-                    validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}: Invalid command.", line + 1), false));
+                    validationExceptions.Add(new ScriptValidationException(string.Format("Line {0}: Invalid command.", line + 1), false, line + 1));
                     return false;
                 }
             }

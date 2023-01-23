@@ -1,5 +1,5 @@
 ﻿
-namespace BrilliantShiningScriptEditor.Forms
+namespace BrilliantShiningScriptEditor.UI.Forms
 {
     partial class FormMain
     {
@@ -36,6 +36,8 @@ namespace BrilliantShiningScriptEditor.Forms
             this.tbtnSave = new System.Windows.Forms.ToolStripButton();
             this.tsepFirst = new System.Windows.Forms.ToolStripSeparator();
             this.tbtnReference = new System.Windows.Forms.ToolStripButton();
+            this.tsepSecond = new System.Windows.Forms.ToolStripSeparator();
+            this.tbtnError = new System.Windows.Forms.ToolStripButton();
             this.webEditor = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.grpScriptFile = new System.Windows.Forms.GroupBox();
             this.treeFiles = new System.Windows.Forms.TreeView();
@@ -52,11 +54,21 @@ namespace BrilliantShiningScriptEditor.Forms
             this.cntxtitemScriptOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.cntxtitemScriptRename = new System.Windows.Forms.ToolStripMenuItem();
             this.cntxtitemScriptDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.splitEditor = new System.Windows.Forms.SplitContainer();
+            this.gridErrors = new System.Windows.Forms.DataGridView();
+            this.colImg = new System.Windows.Forms.DataGridViewImageColumn();
+            this.colLine = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMsg = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webEditor)).BeginInit();
             this.grpScriptFile.SuspendLayout();
             this.cntxtScriptFile.SuspendLayout();
             this.cntxtScript.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitEditor)).BeginInit();
+            this.splitEditor.Panel1.SuspendLayout();
+            this.splitEditor.Panel2.SuspendLayout();
+            this.splitEditor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridErrors)).BeginInit();
             this.SuspendLayout();
             // 
             // stripMain
@@ -67,7 +79,9 @@ namespace BrilliantShiningScriptEditor.Forms
             this.tbtnOpen,
             this.tbtnSave,
             this.tsepFirst,
-            this.tbtnReference});
+            this.tbtnReference,
+            this.tsepSecond,
+            this.tbtnError});
             this.stripMain.Location = new System.Drawing.Point(0, 0);
             this.stripMain.Name = "stripMain";
             this.stripMain.Size = new System.Drawing.Size(1108, 39);
@@ -108,7 +122,27 @@ namespace BrilliantShiningScriptEditor.Forms
             this.tbtnReference.Name = "tbtnReference";
             this.tbtnReference.Size = new System.Drawing.Size(36, 36);
             this.tbtnReference.Text = "tbtnReference";
+            this.tbtnReference.ToolTipText = "Open Reference Window";
             this.tbtnReference.Click += new System.EventHandler(this.tbtnReference_Click);
+            // 
+            // tsepSecond
+            // 
+            this.tsepSecond.Name = "tsepSecond";
+            this.tsepSecond.Size = new System.Drawing.Size(6, 39);
+            // 
+            // tbtnError
+            // 
+            this.tbtnError.Checked = true;
+            this.tbtnError.CheckOnClick = true;
+            this.tbtnError.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.tbtnError.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbtnError.Image = global::BrilliantShiningScriptEditor.Properties.Resources.error;
+            this.tbtnError.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbtnError.Name = "tbtnError";
+            this.tbtnError.Size = new System.Drawing.Size(36, 36);
+            this.tbtnError.Text = "toolStripButton1";
+            this.tbtnError.ToolTipText = "Toggle Error List Panel";
+            this.tbtnError.Click += new System.EventHandler(this.tbtnError_Click);
             // 
             // webEditor
             // 
@@ -118,9 +152,9 @@ namespace BrilliantShiningScriptEditor.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.webEditor.CreationProperties = null;
             this.webEditor.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webEditor.Location = new System.Drawing.Point(12, 42);
+            this.webEditor.Location = new System.Drawing.Point(0, 0);
             this.webEditor.Name = "webEditor";
-            this.webEditor.Size = new System.Drawing.Size(828, 569);
+            this.webEditor.Size = new System.Drawing.Size(828, 426);
             this.webEditor.TabIndex = 7;
             this.webEditor.ZoomFactor = 1D;
             this.webEditor.NavigationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs>(this.webEditor_NavigationCompleted);
@@ -164,6 +198,7 @@ namespace BrilliantShiningScriptEditor.Forms
             // 
             // checkScriptSafe
             // 
+            this.checkScriptSafe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.checkScriptSafe.AutoSize = true;
             this.checkScriptSafe.Checked = true;
             this.checkScriptSafe.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -172,29 +207,32 @@ namespace BrilliantShiningScriptEditor.Forms
             this.checkScriptSafe.Size = new System.Drawing.Size(78, 17);
             this.checkScriptSafe.TabIndex = 13;
             this.checkScriptSafe.Text = "Safe Mode";
+            this.ttFormMain.SetToolTip(this.checkScriptSafe, "Disallow saving for Scripts with errors");
             this.checkScriptSafe.UseVisualStyleBackColor = true;
             // 
             // btnScriptCompile
             // 
-            this.btnScriptCompile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnScriptCompile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptCompile.Enabled = false;
             this.btnScriptCompile.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_compile;
             this.btnScriptCompile.Location = new System.Drawing.Point(6, 508);
             this.btnScriptCompile.Name = "btnScriptCompile";
             this.btnScriptCompile.Size = new System.Drawing.Size(55, 55);
             this.btnScriptCompile.TabIndex = 3;
+            this.ttFormMain.SetToolTip(this.btnScriptCompile, "Compile this Script (Check for errors)");
             this.btnScriptCompile.UseVisualStyleBackColor = true;
             this.btnScriptCompile.Click += new System.EventHandler(this.btnScriptCompile_Click);
             // 
             // btnScriptSave
             // 
-            this.btnScriptSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnScriptSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptSave.Enabled = false;
             this.btnScriptSave.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_save;
             this.btnScriptSave.Location = new System.Drawing.Point(67, 508);
             this.btnScriptSave.Name = "btnScriptSave";
             this.btnScriptSave.Size = new System.Drawing.Size(55, 55);
             this.btnScriptSave.TabIndex = 4;
+            this.ttFormMain.SetToolTip(this.btnScriptSave, "Save this Script to memory");
             this.btnScriptSave.UseVisualStyleBackColor = true;
             this.btnScriptSave.Click += new System.EventHandler(this.btnScriptSave_Click);
             // 
@@ -236,35 +274,102 @@ namespace BrilliantShiningScriptEditor.Forms
             this.cntxtitemScriptRename,
             this.cntxtitemScriptDelete});
             this.cntxtScript.Name = "cntxtScriptFile";
-            this.cntxtScript.Size = new System.Drawing.Size(181, 92);
+            this.cntxtScript.Size = new System.Drawing.Size(118, 70);
             this.cntxtScript.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cntxtScript_ItemClicked);
             // 
             // cntxtitemScriptOpen
             // 
             this.cntxtitemScriptOpen.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_base;
             this.cntxtitemScriptOpen.Name = "cntxtitemScriptOpen";
-            this.cntxtitemScriptOpen.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptOpen.Size = new System.Drawing.Size(117, 22);
             this.cntxtitemScriptOpen.Text = "Open";
             // 
             // cntxtitemScriptRename
             // 
             this.cntxtitemScriptRename.Name = "cntxtitemScriptRename";
-            this.cntxtitemScriptRename.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptRename.Size = new System.Drawing.Size(117, 22);
             this.cntxtitemScriptRename.Text = "Rename";
             // 
             // cntxtitemScriptDelete
             // 
             this.cntxtitemScriptDelete.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_remove;
             this.cntxtitemScriptDelete.Name = "cntxtitemScriptDelete";
-            this.cntxtitemScriptDelete.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptDelete.Size = new System.Drawing.Size(117, 22);
             this.cntxtitemScriptDelete.Text = "Delete";
+            // 
+            // splitEditor
+            // 
+            this.splitEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitEditor.IsSplitterFixed = true;
+            this.splitEditor.Location = new System.Drawing.Point(12, 42);
+            this.splitEditor.Name = "splitEditor";
+            this.splitEditor.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitEditor.Panel1
+            // 
+            this.splitEditor.Panel1.Controls.Add(this.webEditor);
+            // 
+            // splitEditor.Panel2
+            // 
+            this.splitEditor.Panel2.Controls.Add(this.gridErrors);
+            this.splitEditor.Size = new System.Drawing.Size(828, 569);
+            this.splitEditor.SplitterDistance = 424;
+            this.splitEditor.SplitterWidth = 8;
+            this.splitEditor.TabIndex = 9;
+            // 
+            // gridErrors
+            // 
+            this.gridErrors.AllowUserToAddRows = false;
+            this.gridErrors.AllowUserToDeleteRows = false;
+            this.gridErrors.AllowUserToResizeColumns = false;
+            this.gridErrors.AllowUserToResizeRows = false;
+            this.gridErrors.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridErrors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridErrors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colImg,
+            this.colLine,
+            this.colMsg});
+            this.gridErrors.Location = new System.Drawing.Point(0, 0);
+            this.gridErrors.Name = "gridErrors";
+            this.gridErrors.ReadOnly = true;
+            this.gridErrors.RowHeadersVisible = false;
+            this.gridErrors.Size = new System.Drawing.Size(828, 128);
+            this.gridErrors.TabIndex = 1;
+            // 
+            // colImg
+            // 
+            this.colImg.DataPropertyName = "Image";
+            this.colImg.HeaderText = "";
+            this.colImg.Name = "colImg";
+            this.colImg.ReadOnly = true;
+            this.colImg.Width = 30;
+            // 
+            // colLine
+            // 
+            this.colLine.DataPropertyName = "Line";
+            this.colLine.HeaderText = "Line";
+            this.colLine.Name = "colLine";
+            this.colLine.ReadOnly = true;
+            this.colLine.Width = 35;
+            // 
+            // colMsg
+            // 
+            this.colMsg.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colMsg.DataPropertyName = "Message";
+            this.colMsg.HeaderText = "Message";
+            this.colMsg.Name = "colMsg";
+            this.colMsg.ReadOnly = true;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 623);
-            this.Controls.Add(this.webEditor);
+            this.Controls.Add(this.splitEditor);
             this.Controls.Add(this.grpScriptFile);
             this.Controls.Add(this.stripMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -280,6 +385,11 @@ namespace BrilliantShiningScriptEditor.Forms
             this.grpScriptFile.PerformLayout();
             this.cntxtScriptFile.ResumeLayout(false);
             this.cntxtScript.ResumeLayout(false);
+            this.splitEditor.Panel1.ResumeLayout(false);
+            this.splitEditor.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitEditor)).EndInit();
+            this.splitEditor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridErrors)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,6 +418,13 @@ namespace BrilliantShiningScriptEditor.Forms
         private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptOpen;
         private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptRename;
         private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptDelete;
+        private System.Windows.Forms.SplitContainer splitEditor;
+        private System.Windows.Forms.DataGridView gridErrors;
+        private System.Windows.Forms.DataGridViewImageColumn colImg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLine;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMsg;
+        private System.Windows.Forms.ToolStripSeparator tsepSecond;
+        private System.Windows.Forms.ToolStripButton tbtnError;
     }
 }
 

@@ -6,24 +6,27 @@ using System.Threading.Tasks;
 
 namespace BrilliantShiningScriptEditor.Engine.ScriptEditor.Exceptions
 {
-    class ScriptValidationException : Exception
+    public class ScriptValidationException : Exception
     {
         public bool Ignorable { get; }
+        public int Line { get; }
 
         public ScriptValidationException()
         {
         }
 
-        public ScriptValidationException(string message, bool ignorable)
+        public ScriptValidationException(string message, bool ignorable, int line)
             : base(message)
         {
             Ignorable = ignorable;
+            Line = line;
         }
 
-        public ScriptValidationException(string message, bool ignorable, Exception inner)
+        public ScriptValidationException(string message, bool ignorable, int line, Exception inner)
             : base(message, inner)
         {
             Ignorable = ignorable;
+            Line = line;
         }
     }
 }

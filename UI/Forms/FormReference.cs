@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BrilliantShiningScriptEditor.Forms
+namespace BrilliantShiningScriptEditor.UI.Forms
 {
     public partial class FormReference : Form
     {
