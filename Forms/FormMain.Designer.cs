@@ -120,7 +120,7 @@ namespace BrilliantShiningScriptEditor.Forms
             this.webEditor.DefaultBackgroundColor = System.Drawing.Color.White;
             this.webEditor.Location = new System.Drawing.Point(12, 42);
             this.webEditor.Name = "webEditor";
-            this.webEditor.Size = new System.Drawing.Size(828, 569);
+            this.webEditor.Size = new System.Drawing.Size(828, 502);
             this.webEditor.TabIndex = 7;
             this.webEditor.ZoomFactor = 1D;
             this.webEditor.NavigationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs>(this.webEditor_NavigationCompleted);
@@ -236,27 +236,27 @@ namespace BrilliantShiningScriptEditor.Forms
             this.cntxtitemScriptRename,
             this.cntxtitemScriptDelete});
             this.cntxtScript.Name = "cntxtScriptFile";
-            this.cntxtScript.Size = new System.Drawing.Size(181, 92);
+            this.cntxtScript.Size = new System.Drawing.Size(118, 70);
             this.cntxtScript.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cntxtScript_ItemClicked);
             // 
             // cntxtitemScriptOpen
             // 
             this.cntxtitemScriptOpen.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_base;
             this.cntxtitemScriptOpen.Name = "cntxtitemScriptOpen";
-            this.cntxtitemScriptOpen.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptOpen.Size = new System.Drawing.Size(117, 22);
             this.cntxtitemScriptOpen.Text = "Open";
             // 
             // cntxtitemScriptRename
             // 
             this.cntxtitemScriptRename.Name = "cntxtitemScriptRename";
-            this.cntxtitemScriptRename.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptRename.Size = new System.Drawing.Size(117, 22);
             this.cntxtitemScriptRename.Text = "Rename";
             // 
             // cntxtitemScriptDelete
             // 
             this.cntxtitemScriptDelete.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_remove;
             this.cntxtitemScriptDelete.Name = "cntxtitemScriptDelete";
-            this.cntxtitemScriptDelete.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptDelete.Size = new System.Drawing.Size(117, 22);
             this.cntxtitemScriptDelete.Text = "Delete";
             // 
             // FormMain

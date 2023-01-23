@@ -109,6 +109,12 @@
     <Compile Include="Engine\ScriptEditor\Model\Script.cs" />
     <Compile Include="Engine\ScriptEditor\Model\ScriptFile.cs" />
     <Compile Include="Engine\ScriptEditor\ScriptValidator.cs" />
+    <Compile Include="Forms\Controls\CollapsiblePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\CollapsiblePanel.Designer.cs">
+      <DependentUpon>CollapsiblePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Controls\CollapsiblePanel.resx">
+      <DependentUpon>CollapsiblePanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
