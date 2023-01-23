@@ -164,11 +164,11 @@ namespace BrilliantShiningScriptEditor.Properties {
         ///	{
         ///		&quot;PathID&quot;: -696005077699342123,
         ///		&quot;FileName&quot;: &quot;c01fs0101&quot;,
-        ///		&quot;FriendlyName&quot;: &quot;Jubilife - Poké Mart&quot;
+        ///		&quot;FriendlyName&quot;: &quot;Jubilife - PokÃ© Mart&quot;
         ///	},
         ///	{
         ///		&quot;PathID&quot;: -4737298874747568407,
-        ///		&quot;FileName&quot;: &quot;c01 [rest of string was truncated]&quot;;.
+        ///		&quot;FileName&quot;: &quot;c0 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string file_names {
             get {
