@@ -15,5 +15,12 @@ namespace BrilliantShiningScriptEditor.Data.JSONObjects
         public string FileName { get; set; }
         [JsonProperty("FriendlyName")]
         public string FriendlyName { get; set; }
+        [JsonProperty("Description")]
+        public string Description { get; set; }
+
+        public override string ToString()
+        {
+            return FriendlyName;
+        }
     }
 }
