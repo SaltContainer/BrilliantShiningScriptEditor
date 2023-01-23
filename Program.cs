@@ -1,5 +1,5 @@
 ﻿using System;
-using BrilliantShiningScriptEditor.Forms;
+using BrilliantShiningScriptEditor.UI.Forms;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

@@ -1,5 +1,5 @@
 ﻿
-namespace BrilliantShiningScriptEditor.Forms
+namespace BrilliantShiningScriptEditor.UI.Forms
 {
     partial class FormReference
     {

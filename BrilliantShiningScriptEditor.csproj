@@ -75,6 +75,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -109,42 +110,43 @@
     <Compile Include="Engine\ScriptEditor\Model\Script.cs" />
     <Compile Include="Engine\ScriptEditor\Model\ScriptFile.cs" />
     <Compile Include="Engine\ScriptEditor\ScriptValidator.cs" />
-    <Compile Include="Forms\Controls\CollapsiblePanel.cs">
+    <Compile Include="UI\Controls\CollapsibleErrorList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\CollapsiblePanel.Designer.cs">
-      <DependentUpon>CollapsiblePanel.cs</DependentUpon>
+    <Compile Include="UI\Controls\CollapsibleErrorList.Designer.cs">
+      <DependentUpon>CollapsibleErrorList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormMain.cs">
+    <Compile Include="UI\DataView\Error.cs" />
+    <Compile Include="UI\Forms\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormMain.Designer.cs">
+    <Compile Include="UI\Forms\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormReference.cs">
+    <Compile Include="UI\Forms\FormReference.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormReference.Designer.cs">
+    <Compile Include="UI\Forms\FormReference.Designer.cs">
       <DependentUpon>FormReference.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormTextBox.cs">
+    <Compile Include="UI\Forms\FormTextBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormTextBox.Designer.cs">
+    <Compile Include="UI\Forms\FormTextBox.Designer.cs">
       <DependentUpon>FormTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Controls\CollapsiblePanel.resx">
-      <DependentUpon>CollapsiblePanel.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Controls\CollapsibleErrorList.resx">
+      <DependentUpon>CollapsibleErrorList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormMain.resx">
+    <EmbeddedResource Include="UI\Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormReference.resx">
+    <EmbeddedResource Include="UI\Forms\FormReference.resx">
       <DependentUpon>FormReference.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormTextBox.resx">
+    <EmbeddedResource Include="UI\Forms\FormTextBox.resx">
       <DependentUpon>FormTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -229,6 +231,8 @@
     <None Include="Icons\script_info.png" />
     <None Include="Icons\script_base.png" />
     <None Include="Icons\script_stack.png" />
+    <None Include="Icons\error.png" />
+    <None Include="Icons\warning.png" />
     <Content Include="Monaco\**">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

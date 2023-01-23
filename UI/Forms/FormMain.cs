@@ -18,7 +18,7 @@ using System.IO;
 using System.Windows.Threading;
 using Microsoft.Web.WebView2.Core;
 
-namespace BrilliantShiningScriptEditor.Forms
+namespace BrilliantShiningScriptEditor.UI.Forms
 {
     public partial class FormMain : Form
     {
@@ -260,28 +260,22 @@ namespace BrilliantShiningScriptEditor.Forms
             UpdateScriptFileList(scriptFiles);
         }
 
-        private void btnScriptCompile_Click(object sender, EventArgs e)
+        private void CompileScript()
         {
-            // Compile Script
-
             try
             {
                 string code = GetEditorValue();
                 Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, false);
-                MessageBox.Show("No compilation errors found.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                clpErrErrorList.ClearErrors();
             }
             catch (ScriptValidationExceptionListException ex)
             {
-                bool ignorable = !ex.InnerExceptions.Select(exception => exception.Ignorable).Contains(false);
-                string fullError = string.Join("\n", ex.InnerExceptions.Select(exception => exception.Message));
-                MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.OK, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+                clpErrErrorList.UpdateErrors(ex);
             }
         }
 
-        private void btnScriptSave_Click(object sender, EventArgs e)
+        private void SaveScript()
         {
-            // Save Script
-
             try
             {
                 string code = GetEditorValue();
@@ -291,19 +285,42 @@ namespace BrilliantShiningScriptEditor.Forms
             catch (ScriptValidationExceptionListException ex)
             {
                 bool ignorable = !ex.InnerExceptions.Select(exception => exception.Ignorable).Contains(false);
-                string fullError = string.Join("\n", ex.InnerExceptions.Select(exception => exception.Message));
-                if (ignorable && !checkScriptSafe.Checked)
+                if (ignorable)
                 {
-                    fullError += "\nAre you sure you want to save this script anyways?";
-                    if (MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error) == DialogResult.Yes)
+                    int errors = ex.InnerExceptions.Count;
+                    string fullError = "There " + (errors > 1 ? "were" : "was a") + " compilation warning" + (errors > 1 ? "s" : "") + ". See the Error List for more details.";
+                    if (checkScriptSafe.Checked)
                     {
-                        string code = GetEditorValue();
-                        Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, true);
-                        SaveScriptInMemory(script);
+                        MessageBox.Show(fullError, "Compilation Warning" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        fullError += "\nAre you sure you want to save this script anyways?";
+                        if (MessageBox.Show(fullError, "Compilation Warning" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        {
+                            string code = GetEditorValue();
+                            Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, true);
+                            SaveScriptInMemory(script);
+                        }
                     }
                 }
-                else MessageBox.Show(fullError, "Compilation Error" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.OK, ignorable ? MessageBoxIcon.Warning : MessageBoxIcon.Error);
+                else
+                {
+                    int errors = ex.InnerExceptions.Where(exception => !exception.Ignorable).Count();
+                    string description = "There " + (errors > 1 ? "were" : "was a") + " compilation error" + (errors > 1 ? "s" : "") + " and the script cannot be saved. See the Error List for more details.";
+                    MessageBox.Show(description, "Compilation Error" + (errors > 1 ? "s" : ""), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+        }
+
+        private void btnScriptCompile_Click(object sender, EventArgs e)
+        {
+            CompileScript();
+        }
+
+        private void btnScriptSave_Click(object sender, EventArgs e)
+        {
+            SaveScript();
         }
 
         private void tbtnOpen_Click(object sender, EventArgs e)

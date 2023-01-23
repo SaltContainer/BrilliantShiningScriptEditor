@@ -1,5 +1,5 @@
 ﻿
-namespace BrilliantShiningScriptEditor.Forms
+namespace BrilliantShiningScriptEditor.UI.Forms
 {
     partial class FormMain
     {
@@ -52,6 +52,7 @@ namespace BrilliantShiningScriptEditor.Forms
             this.cntxtitemScriptOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.cntxtitemScriptRename = new System.Windows.Forms.ToolStripMenuItem();
             this.cntxtitemScriptDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.clpErrErrorList = new BrilliantShiningScriptEditor.UI.Controls.CollapsibleErrorList();
             this.stripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webEditor)).BeginInit();
             this.grpScriptFile.SuspendLayout();
@@ -120,7 +121,7 @@ namespace BrilliantShiningScriptEditor.Forms
             this.webEditor.DefaultBackgroundColor = System.Drawing.Color.White;
             this.webEditor.Location = new System.Drawing.Point(12, 42);
             this.webEditor.Name = "webEditor";
-            this.webEditor.Size = new System.Drawing.Size(828, 502);
+            this.webEditor.Size = new System.Drawing.Size(828, 339);
             this.webEditor.TabIndex = 7;
             this.webEditor.ZoomFactor = 1D;
             this.webEditor.NavigationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs>(this.webEditor_NavigationCompleted);
@@ -164,6 +165,7 @@ namespace BrilliantShiningScriptEditor.Forms
             // 
             // checkScriptSafe
             // 
+            this.checkScriptSafe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.checkScriptSafe.AutoSize = true;
             this.checkScriptSafe.Checked = true;
             this.checkScriptSafe.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -176,7 +178,7 @@ namespace BrilliantShiningScriptEditor.Forms
             // 
             // btnScriptCompile
             // 
-            this.btnScriptCompile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnScriptCompile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptCompile.Enabled = false;
             this.btnScriptCompile.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_compile;
             this.btnScriptCompile.Location = new System.Drawing.Point(6, 508);
@@ -188,7 +190,7 @@ namespace BrilliantShiningScriptEditor.Forms
             // 
             // btnScriptSave
             // 
-            this.btnScriptSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnScriptSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnScriptSave.Enabled = false;
             this.btnScriptSave.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_save;
             this.btnScriptSave.Location = new System.Drawing.Point(67, 508);
@@ -259,11 +261,21 @@ namespace BrilliantShiningScriptEditor.Forms
             this.cntxtitemScriptDelete.Size = new System.Drawing.Size(117, 22);
             this.cntxtitemScriptDelete.Text = "Delete";
             // 
+            // clpErrErrorList
+            // 
+            this.clpErrErrorList.ButtonText = "Error List";
+            this.clpErrErrorList.IntendedSize = new System.Drawing.Size(828, 224);
+            this.clpErrErrorList.Location = new System.Drawing.Point(12, 387);
+            this.clpErrErrorList.Name = "clpErrErrorList";
+            this.clpErrErrorList.Size = new System.Drawing.Size(828, 224);
+            this.clpErrErrorList.TabIndex = 8;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 623);
+            this.Controls.Add(this.clpErrErrorList);
             this.Controls.Add(this.webEditor);
             this.Controls.Add(this.grpScriptFile);
             this.Controls.Add(this.stripMain);
@@ -308,6 +320,7 @@ namespace BrilliantShiningScriptEditor.Forms
         private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptOpen;
         private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptRename;
         private System.Windows.Forms.ToolStripMenuItem cntxtitemScriptDelete;
+        private Controls.CollapsibleErrorList clpErrErrorList;
     }
 }
 
