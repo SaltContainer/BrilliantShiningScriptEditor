@@ -35,16 +35,18 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.tbtnOpen = new System.Windows.Forms.ToolStripButton();
             this.tbtnSave = new System.Windows.Forms.ToolStripButton();
             this.tsepFirst = new System.Windows.Forms.ToolStripSeparator();
-            this.tbtnReference = new System.Windows.Forms.ToolStripButton();
+            this.tbtnScriptCompile = new System.Windows.Forms.ToolStripButton();
+            this.tbtnScriptSave = new System.Windows.Forms.ToolStripButton();
+            this.tbtnSafeMode = new System.Windows.Forms.ToolStripButton();
             this.tsepSecond = new System.Windows.Forms.ToolStripSeparator();
+            this.tbtnReference = new System.Windows.Forms.ToolStripButton();
+            this.tsepThird = new System.Windows.Forms.ToolStripSeparator();
             this.tbtnError = new System.Windows.Forms.ToolStripButton();
             this.webEditor = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.grpScriptFile = new System.Windows.Forms.GroupBox();
+            this.lbScriptInfo = new System.Windows.Forms.Label();
             this.treeFiles = new System.Windows.Forms.TreeView();
             this.imgTree = new System.Windows.Forms.ImageList(this.components);
-            this.checkScriptSafe = new System.Windows.Forms.CheckBox();
-            this.btnScriptCompile = new System.Windows.Forms.Button();
-            this.btnScriptSave = new System.Windows.Forms.Button();
             this.ttFormMain = new System.Windows.Forms.ToolTip(this.components);
             this.cntxtScriptFile = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cntxtitemScriptFileOpen = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,8 +81,12 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.tbtnOpen,
             this.tbtnSave,
             this.tsepFirst,
-            this.tbtnReference,
+            this.tbtnScriptCompile,
+            this.tbtnScriptSave,
+            this.tbtnSafeMode,
             this.tsepSecond,
+            this.tbtnReference,
+            this.tsepThird,
             this.tbtnError});
             this.stripMain.Location = new System.Drawing.Point(0, 0);
             this.stripMain.Name = "stripMain";
@@ -114,6 +120,48 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.tsepFirst.Name = "tsepFirst";
             this.tsepFirst.Size = new System.Drawing.Size(6, 39);
             // 
+            // tbtnScriptCompile
+            // 
+            this.tbtnScriptCompile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbtnScriptCompile.Enabled = false;
+            this.tbtnScriptCompile.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_compile;
+            this.tbtnScriptCompile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbtnScriptCompile.Name = "tbtnScriptCompile";
+            this.tbtnScriptCompile.Size = new System.Drawing.Size(36, 36);
+            this.tbtnScriptCompile.Text = "toolStripButton1";
+            this.tbtnScriptCompile.ToolTipText = "Compile Script";
+            this.tbtnScriptCompile.Click += new System.EventHandler(this.tbtnScriptCompile_Click);
+            // 
+            // tbtnScriptSave
+            // 
+            this.tbtnScriptSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbtnScriptSave.Enabled = false;
+            this.tbtnScriptSave.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_save;
+            this.tbtnScriptSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbtnScriptSave.Name = "tbtnScriptSave";
+            this.tbtnScriptSave.Size = new System.Drawing.Size(36, 36);
+            this.tbtnScriptSave.Text = "toolStripButton2";
+            this.tbtnScriptSave.ToolTipText = "Save Script into memory";
+            this.tbtnScriptSave.Click += new System.EventHandler(this.tbtnScriptSave_Click);
+            // 
+            // tbtnSafeMode
+            // 
+            this.tbtnSafeMode.Checked = true;
+            this.tbtnSafeMode.CheckOnClick = true;
+            this.tbtnSafeMode.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.tbtnSafeMode.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tbtnSafeMode.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbtnSafeMode.Name = "tbtnSafeMode";
+            this.tbtnSafeMode.Size = new System.Drawing.Size(33, 36);
+            this.tbtnSafeMode.Text = "Safe";
+            this.tbtnSafeMode.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            this.tbtnSafeMode.ToolTipText = "Safe Mode";
+            // 
+            // tsepSecond
+            // 
+            this.tsepSecond.Name = "tsepSecond";
+            this.tsepSecond.Size = new System.Drawing.Size(6, 39);
+            // 
             // tbtnReference
             // 
             this.tbtnReference.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -125,10 +173,10 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.tbtnReference.ToolTipText = "Open Reference Window";
             this.tbtnReference.Click += new System.EventHandler(this.tbtnReference_Click);
             // 
-            // tsepSecond
+            // tsepThird
             // 
-            this.tsepSecond.Name = "tsepSecond";
-            this.tsepSecond.Size = new System.Drawing.Size(6, 39);
+            this.tsepThird.Name = "tsepThird";
+            this.tsepThird.Size = new System.Drawing.Size(6, 39);
             // 
             // tbtnError
             // 
@@ -163,16 +211,23 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             // 
             this.grpScriptFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpScriptFile.Controls.Add(this.lbScriptInfo);
             this.grpScriptFile.Controls.Add(this.treeFiles);
-            this.grpScriptFile.Controls.Add(this.checkScriptSafe);
-            this.grpScriptFile.Controls.Add(this.btnScriptCompile);
-            this.grpScriptFile.Controls.Add(this.btnScriptSave);
             this.grpScriptFile.Location = new System.Drawing.Point(846, 42);
             this.grpScriptFile.Name = "grpScriptFile";
             this.grpScriptFile.Size = new System.Drawing.Size(250, 569);
             this.grpScriptFile.TabIndex = 5;
             this.grpScriptFile.TabStop = false;
-            this.grpScriptFile.Text = "Script File Control";
+            this.grpScriptFile.Text = "Script File Explorer";
+            // 
+            // lbScriptInfo
+            // 
+            this.lbScriptInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbScriptInfo.Location = new System.Drawing.Point(6, 432);
+            this.lbScriptInfo.Name = "lbScriptInfo";
+            this.lbScriptInfo.Size = new System.Drawing.Size(238, 134);
+            this.lbScriptInfo.TabIndex = 15;
+            this.lbScriptInfo.Text = "Loaded Script:\r\nNone";
             // 
             // treeFiles
             // 
@@ -184,7 +239,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.treeFiles.Location = new System.Drawing.Point(6, 19);
             this.treeFiles.Name = "treeFiles";
             this.treeFiles.SelectedImageIndex = 0;
-            this.treeFiles.Size = new System.Drawing.Size(238, 483);
+            this.treeFiles.Size = new System.Drawing.Size(238, 407);
             this.treeFiles.TabIndex = 14;
             this.treeFiles.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeFiles_NodeMouseClick);
             this.treeFiles.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeFiles_NodeMouseDoubleClick);
@@ -195,46 +250,6 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.imgTree.TransparentColor = System.Drawing.Color.Transparent;
             this.imgTree.Images.SetKeyName(0, "script_base.png");
             this.imgTree.Images.SetKeyName(1, "script_stack.png");
-            // 
-            // checkScriptSafe
-            // 
-            this.checkScriptSafe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkScriptSafe.AutoSize = true;
-            this.checkScriptSafe.Checked = true;
-            this.checkScriptSafe.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkScriptSafe.Location = new System.Drawing.Point(148, 528);
-            this.checkScriptSafe.Name = "checkScriptSafe";
-            this.checkScriptSafe.Size = new System.Drawing.Size(78, 17);
-            this.checkScriptSafe.TabIndex = 13;
-            this.checkScriptSafe.Text = "Safe Mode";
-            this.ttFormMain.SetToolTip(this.checkScriptSafe, "Disallow saving for Scripts with errors");
-            this.checkScriptSafe.UseVisualStyleBackColor = true;
-            // 
-            // btnScriptCompile
-            // 
-            this.btnScriptCompile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnScriptCompile.Enabled = false;
-            this.btnScriptCompile.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_compile;
-            this.btnScriptCompile.Location = new System.Drawing.Point(6, 508);
-            this.btnScriptCompile.Name = "btnScriptCompile";
-            this.btnScriptCompile.Size = new System.Drawing.Size(55, 55);
-            this.btnScriptCompile.TabIndex = 3;
-            this.ttFormMain.SetToolTip(this.btnScriptCompile, "Compile this Script (Check for errors)");
-            this.btnScriptCompile.UseVisualStyleBackColor = true;
-            this.btnScriptCompile.Click += new System.EventHandler(this.btnScriptCompile_Click);
-            // 
-            // btnScriptSave
-            // 
-            this.btnScriptSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnScriptSave.Enabled = false;
-            this.btnScriptSave.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_save;
-            this.btnScriptSave.Location = new System.Drawing.Point(67, 508);
-            this.btnScriptSave.Name = "btnScriptSave";
-            this.btnScriptSave.Size = new System.Drawing.Size(55, 55);
-            this.btnScriptSave.TabIndex = 4;
-            this.ttFormMain.SetToolTip(this.btnScriptSave, "Save this Script to memory");
-            this.btnScriptSave.UseVisualStyleBackColor = true;
-            this.btnScriptSave.Click += new System.EventHandler(this.btnScriptSave_Click);
             // 
             // cntxtScriptFile
             // 
@@ -337,7 +352,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.gridErrors.Name = "gridErrors";
             this.gridErrors.ReadOnly = true;
             this.gridErrors.RowHeadersVisible = false;
-            this.gridErrors.Size = new System.Drawing.Size(828, 128);
+            this.gridErrors.Size = new System.Drawing.Size(828, 136);
             this.gridErrors.TabIndex = 1;
             // 
             // colImg
@@ -382,7 +397,6 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.stripMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webEditor)).EndInit();
             this.grpScriptFile.ResumeLayout(false);
-            this.grpScriptFile.PerformLayout();
             this.cntxtScriptFile.ResumeLayout(false);
             this.cntxtScript.ResumeLayout(false);
             this.splitEditor.Panel1.ResumeLayout(false);
@@ -400,10 +414,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
         private System.Windows.Forms.ToolStrip stripMain;
         private System.Windows.Forms.ToolStripButton tbtnOpen;
         private System.Windows.Forms.ToolStripButton tbtnSave;
-        private System.Windows.Forms.Button btnScriptSave;
-        private System.Windows.Forms.Button btnScriptCompile;
         private System.Windows.Forms.GroupBox grpScriptFile;
-        private System.Windows.Forms.CheckBox checkScriptSafe;
         private Microsoft.Web.WebView2.WinForms.WebView2 webEditor;
         private System.Windows.Forms.ToolTip ttFormMain;
         private System.Windows.Forms.ToolStripSeparator tsepFirst;
@@ -425,6 +436,11 @@ namespace BrilliantShiningScriptEditor.UI.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn colMsg;
         private System.Windows.Forms.ToolStripSeparator tsepSecond;
         private System.Windows.Forms.ToolStripButton tbtnError;
+        private System.Windows.Forms.ToolStripButton tbtnScriptCompile;
+        private System.Windows.Forms.ToolStripButton tbtnScriptSave;
+        private System.Windows.Forms.ToolStripButton tbtnSafeMode;
+        private System.Windows.Forms.ToolStripSeparator tsepThird;
+        private System.Windows.Forms.Label lbScriptInfo;
     }
 }
 
