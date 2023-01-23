@@ -17,6 +17,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Windows.Threading;
 using Microsoft.Web.WebView2.Core;
+using BrilliantShiningScriptEditor.UI.DataView;
 
 namespace BrilliantShiningScriptEditor.UI.Forms
 {
@@ -30,11 +31,11 @@ namespace BrilliantShiningScriptEditor.UI.Forms
         private Script loadedScript;
 
         private bool editorLoaded = false;
+        private bool collapsedErrorList = false;
 
         public FormMain()
         {
             InitializeComponent();
-            AddToolTips();
 
             scriptEditorEngine = new ScriptEditorEngine();
         }
@@ -104,17 +105,15 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             return wait;
         }
 
-        private void FormMain_SizeChanged(object sender, EventArgs e)
+        private void ResizeEditor()
         {
             if (editorLoaded) ExecuteEditorScript("editor.layout()");
         }
         #endregion
 
-        private void AddToolTips()
+        private void FormMain_SizeChanged(object sender, EventArgs e)
         {
-            ttFormMain.SetToolTip(btnScriptCompile, "Compile this Script (Check for errors)");
-            ttFormMain.SetToolTip(btnScriptSave, "Save this Script to memory");
-            ttFormMain.SetToolTip(checkScriptSafe, "Disallow saving for Scripts with errors");
+            ResizeEditor();
         }
 
         private void EnableControlsOnOpen()
@@ -266,11 +265,11 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             {
                 string code = GetEditorValue();
                 Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, false);
-                clpErrErrorList.ClearErrors();
+                ClearErrors();
             }
             catch (ScriptValidationExceptionListException ex)
             {
-                clpErrErrorList.UpdateErrors(ex);
+                UpdateErrors(ex);
             }
         }
 
@@ -311,6 +310,35 @@ namespace BrilliantShiningScriptEditor.UI.Forms
                     MessageBox.Show(description, "Compilation Error" + (errors > 1 ? "s" : ""), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        public void ClearErrors()
+        {
+            gridErrors.DataSource = new List<Error>();
+        }
+
+        public void UpdateErrors(ScriptValidationExceptionListException errors)
+        {
+            List<Error> messages = errors.InnerExceptions.Select(ex => new Error(ex.Ignorable, ex.Line, ex.Message)).ToList();
+            gridErrors.DataSource = messages;
+        }
+
+        public void ToggleErrorList()
+        {
+            collapsedErrorList = !collapsedErrorList;
+
+            if (collapsedErrorList)
+            {
+                splitEditor.Panel2Collapsed = true;
+                splitEditor.Panel2.Hide();
+            }
+            else
+            {
+                splitEditor.Panel2Collapsed = false;
+                splitEditor.Panel2.Show();
+            }
+
+            ResizeEditor();
         }
 
         private void btnScriptCompile_Click(object sender, EventArgs e)
@@ -373,6 +401,11 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             {
                 formReference.Show(this);
             }
+        }
+
+        private void tbtnError_Click(object sender, EventArgs e)
+        {
+            ToggleErrorList();
         }
 
         private void treeFiles_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)

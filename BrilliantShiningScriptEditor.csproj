@@ -110,12 +110,6 @@
     <Compile Include="Engine\ScriptEditor\Model\Script.cs" />
     <Compile Include="Engine\ScriptEditor\Model\ScriptFile.cs" />
     <Compile Include="Engine\ScriptEditor\ScriptValidator.cs" />
-    <Compile Include="UI\Controls\CollapsibleErrorList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Controls\CollapsibleErrorList.Designer.cs">
-      <DependentUpon>CollapsibleErrorList.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\DataView\Error.cs" />
     <Compile Include="UI\Forms\FormMain.cs">
       <SubType>Form</SubType>
@@ -137,9 +131,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="UI\Controls\CollapsibleErrorList.resx">
-      <DependentUpon>CollapsibleErrorList.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,7 +216,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UI\Controls\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Icons\info.png" />
     <None Include="Icons\script_info.png" />
