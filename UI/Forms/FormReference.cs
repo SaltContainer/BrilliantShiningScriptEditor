@@ -17,9 +17,13 @@ namespace BrilliantShiningScriptEditor.UI.Forms
 {
     public partial class FormReference : Form
     {
-        public FormReference()
+        private FormMain parent;
+
+        public FormReference(FormMain parent)
         {
             InitializeComponent();
+
+            this.parent = parent;
 
             UpdateDataSources();
         }
@@ -31,6 +35,8 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             comboSysRef.DataSource = FileConstants.AllSystemFlags.OrderBy(s => s.Name).ToList();
             comboWorkRef.DataSource = FileConstants.AllWorkVariables.OrderBy(w => w.Name).ToList();
             comboFileRef.DataSource = FileConstants.AllScriptFileNames.OrderBy(f => f.FriendlyName).ToList();
+
+            parent.ExecuteEditorScript("syntaxReload();");
         }
 
         private void UpdateCommandInfo(CommandInfo command)
@@ -166,12 +172,12 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             if (json != null)
             {
                 List<CommandInfo> commands = TryParseJson<CommandInfo>(json);
-                if (commands != null)
+                if (commands != null && MessageBox.Show("Importing this file will overwrite the custom commands that were previously imported. Are you sure you want to import this new file?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     FileConstants.CustomCommands = commands;
                     if (WriteCustomToFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSON", "CustomReference", "commands.json"), JsonConvert.SerializeObject(commands)))
                     {
-                        MessageBox.Show("Successfully imported custom commands! A restart might be required to get everything up to date.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Successfully imported custom commands!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     UpdateDataSources();
                 }
@@ -184,12 +190,12 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             if (json != null)
             {
                 List<ArgumentTypeInfo> flags = TryParseJson<ArgumentTypeInfo>(json);
-                if (flags != null)
+                if (flags != null && MessageBox.Show("Importing this file will overwrite the custom flags that were previously imported. Are you sure you want to import this new file?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     FileConstants.CustomFlags = flags;
                     if (WriteCustomToFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSON", "CustomReference", "flags.json"), JsonConvert.SerializeObject(flags)))
                     {
-                        MessageBox.Show("Successfully imported custom flags! A restart might be required to get everything up to date.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Successfully imported custom flags!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     UpdateDataSources();
                 }
@@ -202,12 +208,12 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             if (json != null)
             {
                 List<ArgumentTypeInfo> sys_flags = TryParseJson<ArgumentTypeInfo>(json);
-                if (sys_flags != null)
+                if (sys_flags != null && MessageBox.Show("Importing this file will overwrite the custom system flags that were previously imported. Are you sure you want to import this new file?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     FileConstants.CustomSystemFlags = sys_flags;
                     if (WriteCustomToFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSON", "CustomReference", "sys_flags.json"), JsonConvert.SerializeObject(sys_flags)))
                     {
-                        MessageBox.Show("Successfully imported custom system flags! A restart might be required to get everything up to date.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Successfully imported custom system flags!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     UpdateDataSources();
                 }
@@ -220,12 +226,12 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             if (json != null)
             {
                 List<ArgumentTypeInfo> work = TryParseJson<ArgumentTypeInfo>(json);
-                if (work != null)
+                if (work != null && MessageBox.Show("Importing this file will overwrite the custom work variables that were previously imported. Are you sure you want to import this new file?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     FileConstants.CustomWorkVariables = work;
                     if (WriteCustomToFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSON", "CustomReference", "work.json"), JsonConvert.SerializeObject(work)))
                     {
-                        MessageBox.Show("Successfully imported custom work variables! A restart might be required to get everything up to date.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Successfully imported custom work variables!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     UpdateDataSources();
                 }
@@ -238,7 +244,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             if (json != null)
             {
                 List<FileInfo> file_names = TryParseJson<FileInfo>(json);
-                if (file_names != null)
+                if (file_names != null && MessageBox.Show("Importing this file will overwrite the custom file names that were previously imported. Are you sure you want to import this new file?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     FileConstants.CustomScriptFileNames = file_names;
                     if (WriteCustomToFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSON", "CustomReference", "file_names.json"), JsonConvert.SerializeObject(file_names)))

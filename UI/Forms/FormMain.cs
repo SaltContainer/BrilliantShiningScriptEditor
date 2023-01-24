@@ -75,7 +75,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             return code;
         }
 
-        private string ExecuteEditorScript(string script)
+        public string ExecuteEditorScript(string script)
         {
             return EditorWait(webEditor.CoreWebView2.ExecuteScriptAsync(script));
         }
@@ -332,18 +332,18 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             }
         }
 
-        public void ClearErrors()
+        private void ClearErrors()
         {
             gridErrors.DataSource = new List<Error>();
         }
 
-        public void UpdateErrors(ScriptValidationExceptionListException errors)
+        private void UpdateErrors(ScriptValidationExceptionListException errors)
         {
             List<Error> messages = errors.InnerExceptions.Select(ex => new Error(ex.Ignorable, ex.Line, ex.Message)).ToList();
             gridErrors.DataSource = messages;
         }
 
-        public void ToggleErrorList()
+        private void ToggleErrorList()
         {
             collapsedErrorList = !collapsedErrorList;
 
@@ -415,7 +415,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
         {
             if (formReference == null)
             {
-                formReference = new FormReference();
+                formReference = new FormReference(this);
             }
             if (!formReference.Visible)
             {
