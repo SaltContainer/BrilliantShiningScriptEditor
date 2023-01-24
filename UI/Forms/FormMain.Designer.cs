@@ -261,27 +261,27 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.cntxtitemScriptFileRename,
             this.cntxtitemScriptFileAdd});
             this.cntxtScriptFile.Name = "cntxtScriptFile";
-            this.cntxtScriptFile.Size = new System.Drawing.Size(181, 92);
+            this.cntxtScriptFile.Size = new System.Drawing.Size(130, 70);
             this.cntxtScriptFile.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cntxtScriptFile_ItemClicked);
             // 
             // cntxtitemScriptFileOpen
             // 
             this.cntxtitemScriptFileOpen.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_base;
             this.cntxtitemScriptFileOpen.Name = "cntxtitemScriptFileOpen";
-            this.cntxtitemScriptFileOpen.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptFileOpen.Size = new System.Drawing.Size(129, 22);
             this.cntxtitemScriptFileOpen.Text = "Open";
             // 
             // cntxtitemScriptFileRename
             // 
             this.cntxtitemScriptFileRename.Name = "cntxtitemScriptFileRename";
-            this.cntxtitemScriptFileRename.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptFileRename.Size = new System.Drawing.Size(129, 22);
             this.cntxtitemScriptFileRename.Text = "Rename";
             // 
             // cntxtitemScriptFileAdd
             // 
             this.cntxtitemScriptFileAdd.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_add;
             this.cntxtitemScriptFileAdd.Name = "cntxtitemScriptFileAdd";
-            this.cntxtitemScriptFileAdd.Size = new System.Drawing.Size(180, 22);
+            this.cntxtitemScriptFileAdd.Size = new System.Drawing.Size(129, 22);
             this.cntxtitemScriptFileAdd.Text = "Add Script";
             // 
             // cntxtScript
@@ -354,7 +354,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.gridErrors.Name = "gridErrors";
             this.gridErrors.ReadOnly = true;
             this.gridErrors.RowHeadersVisible = false;
-            this.gridErrors.Size = new System.Drawing.Size(828, 128);
+            this.gridErrors.Size = new System.Drawing.Size(828, 140);
             this.gridErrors.TabIndex = 1;
             // 
             // colImg
