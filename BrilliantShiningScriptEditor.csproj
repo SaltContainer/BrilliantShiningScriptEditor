@@ -99,7 +99,7 @@
     <Compile Include="Data\JSONObjects\Scripts\FileInfo.cs" />
     <Compile Include="Data\Utils\FileConstants.cs" />
     <Compile Include="Data\Utils\RegexPatterns.cs" />
-    <Compile Include="Engine\ScriptEditor\EditorEngine.cs" />
+    <Compile Include="Engine\ScriptEditor\ScriptEditorEngine.cs" />
     <Compile Include="Engine\ScriptEditor\Exceptions\ScriptValidationException.cs" />
     <Compile Include="Engine\ScriptEditor\Exceptions\ScriptValidationExceptionListException.cs" />
     <Compile Include="Engine\ScriptEditor\Model\Argument.cs" />
@@ -145,6 +145,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="JSON\CustomReference\commands.json" />
+    <None Include="JSON\CustomReference\file_names.json" />
+    <None Include="JSON\CustomReference\flags.json" />
+    <None Include="JSON\CustomReference\sys_flags.json" />
+    <None Include="JSON\CustomReference\work.json" />
     <None Include="JSON\file_names.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

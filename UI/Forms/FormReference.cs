@@ -1,11 +1,14 @@
 ﻿using BrilliantShiningScriptEditor.Data.JSONObjects;
 using BrilliantShiningScriptEditor.Data.Utils;
+using Microsoft.WindowsAPICodePack.Dialogs;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,15 +17,26 @@ namespace BrilliantShiningScriptEditor.UI.Forms
 {
     public partial class FormReference : Form
     {
-        public FormReference()
+        private FormMain parent;
+
+        public FormReference(FormMain parent)
         {
             InitializeComponent();
 
-            comboCmdRef.DataSource = FileConstants.Commands.OrderBy(c => c.Name).ToList();
-            comboFlagRef.DataSource = FileConstants.Flags.OrderBy(f => f.Name).ToList();
-            comboSysRef.DataSource = FileConstants.SystemFlags.OrderBy(s => s.Name).ToList();
-            comboWorkRef.DataSource = FileConstants.WorkVariables.OrderBy(w => w.Name).ToList();
-            comboFileRef.DataSource = FileConstants.ScriptFileNames.OrderBy(f => f.FriendlyName).ToList();
+            this.parent = parent;
+
+            UpdateDataSources();
+        }
+
+        private void UpdateDataSources()
+        {
+            comboCmdRef.DataSource = FileConstants.AllCommands.OrderBy(c => c.Name).ToList();
+            comboFlagRef.DataSource = FileConstants.AllFlags.OrderBy(f => f.Name).ToList();
+            comboSysRef.DataSource = FileConstants.AllSystemFlags.OrderBy(s => s.Name).ToList();
+            comboWorkRef.DataSource = FileConstants.AllWorkVariables.OrderBy(w => w.Name).ToList();
+            comboFileRef.DataSource = FileConstants.AllScriptFileNames.OrderBy(f => f.FriendlyName).ToList();
+
+            parent.ExecuteEditorScript("syntaxReload();");
         }
 
         private void UpdateCommandInfo(CommandInfo command)
@@ -62,6 +76,62 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             lbFileDescription.Text = file.Description == "" ? "This script file is not documented yet." : file.Description;
         }
 
+        private string OpenCustomFile()
+        {
+            CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+            dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
+            {
+                try
+                {
+                    string fullJson = "";
+                    using (System.IO.StreamReader reader = System.IO.File.OpenText(dialog.FileName))
+                    {
+                        fullJson = reader.ReadToEnd();
+                    }
+                    return fullJson;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("There was an exception while reading this file. Exception: " + ex.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            return null;
+        }
+
+        private bool WriteCustomToFile(string path, string json)
+        {
+            try
+            {
+                using (System.IO.StreamWriter sw = new System.IO.StreamWriter(path))
+                {
+                    sw.Write(json);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("There was an exception while writing the custom file. Exception: " + ex.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return false;
+        }
+
+        private List<T> TryParseJson<T>(string jsonString)
+        {
+            try
+            {
+                JsonSerializerSettings settings = new JsonSerializerSettings();
+                settings.MissingMemberHandling = MissingMemberHandling.Error;
+
+                return JsonConvert.DeserializeObject<List<T>>(jsonString, settings);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("There was an exception while parsing this file. Exception: " + ex.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return null;
+        }
+
         private void FormReference_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
@@ -94,6 +164,96 @@ namespace BrilliantShiningScriptEditor.UI.Forms
         private void comboFileRef_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateFileInfo((FileInfo)comboFileRef.SelectedItem);
+        }
+
+        private void btnCmdImport_Click(object sender, EventArgs e)
+        {
+            string json = OpenCustomFile();
+            if (json != null)
+            {
+                List<CommandInfo> commands = TryParseJson<CommandInfo>(json);
+                if (commands != null && MessageBox.Show("Importing this file will overwrite the custom commands that were previously imported. Are you sure you want to import this new file?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    FileConstants.CustomCommands = commands;
+                    if (WriteCustomToFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSON", "CustomReference", "commands.json"), JsonConvert.SerializeObject(commands)))
+                    {
+                        MessageBox.Show("Successfully imported custom commands!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    UpdateDataSources();
+                }
+            }
+        }
+
+        private void btnFlagImport_Click(object sender, EventArgs e)
+        {
+            string json = OpenCustomFile();
+            if (json != null)
+            {
+                List<ArgumentTypeInfo> flags = TryParseJson<ArgumentTypeInfo>(json);
+                if (flags != null && MessageBox.Show("Importing this file will overwrite the custom flags that were previously imported. Are you sure you want to import this new file?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    FileConstants.CustomFlags = flags;
+                    if (WriteCustomToFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSON", "CustomReference", "flags.json"), JsonConvert.SerializeObject(flags)))
+                    {
+                        MessageBox.Show("Successfully imported custom flags!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    UpdateDataSources();
+                }
+            }
+        }
+
+        private void btnSysImport_Click(object sender, EventArgs e)
+        {
+            string json = OpenCustomFile();
+            if (json != null)
+            {
+                List<ArgumentTypeInfo> sys_flags = TryParseJson<ArgumentTypeInfo>(json);
+                if (sys_flags != null && MessageBox.Show("Importing this file will overwrite the custom system flags that were previously imported. Are you sure you want to import this new file?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    FileConstants.CustomSystemFlags = sys_flags;
+                    if (WriteCustomToFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSON", "CustomReference", "sys_flags.json"), JsonConvert.SerializeObject(sys_flags)))
+                    {
+                        MessageBox.Show("Successfully imported custom system flags!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    UpdateDataSources();
+                }
+            }
+        }
+
+        private void btnWorkImport_Click(object sender, EventArgs e)
+        {
+            string json = OpenCustomFile();
+            if (json != null)
+            {
+                List<ArgumentTypeInfo> work = TryParseJson<ArgumentTypeInfo>(json);
+                if (work != null && MessageBox.Show("Importing this file will overwrite the custom work variables that were previously imported. Are you sure you want to import this new file?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    FileConstants.CustomWorkVariables = work;
+                    if (WriteCustomToFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSON", "CustomReference", "work.json"), JsonConvert.SerializeObject(work)))
+                    {
+                        MessageBox.Show("Successfully imported custom work variables!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    UpdateDataSources();
+                }
+            }
+        }
+
+        private void btnFileImport_Click(object sender, EventArgs e)
+        {
+            string json = OpenCustomFile();
+            if (json != null)
+            {
+                List<FileInfo> file_names = TryParseJson<FileInfo>(json);
+                if (file_names != null && MessageBox.Show("Importing this file will overwrite the custom file names that were previously imported. Are you sure you want to import this new file?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    FileConstants.CustomScriptFileNames = file_names;
+                    if (WriteCustomToFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "JSON", "CustomReference", "file_names.json"), JsonConvert.SerializeObject(file_names)))
+                    {
+                        MessageBox.Show("Successfully imported custom file names! A restart might be required to get everything up to date.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    UpdateDataSources();
+                }
+            }
         }
     }
 }

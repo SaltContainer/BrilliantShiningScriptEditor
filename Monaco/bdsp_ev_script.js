@@ -47,35 +47,80 @@ var flags = [];
 var sysflags = [];
 var works = [];
 
-loadFiles('../JSON/commands.json', '../JSON/flags.json', '../JSON/sys_flags.json', '../JSON/work.json')
-    .then(registerLanguageAndSyntax)
-    .catch(function (err) {
-        console.log('Error while loading JSON: ' + err);
-    });
+var tokenRegistration;
+var hoverRegistration;
+var completionRegistration;
+
+syntaxReload();
+
+function syntaxReload() {
+    commands = [];
+    flags = [];
+    sysflags = [];
+    works = [];
+
+    if (tokenRegistration) tokenRegistration.dispose();
+    if (hoverRegistration) hoverRegistration.dispose();
+    if (completionRegistration) completionRegistration.dispose();
+
+    loadFiles('commands.json', 'flags.json', 'sys_flags.json', 'work.json')
+        .then(registerLanguageAndSyntax)
+        .catch(function (err) {
+            console.log('Error while loading JSON: ' + err);
+        });
+}
 
 async function loadFiles(commandsFile, flagsFile, sysFlagsFile, workFile) {
-    return fetch(commandsFile)
+    return fetch('../JSON/CustomReference/' + commandsFile)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         handleCommands(data);
     }) &&
-    fetch(flagsFile)
+    fetch('../JSON/CustomReference/' + flagsFile)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         handleFlags(data);
     }) &&
-    fetch(sysFlagsFile)
+    fetch('../JSON/CustomReference/' + sysFlagsFile)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         handleSysFlags(data);
     }) &&
-    fetch(workFile)
+    fetch('../JSON/CustomReference/' + workFile)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        handleWork(data);
+    }) &&
+    fetch('../JSON/' + commandsFile)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        handleCommands(data);
+    }) &&
+    fetch('../JSON/' + flagsFile)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        handleFlags(data);
+    }) &&
+    fetch('../JSON/' + sysFlagsFile)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        handleSysFlags(data);
+    }) &&
+    fetch('../JSON/' + workFile)
     .then(function (response) {
         return response.json();
     })
@@ -86,29 +131,37 @@ async function loadFiles(commandsFile, flagsFile, sysFlagsFile, workFile) {
 
 function handleCommands(data) {
     for (var i = 0; i < data.length; i++) {
-        var command = new Command(data[i].Id, data[i].Name, data[i].Description, data[i].Dummy, data[i].Animation, data[i].Args.map(a => new Arg(a.TentativeName, a.Description, a.Type, a.Optional)));
-        commands.push(command);
+        if (!commands.map(c => c.id).includes(data[i].Id)) {
+            var command = new Command(data[i].Id, data[i].Name, data[i].Description, data[i].Dummy, data[i].Animation, data[i].Args.map(a => new Arg(a.TentativeName, a.Description, a.Type, a.Optional)));
+            commands.push(command);
+        }
     }
 }
 
 function handleFlags(data) {
     for (var i = 0; i < data.length; i++) {
-        var flag = new Flag(data[i].Id, data[i].Name, data[i].Description);
-        flags.push(flag);
+        if (!flags.map(f => f.id).includes(data[i].Id)) {
+            var flag = new Flag(data[i].Id, data[i].Name, data[i].Description);
+            flags.push(flag);
+        }
     }
 }
 
 function handleSysFlags(data) {
     for (var i = 0; i < data.length; i++) {
-        var sysFlag = new SystemFlag(data[i].Id, data[i].Name, data[i].Description);
-        sysflags.push(sysFlag);
+        if (!sysflags.map(s => s.id).includes(data[i].Id)) {
+            var sysFlag = new SystemFlag(data[i].Id, data[i].Name, data[i].Description);
+            sysflags.push(sysFlag);
+        }
     }
 }
 
 function handleWork(data) {
     for (var i = 0; i < data.length; i++) {
-        var work = new WorkVariable(data[i].Id, data[i].Name, data[i].Description);
-        works.push(work);
+        if (!works.map(w => w.id).includes(data[i].Id)) {
+            var work = new WorkVariable(data[i].Id, data[i].Name, data[i].Description);
+            works.push(work);
+        }
     }
 }
 
@@ -137,7 +190,7 @@ function registerLanguageAndSyntax()
         id: 'bdsp'
     });
 
-    monaco.languages.setMonarchTokensProvider('bdsp', {
+    tokenRegistration = monaco.languages.setMonarchTokensProvider('bdsp', {
         commands: commands.map(c => c.name),
         flags: flags.map(f => f.name),
         sysflags: sysflags.map(s => s.name),
@@ -177,7 +230,7 @@ function registerLanguageAndSyntax()
         }
     });
 
-    monaco.languages.registerHoverProvider("bdsp", {
+    hoverRegistration = monaco.languages.registerHoverProvider("bdsp", {
         provideHover: function(model, position) {
             const word = model.getWordAtPosition(position);
 
@@ -235,7 +288,7 @@ function registerLanguageAndSyntax()
         }
     });
 
-    monaco.languages.registerCompletionItemProvider("bdsp", {
+    completionRegistration = monaco.languages.registerCompletionItemProvider("bdsp", {
         provideCompletionItems: function(model, position) {
             let line = model.getLineContent(position.lineNumber);
             lineTrimmed = line.trimStart();

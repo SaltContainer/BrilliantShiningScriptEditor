@@ -59,11 +59,6 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
             return bundleManipulator.IsBundleLoaded(FileConstants.ScriptDataBundleKey);
         }
 
-        public List<CommandInfo> GetCommands()
-        {
-            return FileConstants.Commands;
-        }
-
         public string DecompileScript(Script script)
         {
             return scriptValidator.DecompileScript(script);

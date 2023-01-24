@@ -41,7 +41,7 @@ namespace BrilliantShiningScriptEditor.Data
                 {
                     if (!IsBundleLoaded(entry))
                     {
-                        Bundle data = new ScriptBundle(assetsManager, bundleDecompressor.LoadAndDecompressFile(string.Format("{0}\\{1}", basePath, FileConstants.Bundles[entry].FullPath)), entry);
+                        Bundle data = new ScriptBundle(assetsManager, bundleDecompressor.LoadAndDecompressFile(Path.Combine(basePath, FileConstants.Bundles[entry].FullPath)), entry);
                         this.bundles.Add(entry, data);
                     }
                 }
@@ -60,7 +60,7 @@ namespace BrilliantShiningScriptEditor.Data
             {
                 foreach (var entry in bundles)
                 {
-                    SaveBundleInFile(entry.Key, string.Format("{0}/{1}", directory, FileConstants.Bundles[entry.Key].FullPath));
+                    SaveBundleInFile(entry.Key, Path.Combine(directory, FileConstants.Bundles[entry.Key].FullPath));
                 }
                 return true;
             }
@@ -77,7 +77,7 @@ namespace BrilliantShiningScriptEditor.Data
             {
                 foreach (var entry in bundles)
                 {
-                    SaveBundleInFile(entry, string.Format("{0}\\{1}", directory, FileConstants.Bundles[entry].FullPath));
+                    SaveBundleInFile(entry, Path.Combine(directory, FileConstants.Bundles[entry].FullPath));
                 }
                 return true;
             }
@@ -97,7 +97,7 @@ namespace BrilliantShiningScriptEditor.Data
         {
             try
             {
-                SaveBundleInFile(bundleKey, string.Format("{0}\\{1}", directory, FileConstants.Bundles[bundleKey].FullPath));
+                SaveBundleInFile(bundleKey, Path.Combine(directory, FileConstants.Bundles[bundleKey].FullPath));
                 return true;
             }
             catch (Exception ex)
@@ -142,7 +142,7 @@ namespace BrilliantShiningScriptEditor.Data
 
         public bool SetBasePath(string path)
         {
-            if (Directory.Exists(string.Format("{0}\\{1}", path, "Data")))
+            if (Directory.Exists(Path.Combine(path, "Data")))
             {
                 this.basePath = path;
                 return true;
