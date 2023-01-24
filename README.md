@@ -1,8 +1,8 @@
 # Brilliant Shining Script Editor
 
-A WIP Script Editor for Pokémon Brilliant Diamond and Shining Pearl.
+A Script Editor for Pokémon Brilliant Diamond and Shining Pearl.
 
-![Picture showing the application](https://i.imgur.com/xupxjIs.png "The Script Editor")<br>
+![Picture showing the application](https://i.imgur.com/13K4D2v.png "The Script Editor")<br>
 
 The most recent version can be downloaded from the releases page. Supported features are described further down.
 
@@ -12,19 +12,32 @@ The most recent version can be downloaded from the releases page. Supported feat
 
 A full-blown editor for all scripts used by the game!
 - Edit any script in a readable format and let the editor do the conversion work for you
+  - If working on individual scripts is too much work, you can also edit full script files
 - Editor powered by Monaco Editor, with support for autocompletion and syntax highlighting
 - "Compile" the script to validate if there are any missing arguments or other issues
-- Look through the 1000+ commands that can be used and get details on what they do and what arguments they need
-- Add or delete scripts
+- Add, delete or rename scripts
 
-[Usage Example](https://youtu.be/CkC6rlwUOvw)
+### Command Reference
+
+A tool to reference commands that can be used and get details on what they do and what arguments they need!
+- Also reference all other argument types including any custom ones added
+- Custom Flag, System Flag, Work Variable, and File names that can be imported and used within the script editor
 
 ## Upcoming Features
 
-### Custom Flag, System Flag, and Work names
+### Settings Window
 
-Useful for large-scale mods that require new flags to be used.<br>
-This can be done currently by editing the bundled JSON files, but a more user-friendly method will eventually be implemented.
+Edit some settings so you feel comfortable scripting in the way you want
+- "Assembly" syntax vs "Function" syntax
+  - Assembly is the current syntax (something like "_LDVAL var_94 6.0") and Function would be in the style of ev-as (something like "_LDVAL(var_94, 6.0)").
+- "Typed" prefixes vs "Symbol" prefixes
+  - Typed is the current prefixes (var_, flag_, sys_) and Symbol would be in the style of ev-as (@, #, $).
+- Use quotation marks for labels
+  - No quotation marks is the current syntax.
+
+### Multiple script editor tabs
+
+Edit multiple scripts and/or script files at once, without worrying about having to save every time you want to switch between all of them
 
 ## Requirements
 
