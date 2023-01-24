@@ -2,7 +2,7 @@
 
 A Script Editor for Pokémon Brilliant Diamond and Shining Pearl.
 
-![Picture showing the application](https://i.imgur.com/13K4D2v.png "The Script Editor")<br>
+![Picture showing the application](https://i.imgur.com/qZ1QfNl.png "The Script Editor")<br>
 
 The most recent version can be downloaded from the releases page. Supported features are described further down.
 
@@ -17,11 +17,11 @@ A full-blown editor for all scripts used by the game!
 - "Compile" the script to validate if there are any missing arguments or other issues
 - Add, delete or rename scripts
 
-### Command Reference
+### Data Reference
 
 A tool to reference commands that can be used and get details on what they do and what arguments they need!
 - Also reference all other argument types including any custom ones added
-- Custom Flag, System Flag, Work Variable, and File names that can be imported and used within the script editor
+- Custom Command, Flag, System Flag, Work Variable, and File names that can be imported and used within the script editor
 
 ## Upcoming Features
 
