@@ -61,7 +61,17 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
             return string.Join("\n", convertedCommands);
         }
 
-        public Script CompileScript(string script, string name, bool ignoreExceptions)
+        public string DecompileScriptFile(ScriptFile scriptFile)
+        {
+            List<string> decompiledScripts = new List<string>();
+            foreach (Script script in scriptFile.Scripts)
+            {
+                decompiledScripts.Add(script.Name + ":\n" + DecompileScript(script));
+            }
+            return string.Join("\n\n", decompiledScripts);
+        }
+
+        public Script CompileScript(string script, string name, bool ignoreExceptions, int lineOffset)
         {
             ClearExceptions();
             List<Command> convertedCommands = new List<Command>();
@@ -78,7 +88,7 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
                         string arg = args[j];
                         if (j == 0)
                         {
-                            if (ValidateCommand(arg, i))
+                            if (ValidateCommand(arg, i + lineOffset))
                             {
                                 CommandInfo result = GetCommandFromName(arg);
                                 if (result != null) convertedArguments.Add(new Argument(ArgumentType.Command, result.Id));
@@ -110,11 +120,65 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
                         }
                         else convertedArguments.Add(new Argument(ArgumentType.String, arg));
                     }
-                    if (ValidateArguments(convertedArguments, i)) convertedCommands.Add(new Command(convertedArguments));
+                    if (ValidateArguments(convertedArguments, i + lineOffset)) convertedCommands.Add(new Command(convertedArguments));
                 }
             }
             if (validationExceptions.Count > 0 && !ignoreExceptions) throw new ScriptValidationExceptionListException("", validationExceptions);
             return new Script(name, convertedCommands);
+        }
+
+        public ScriptFile CompileScriptFile(string scriptFile, long pathId, string name, bool ignoreExceptions)
+        {
+            List<ScriptValidationException> exceptions = new List<ScriptValidationException>();
+            string[] lines = scriptFile.Split('\n');
+            List<int> linesWithName = lines.Select((l, i) => (l, i)).Where(l => l.l.EndsWith(":")).Select(l => l.i).ToList();
+            List<(string, string, int)> scripts = new List<(string, string, int)>();
+
+            if (linesWithName.Count == 0)
+            {
+                scripts.Add(("", scriptFile, 0));
+                exceptions.Add(new ScriptValidationException(string.Format("Line {0}: No script name was specified in this file.", 0), false, 0));
+            }
+            else
+            {
+                for (int i=0; i<linesWithName.Count; i++)
+                {
+                    if (i+1 < linesWithName.Count)
+                    {
+                        List<string> scriptLines = lines.Take(linesWithName[i+1]).Skip(linesWithName[i]+1).ToList();
+                        scripts.Add((string.Join("\n", scriptLines), lines[linesWithName[i]].Trim(new[] { ':' }), linesWithName[i]+1));
+                    }
+                    else
+                    {
+                        List<string> scriptLines = lines.Skip(linesWithName[i]+1).ToList();
+                        scripts.Add((string.Join("\n", scriptLines), lines[linesWithName[i]].Trim(new[] { ':' }), linesWithName[i]+1));
+                    }
+                }
+            }
+
+            if (scripts.Count != scripts.Select(s => s.Item2).Distinct().Count())
+            {
+                exceptions.Add(new ScriptValidationException(string.Format("Line {0}: There are duplicate script names in this file.", 0), false, 0));
+            }
+
+            List<Script> compiledScripts = new List<Script>();
+
+            for (int i=0; i<scripts.Count; i++)
+            {
+                (string, string, int) script = scripts[i];
+                try
+                {
+                    Script compiledScript = CompileScript(script.Item1, script.Item2, ignoreExceptions, script.Item3);
+                    compiledScripts.Add(compiledScript);
+                }
+                catch (ScriptValidationExceptionListException ex)
+                {
+                    exceptions.AddRange(ex.InnerExceptions);
+                }
+            }
+
+            if (exceptions.Count > 0 && !ignoreExceptions) throw new ScriptValidationExceptionListException("", exceptions);
+            return new ScriptFile(new List<string>(), compiledScripts, name, pathId);
         }
 
         private bool ValidateArguments(List<Argument> arguments, int line)
