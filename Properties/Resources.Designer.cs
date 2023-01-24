@@ -135,6 +135,51 @@ namespace BrilliantShiningScriptEditor.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to [].
+        /// </summary>
+        internal static string custom_commands {
+            get {
+                return ResourceManager.GetString("custom_commands", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [].
+        /// </summary>
+        internal static string custom_file_names {
+            get {
+                return ResourceManager.GetString("custom_file_names", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [].
+        /// </summary>
+        internal static string custom_flags {
+            get {
+                return ResourceManager.GetString("custom_flags", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [].
+        /// </summary>
+        internal static string custom_sys_flags {
+            get {
+                return ResourceManager.GetString("custom_sys_flags", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [].
+        /// </summary>
+        internal static string custom_work {
+            get {
+                return ResourceManager.GetString("custom_work", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap error {
@@ -146,29 +191,28 @@ namespace BrilliantShiningScriptEditor.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to [
-        ///	{
-        ///		&quot;PathID&quot;: -4159401333858848265,
-        ///		&quot;FileName&quot;: &quot;battle_room&quot;,
-        ///		&quot;FriendlyName&quot;: &quot;Unused Wireless Battle Room (?)&quot;
-        ///	},
-        ///	{
-        ///		&quot;PathID&quot;: -594893302899321786,
-        ///		&quot;FileName&quot;: &quot;bg_attr&quot;,
-        ///		&quot;FriendlyName&quot;: &quot;Tile-specific Scripts&quot;
-        ///	},
-        ///	{
-        ///		&quot;PathID&quot;: -524791092379703435,
-        ///		&quot;FileName&quot;: &quot;c01&quot;,
-        ///		&quot;FriendlyName&quot;: &quot;Jubilife City&quot;
-        ///	},
-        ///	{
-        ///		&quot;PathID&quot;: -696005077699342123,
-        ///		&quot;FileName&quot;: &quot;c01fs0101&quot;,
-        ///		&quot;FriendlyName&quot;: &quot;Jubilife - PokÃ© Mart&quot;
-        ///	},
-        ///	{
-        ///		&quot;PathID&quot;: -4737298874747568407,
-        ///		&quot;FileName&quot;: &quot;c0 [rest of string was truncated]&quot;;.
+        ///  {
+        ///    &quot;PathID&quot;: -4159401333858848265,
+        ///    &quot;FileName&quot;: &quot;battle_room&quot;,
+        ///    &quot;FriendlyName&quot;: &quot;Unused Wireless Battle Room (?)&quot;,
+        ///    &quot;Description&quot;: &quot;&quot;
+        ///  },
+        ///  {
+        ///    &quot;PathID&quot;: -594893302899321786,
+        ///    &quot;FileName&quot;: &quot;bg_attr&quot;,
+        ///    &quot;FriendlyName&quot;: &quot;Tile-specific Scripts&quot;,
+        ///    &quot;Description&quot;: &quot;&quot;
+        ///  },
+        ///  {
+        ///    &quot;PathID&quot;: -524791092379703435,
+        ///    &quot;FileName&quot;: &quot;c01&quot;,
+        ///    &quot;FriendlyName&quot;: &quot;Jubilife City&quot;,
+        ///    &quot;Description&quot;: &quot;&quot;
+        ///  },
+        ///  {
+        ///    &quot;PathID&quot;: -696005077699342123,
+        ///    &quot;FileName&quot;: &quot;c01fs0101&quot;,
+        ///    [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string file_names {
             get {

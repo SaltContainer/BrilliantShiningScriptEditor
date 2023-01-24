@@ -25,7 +25,7 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
                     switch (arg.Type)
                     {
                         case ArgumentType.Command:
-                            convertedArgs.Add(FileConstants.Commands.Where(c => c.Id == arg.GetNumberValue())
+                            convertedArgs.Add(FileConstants.AllCommands.Where(c => c.Id == arg.GetNumberValue())
                                 .Select(c => c.Name)
                                 .DefaultIfEmpty(string.Format("cmd_{0}", arg.GetNumberValue()))
                                 .First());
@@ -34,19 +34,19 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
                             convertedArgs.Add(BitConverter.ToSingle(BitConverter.GetBytes(arg.GetNumberValue()), 0).ToString());
                             break;
                         case ArgumentType.Variable:
-                            convertedArgs.Add(FileConstants.WorkVariables.Where(w => w.Id == arg.GetNumberValue())
+                            convertedArgs.Add(FileConstants.AllWorkVariables.Where(w => w.Id == arg.GetNumberValue())
                                 .Select(w => w.Name)
                                 .DefaultIfEmpty(string.Format("var_{0}", arg.GetNumberValue()))
                                 .First());
                             break;
                         case ArgumentType.Flag:
-                            convertedArgs.Add(FileConstants.Flags.Where(f => f.Id == arg.GetNumberValue())
+                            convertedArgs.Add(FileConstants.AllFlags.Where(f => f.Id == arg.GetNumberValue())
                                 .Select(f => f.Name)
                                 .DefaultIfEmpty(string.Format("flag_{0}", arg.GetNumberValue()))
                                 .First());
                             break;
                         case ArgumentType.SystemFlag:
-                            convertedArgs.Add(FileConstants.SystemFlags.Where(s => s.Id == arg.GetNumberValue())
+                            convertedArgs.Add(FileConstants.AllSystemFlags.Where(s => s.Id == arg.GetNumberValue())
                                 .Select(s => s.Name)
                                 .DefaultIfEmpty(string.Format("sys_{0}", arg.GetNumberValue()))
                                 .First());
@@ -217,42 +217,42 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
 
         private CommandInfo GetCommandFromName(string name)
         {
-            return FileConstants.Commands.Where(c => c.Name == name).DefaultIfEmpty(null).First();
+            return FileConstants.AllCommands.Where(c => c.Name == name).DefaultIfEmpty(null).First();
         }
 
         private CommandInfo GetCommandFromId(int id)
         {
-            return FileConstants.Commands.Where(c => c.Id == id).DefaultIfEmpty(null).First();
+            return FileConstants.AllCommands.Where(c => c.Id == id).DefaultIfEmpty(null).First();
         }
 
         private ArgumentTypeInfo GetFlagFromName(string name)
         {
-            return FileConstants.Flags.Where(f => f.Name == name).DefaultIfEmpty(null).First();
+            return FileConstants.AllFlags.Where(f => f.Name == name).DefaultIfEmpty(null).First();
         }
 
         private ArgumentTypeInfo GetFlagFromId(int id)
         {
-            return FileConstants.Flags.Where(f => f.Id == id).DefaultIfEmpty(null).First();
+            return FileConstants.AllFlags.Where(f => f.Id == id).DefaultIfEmpty(null).First();
         }
 
         private ArgumentTypeInfo GetSysFlagFromName(string name)
         {
-            return FileConstants.SystemFlags.Where(s => s.Name == name).DefaultIfEmpty(null).First();
+            return FileConstants.AllSystemFlags.Where(s => s.Name == name).DefaultIfEmpty(null).First();
         }
 
         private ArgumentTypeInfo GetSysFlagFromId(int id)
         {
-            return FileConstants.SystemFlags.Where(s => s.Id == id).DefaultIfEmpty(null).First();
+            return FileConstants.AllSystemFlags.Where(s => s.Id == id).DefaultIfEmpty(null).First();
         }
 
         private ArgumentTypeInfo GetWorkFromName(string name)
         {
-            return FileConstants.WorkVariables.Where(w => w.Name == name).DefaultIfEmpty(null).First();
+            return FileConstants.AllWorkVariables.Where(w => w.Name == name).DefaultIfEmpty(null).First();
         }
 
         private ArgumentTypeInfo GetWorkFromId(int id)
         {
-            return FileConstants.WorkVariables.Where(w => w.Id == id).DefaultIfEmpty(null).First();
+            return FileConstants.AllWorkVariables.Where(w => w.Id == id).DefaultIfEmpty(null).First();
         }
 
         private string GetTypeNameFromType(ArgumentType type)
