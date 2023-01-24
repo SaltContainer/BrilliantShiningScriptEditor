@@ -382,8 +382,16 @@ namespace BrilliantShiningScriptEditor.UI.Forms
                         if (MessageBox.Show(fullError, "Compilation Warning" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                         {
                             string code = GetEditorValue();
-                            Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, true);
-                            SaveScriptInMemory(script);
+                            if (fullFileMode)
+                            {
+                                ScriptFile scriptFile = scriptEditorEngine.CompileScriptFile(code, parentOfLoadedScript.PathID, parentOfLoadedScript.FileName, true);
+                                SaveScriptFileInMemory(scriptFile);
+                            }
+                            else
+                            {
+                                Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, true);
+                                SaveScriptInMemory(script);
+                            } 
                         }
                     }
                 }

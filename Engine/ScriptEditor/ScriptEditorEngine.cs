@@ -71,7 +71,7 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
 
         public Script CompileScript(string script, string name, bool ignoreExceptions)
         {
-            return scriptValidator.CompileScript(script, name, ignoreExceptions);
+            return scriptValidator.CompileScript(script, name, ignoreExceptions, 0);
         }
 
         public ScriptFile CompileScriptFile(string scriptFile, long pathId, string name, bool ignoreExceptions)
