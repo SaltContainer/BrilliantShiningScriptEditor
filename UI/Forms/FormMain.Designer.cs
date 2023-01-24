@@ -241,8 +241,11 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.treeFiles.SelectedImageIndex = 0;
             this.treeFiles.Size = new System.Drawing.Size(238, 407);
             this.treeFiles.TabIndex = 14;
+            this.treeFiles.BeforeCollapse += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeFiles_BeforeCollapse);
+            this.treeFiles.BeforeExpand += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeFiles_BeforeExpand);
             this.treeFiles.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeFiles_NodeMouseClick);
             this.treeFiles.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeFiles_NodeMouseDoubleClick);
+            this.treeFiles.MouseDown += new System.Windows.Forms.MouseEventHandler(this.treeFiles_MouseDown);
             // 
             // imgTree
             // 
@@ -258,28 +261,27 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.cntxtitemScriptFileRename,
             this.cntxtitemScriptFileAdd});
             this.cntxtScriptFile.Name = "cntxtScriptFile";
-            this.cntxtScriptFile.Size = new System.Drawing.Size(130, 70);
+            this.cntxtScriptFile.Size = new System.Drawing.Size(181, 92);
             this.cntxtScriptFile.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cntxtScriptFile_ItemClicked);
             // 
             // cntxtitemScriptFileOpen
             // 
-            this.cntxtitemScriptFileOpen.Enabled = false;
             this.cntxtitemScriptFileOpen.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_base;
             this.cntxtitemScriptFileOpen.Name = "cntxtitemScriptFileOpen";
-            this.cntxtitemScriptFileOpen.Size = new System.Drawing.Size(129, 22);
+            this.cntxtitemScriptFileOpen.Size = new System.Drawing.Size(180, 22);
             this.cntxtitemScriptFileOpen.Text = "Open";
             // 
             // cntxtitemScriptFileRename
             // 
             this.cntxtitemScriptFileRename.Name = "cntxtitemScriptFileRename";
-            this.cntxtitemScriptFileRename.Size = new System.Drawing.Size(129, 22);
+            this.cntxtitemScriptFileRename.Size = new System.Drawing.Size(180, 22);
             this.cntxtitemScriptFileRename.Text = "Rename";
             // 
             // cntxtitemScriptFileAdd
             // 
             this.cntxtitemScriptFileAdd.Image = global::BrilliantShiningScriptEditor.Properties.Resources.script_add;
             this.cntxtitemScriptFileAdd.Name = "cntxtitemScriptFileAdd";
-            this.cntxtitemScriptFileAdd.Size = new System.Drawing.Size(129, 22);
+            this.cntxtitemScriptFileAdd.Size = new System.Drawing.Size(180, 22);
             this.cntxtitemScriptFileAdd.Text = "Add Script";
             // 
             // cntxtScript
@@ -352,7 +354,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.gridErrors.Name = "gridErrors";
             this.gridErrors.ReadOnly = true;
             this.gridErrors.RowHeadersVisible = false;
-            this.gridErrors.Size = new System.Drawing.Size(828, 136);
+            this.gridErrors.Size = new System.Drawing.Size(828, 128);
             this.gridErrors.TabIndex = 1;
             // 
             // colImg

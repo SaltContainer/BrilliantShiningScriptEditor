@@ -32,6 +32,9 @@ namespace BrilliantShiningScriptEditor.UI.Forms
 
         private bool editorLoaded = false;
         private bool collapsedErrorList = false;
+        private bool fullFileMode = false;
+
+        private bool treeViewDoubleClick = false;
 
         public FormMain()
         {
@@ -151,26 +154,49 @@ namespace BrilliantShiningScriptEditor.UI.Forms
 
         private void UpdateScriptBox()
         {
-            SetEditorValue(scriptEditorEngine.DecompileScript(loadedScript));
+            if (fullFileMode) SetEditorValue(scriptEditorEngine.DecompileScriptFile(parentOfLoadedScript));
+            else SetEditorValue(scriptEditorEngine.DecompileScript(loadedScript));
             ExecuteEditorScript("editor.updateOptions({readOnly: false})");
         }
 
         private void UpdateScriptInfo()
         {
             List<string> lines = new List<string>();
-            lines.Add("Loaded Script:");
-            if (loadedScript == null || parentOfLoadedScript == null)
+
+            if (fullFileMode)
             {
-                lines.Add("None");
+                lines.Add("Loaded Script File:");
+                if (parentOfLoadedScript == null)
+                {
+                    lines.Add("None");
+                }
+                else
+                {
+                    lines.Add(parentOfLoadedScript.ToString());
+                    lines.Add("(" + parentOfLoadedScript.FileName + ")");
+                    lines.Add("");
+                    int cmdCount = parentOfLoadedScript.Scripts.SelectMany(s => s.Commands).Count();
+                    int scriptCount = parentOfLoadedScript.Scripts.Count;
+                    lines.Add(string.Format("This script file contains {0} command" + (cmdCount > 1 ? "s" : "") + " in {1} script" + (scriptCount > 1 ? "s" : "") + ".", cmdCount, scriptCount));
+                }
             }
             else
             {
-                lines.Add(loadedScript.Name + " in " + parentOfLoadedScript.ToString());
-                lines.Add("(" + parentOfLoadedScript.FileName + "/" + loadedScript.Name + ")");
-                lines.Add("");
-                int cmdCount = loadedScript.Commands.Count;
-                lines.Add(string.Format("This script contains {0} command" + (cmdCount > 1 ? "s" : "") + ".", cmdCount));
+                lines.Add("Loaded Script:");
+                if (loadedScript == null || parentOfLoadedScript == null)
+                {
+                    lines.Add("None");
+                }
+                else
+                {
+                    lines.Add(loadedScript.Name + " in " + parentOfLoadedScript.ToString());
+                    lines.Add("(" + parentOfLoadedScript.FileName + "/" + loadedScript.Name + ")");
+                    lines.Add("");
+                    int cmdCount = loadedScript.Commands.Count;
+                    lines.Add(string.Format("This script contains {0} command" + (cmdCount > 1 ? "s" : "") + ".", cmdCount));
+                }
             }
+            
             lbScriptInfo.Text = string.Join("\n", lines);
         }
 
@@ -178,6 +204,18 @@ namespace BrilliantShiningScriptEditor.UI.Forms
         {
             parentOfLoadedScript = scriptFile;
             loadedScript = script;
+            fullFileMode = false;
+            UpdateScriptBox();
+            UpdateScriptInfo();
+            tbtnScriptCompile.Enabled = true;
+            tbtnScriptSave.Enabled = true;
+        }
+
+        private void OpenScriptFile(ScriptFile scriptFile)
+        {
+            parentOfLoadedScript = scriptFile;
+            loadedScript = null;
+            fullFileMode = true;
             UpdateScriptBox();
             UpdateScriptInfo();
             tbtnScriptCompile.Enabled = true;
@@ -279,12 +317,26 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             UpdateScriptFileList();
         }
 
+        private void SaveScriptFileInMemory(ScriptFile scriptFile)
+        {
+            scriptFiles[scriptFiles.FindIndex(f => f.PathID == scriptFile.PathID)] = scriptFile;
+            MessageBox.Show("Successfully saved the script file in memory!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            UpdateScriptFileList();
+        }
+
         private void CompileScript()
         {
             try
             {
                 string code = GetEditorValue();
-                Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, false);
+                if (fullFileMode)
+                {
+                    ScriptFile scriptFile = scriptEditorEngine.CompileScriptFile(code, parentOfLoadedScript.PathID, parentOfLoadedScript.FileName, false);
+                }
+                else
+                {
+                    Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, false);
+                }
                 ClearErrors();
             }
             catch (ScriptValidationExceptionListException ex)
@@ -298,12 +350,24 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             try
             {
                 string code = GetEditorValue();
-                Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, false);
-                SaveScriptInMemory(script);
+                if (fullFileMode)
+                {
+                    if (MessageBox.Show("Saving will overwrite all the scripts in this script file. Are you sure you want to save?", "Potential Data Loss", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                    {
+                        ScriptFile scriptFile = scriptEditorEngine.CompileScriptFile(code, parentOfLoadedScript.PathID, parentOfLoadedScript.FileName, false);
+                        SaveScriptFileInMemory(scriptFile);
+                    }
+                }
+                else
+                {
+                    Script script = scriptEditorEngine.CompileScript(code, loadedScript.Name, false);
+                    SaveScriptInMemory(script);
+                }
             }
             catch (ScriptValidationExceptionListException ex)
             {
                 bool ignorable = !ex.InnerExceptions.Select(exception => exception.Ignorable).Contains(false);
+                string type = fullFileMode ? "script file" : "script";
                 if (ignorable)
                 {
                     int errors = ex.InnerExceptions.Count;
@@ -314,7 +378,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
                     }
                     else
                     {
-                        fullError += "\nAre you sure you want to save this script anyways?";
+                        fullError += "\nAre you sure you want to save this " + type + " anyways?";
                         if (MessageBox.Show(fullError, "Compilation Warning" + (ex.InnerExceptions.Count > 1 ? "s" : ""), MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                         {
                             string code = GetEditorValue();
@@ -326,7 +390,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
                 else
                 {
                     int errors = ex.InnerExceptions.Where(exception => !exception.Ignorable).Count();
-                    string description = "There " + (errors > 1 ? "were" : "was a") + " compilation error" + (errors > 1 ? "s" : "") + " and the script cannot be saved. See the Error List for more details.";
+                    string description = "There " + (errors > 1 ? "were" : "was a") + " compilation error" + (errors > 1 ? "s" : "") + " and the " + type + " cannot be saved. See the Error List for more details.";
                     MessageBox.Show(description, "Compilation Error" + (errors > 1 ? "s" : ""), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -430,10 +494,18 @@ namespace BrilliantShiningScriptEditor.UI.Forms
 
         private void treeFiles_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            if (e.Node.Tag is Script && e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
-                OpenScript((ScriptFile)e.Node.Parent.Tag, (Script)e.Node.Tag);
+                if (e.Node.Tag is Script script)
+                {
+                    OpenScript((ScriptFile)e.Node.Parent.Tag, script);
+                }
+                else if (e.Node.Tag is ScriptFile scriptFile)
+                {
+                    OpenScriptFile(scriptFile);
+                }
             }
+            
         }
 
         private void cntxtScriptFile_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -441,7 +513,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             cntxtScriptFile.Close();
             if (e.ClickedItem == cntxtitemScriptFileOpen)
             {
-                // TODO: Implement full Script File here
+                OpenScriptFile((ScriptFile)treeFiles.SelectedNode.Tag);
             }
             else if (e.ClickedItem == cntxtitemScriptFileRename)
             {
@@ -473,6 +545,21 @@ namespace BrilliantShiningScriptEditor.UI.Forms
         private void treeFiles_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
             treeFiles.SelectedNode = e.Node;
+        }
+
+        private void treeFiles_BeforeCollapse(object sender, TreeViewCancelEventArgs e)
+        {
+            if (treeViewDoubleClick && e.Action == TreeViewAction.Collapse) e.Cancel = true;
+        }
+
+        private void treeFiles_BeforeExpand(object sender, TreeViewCancelEventArgs e)
+        {
+            if (treeViewDoubleClick && e.Action == TreeViewAction.Expand) e.Cancel = true;
+        }
+
+        private void treeFiles_MouseDown(object sender, MouseEventArgs e)
+        {
+            treeViewDoubleClick = e.Clicks > 1;
         }
     }
 }

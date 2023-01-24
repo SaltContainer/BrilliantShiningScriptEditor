@@ -61,6 +61,11 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
             return string.Join("\n", convertedCommands);
         }
 
+        public string DecompileScriptFile(ScriptFile scriptFile)
+        {
+            return "Decompile here";
+        }
+
         public Script CompileScript(string script, string name, bool ignoreExceptions)
         {
             ClearExceptions();
@@ -115,6 +120,11 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
             }
             if (validationExceptions.Count > 0 && !ignoreExceptions) throw new ScriptValidationExceptionListException("", validationExceptions);
             return new Script(name, convertedCommands);
+        }
+
+        public ScriptFile CompileScriptFile(string scriptFile, long pathId, string name, bool ignoreExceptions)
+        {
+            return new ScriptFile(new List<string>(), new List<Script>(), name, pathId);
         }
 
         private bool ValidateArguments(List<Argument> arguments, int line)

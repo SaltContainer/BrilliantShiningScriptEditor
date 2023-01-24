@@ -24,7 +24,7 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor.Model
 
         public override string ToString()
         {
-            return FileConstants.ScriptFileNames.Where(f => f.PathID == PathID).Select(f => f.FriendlyName).DefaultIfEmpty(FileName).First();
+            return FileConstants.AllScriptFileNames.Where(f => f.PathID == PathID).Select(f => f.FriendlyName).DefaultIfEmpty(FileName).First();
         }
     }
 }

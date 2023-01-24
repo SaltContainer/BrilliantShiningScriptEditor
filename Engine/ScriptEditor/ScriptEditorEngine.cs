@@ -64,9 +64,19 @@ namespace BrilliantShiningScriptEditor.Engine.ScriptEditor
             return scriptValidator.DecompileScript(script);
         }
 
+        public string DecompileScriptFile(ScriptFile scriptFile)
+        {
+            return scriptValidator.DecompileScriptFile(scriptFile);
+        }
+
         public Script CompileScript(string script, string name, bool ignoreExceptions)
         {
             return scriptValidator.CompileScript(script, name, ignoreExceptions);
+        }
+
+        public ScriptFile CompileScriptFile(string scriptFile, long pathId, string name, bool ignoreExceptions)
+        {
+            return scriptValidator.CompileScriptFile(scriptFile, pathId, name, ignoreExceptions);
         }
 
         private bool LoadScriptFiles()
