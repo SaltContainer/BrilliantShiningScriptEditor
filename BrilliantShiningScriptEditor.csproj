@@ -110,6 +110,9 @@
     <Compile Include="Engine\ScriptEditor\Model\Script.cs" />
     <Compile Include="Engine\ScriptEditor\Model\ScriptFile.cs" />
     <Compile Include="Engine\ScriptEditor\ScriptValidator.cs" />
+    <Compile Include="Engine\ScriptEditor\Settings\ArgumentSyntax.cs" />
+    <Compile Include="Engine\ScriptEditor\Settings\CommentSyntax.cs" />
+    <Compile Include="Engine\ScriptEditor\Settings\TypeSyntax.cs" />
     <Compile Include="UI\DataView\Error.cs" />
     <Compile Include="UI\Forms\FormMain.cs">
       <SubType>Form</SubType>
@@ -122,6 +125,12 @@
     </Compile>
     <Compile Include="UI\Forms\FormReference.Designer.cs">
       <DependentUpon>FormReference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Forms\FormTextBox.cs">
       <SubType>Form</SubType>
@@ -136,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Forms\FormReference.resx">
       <DependentUpon>FormReference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Forms\FormTextBox.resx">
       <DependentUpon>FormTextBox.cs</DependentUpon>
@@ -231,6 +243,7 @@
     <None Include="Icons\script_stack.png" />
     <None Include="Icons\error.png" />
     <None Include="Icons\warning.png" />
+    <None Include="Icons\gear.png" />
     <Content Include="Monaco\**">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

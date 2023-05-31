@@ -495,6 +495,15 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             }
         }
 
+        private void tbtnSettings_Click(object sender, EventArgs e)
+        {
+            FormSettings form = new FormSettings();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                // TODO: Update syntax in Monaco Editor
+            }
+        }
+
         private void tbtnError_Click(object sender, EventArgs e)
         {
             ToggleErrorList();

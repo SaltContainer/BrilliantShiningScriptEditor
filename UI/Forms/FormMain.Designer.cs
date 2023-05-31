@@ -61,6 +61,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.colImg = new System.Windows.Forms.DataGridViewImageColumn();
             this.colLine = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMsg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbtnSettings = new System.Windows.Forms.ToolStripButton();
             this.stripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webEditor)).BeginInit();
             this.grpScriptFile.SuspendLayout();
@@ -86,6 +87,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.tbtnSafeMode,
             this.tsepSecond,
             this.tbtnReference,
+            this.tbtnSettings,
             this.tsepThird,
             this.tbtnError});
             this.stripMain.Location = new System.Drawing.Point(0, 0);
@@ -354,7 +356,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.gridErrors.Name = "gridErrors";
             this.gridErrors.ReadOnly = true;
             this.gridErrors.RowHeadersVisible = false;
-            this.gridErrors.Size = new System.Drawing.Size(828, 140);
+            this.gridErrors.Size = new System.Drawing.Size(828, 136);
             this.gridErrors.TabIndex = 1;
             // 
             // colImg
@@ -380,6 +382,17 @@ namespace BrilliantShiningScriptEditor.UI.Forms
             this.colMsg.HeaderText = "Message";
             this.colMsg.Name = "colMsg";
             this.colMsg.ReadOnly = true;
+            // 
+            // tbtnSettings
+            // 
+            this.tbtnSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbtnSettings.Image = global::BrilliantShiningScriptEditor.Properties.Resources.gear;
+            this.tbtnSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbtnSettings.Name = "tbtnSettings";
+            this.tbtnSettings.Size = new System.Drawing.Size(36, 36);
+            this.tbtnSettings.Text = "tbtnReference";
+            this.tbtnSettings.ToolTipText = "Open Reference Window";
+            this.tbtnSettings.Click += new System.EventHandler(this.tbtnSettings_Click);
             // 
             // FormMain
             // 
@@ -443,6 +456,7 @@ namespace BrilliantShiningScriptEditor.UI.Forms
         private System.Windows.Forms.ToolStripButton tbtnSafeMode;
         private System.Windows.Forms.ToolStripSeparator tsepThird;
         private System.Windows.Forms.Label lbScriptInfo;
+        private System.Windows.Forms.ToolStripButton tbtnSettings;
     }
 }
 
